@@ -1,0 +1,223 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Using the HPC for Bioinformatics Computing &#8212; BIT 815 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Useful Publications and Websites" href="readings.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <a class="reference external image-reference" href="http://www.ncsu.edu"><img alt="_images/NC_State2.gif" src="_images/NC_State2.gif" /></a>
+<a class="reference external image-reference" href="http://www.cnr.ncsu.edu/fer/"><img alt="_images/FERlogo2.png" src="_images/FERlogo2.png" /></a>
+<div class="section" id="using-the-hpc-for-bioinformatics-computing">
+<h1>Using the HPC for Bioinformatics Computing<a class="headerlink" href="#using-the-hpc-for-bioinformatics-computing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="global-overview">
+<h2>Global overview<a class="headerlink" href="#global-overview" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Accounts on the HPC are available to those with an NCSU Unity ID - see <a class="reference external" href="https://projects.ncsu.edu/hpc//Accounts/Accounts.php">HPC Accounts</a> for information.</li>
+<li>Connect to the HPC via login.hpc.ncsu.edu using PuTTY for a command-line interface</li>
+<li>Create a job submission script file that contains the commands you want to execute</li>
+<li>Submit the job script to the appropriate queue and wait until the job is complete</li>
+<li>Transfer the output data back to your office workstation for further analysis, or write another job submission script to carry out more analysis on the HPC.</li>
+</ol>
+</div>
+<div class="section" id="job-submission-and-management">
+<h2>Job submission and management<a class="headerlink" href="#job-submission-and-management" title="Permalink to this headline">¶</a></h2>
+<p>A tool called Load Sharing Facility (LSF) is used to manage the queues of submitted computing jobs on the HPC cluster. See <a class="reference external" href="https://projects.ncsu.edu/hpc//Documents/BladeCenter/ClusterLSF.php">LSF on HPC Cluster</a> for a summary of the factors considering in prioritizing submitted jobs in the queue. More information is available at the <a class="reference external" href="https://projects.ncsu.edu/hpc//Documents/HowTo.php">FAQ for HPC users</a>; additional documentation on LSF commands can also be found via Google searches.</p>
+</div>
+<div class="section" id="available-software">
+<h2>Available software<a class="headerlink" href="#available-software" title="Permalink to this headline">¶</a></h2>
+<p>The most current list of software available on the HPC can be obtained by logging into the HPC and listing the contents of the directory /usr/local/apps - not all the listed programs are related to bioinformatics, but this will allow searching for a specific program of interest. As of March 1, 2016, installed software useful for biological research applications included a mix of open-source and commercial tools - examples are shown here, but the complete list is much longer.</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="26%" />
+<col width="36%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>abyss-1.0.14</td>
+<td>asreml2</td>
+<td>BEAST.v1.4.7</td>
+</tr>
+<tr class="row-even"><td>blasr-smrtanalysis</td>
+<td>bowtie2</td>
+<td>bwa</td>
+</tr>
+<tr class="row-odd"><td>circos</td>
+<td>cufflinks</td>
+<td>cutadapt</td>
+</tr>
+<tr class="row-even"><td>EIGENSOFT-3.0</td>
+<td>exonerate</td>
+<td>FastQC</td>
+</tr>
+<tr class="row-odd"><td>fastx_toolkit</td>
+<td>java</td>
+<td>maker</td>
+</tr>
+<tr class="row-even"><td>maq</td>
+<td>mothur</td>
+<td>mpiblast-1.4.0</td>
+</tr>
+<tr class="row-odd"><td>mrbayes-3.1.1</td>
+<td>mrbayes-3.1.2</td>
+<td>MUMmer</td>
+</tr>
+<tr class="row-even"><td>ncbi-blast</td>
+<td>ncbi-em64t</td>
+<td>ncbi-sra</td>
+</tr>
+<tr class="row-odd"><td>oases</td>
+<td>octave-2.1.73</td>
+<td>paup4b10-x86-linux-icc</td>
+</tr>
+<tr class="row-even"><td>paup4b10-x86-linux-icc.orig</td>
+<td>paup4b10-x86-linux</td>
+<td>paup4b10</td>
+</tr>
+<tr class="row-odd"><td>perl, bioperl</td>
+<td>plink</td>
+<td>python-2.6.5</td>
+</tr>
+<tr class="row-even"><td>python-2.4.4</td>
+<td>R-2.3.1</td>
+<td>raxml</td>
+</tr>
+<tr class="row-odd"><td>RepeatMasker</td>
+<td>samtools</td>
+<td>SOAPdenovo2</td>
+</tr>
+<tr class="row-even"><td>sparsehash-1.5.2</td>
+<td>spss</td>
+<td>SQLite</td>
+</tr>
+<tr class="row-odd"><td>sqlite</td>
+<td>stacks</td>
+<td>tassel</td>
+</tr>
+<tr class="row-even"><td>tophat</td>
+<td>trinity</td>
+<td>velvet</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="setting-up-a-job-submission-script">
+<h2>Setting up a job submission script<a class="headerlink" href="#setting-up-a-job-submission-script" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Similar to other shell scripts - start by specifying the shell that will process the script, e.g. #!/bin/bash or another shell.</li>
+<li>The next lines specify options for the batch submission process</li>
+</ul>
+</div></blockquote>
+<p>Last modified 18 December 2018.
+Edits by <a class="reference external" href="https://github.com/rwhetten">Ross Whetten</a>, <a class="reference external" href="https://github.com/wkohlway">Will Kohlway</a>, &amp; <a class="reference external" href="https://github.com/amalgamaria">Maria Adonay</a>.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">BIT 815</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="course-schedule.html">Semester Overview, 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topics.html">Topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readings.html">Useful Publications and Websites</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using the HPC for Bioinformatics Computing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#global-overview">Global overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#job-submission-and-management">Job submission and management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#available-software">Available software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-a-job-submission-script">Setting up a job submission script</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="readings.html" title="previous chapter">Useful Publications and Websites</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Ross Whetten.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/HPC.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

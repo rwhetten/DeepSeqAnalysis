@@ -1,0 +1,182 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Genome Sequencing and Assembly &#8212; BIT 815 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <a class="reference external image-reference" href="http://www.ncsu.edu"><img alt="_images/NC_State2.gif" src="_images/NC_State2.gif" /></a>
+<a class="reference external image-reference" href="http://www.cnr.ncsu.edu/fer/"><img alt="_images/FERlogo2.png" src="_images/FERlogo2.png" /></a>
+<div class="section" id="genome-sequencing-and-assembly">
+<h1>Genome Sequencing and Assembly<a class="headerlink" href="#genome-sequencing-and-assembly" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="global-overview">
+<h2>Global Overview<a class="headerlink" href="#global-overview" title="Permalink to this headline">¶</a></h2>
+<p>De-novo assembly of a complete and accurate genome sequence from high-throughput sequencing data is a challenging computational problem for any genome that contains repeated DNA sequences longer than the typical sequencing read length (<a class="reference external" href="http://www.annualreviews.org/doi/abs/10.1146/annurev-genom-090314-050032">Simpson &amp; Pop, 2015</a>). The single-copy regions between repeated sequences can be assembled into contiguous stretches of sequences, or “contigs”. Construction and sequencing of “mate-paired” sequencing libraries allow retrieval of DNA sequences known to occur at a specific spacing in the genome, which can range from 2 kb to 35 or 40 kb. These data allow linking of contigs into larger “scaffolds” that contain gaps where the exact sequence is unknown but the approximate size is known. “Draft” genome assemblies often consist of many such scaffolds, and the unknown sequences in the gaps within scaffolds can represent half or more of the total length of the scaffolds. The process of “finishing” a genome sequence involves collecting sequence data to fill the gaps in scaffolds and ensure that all contigs are placed in the correct order and orientation relative to each other to form a complete continuous sequence of each chromosome of the genome of interest. This process is difficult and expensive, so few eukaryotic genomes larger than those of fungi are completely finished. Long-read sequencing methods, such as Pacific Biosciences and Oxford Nanopore Technologies single-molecule sequencing, provide reads long enough to bridge across many repetitive regions in eukaryotic genomes, and such long-read data have been used to improve existing assemblies of mammalian genomes (e.g. the gorilla genome, <a class="reference external" href="http://science.sciencemag.org/content/352/6281/aae0344.long">Gordon et al, 2016</a>) and carry out de-novo assembly of fungal genomes (e.g. the genome of Verticillium dahliae, <a class="reference external" href="http://mbio.asm.org/content/6/4/e00936-15.long">Faino et al, 2015</a>).</p>
+<p>Alternative approaches to scaffolding have been developed, based on the observation that DNA packaged into nucleosomes and higher-order chromatin shows a consistent pattern of long-range interactions both in vivo using nuclei isolated from living cells (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2858594/">Lieberman-Aiden et al, Science 326:289-293</a>, 2009) or in vitro using DNA-histone complexes prepared from purified DNA and proteins (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4772016/">Putnam et al, Genome Research 26:342-350</a>, 2016). In the past few years, methods to use these long-range interactions to aid in scaffolding genome assemblies and determining the linkage phase of genetic variants in diploid genomes have been developed (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4117202/">Burton et al</a>, Nat Biotechnol 31:1119-1125, <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3880131/">Kaplan &amp; Dekker</a>, Nat Biotechnol 31:1143-1147, and <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4180835/">Selvaraj et al</a>, Nat Biotechnol 31:1111-1118, all in 2013; Putnam et al in Genome Research, cited above). Another means of detecting long-range linkages among DNA sequences is based on a microfluidic technology that allows labeling of DNA sequence reads from long (50 kb to 150 kb) DNA molecules with the same 14-base barcode sequence, so that reads can be grouped into clusters of known relationships (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4927370/">Mostovoy et al</a>, Nat Methods 13:587-590, 2016).</p>
+</div>
+<div class="section" id="objective">
+<h2>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h2>
+<p>The objective of this session is to introduce participants to important issues to consider in genome sequencing and assembly experiments. Simulation of sequencing reads from a bacterial genome will provide example datasets that will serve as input to an assembly program, and will allow testing the effect of sequencing error rate on assembly quality.</p>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>De-novo assembly of short DNA sequence reads into a complete genome reference sequence is a challenging and computationally-intensive task for genomes larger than a few megabases, and can be difficult even for small bacterial genomes that happen to be rich in repeated DNA sequences. The key challenge in assembly is to correctly place DNA segments that occur only once in the genome relative to repeated sequences that occur multiple times.  The Overlap-Layout-Consensus strategy used to assemble the human genome sequence from Sanger sequencing reads  (500 to 900 nt in length) is not feasible for assembly from short reads (50 to 150 nt in length). An alternative approach, based on de Bruijn  graph theory, breaks reads up into short fragments called k-mers, which are oligomers k nt in length, with k typically ranging from 19 to 75 depending on read length. These k-mers can be much more efficiently indexed and analyzed than longer reads, and very efficient mathematical methods are available for solving the problem of ordering k-mers into contiguous sequences (Pevzner et al, 2001). A recent publication described a hybrid approach, in which short paired-end reads are analyzed as k-mers, then extended into “super reads” by searching for unique overlapping k-mer sequences at the ends of each read. This process converts large numbers of short reads into a much smaller number of longer “super reads” that can be assembled using the OLC strategy (Zimin et al, 2013). A recent manuscript posted on BioRxiv by <a class="reference external" href="http://www4.ncsu.edu/~rosswhet/BIT815/Overview/biorxiv.org/content/biorxiv/early/2016/07/26/066100.full.pdf">Zimin et al (2016)</a> extends the “super-read” concept to allow incorporation of long single-molecule sequence reads from Pacific Biosciences or Oxford Nanopore sequencing platforms to form “mega-reads”, and describes assembly of the <em>Aegilops tauschii</em> genome to a higher degree of contiguity than previously reported.</p>
+</div>
+<div class="section" id="key-facts">
+<h2>Key Facts<a class="headerlink" href="#key-facts" title="Permalink to this headline">¶</a></h2>
+<p>The length and number of repetitive sequences in a particular genome determine the sequencing strategy to produce data likely to allow a relatively complete assembly. The objective is to have good coverage of the genome with pairs of reads that are far enough apart to guarantee that both reads of a pair are not within the same repetitive sequence element.  If one read is within a repetitive element and the other read is in flanking sequence that is unique in the genome, then that read pair provides evidence locating one copy of the repetitive element within a specific unique-sequence region in the genome. Different genomes have differing lengths and arrangements of repetitive DNA sequences in the genome, so different strategies may be required for library construction and sequencing.</p>
+<p>Different approaches have been proposed to evaluate the quality and completeness of de novo genome assemblies. <a class="reference external" href="http://genome.cshlp.org/content/early/2011/09/16/gr.126599.111.abstract">Assemblathon-1 (2011)</a> and <a class="reference external" href="https://gigascience.biomedcentral.com/articles/10.1186/2047-217X-2-10">Assemblathon-2 (2013)</a> were multi-investigator projects to compare the utility of different software tools and analytical approaches to genome assembly. <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3624806/">QUAST</a> and <a class="reference external" href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-5-r47">REAPR</a> are software tools for assessment of the quality of genome assemblies, both published in 2013. QUAST offers many metrics of assembly quality based on similarity to an existing reference genome assembly, and some metrics than can be applied to new genome assemblies that lack any existing reference sequence. REAPR assesses the degree of correctness of an assembly based on results of re-mapping of paired-end reads back to the assembly and finding regions that don’t match the expected distribution of paired-end sequences - see the <a class="reference external" href="http://www4.ncsu.edu/~rosswhet/BIT815/Overview/documents/reapr_manual.pdf">manual</a> for details. REAPR is installed on the VCL image, so it is available for use on instances running on the VCL. <a class="reference external" href="https://academic.oup.com/bioinformatics/article/31/19/3210/211866/BUSCO-assessing-genome-assembly-and-annotation">BUSCO</a>, described in a 2015 publication, assesses assembly completeness by testing for the presence of conserved genes found in many existing genome assemblies of species from the relevant phylogenetic realm to the assembly being tested. The authors of the BUSCO publication maintain a <a class="reference external" href="http://busco.ezlab.org/">website</a> where data for evaluation of genome assemblies from various taxa of organisms can be downloaded.</p>
+<ul class="simple">
+<li>Sequencing library recommendations by Gnerre et al. (2011) for mammalian genomes:<ul>
+<li>Create both paired-end (180 bp insert, 2x100-nt reads) and mate-pair libraries of different (3 kb, 6 kb and 40 kb)  insert lengths (see <a class="reference external" href="http://www.illumina.com/technology/mate_pair_sequencing_assay.ilmn">http://www.illumina.com/technology/mate_pair_sequencing_assay.ilmn</a> for information on mate-pair libraries)</li>
+</ul>
+</li>
+<li>Variant discovery/genotyping<ul>
+<li>SNPs vs structural variants: SNPs are more abundant as sites, but insertion/deletion (indel) and rearrangement events can affect more nucleotides genome-wide</li>
+<li>Common alleles vs rare: common alleles are easier to detect and effects can be estimated accurately; rare alleles can be so hard to find that specific strategies are needed to identify sufficient numbers of individuals to provide statistical power to estimate SNP effects</li>
+<li>Barcoding works well for genotyping specific individuals at SNPs with common alleles: pooled samples work well for identifying rare variants and estimating allele frequencies.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="exercise-assembly-of-a-bacterial-genome-from-simulated-illumina-100-nt-pe-reads">
+<h2>Exercise - assembly of a bacterial genome from simulated Illumina 100-nt PE reads<a class="headerlink" href="#exercise-assembly-of-a-bacterial-genome-from-simulated-illumina-100-nt-pe-reads" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Simulation of paired-end short reads from a bacterial genome sequence can be done with the GemReads.py program used previously, but that process takes some time.  Two files containing simulated 100-nt paired-end reads from the <em>Lactobacillus helveticus</em> strain DPC4571 genome (sim.r1.fq.gz and sim.r2.fq.gz) are in the /data/DPC4571/ directory of the VCL machine image.</li>
+<li>Use the df (remember “disk free”) command to see how much free space is left on your VCL instance - this is a useful practice before doing anything that generates large output files, because it is frustrating to start a large computing job and have it fail due to a lack of disk space to store output files.</li>
+<li>Map the simulated reads back to the reference genome sequence using the BWA aligner - execute the commands bwa index and bwa mem at a terminal prompt for an overview of the command-line options of the commands to create an index of the reference genome sequence and align the simulated reads to it, or read the <a class="reference external" href="http://bio-bwa.sourceforge.net/bwa.shtml">manual</a> to learn more of the details about how to carry out alignment of short reads to a reference genome. NOTE: BWA programs read from gzipped files, so you do not need to un-gzip the reference genome (DPC4571.fasta.gz) sequence file in the data folder, or the sim.r1 and sim.r2 sequence read files. By default, BWA writes SAM-format output to STDOUT (the screen), so you need to redirect that to a file or another command in order to save it. In order to save space, it is most efficient to pipe the SAM output first to samtools1.3 view to convert it to BAM format, then to samtools1.3 sort to sort the BAM file so it is ready for use in other downstream applications. The BWA and samtools1.3 packages are installed in the search path, so you can use these programs without specifying a complete path to the executable files.</li>
+<li>The MaSuRCA assembler tgz archive is already compiled and installed in the /usr/local/masurca directory of the VCL machine image.</li>
+<li>Use the MaSuRCA assembler to assemble the simulated reads into a genome assembly, following the instructions given in the MaSuRCA <a class="reference external" href="http://www4.ncsu.edu/~rosswhet/BIT815/resources/documents/MaSuRCA_QuickStartGuide.pdf">Quick Start Guide</a>. The average insert size and standard deviation of insert sizes of the simulated paired-end reads is available from the information scrolled to the screen by the BWA mem program during the alignment process, or in the <a class="reference external" href="http://www4.ncsu.edu/~rosswhet/BIT815/Overview/Week2/K-merCounting_ErrorCorrection.sh">KmerCounting_ErrorCorrection.sh</a> script in the section that describes the GemReads.py command used to simulate the reads.</li>
+<li>Comparison of the genome assembly to the genome reference sequence is possible using whole-genome alignment with <a class="reference external" href="http://mummer.sourceforge.net/manual/">MUMmer v.3</a>. This package of programs is installed in the /usr/local/MUMmer3.23/ directory; look at the list of programs and type
+<code class="code docutils literal notranslate"><span class="pre">nucmer</span> <span class="pre">-h</span></code> at a terminal prompt to see the options available for the nucmer sequence alignment program.</li>
+<li>Assembly quality metrics and Assemblathon-1: <a class="reference external" href="p:%5Cfer%5CChristmas%20Tree%20Genetics%20Program%5COther%20Files%5CBIT815_WebpageCode%5CBIT815%5CDocuments%20for%20classes%5CWeek%204">Outline and notes</a></li>
+</ul>
+</div>
+<div class="section" id="additional-resources">
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Zimin A, et al. (2013) The MaSuRCA genome assembler. Bioinformatics 29:2669–2677. <a class="reference external" href="http://bioinformatics.oxfordjournals.org/content/29/21/2669.full">Publisher Website</a></p>
+<p><em>This paper describes a novel strategy for local assembly of Illumina or other short paired-end sequencing reads into “super reads” that can then be assembled using a modified version of an Overlap - Layout - Consensus assembler.</em></p>
+</li>
+<li><p class="first">Veeckman, E., et al. (2016) Are we there yet? Reliably estimating the completeness of plant genome sequences. Plant Cell 28:1759-1768 <a class="reference external" href="http://www.plantcell.org/content/28/8/1759.long">Publisher Website</a></p>
+<p><em>This paper provides an overview of metrics for assessment of the completeness of de-novo genome assemblies, along with a discussion of potential sources of bias of different approaches.</em></p>
+</li>
+<li><p class="first">Khelik et al, (2017) NucDiff: in-depth characterization and annotation of differences between two sets of DNA sequences. BMC Bioinformatics 18:338. <a class="reference external" href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1748-z">Publisher Website</a></p>
+<p><em>This paper describes a software package that uses results from Mummer v3 Nucmer, delta-filter &amp; show-snps programs to classify sequence differences, which are presented in GFF3 format so they can be visualized in a genome browser.</em></p>
+</li>
+<li><p class="first">Baker, M. (2012) De-novo genome assembly - what every biologist needs to know. Nature Methods 9:333-337 <a class="reference external" href="http://www.nature.com/nmeth/journal/v9/n4/full/nmeth.1935.html">Publisher Website</a></p>
+</li>
+<li><p class="first">Gnerre S, et al. (2011) High-quality draft assemblies of mammalian genomes from massively parallel sequence data. Proc Natl Acad Sci USA 108:1513–1518. <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3029755/">PubMedCentral</a></p>
+<p><em>This paper provides recommendations for different types of Illumina libraries and appropriate depths of sequencing for best results with the ALLPATHS assembler. While this approach was the state-of-the-art in genome assembly for a period of time, it is no longer considered the optimal approach.</em></p>
+</li>
+<li><p class="first">Salzberg S, et al. (2012) GAGE: A critical evaluation of genome assemblies and assembly algorithms. Genome Research 22:557–567. <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3290791">PubMedCentral</a></p>
+<p><em>This paper describes a set of experiments comparing different assembly programs on four genomes, and provides useful insights into the challenges of genome assembly.</em></p>
+</li>
+<li><p class="first">Magoc T and Salzberg S. (2011) FLASH: Fast Length Adjustment of Short Reads to improve genome assemblies. Bioinformatics 27:2957–2963. <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3198573/">PubMedCentral</a></p>
+</li>
+<li><p class="first">Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. <a class="reference external" href="http://www.pnas.org/content/98/17/9748.full">Full Text</a></p>
+</li>
+</ul>
+<p>Last modified 18 December 2018.
+Edits by <a class="reference external" href="https://github.com/rwhetten">Ross Whetten</a>, <a class="reference external" href="https://github.com/wkohlway">Will Kohlway</a>, &amp; <a class="reference external" href="https://github.com/amalgamaria">Maria Adonay</a>.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">BIT 815</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="course-schedule.html">Semester Overview, 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topics.html">Topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readings.html">Useful Publications and Websites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HPC.html">Using the HPC for Bioinformatics Computing</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Ross Whetten.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/genome-assembly.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
