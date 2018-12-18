@@ -1,0 +1,43 @@
+.. image:: //media/hd02/BIT815/rstFiles/wtest/docs/source/Images/NC_State.gif
+   :target: http://www.ncsu.edu
+
+.. image:: //media/hd02/BIT815/rstFiles/wtest/docs/source/Images/FERlogo.png
+   :target: http://www.cnr.ncsu.edu/fer/
+
+Topics
+======
+
+
+.. Introduction to Linux and the command-line interface need to do
+
+`Sequencing Instruments <https://www.biostarhandbook.com/instruments/sequencing-instruments.html>`_
+***************************************************************************************************
+
+`Experimental Design <experimental-design.html>`_
+*************************************************
+
+`Data Preprocessing and QC <data-preprocessing-qc.html>`_
+*********************************************************
+
+`Transcriptome Assembly <transcriptome-assembly.html>`_ 
+*******************************************************
+
+
+
+
+----------
+
+
+
+
+	.. image:: //media/hd02/BIT815/rstFiles/wtest/docs/source/Images/Flowchart.jpg 
+
+
+
+
+
+
+
+Last modified 17 December 2018.
+`Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
+
