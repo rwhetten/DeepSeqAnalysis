@@ -1,7 +1,7 @@
-.. image:: //media/hd02/BIT815/Overview/Figures/NC_State.gif
+.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/NC_State.gif
    :target: http://www.ncsu.edu	
 
-.. image:: //media/hd02/BIT815/Overview/Figures/FERlogo.png
+.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/FERlogo.png
    :target: http://www.cnr.ncsu.edu/fer/
 
 BIT 815, Deep Sequencing Data Analysis
@@ -34,7 +34,5 @@ Indices and tables
 * :ref:`search`
 
 
-Last modified 17 December 2018.
-`Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
-
-
+Last modified 18 December 2018.
+Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

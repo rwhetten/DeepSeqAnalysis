@@ -1,27 +1,27 @@
-.. image:: //media/hd02/BIT815/rstFiles/wtest/docs/source/Images/NC_State.gif
+.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/NC_State.gif
    :target: http://www.ncsu.edu
 
-.. image:: //media/hd02/BIT815/rstFiles/wtest/docs/source/Images/FERlogo.png
+.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/FERlogo.png
    :target: http://www.cnr.ncsu.edu/fer/
 
 Semester Overview, 2019
 =======================
 
 
-.. image:: //media/hd02/BIT815/Overview/Figures/syllabus_logo.jpg
+.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/syllabus_logo.jpg
 
-Image credit: Lilian Matallana
-
-
+Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21704474/>`_
 
 
-				**Class meetings are in Room 6117 Jordan Hall from 8:30 to 10:20 am on Mondays, Wednesdays, and Fridays**
 
-					The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading
 
-								The Piazza online forum page is available for questions and discussion  
+				**Class meetings are in Room 6117 Jordan Hall from 8:30 to 10:20 am on Mondays, Wednesdays, and Fridays.**
 
-												Teaching assistant: Will Kohlway
+					The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading.
+
+								The `Piazza online forum page <https://piazza.com/ncsu/spring2018/bit815/home>`_ is available for questions and discussion.
+
+												Teaching assistant: `Will Kohlway <whkohlwa@ncsu.edu>`_
 
 
 
@@ -104,6 +104,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 17 December 2018.
-`Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
-
+Last modified 18 December 2018.
+Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

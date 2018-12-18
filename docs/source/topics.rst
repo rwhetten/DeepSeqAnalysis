@@ -1,7 +1,7 @@
-.. image:: //media/hd02/BIT815/rstFiles/wtest/docs/source/Images/NC_State.gif
+.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/NC_State.gif
    :target: http://www.ncsu.edu
 
-.. image:: //media/hd02/BIT815/rstFiles/wtest/docs/source/Images/FERlogo.png
+.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/FERlogo.png
    :target: http://www.cnr.ncsu.edu/fer/
 
 Topics
@@ -22,6 +22,8 @@ Topics
 `Transcriptome Assembly <transcriptome-assembly.html>`_ 
 *******************************************************
 
+`Genome Assembly <genome-assembly.html>`_ 
+*****************************************
 
 
 
@@ -30,7 +32,7 @@ Topics
 
 
 
-	.. image:: //media/hd02/BIT815/rstFiles/wtest/docs/source/Images/Flowchart.jpg 
+	.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/Flowchart.jpg 
 
 
 
@@ -38,6 +40,6 @@ Topics
 
 
 
-Last modified 17 December 2018.
-`Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
+Last modified 18 December 2018.
+Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
 

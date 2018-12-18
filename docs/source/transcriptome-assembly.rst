@@ -1,7 +1,7 @@
-.. image:: //media/hd02/BIT815/rstFiles/wtest/docs/source/Images/NC_State.gif
+.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/NC_State.gif
    :target: http://www.ncsu.edu
 
-.. image:: /media/hd02/BIT815/rstFiles/wtest/docs/source/Images/FERlogo.png
+.. image:: //media/hd02/BIT815/rstFiles/wtest/DeepSeqAnalysis/docs/source/Images/FERlogo.png
    :target: http://www.cnr.ncsu.edu/fer/
 
 Transcriptome Assembly
@@ -62,5 +62,5 @@ Additional Resources
 + Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. `Full Text <http://www.pnas.org/content/98/17/9748.full>`_
 
 
-Last modified 17 December 2018.
-`Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
+Last modified 18 December 2018.
+Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
