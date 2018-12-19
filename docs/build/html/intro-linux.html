@@ -1,0 +1,163 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Introduction to Linux and the Command-line Interface &#8212; BIT 815 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">BIT 815 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <a class="reference external image-reference" href="http://www.ncsu.edu"><img alt="_images/NC_State.gif" src="_images/NC_State.gif" /></a>
+<a class="reference external image-reference" href="http://www.cnr.ncsu.edu/fer/"><img alt="_images/FERlogo.png" src="_images/FERlogo.png" /></a>
+<div class="section" id="introduction-to-linux-and-the-command-line-interface">
+<h1>Introduction to Linux and the Command-line Interface<a class="headerlink" href="#introduction-to-linux-and-the-command-line-interface" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="objective">
+<h2>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h2>
+<p>The objective of these class sessions is to introduce participants to the Linux computing environment, with a particular focus on the Lubuntu 16.04 environment provided as a virtual machine through the NC State <a class="reference external" href="https://vcl.ncsu.edu/">Virtual Computing Laboratory</a>. An introductory lecture on key elements of Linux system architecture and computing philosophy will be followed by hands-on computing exercises to provide experience in using command-line utilities to navigate the file system, manage files and directories, and carry out basic file processing tasks. Demonstrations of how these command-line utilities can be applied to sequence analysis tasks are integrated into the exercises.</p>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Introductory <a class="reference external" href="/Images/week1/Class_Intro.pdf">slides provide</a> an introduction to the course objectives and the Linux operating system in the first class session, and a <a class="reference external" href="/Images/week1/GuidingPrinciplesOfUnix.pdf">summary</a> of Chapter 1 from Eric Raymond’s book The Art of Unix Programming  (complete text available <a class="reference external" href="http://www.catb.org/esr/writings/taoup/html/">here</a>) is used as a framework for discussion of differences between the Linux command-line interface and graphical interfaces. File globbing and regular expressions provide a basis for discussion of abstraction and generalization as key parts of computational thinking.</p>
+</div>
+<div class="section" id="global-overview">
+<h2>Global Overview<a class="headerlink" href="#global-overview" title="Permalink to this headline">¶</a></h2>
+<p>Linux is the operating system of choice for computationally-intensive data analysis, because of its design and the efficiency with which it runs. Much open-source software for sequence data analysis is written for Linux, although there are an increasing number of Java-based programs that can run under Windows. A key element of the philosophy behind Unix and Linux operating systems is decomposition of tasks into simple categories – separate command-line utilities are available for separate tasks. Combining these simple individual tools into pipelines provides enormous flexibility for managing and processing data. Abstraction is another key concept in computing - generalizing from a specific case to a larger group of cases that all meet a specific set of criteria. The use of “wildcard” or meta-characters to specify groups of files is a simple example; this process is commonly called file globbing. Regular expressions are another powerful example of  abstraction and generalization as key parts of computational thinking.</p>
+</div>
+<div class="section" id="key-facts">
+<h2>Key Facts<a class="headerlink" href="#key-facts" title="Permalink to this headline">¶</a></h2>
+<p>DNA sequence data and most results of analysis are stored in plain text format, often compressed using an open-source algorithm to reduce the size of the files stored on disk. A few dozen commands for manipulation of text files, executed either separately or in different combinations, provide an  enormous range of data manipulation and analysis capabilities. A modest investment of time in learning basic file formats and commands for text file manipulation will pay large returns by enabling you to manage large data files and carry out basic analyses on the command line, without any specialized software for sequence analysis.</p>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>An <a class="reference external" href="/Images/week1/Lubuntu16.04_Intro_BIT815.pdf">Introduction to Linux and Lubuntu 16.04</a> is a tutorial to guide participants through an 8-step introduction to the Lubuntu 16.04 operating system on the Linux live USB drives used for most class computing exercises.</li>
+<li>A list of useful <a class="reference external" href="LinuxCommandReference.pdf">Linux commands</a> is available as a handy reference.</li>
+<li>The example files for the week1 <a class="reference external" href="/Images/week1/quiz1.txt">quiz</a> are at <a class="reference external" href="Images/week1/quiz_week1.tgz">quiz_week1.tgz</a>.</li>
+<li>Some links to useful websites with more information about Linux and the bash shell: <a class="reference external" href="http://mywiki.wooledge.org/BashGuide">The BashGuide</a>, <a class="reference external" href="https://ss64.com/bash/">An A-Z Index of the Bash Command Line</a>, and <a class="reference external" href="http://linuxcommand.org/index.php">LinuxCommand.org</a>.</li>
+</ol>
+</div>
+<div class="section" id="additional-resources">
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="background-information-about-linux">
+<h3>Background information about Linux:<a class="headerlink" href="#background-information-about-linux" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>A reminiscence called <a class="reference external" href="http://faculty.salina.k-state.edu/tim/unix_sg/_downloads/The_Strange_Birth_and_Long_Life_of_Unix_IEEE_Spectrum.pdf">The Strange Birth and Long Life of Unix</a> by Warren Toomey in 2011 commemorated the 40th anniversary of the beginning of Unix (and therefore, Linux) development.</li>
+<li>The <a class="reference external" href="https://software-carpentry.org/lessons/">Software Carpentry</a> website has a series of tutorials with introductions to many aspects of Linux computing. The lessons entitled The Unix Shell and Programming with R are particularly relevant to this course, because we use the shell a lot throughout the course, and R is important in the section on transcriptome analysis.</li>
+<li>Analysis of Next-Generation Sequencing Data workshops (ANGUS) have been taught at Michigan State in the past, and in 2017 moved to UC-Davis. Course materials are available online. The class uses cloud computing instances that are configured differently, so the exercises won’t necessarily work exactly the same on the VCL machine image we are using, but the course materials do contain useful information about bioinformatics applications and tools.</li>
+<li>More information on regular expressions is available at <cite>A Brief Introduction to Regular Expressions &lt;http://tldp.org/LDP/abs/html/regexp.html&gt;</cite> at The Linux Documentation Project webpage.</li>
+<li>The <a class="reference external" href="/Images/week1/FileGlobbing.pdf">FileGlobbing.pdf</a> and <a class="reference external" href="/Images/week1/RegularExpressions.pdf">RegularExpressions.pdf</a> documents also provide more information on these pattern-matching tools.</li>
+<li>One aspect of command-line use is knowing when to use a particular command, and when it is not needed.  Many command-line utilities such as grep, cut, wc,  sort,  sed, and awk (among many others) accept filenames as arguments after the command, but will also accept input from stdin via a pipe. Other utilities, such as tr, do not accept a filename as an argument.</li>
+</ul>
+<p># Uncompress the GO file:
+gunzip goa_human.gaf.gz</p>
+<p># Remove the lines starting with ! and simplfy the file name:
+cat goa_human.gaf grep -v ‘!’ &gt; assoc.txt
+# The same result could be obtained in a single step using this alternative
+gunzip goa_human.gaf.gz | grep -v ‘!’ &gt; assoc.txt</p>
+</div>
+<div class="section" id="windows-subsystem-for-linux-in-windows-10">
+<h3>Windows Subsystem for Linux in Windows 10<a class="headerlink" href="#windows-subsystem-for-linux-in-windows-10" title="Permalink to this headline">¶</a></h3>
+<p>Windows 10 offers an optional beta-release of Windows Subsystem for Linux, which allows running any of three different Linux-like command-line environments  on Windows, although the Linux kernel itself is not installed. These provide a command-line bash shell environment with GNU utilities - see a tutorial on set-up or a Microsoft page.</p>
+</div>
+<div class="section" id="setting-up-an-amazon-web-service-account-to-use-elastic-compute-cloud-services">
+<h3>Setting up an Amazon Web Service account to use Elastic Compute Cloud services:<a class="headerlink" href="#setting-up-an-amazon-web-service-account-to-use-elastic-compute-cloud-services" title="Permalink to this headline">¶</a></h3>
+<p>A 2013 guide to setting up an Amazon Web Services account is available for those interested in using cloud-based computing resources, and a 2013 guide to preparing and running a Cloudbiolinux instance on the Amazon Web Services Elastic Compute Cloud (AWS-EC2), is also available. The BIT815 course no longer uses AWS resources, so these documents have not been updated to reflect any recent changes in AWS procedures – users are cautioned to follow the instructions on the AWS website rather than those in these documents in case of any conflict.</p>
+<p>Last modified 18 December 2018.
+Edits by <a class="reference external" href="https://github.com/rwhetten">Ross Whetten</a>, <a class="reference external" href="https://github.com/wkohlway">Will Kohlway</a>, &amp; <a class="reference external" href="https://github.com/amalgamaria">Maria Adonay</a>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction to Linux and the Command-line Interface</a><ul>
+<li><a class="reference internal" href="#objective">Objective</a></li>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#global-overview">Global Overview</a></li>
+<li><a class="reference internal" href="#key-facts">Key Facts</a></li>
+<li><a class="reference internal" href="#exercises">Exercises</a></li>
+<li><a class="reference internal" href="#additional-resources">Additional Resources</a><ul>
+<li><a class="reference internal" href="#background-information-about-linux">Background information about Linux:</a></li>
+<li><a class="reference internal" href="#windows-subsystem-for-linux-in-windows-10">Windows Subsystem for Linux in Windows 10</a></li>
+<li><a class="reference internal" href="#setting-up-an-amazon-web-service-account-to-use-elastic-compute-cloud-services">Setting up an Amazon Web Service account to use Elastic Compute Cloud services:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/intro-linux.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">BIT 815 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Ross Whetten.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.
+    </div>
+  </body>
+</html>

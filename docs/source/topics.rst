@@ -8,7 +8,8 @@ Topics
 ======
 
 
-.. Introduction to Linux and the command-line interface need to do
+`Introduction to Linux and the Command-line Interface <intro-linux.html>`_
+**************************************************************************
 
 `Sequencing Instruments <https://www.biostarhandbook.com/instruments/sequencing-instruments.html>`_
 ***************************************************************************************************

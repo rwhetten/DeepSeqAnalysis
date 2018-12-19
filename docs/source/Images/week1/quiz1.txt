@@ -1,0 +1,16 @@
+Week 1 quiz.
+
+1. Reading manual pages (or "man pages") for Linux commands is an important source of information about command options and arguments. Read the man page for the ls command to learn how to display files sorted by decreasing file size, with file modification date, size, ownership, and other key information shown. Execute the command, and show the command and resulting list of the week1 file directory using these options.
+What does the first column of the display show?
+What kind of file is the myfile1 file?
+What kind of file is the c1samp.bam file?
+What kind of file is the c1samp.sam file?
+
+
+
+2. Show the command used to display the first 16 lines of the c1samp.fq file on the screen, and the resulting output. Show the command and output for the last 8 lines of the same file.
+How many sequences are in the c1samp.fq file?
+
+3. Do a Google search to find information about the columns in a SAM file. What information is in column 5?
+
+Is the same information present in column 12 of every line, or does it vary from line to line? Do you see a pattern in which lines have a specific kind of information in column 12?
