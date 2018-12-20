@@ -58,25 +58,27 @@ Background information about Linux:
 + A reminiscence called `The Strange Birth and Long Life of Unix <http://faculty.salina.k-state.edu/tim/unix_sg/_downloads/The_Strange_Birth_and_Long_Life_of_Unix_IEEE_Spectrum.pdf>`_ by Warren Toomey in 2011 commemorated the 40th anniversary of the beginning of Unix (and therefore, Linux) development.
 + The `Software Carpentry <https://software-carpentry.org/lessons/>`_ website has a series of tutorials with introductions to many aspects of Linux computing. The lessons entitled The Unix Shell and Programming with R are particularly relevant to this course, because we use the shell a lot throughout the course, and R is important in the section on transcriptome analysis.
 + Analysis of Next-Generation Sequencing Data workshops (ANGUS) have been taught at Michigan State in the past, and in 2017 moved to UC-Davis. Course materials are available online. The class uses cloud computing instances that are configured differently, so the exercises won't necessarily work exactly the same on the VCL machine image we are using, but the course materials do contain useful information about bioinformatics applications and tools.
-+ More information on regular expressions is available at `A Brief Introduction to Regular Expressions <http://tldp.org/LDP/abs/html/regexp.html>` at The Linux Documentation Project webpage.
++ More information on regular expressions is available at `A Brief Introduction to Regular Expressions <http://tldp.org/LDP/abs/html/regexp.html>`_ at The Linux Documentation Project webpage.
 + The `FileGlobbing.pdf </Images/week1/FileGlobbing.pdf>`_ and `RegularExpressions.pdf </Images/week1/RegularExpressions.pdf>`_ documents also provide more information on these pattern-matching tools.
-+ One aspect of command-line use is knowing when to use a particular command, and when it is not needed.  Many command-line utilities such as grep, cut, wc,  sort,  sed, and awk (among many others) accept filenames as arguments after the command, but will also accept input from stdin via a pipe. Other utilities, such as tr, do not accept a filename as an argument.
++ One aspect of command-line use is knowing when to use a particular command, and when it is not needed.  Many command-line utilities such as grep, cut, wc,  sort,  sed, and awk (among many others) accept filenames as arguments after the command, but will also accept input from stdin via a pipe. Other utilities, such as tr, do not accept a filename as an argument and only process data received from stdin. Some people prefer to use the cat command to put data into a pipeline, even when the command being used could read the filename as an argument, simply for the sake of consistency and style (see this `StackOverflow discussion <https://stackoverflow.com/questions/11710552/useless-use-of-cat>`_ as an example), while purists argue that using a command when it is not required means running two processes when one will do. This is rarely a problem, but can lead to differences in the commands used to accomplish the same result. For example, in chapter 5 of the Biostar Handbook called Ontologies, the section called Understand the GO data includes some manipulations of a file called goa_human.gaf.gz, after downloading the file from the geneontology.org website.
 
+::
 
-# Uncompress the GO file:
-gunzip goa_human.gaf.gz
+	# Uncompress the GO file:
+	gunzip goa_human.gaf.gz
 
-# Remove the lines starting with ! and simplfy the file name:
-cat goa_human.gaf grep -v '!' > assoc.txt
-# The same result could be obtained in a single step using this alternative
-gunzip goa_human.gaf.gz | grep -v '!' > assoc.txt
+	# Remove the lines starting with ! and simplfy the file name:
+	cat goa_human.gaf grep -v '!' > assoc.txt
+
+	# The same result could be obtained in a single step using this alternative
+	gunzip goa_human.gaf.gz | grep -v '!' > assoc.txt
 
 
 
 Windows Subsystem for Linux in Windows 10
 -----------------------------------------
 
-Windows 10 offers an optional beta-release of Windows Subsystem for Linux, which allows running any of three different Linux-like command-line environments  on Windows, although the Linux kernel itself is not installed. These provide a command-line bash shell environment with GNU utilities - see a tutorial on set-up or a Microsoft page.
++ Windows 10 offers an optional beta-release of Windows Subsystem for Linux, which allows running any of three different Linux-like command-line environments  on Windows, although the Linux kernel itself is not installed. These provide a command-line bash shell environment with GNU utilities - see a `tutorial on set-up <https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/>`_ or a `Microsoft page <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_.
 
 
 
@@ -84,7 +86,7 @@ Setting up an Amazon Web Service account to use Elastic Compute Cloud services:
 -------------------------------------------------------------------------------
 
 
-A 2013 guide to setting up an Amazon Web Services account is available for those interested in using cloud-based computing resources, and a 2013 guide to preparing and running a Cloudbiolinux instance on the Amazon Web Services Elastic Compute Cloud (AWS-EC2), is also available. The BIT815 course no longer uses AWS resources, so these documents have not been updated to reflect any recent changes in AWS procedures – users are cautioned to follow the instructions on the AWS website rather than those in these documents in case of any conflict.
++ A 2013 `guide </Images/week1/SettingUpAWS-EC2account_Jan2013.pdf>`_ to setting up an Amazon Web Services account is available for those interested in using cloud-based computing resources, and a 2013 `guide </Images/week1/SettingUpFirstEC2instance_Jan2013.pdf>`_ to preparing and running a Cloudbiolinux instance on the Amazon Web Services Elastic Compute Cloud (AWS-EC2), is also available. The BIT815 course no longer uses AWS resources, so these documents have not been updated to reflect any recent changes in AWS procedures – users are cautioned to follow the instructions on the AWS website rather than those in these documents in case of any conflict.
 
 
 

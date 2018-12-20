@@ -4,8 +4,8 @@
 .. image:: /Images/FERlogo.png
    :target: http://www.cnr.ncsu.edu/fer/ 
 
-Using the HPC for Bioinformatics Computing
-==========================================
+Computing Hardware
+==================
 
 Global overview
 ***************

@@ -8,6 +8,8 @@ Topics
 ======
 
 
+
+
 `Introduction to Linux and the Command-line Interface <intro-linux.html>`_
 **************************************************************************
 
@@ -20,13 +22,17 @@ Topics
 `Data Preprocessing and QC <data-preprocessing-qc.html>`_
 *********************************************************
 
+`Error Correction and Alignment <error-correct.html>`_
+******************************************************
+
 `Transcriptome Assembly <transcriptome-assembly.html>`_ 
 *******************************************************
 
 `Genome Assembly <genome-assembly.html>`_ 
 *****************************************
 
-
+`Re-Sequencing, Alignment, and Structural Variation <re-seq-align-struct.html>`_ 
+********************************************************************************
 
 ----------
 

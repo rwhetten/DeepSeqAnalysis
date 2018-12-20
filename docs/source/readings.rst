@@ -4,8 +4,8 @@
 .. image:: /Images/FERlogo.png
    :target: http://www.cnr.ncsu.edu/fer/
 
-Useful Publications and Websites
-================================
+Readings and Resources
+======================
 
 Global overview books and papers
 ********************************

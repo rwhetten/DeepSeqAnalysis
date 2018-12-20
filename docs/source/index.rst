@@ -17,13 +17,25 @@ The course BIT815, Analysis of Deep Sequencing Data, is designed to introduce bi
 
 .. toctree::
    :maxdepth: 2
-   
+
+   self
    course-schedule  
    topics
-   	 experimental-design
-     data-preprocessing-qc
    readings
-   HPC
+   hardware
+ 
+
+.. toctree::
+   :hidden:
+   
+   experimental-design
+   intro-linux
+   experimental-design
+   data-preprocessing-qc
+   error-correct
+   transcriptome-assembly 
+   genome-assembly 
+   re-seq-align-struct 
 
 
 Indices and tables
