@@ -1,8 +1,6 @@
 .. image:: /Images/NC_State.gif
    :target: http://www.ncsu.edu	
 
-.. image:: /Images/FERlogo.png
-   :target: http://www.cnr.ncsu.edu/fer/
 
 BIT 815, Deep Sequencing Data Analysis
 ======================================
@@ -18,24 +16,23 @@ The course BIT815, Analysis of Deep Sequencing Data, is designed to introduce bi
 .. toctree::
    :maxdepth: 2
 
-   self
    course-schedule  
-   topics
    readings
    hardware
- 
-
-.. toctree::
-   :hidden:
-   
-   experimental-design
    intro-linux
+   Sequencing Instruments <https://www.biostarhandbook.com/instruments/sequencing-instruments.html>
    experimental-design
    data-preprocessing-qc
    error-correct
    transcriptome-assembly 
    genome-assembly 
    re-seq-align-struct 
+   genotyping
+   r-lesson
+   transcriptome-analysis
+   chromatin-structure
+   awk-sed-bash
+
 
 
 Indices and tables
@@ -46,5 +43,5 @@ Indices and tables
 * :ref:`search`
 
 
-Last modified 18 December 2018.
+Last modified 26 December 2018.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

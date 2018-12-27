@@ -1,8 +1,6 @@
 .. image:: /Images/NC_State.gif
    :target: http://www.ncsu.edu
 
-.. image:: /Images/FERlogo.png
-   :target: http://www.cnr.ncsu.edu/fer/
 
 Semester Overview, 2019
 =======================
@@ -19,9 +17,9 @@ Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21
 
 					The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading.
 
-								The `Piazza online forum page <https://piazza.com/ncsu/spring2018/bit815/home>`_ is available for questions and discussion.
+							The `Piazza online forum page <https://piazza.com/ncsu/spring2018/bit815/home>`_ is available for questions and discussion.
 
-												Teaching assistant: `Will Kohlway <whkohlwa@ncsu.edu>`_
+							Teaching assistant: `Will Kohlway <whkohlwa@ncsu.edu>`_
 
 
 

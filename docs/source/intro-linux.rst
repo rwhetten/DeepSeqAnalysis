@@ -1,8 +1,6 @@
 .. image:: /Images/NC_State.gif
    :target: http://www.ncsu.edu
 
-.. image:: /Images/FERlogo.png
-   :target: http://www.cnr.ncsu.edu/fer/
 
 .. role:: bash(code)
    :language: bash
@@ -20,7 +18,7 @@ The objective of these class sessions is to introduce participants to the Linux 
 Description
 ***********
 
-Introductory `slides provide </Images/week1/Class_Intro.pdf>`_ an introduction to the course objectives and the Linux operating system in the first class session, and a `summary </Images/week1/GuidingPrinciplesOfUnix.pdf>`_ of Chapter 1 from Eric Raymond’s book The Art of Unix Programming  (complete text available `here <http://www.catb.org/esr/writings/taoup/html/>`_) is used as a framework for discussion of differences between the Linux command-line interface and graphical interfaces. File globbing and regular expressions provide a basis for discussion of abstraction and generalization as key parts of computational thinking. 
+Introductory `slides provide <https://drive.google.com/open?id=14abKXvZShl4DuNfkGX0-dVTYHkKo67-C>`_ an introduction to the course objectives and the Linux operating system in the first class session, and a `summary <https://drive.google.com/open?id=1ztskWkrVwFT0PogGDFw54L6-lppFwpsd>`_ of Chapter 1 from Eric Raymond’s book The Art of Unix Programming  (complete text available `here <http://www.catb.org/esr/writings/taoup/html/>`_) is used as a framework for discussion of differences between the Linux command-line interface and graphical interfaces. File globbing and regular expressions provide a basis for discussion of abstraction and generalization as key parts of computational thinking. 
 
 
 Global Overview
@@ -38,11 +36,11 @@ DNA sequence data and most results of analysis are stored in plain text format, 
 Exercises
 *********
 
-1. An `Introduction to Linux and Lubuntu 16.04 </Images/week1/Lubuntu16.04_Intro_BIT815.pdf>`_ is a tutorial to guide participants through an 8-step introduction to the Lubuntu 16.04 operating system on the Linux live USB drives used for most class computing exercises.
+1. An `Introduction to Linux and Lubuntu 16.04 <https://drive.google.com/open?id=1p68ptYQQfTfp-BWd8SGvRwSNAHJnR99D>`_ is a tutorial to guide participants through an 8-step introduction to the Lubuntu 16.04 operating system used for most class computing exercises.
 
-2. A list of useful `Linux commands <LinuxCommandReference.pdf>`_ is available as a handy reference.
+2. A list of useful `Linux commands <https://drive.google.com/open?id=17LksoyHNWWac50e17mk_ZEdwEie5E55H>`_ is available as a handy reference.
 
-3. The example files for the week1 `quiz </Images/week1/quiz1.txt>`_ are at `quiz_week1.tgz <Images/week1/quiz_week1.tgz>`_.
+3. The example files for the week1 `quiz <https://drive.google.com/open?id=1lT1CT2uRF1GSiIpPOdG_4mTWZ6Fa7bwb>`_ are at `quiz_week1.tgz <https://drive.google.com/open?id=1J7h4u3YaBrozBAK30lL8K3ekDjAv-2P9>`_.
 
 4. Some links to useful websites with more information about Linux and the bash shell: `The BashGuide <http://mywiki.wooledge.org/BashGuide>`_, `An A-Z Index of the Bash Command Line <https://ss64.com/bash/>`_, and `LinuxCommand.org <http://linuxcommand.org/index.php>`_.
 
@@ -59,7 +57,7 @@ Background information about Linux:
 + The `Software Carpentry <https://software-carpentry.org/lessons/>`_ website has a series of tutorials with introductions to many aspects of Linux computing. The lessons entitled The Unix Shell and Programming with R are particularly relevant to this course, because we use the shell a lot throughout the course, and R is important in the section on transcriptome analysis.
 + Analysis of Next-Generation Sequencing Data workshops (ANGUS) have been taught at Michigan State in the past, and in 2017 moved to UC-Davis. Course materials are available online. The class uses cloud computing instances that are configured differently, so the exercises won't necessarily work exactly the same on the VCL machine image we are using, but the course materials do contain useful information about bioinformatics applications and tools.
 + More information on regular expressions is available at `A Brief Introduction to Regular Expressions <http://tldp.org/LDP/abs/html/regexp.html>`_ at The Linux Documentation Project webpage.
-+ The `FileGlobbing.pdf </Images/week1/FileGlobbing.pdf>`_ and `RegularExpressions.pdf </Images/week1/RegularExpressions.pdf>`_ documents also provide more information on these pattern-matching tools.
++ The `FileGlobbing.pdf <https://drive.google.com/open?id=1rZwW8mynGu1JZiFqaYUYinA5DFMgQmgI>`_ and `RegularExpressions.pdf <https://drive.google.com/open?id=1uPppomFXdjnmTJczgnglb8lsoCde-Zic>`_ documents also provide more information on these pattern-matching tools.
 + One aspect of command-line use is knowing when to use a particular command, and when it is not needed.  Many command-line utilities such as grep, cut, wc,  sort,  sed, and awk (among many others) accept filenames as arguments after the command, but will also accept input from stdin via a pipe. Other utilities, such as tr, do not accept a filename as an argument and only process data received from stdin. Some people prefer to use the cat command to put data into a pipeline, even when the command being used could read the filename as an argument, simply for the sake of consistency and style (see this `StackOverflow discussion <https://stackoverflow.com/questions/11710552/useless-use-of-cat>`_ as an example), while purists argue that using a command when it is not required means running two processes when one will do. This is rarely a problem, but can lead to differences in the commands used to accomplish the same result. For example, in chapter 5 of the Biostar Handbook called Ontologies, the section called Understand the GO data includes some manipulations of a file called goa_human.gaf.gz, after downloading the file from the geneontology.org website.
 
 ::

@@ -1,8 +1,6 @@
 .. image:: /Images/NC_State.gif  
    :target: http://www.ncsu.edu
 
-.. image:: /Images/FERlogo.png
-   :target: http://www.cnr.ncsu.edu/fer/
 
 Experimental Design
 ===================
