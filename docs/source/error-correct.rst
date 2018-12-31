@@ -32,7 +32,7 @@ Ultra-high-throughput DNA sequencing platforms typically have much higher error 
 Key Facts
 *********
 
-Simulation is an important tools for development of new software and comparison of available software tools for specific purposes. The assumptions made in creating simulated datasets often determine the relative performance of different analytical approaches, so it is important to know what assumptions are made during simulation and how realistic those assumptions are for real datasets. In the exercises below,  simulated Illumina paired-end reads created from a reference bacterial genome (*Lactobacillus helveticus* `strain DPC4571 <https://drive.google.com/open?id=1N_8e4SAj4SU_Y0zoYzA8_s3k1vXZCMtd>`_) are used.  The simulated read files (sim.r1.fq.gz and sim.r2.fq.gz) and the reference bacterial genome file are provided in the DPC4571 folder within ExcerciseData on the BIT815 team drive. GemReads.py (a Python script from the `GemSIM <http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-13-74>`_ package) was used to create the simulated Illumina reads, and this package is installed in the VCL system, so you can create your own simulated datasets from the reference genome, but this is too time-consuming to do in class. GemReads.py does not accept gzipped files as input, so you will have to unpack the compressed genome sequence file.
+Simulation is an important tools for development of new software and comparison of available software tools for specific purposes. The assumptions made in creating simulated datasets often determine the relative performance of different analytical approaches, so it is important to know what assumptions are made during simulation and how realistic those assumptions are for real datasets. In the exercises below,  simulated Illumina paired-end reads created from a reference bacterial genome (*Lactobacillus helveticus* `strain DPC4571 <https://drive.google.com/open?id=1N_8e4SAj4SU_Y0zoYzA8_s3k1vXZCMtd>`_) are used.  The simulated read files (`sim.r1.fq.gz <https://drive.google.com/open?id=129qylzArUm3-K6-Rv8ORKqBwURuzwu5m>`_ and `sim.r2.fq.gz <https://drive.google.com/open?id=1ETW5KbnT7MTmxznzJSaUrTEKkhZmb-7A>`_) and the reference bacterial genome file are provided in the DPC4571 folder within ExcerciseData on the BIT815 team drive. GemReads.py (a Python script from the `GemSIM <http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-13-74>`_ package) was used to create the simulated Illumina reads, and this package is installed in the VCL system, so you can create your own simulated datasets from the reference genome, but this is too time-consuming to do in class. GemReads.py does not accept gzipped files as input, so you will have to unpack the compressed genome sequence file.
 
 
 Exercises
@@ -50,7 +50,7 @@ Exercises
 
 6. Summarize the resulting SAM output files using the command-line tools grep, awk, cut, sort, and uniq, as described in `SAMformatAndCLtools.pdf <https://drive.google.com/open?id=1fA8Lam8lYaAM6venR3x6_rXO0MGPqO2O>`_
 
-7. For extra practice working with SAM alignment files, download the smallfiles.zip archive [#Ross, I can not find this file.] (from the Resources page on the website) into your working directory and unpack the archive with the command unzip smallfiles.zip  Use the command-line tools grep, awk, cut, sort, and uniq, as described in the SAMformatAndCLtools.pdf document, to analyze the smallRNA-seq.sam file of read alignments. The same types of analyses can be carried out on the `sampleReadsSAM.tgz <https://drive.google.com/open?id=1zhNSU1j2Kr5Ptyjuv3-KY5gJzPw0MZeh>`_ file (also from the Resources page on the website).
+7. For extra practice working with SAM alignment files, download the smallfiles.zip archive [#Ross, I can not find this file.] (from the Resources page on the website) into your working directory and unpack the archive with the command unzip smallfiles.zip  Use the command-line tools grep, awk, cut, sort, and uniq, as described in the SAMformatAndCLtools.pdf document, to analyze the smallRNA-seq.sam file of read alignments. The same types of analyses can be carried out on the `sampleReadsSAM.tgz <https://drive.google.com/open?id=1zhNSU1j2Kr5Ptyjuv3-KY5gJzPw0MZeh>`_ file.
 
 
 Additional Resources
@@ -70,5 +70,5 @@ Additional Resources
 
 
 
-Last modified 18 December 2018.
+Last modified 31 December 2018.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

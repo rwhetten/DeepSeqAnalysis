@@ -67,25 +67,30 @@ De novo assembly
 Chromatin analysis
 ******************
 
-+ Bias Correction
+Bias Correction
+
   + Identifying and mitigating bias in next-generation sequencing methods for chromatin biology. Meyer and Liu, Nat Rev Genetics 15: 709 - 721, 2014 `Publisher Web Site <http://www.nature.com/nrg/journal/v15/n11/abs/nrg3788.html>`_
 
-+ Chromatin Immunoprecipitation sequencing: ChIP-seq
+Chromatin Immunoprecipitation sequencing: ChIP-seq
+
   + ChIP-seq: advantages and challenges of a maturing technology. Park, Nat Rev Genet. 10:669-80, 2009 `PubMed <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3191340/>`_
   + ChIP-seq and Beyond: new and improved methodologies to detect and characterize protein-DNA interactions. Furey, Nat Rev Genet 13: 840–852, 2012 `Publisher Web Site <http://www.nature.com/nrg/journal/v13/n12/full/nrg3306.html>`_
   + MuMoD: a Bayesian approach to detect multiple modes of protein–DNA binding from genome-wide ChIP data. Narlikar, Nucleic Acids Res 41:21–32, 2013 `PubMed <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3592440/>`_
 
-+ Chromatin conformation
+Chromatin conformation
+
   + A decade of 3C technologies: insights into nuclear organization. de Wit & de Laat, Genes & Devel  26: 11-24, 2012 `Publisher Website <http://genesdev.cshlp.org/content/26/1/11.full>`_
   + Exploring the three-dimensional organization of genomes: interpreting chromatin interaction data. Dekker et al, Nature Reviews Genetics 14: 390–403, 2013 `Publisher Website <http://www.nature.com/nrg/journal/v14/n6/full/nrg3454.html>`_
 
 Transcriptome analysis
 **********************
 
-+ General considerations for RNA-seq library construction
+General considerations for RNA-seq library construction
+
   + Molecular indexing enables quantitative targeted RNA sequencing and reveals poor efficiencies in standard library preparations. Fu et al, PNAS 111:1891–1896, 2014 `Publisher Web Site <http://www.pnas.org/content/111/5/1891>`_
 
-+ Assembly and comparison to genome
+Assembly and comparison to genome
+
   + A glance at quality score: implication for de novo transcriptome reconstruction of Illumina reads. Mbandi et al., Frontiers in Genetics 2014. `Publisher Website <http://journal.frontiersin.org/Journal/10.3389/fgene.2014.00017/full?>`_
   + Full-length transcriptome assembly from RNA-Seq data without a reference genome. Grabherr et al, Nature Biotechnology 29:644 - 652, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21572440>`_ [*Software called `Trinity <http://trinityrnaseq.sourceforge.net/>`_; available on Sourceforge.*]
   + Comprehensive analysis of RNA-Seq data reveals extensive RNA editing in a human transcriptome. Peng et al, Nature Biotechnology 30:253 - 260, 2012. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/22327324>`_ [*Several comments on this paper question whether the reported differences are in fact evidence of editing or are simply sequencing errors - the authors stand by their conclusions, but the controversy demonstrates the importance of robust data analysis methods.*]
@@ -93,7 +98,7 @@ Transcriptome analysis
   + Rnnotator: an automated de novo transcriptome assembly pipeline from stranded RNA-Seq reads. Martin et al, BMC Genomics 11:663, 2010 `Full Text <http://www.biomedcentral.com/1471-2164/11/663>`_
   + De novo assembly and analysis of RNA-seq data. Robertson et al, Nature Methods 7:909-912, 2010 `Full Text <http://www.nature.com/nmeth/journal/v7/n11/full/nmeth.1517.html>`_ [*Describes Trans-ABySS, a pipeline to use the ABySS parallel assembler for de novo transcriptome analysis.*]
 
-+ Differential expression analysis
+Differential expression analysis
   + Robust adjustment of sequence tag abundance. Baumann & Doerge, Bioinformatics 2013 `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/24108185>`_
   + R-SAP: a multi-threading computational pipeline for the characterization of high-throughput RNA-sequencing data. Mittal & McDonald, Nucleic Acids Res, 2012 `Full Text <http://nar.oxfordjournals.org/content/early/2012/01/28/nar.gks047.long>`_
   + Targeted RNA sequencing reveals the deep complexity of the human transcriptome. Mercer et al, Nature Biotechnology 30:99 - 104, 2012 `Publisher Website <http://www.nature.com/nbt/journal/v30/n1/full/nbt.2024.html>`_
@@ -124,7 +129,8 @@ Comparing genomes and assemblies; variant detection
   + Genome-wide LORE1 retrotransposon mutagenesis and high-throughput insertion detection in Lotus japonicus. Urbański et al, Plant J 64:731-741, 2012. `Publisher Website <http://onlinelibrary.wiley.com/doi/10.1111/j.1365-313X.2011.04827.x/abstract>`_ [*This paper describes a 2-dimensional pooling strategy with barcoding to allow use of Illumina sequencing to screen for retrotransposon insertion mutations, and includes a software package called FSTpoolit for analysis of the resulting sequence reads.*]
   + Reproducibility of variant calls in replicate next-generation sequencing experiments. Qi et al., PLoS One 10: e0119230, 2015 `Full Text <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0119230>`_
 
-+ Genotyping by sequencing
+Genotyping by sequencing
+
   + Genome-wide genetic marker discovery and genotyping using next-generation sequencing. Davey et al., Nat Rev Genet 12(7):499-510, 2011 `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21681211>`_ [*A review of methods available at the time.*]
   + A robust, simple genotyping-by-sequencing (GBS) approach for high diversity species. Elshire et al., PLoS One 6(5):e19379, 2011. `Full Text <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3087801>`_
   + Development of high-density genetic maps for barley and wheat using a novel two-enzyme genotyping-by-sequencing approach. Poland et al., PLoS One 7(2): e32253, 2012. `Full Text <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3289635/>`_
@@ -134,7 +140,8 @@ Comparing genomes and assemblies; variant detection
   + High-throughput genotyping by whole-genome resequencing. Huang et al., Genome Res 19(6):1068-76, 2009. `Full Text <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2694477>`_
   + Multiplexed shotgun genotyping for rapid and efficient genetic mapping. Andolfatto et al. Genome Res 21(4):610-7, 2011. `Full Text <http://genome.cshlp.org/content/21/4/610.long>`_
 
-+ Restriction-site Associated DNA (RAD) markers
+Restriction-site Associated DNA (RAD) markers
+
   + Rapid SNP discovery and genetic mapping using sequenced RAD markers. Baird et al, PLoS One 3(10):e3376, 2008 `Full Text <http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0003376>`_
   + Linkage mapping and comparative genomics using next-generation RAD sequencing of a non-model organism. Baxter et al., PLoS One 6(4):e19315, 2011. `Full Text <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3082572>`_
   + Genome evolution and meiotic maps by massively parallel DNA sequencing: spotted gar, an outgroup for the teleost genome duplication. Amores et al, Genetics 188(4):799-808, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21828280>`_
@@ -154,13 +161,13 @@ Population Genomics
 Workspace environments
 **********************
 
-+ Papers
+Papers
   + Galaxy: a comprehensive approach for supporting accessible, reproducible, and transparent computational research in the life sciences. Goecks et al, Genome Biol 11(8):R86, 2010 `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2945788>`_
   + Galaxy Cloudman: Delivering compute clusters. BMC Bioinformatics 11(Suppl. 12):S4, 2010 `Full Text <http://www.biomedcentral.com/content/pdf/1471-2105-11-S12-S4.pdf>`_
   + `The Genome Analysis Toolkit <http://www.broadinstitute.org/gsa/wiki/index.php/The_Genome_Analysis_Toolkit>`_: a MapReduce framework for analyzing next-generation DNA sequencing data. McKenna et al, Genome Res 20(9):1297-303, 2010. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2928508>`_
   + A framework for variation discovery and genotyping using next-generation DNA sequencing data. DePristo et al., Nat Genet 43(5):491-8, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21478889>`_
 
-+ Online resources
+Online resources
   + The `R statistical computing <http://cran.r-project.org/>`_ environment includes `Bioconductor <http://www.bioconductor.org/>`_, a specialized set of tools for analysis of microarray and high-throughput sequencing data. Introductory materials from on-line or short workshops are widely available online; examples are `Evomics2012 Bioconductor Tutorial <http://bioconductor.org/help/course-materials/2012/Evomics2012/Bioconductor-tutorial.pdf>`_, and `Intro to Bioconductor <http://bcb.dfci.harvard.edu/%7Eaedin/courses/Bioconductor/>`_. Materials from an advanced course on high-throughput genetic data analysis are at `Seattle 2012 materials <http://bioconductor.org/help/course-materials/2012/SeattleFeb2012/>`_. Thomas Girke of UC-Riverside has written a very complete set of manuals describing the use of R and Bioconductor for analysis of genomic datasets, available at `R and Bioconductor Manuals <http://manuals.bioinformatics.ucr.edu/home/R_BioCondManual>`_.
 
   `Manuals <http://cran.r-project.org/manuals.html>`_ and contributed `documentation <http://cran.r-project.org/other-docs.html>`_ for R are available at the R-project.org website, and video tutorials are also available on Youtube; those posted by Tutorlol are brief, clear, and to the point.
@@ -174,7 +181,7 @@ Workspace environments
 
   `A Little Book of R for Bioinformatics <http://a-little-book-of-r-for-bioinformatics.readthedocs.org/en/latest/>`_ is an on-line resource with information and exercises to provide practice in bioinformatics analysis of DNA sequences and other biological data in R. Many books on specific topics in R programming are also available through Amazon or other vendors.
 
-+ Cloud computing resources
+Cloud computing resources
   + The case for cloud computing in genome informatics. Lincoln Stein, Genome Biol. 11(5):207, 2010 `Pubmed <http://www.ncbi.nlm.nih.gov/pubmed/20441614>`_
   + Galaxy Cloudman: delivering cloud compute clusters. Afgan et al, BMC Bioinformatics 11(Suppl 12):S4, 2010 `Full Text <http://www.biomedcentral.com/1471-2105/11/S12/S4>`_
   + `CloudBioLinux <http://cloudbiolinux.com/>`_ is an open-source project that provides a bioinformatics Linux system for cloud computing, pre-configured with a variety of software tools installed and ready to use.
@@ -186,13 +193,15 @@ Workspace environments
   + SeqWare Query Engine: storing and searching sequence data in the cloud. OConnor et al, BMC Bioinformatics 11(Suppl 12):S2, 2010 `Full Text <http://www.biomedcentral.com/1471-2105/11/S12/S2>`_
   + An overview of the Hadoop/MapReduce/HBase framework and its current applications in bioinformatics. Taylor, BMC Bioinformatics 11(Suppl 12):S1, 2010 `Full Text <http://www.biomedcentral.com/1471-2105/11/S12/S1>`_
 
-+ Links to Linux command-line tutorials and resources
-  Tutorials for AWK, a powerful tool for handling data tables
+**Links to Linux command-line tutorials and resources**
+
+Tutorials for AWK, a powerful tool for handling data tables
   + A set of `awk notes <http://people.bu.edu/scottm/AWK.NOTES>`_ from Boston University
   + Bruce Barnett's `awk tutorial <http://www.grymoire.com/Unix/Awk.html>`_
   + Greg Goebel's `awk tutorial <http://www.vectorsite.net/tsawk.html>`_
   + `Executing an awk command from R <http://teaching.software-carpentry.org/2013/01/16/1433/>`_ to simplify data exploratory analysis, from Lex Nederbragt
-  Tutorials for bash shell scripting
+
+Tutorials for bash shell scripting
   + A `tutorial <http://www.linuxconfig.org/bash-scripting-tutorial>`_ at linuxconfig.org
   + A `Getting Started With Bash <http://www.hypexr.org/bash_tutorial.php>`_ tutorial at hypexr.org
   + Mendel Cooper's `Advanced Bash Shell-Scripting Guide <http://tldp.org/LDP/abs/html/>`_
@@ -219,5 +228,5 @@ Links to other useful sites
 + The European Bioinformatics Institute provides tools `ArrayExpressHTS and R-Cloud <http://www.ebi.ac.uk/Tools/rcloud/>`_ for analysis of transcriptome data
 
 
-Last modified 18 December 2018.
+Last modified 27 December 2018.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

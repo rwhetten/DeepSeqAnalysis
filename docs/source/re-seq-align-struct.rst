@@ -116,7 +116,7 @@ Additional Resources
 + Quality control of alignment files is a valuable preliminary step before investing significant time and effort in analysis. A package called *indexcov* is available to efficiently summarize coverage of different genomic regions within a single sample, or uniformity of coverage across multiple samples, beginning with alignments in BAM or CRAM formats. See Indexcov: fast coverage quality control for whole-genome sequencing. `GigaScience 6:1-6, 2017 <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5737511/>`_
 
 
-+ Genomic rearrangements in Arabidopsis considered as quantitative traits. `Imprialou et al, Genetics 205:1425-1441  <http://www.genetics.org/content/205/4/1425>'_, 2017. *This paper describes a strategy for mapping likely locations of structural rearrangements in a segregating population of recombinant inbred lines using low-coverage (0.3x) whole-genome resequencing.*
++ Genomic rearrangements in Arabidopsis considered as quantitative traits. `Imprialou et al, Genetics 205:1425-1441  <http://www.genetics.org/content/205/4/1425>`_, 2017. *This paper describes a strategy for mapping likely locations of structural rearrangements in a segregating population of recombinant inbred lines using low-coverage (0.3x) whole-genome resequencing.*
 
 + LUMPY: a probabilistic framework for structural variant discovery. `Chiang et al, Genome Biology 15:R84, <https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-6-r84>`_ 2014.
 
@@ -129,5 +129,5 @@ Additional Resources
 
 
 
-Last modified 20 December 2018.
+Last modified 27 December 2018.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

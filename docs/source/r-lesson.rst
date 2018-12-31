@@ -16,8 +16,8 @@ Objective
 Introduce and teach basic R usasge via the software carpentry amd Data carpentry workshops.
 
 
-Description
-***********
+Workshop Links
+**************
 
 `Software Carpentry <http://swcarpentry.github.io/r-novice-gapminder/>`_
 
@@ -30,5 +30,5 @@ Description
 
 
 
-Last modified 20 December 2018.
+Last modified 31 December 2018.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

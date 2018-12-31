@@ -44,9 +44,8 @@ Exercises
 
 2. Software: fastx-toolkit and FastQC. FastQC is a Java program that will run on Windows, Mac, or Linux, and is already installed on the VCL machine image - the link here is provided for those interested in installing the software on another machine. The fastx-toolkit package of programs is available in the Ubuntu repository, and is also already installed on the machine image.  These programs differ in that FastQC has a nice graphic interface and produces pretty graphs describing various aspects of data quality, but has no capability to filter, trim, or otherwise modify sequence files to address problems made apparent in those pretty graphs. The fastx-toolkit package can also produce graphs, although they aren't quite as pretty, but it does have
 
-3. Using fastx-toolkit for exploratory analysis. The first exercise will use fastx-toolkit to analyze and process the c3.fq.gz sequence file from the /data/AtRNAseq directory on your VCL machine instance. The fastx-toolkit programs are simple and somewhat dated, but still useful. Download the QCexercises.sh shell script with exercises by executing the following command at a terminal prompt::
+3. Using fastx-toolkit for exploratory analysis. The first exercise will use fastx-toolkit to analyze and process the `c3.fq.gz <https://drive.google.com/open?id=1DhVkPmszlpvH8dIKXef2iiSO-cF_cj-v>`_ sequence file, also found in the the `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_ archive. The fastx-toolkit programs are simple and somewhat dated, but still useful. Download the `QCexercises.sh <https://drive.google.com/open?id=1ERJJYdJciiw0Z3q0LDUfm-QGPcwpdxrB>`_ shell script with exercises.
 
-  wget http://www4.ncsu.edu/~rosswhet/BIT815/resources/QCexercises.sh
 
 4. Run the script using the command bash QCexercises.sh from a terminal prompt. The shell script should create two image files (with a .png extension) in the directory where you run it - use one of the image viewer programs available under Graphics in the Application menu of the Linux system to view these image files, or just use the display command at a terminal prompt.
   display c3.qual.png &
@@ -63,15 +62,18 @@ The resulting HTML output file can be opened with a browser from the command lin
 
 7. Using fastx-toolkit to remove adaptor sequences and trim off low-quality bases. Find the web page with instructions on the individual programs in the fastx-toolkit package (remember, the information is out there - you just have to find it). Use the fastx_clipper and fastq_quality_filter programs to remove any copies of the Illumina sequencing adaptor (GATCGGAAGAGCTCGTATGCCGTCTTCTGCTTGAAA) and to trim low-quality bases so that 80% of the bases in each read have a quality score of 15 or higher. Note that the fastx-toolkit programs accept input from STDIN and deliver output to STDOUT by default, so they are designed to be linked together in pipelines for processing data without the need to save intermediate files. See the QCexercises.sh script file for an example of how to format the command to send decompressed fastq-format sequence to fastx-toolkit commands.
 
-**:red:`NOTE: the -Q33 option is required`** - fastx-toolkit by default assumes that fastq-format sequences have quality scores from an older version of the Illumina base-calling software, and if you don't tell it to use the new version, it will return an error message.
+**NOTE: the -Q33 option is required** - fastx-toolkit by default assumes that fastq-format sequences have quality scores from an older version of the Illumina base-calling software, and if you don't tell it to use the new version, it will return an error message.
 
 8. :underline:`Using BBTools programs to remove adaptor sequences and trim low-quality bases.` The BBTools programs are installed in the /usr/local/bbmap directory of the Linux system, and this directory has been included in the $PATH environment variable, so you can run them by typing the name of the command at a terminal prompt, for example bbduk.sh to run the bbduk.sh program. Executing this command with no arguments will print a user guide for the command to the terminal screen, so this is one way to learn what options and arguments each command accepts. A web search will lead you to a BBTools User Guide at the DOE Joint Genome Institute, because the author (Brian Bushnell) is a bioinformatics specialist at JGI. NOTE: many of the BBTools programs are Java-based, so they can  be used on any operating system that has Java installed, but you can read the user guides for all the commands without installing Java. By default, the bbduk.sh and bbduk2.sh programs do not use the same sliding window approach for quality trimming as does fastq_quality_filter, but setting the appropriate options during execution of either bbduk.sh or bbduk2.sh will allow that approach to be used. For more information about alternative ways of quality trimming, see this `SeqAnswers Forum <http://seqanswers.com/forums/showthread.php?t=42776&page=7>`_ thread, and look for post #134.
 
-9. :underline:`Summarizing sequence data characteristics using FastQC.` You can run FastQC either from the command line, providing the names of sequence files to be processed as arguments, or from a graphic user interface. Typing the  command :code:`fastqc` without providing an input filename will start the program in interactive mode, where you choose which file to analyze from the File menu, while providing a file "glob" using wildcard characters will run the program on every sequence file that matches the filename pattern, e.g.::
+9. :underline:`Summarizing sequence data characteristics using FastQC.` You can run FastQC either from the command line, providing the names of sequence files to be processed as arguments, or from a graphic user interface. Typing the  command :code:`fastqc` without providing an input filename will start the program in interactive mode, where you choose which file to analyze from the File menu, while providing a file "glob" using wildcard characters will run the program on every sequence file that matches the filename pattern from `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_, e.g.::
 
-  fastqc /data/AtRNAseq/[ct][123].fq.gz
+  fastqc /fullset/[ct][123].fq.gz
 
 Note that the FastQC program can process gzip-compressed sequence files without saving an uncompressed version - this is important for saving disk space when hundreds of gigabytes of compressed sequence files need to be processed.
+
+
+
 
 Additional Resources
 ********************
@@ -89,5 +91,5 @@ Additional Resources
 
 
 
-Last modified 18 December 2018.
+Last modified 31 December 2018.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

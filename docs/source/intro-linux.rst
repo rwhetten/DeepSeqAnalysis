@@ -12,7 +12,7 @@ Introduction to Linux and the Command-line Interface
 Objective
 *********
 
-The objective of these class sessions is to introduce participants to the Linux computing environment, with a particular focus on the Lubuntu 16.04 environment provided as a virtual machine through the NC State `Virtual Computing Laboratory <https://vcl.ncsu.edu/>`_. An introductory lecture on key elements of Linux system architecture and computing philosophy will be followed by hands-on computing exercises to provide experience in using command-line utilities to navigate the file system, manage files and directories, and carry out basic file processing tasks. Demonstrations of how these command-line utilities can be applied to sequence analysis tasks are integrated into the exercises.
+The objective of these class sessions is to introduce participants to the Linux computing environment, with a particular focus on the Unix environment provided as a virtual machine through the NC State `Virtual Computing Laboratory <https://vcl.ncsu.edu/>`_. An introductory lecture on key elements of Linux system architecture and computing philosophy will be followed by hands-on computing exercises to provide experience in using command-line utilities to navigate the file system, manage files and directories, and carry out basic file processing tasks. Demonstrations of how these command-line utilities can be applied to sequence analysis tasks are integrated into the exercises.
 
 
 Description

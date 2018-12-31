@@ -124,5 +124,5 @@ _______
 
 
 
-Last modified 26 December 2018.
+Last modified 31 December 2018.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

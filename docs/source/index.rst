@@ -32,7 +32,7 @@ The course BIT815, Analysis of Deep Sequencing Data, is designed to introduce bi
    transcriptome-analysis
    chromatin-structure
    awk-sed-bash
-
+   clc
 
 
 Indices and tables

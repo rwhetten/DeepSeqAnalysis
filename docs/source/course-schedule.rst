@@ -13,13 +13,13 @@ Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21
 
 
 
-				**Class meetings are in Room 6117 Jordan Hall from 8:30 to 10:20 am on Mondays, Wednesdays, and Fridays.**
+			**Class meetings are in Room 6117 Jordan Hall from 8:30 to 10:20 am on Mondays, Wednesdays, and Fridays.**
 
-					The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading.
+				The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading.
 
-							The `Piazza online forum page <https://piazza.com/ncsu/spring2018/bit815/home>`_ is available for questions and discussion.
+				The `Piazza online forum page <https://piazza.com/ncsu/spring2018/bit815/home>`_ is available for questions and discussion.
 
-							Teaching assistant: `Will Kohlway <whkohlwa@ncsu.edu>`_
+				Teaching assistant: `Will Kohlway <whkohlwa@ncsu.edu>`_
 
 
 
@@ -79,17 +79,19 @@ Course Schedule
 General background information and course resources
 ***************************************************
 
-|	General advice on troubleshooting
-|	`Course syllabus </media/hd02/BIT815/rstFiles/wtest/docs/source/Images/Spring2019Syllabus_BIT815.pdf>`_
-|	Class bash history files from instructor VCL instances
-|	Lior Pachter's list of sequencing-based assays: \*Seq
-|	The R statistical programming environment
-|	Course resources
-|	`Overview slides <//media/hd02/BIT815/rstFiles/wtest/docs/source/Images/DeepSequencingDataAnalysis_2015.pdf>`_
-|	Cloud computing with Amazon Web Services: setting up an AWS account and starting an instance
-|	OMICtools software database publication and website
-|	Qiagen webpage of tutorials for CLC workbench programs
-|	Colib'read project webpage on reference-assembly-free programs for SNP and indel detection and moress 
+
++	General advice on `troubleshooting <https://drive.google.com/open?id=1kPtHHqjuRwECuw3hnsTpgcvDQ9JxBj1a>`_
++	`Course syllabus <https://drive.google.com/open?id=1HgYJGXv_mxbKycTMrtK_dg37jjuEAvVG>`_
++	Class bash history files from instructor VCL instances
++	Lior Pachter's list of sequencing-based assays: `\*Seq <https://liorpachter.wordpress.com/seq/>`_
++	`The R statistical programming environment <https://drive.google.com/open?id=1TTEs1_FxR3kccpUiQdSIvg6A81DzahOJ>`_
++	`Course resources <https://drive.google.com/open?id=1Fjj_3fo3NkGNQyoxwZ16VlGsoREQjtkQ>`_
++	`Overview slides <https://drive.google.com/open?id=10RYNwJXx7gwYCA_o_1u8AtRw465ROjZn>`_
++	Cloud computing with Amazon Web Services: `setting up an AWS account <https://drive.google.com/open?id=1OXA_TAYu2l_--GEAW85eKJCLUtWyqhbN>`_ and `starting an instance <https://drive.google.com/open?id=1U7D7BRfS1LLbWGzJwkBejc8vfyRSPLIc>`_
++	OMICtools software database `publication <http://database.oxfordjournals.org/content/2014/bau069.long>`_ and `website <http://omictools.com/>`_
++	Qiagen webpage of `tutorials <https://www.qiagenbioinformatics.com/support/tutorials/>`_ for CLC workbench programs
++	`Colib'read project webpage <https://colibread.inria.fr/project/>`_ on reference-assembly-free programs for SNP and indel detection and moress 
+
 
 A flow-chart overview of DNA sequencing experiments
 ***************************************************
@@ -102,5 +104,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 18 December 2018.
+Last modified 27 December 2018.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
