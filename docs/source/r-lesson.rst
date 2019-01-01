@@ -13,7 +13,7 @@ R and R Studio
 Objective
 *********
 
-Introduce and teach basic R usage via the software carpentry and Data carpentry workshops.
+Introduce and teach basic R usage with lessions from Software Carpentry and Data Carpentry workshops.
 
 
 Workshop Links
