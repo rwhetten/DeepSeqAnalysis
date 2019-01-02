@@ -80,12 +80,12 @@ General background information and course resources
 ***************************************************
 
 
-+	General advice on `troubleshooting <https://drive.google.com/open?id=1kPtHHqjuRwECuw3hnsTpgcvDQ9JxBj1a>`_
++	General advice on `troubleshooting <troubleshooting.html>`_
 +	`Course syllabus <https://drive.google.com/open?id=1HgYJGXv_mxbKycTMrtK_dg37jjuEAvVG>`_
 +	Class bash history files from instructor VCL instances
 +	Lior Pachter's list of sequencing-based assays: `\*Seq <https://liorpachter.wordpress.com/seq/>`_
-+	`The R statistical programming environment <https://drive.google.com/open?id=1TTEs1_FxR3kccpUiQdSIvg6A81DzahOJ>`_
-+	`Course resources <https://drive.google.com/open?id=1Fjj_3fo3NkGNQyoxwZ16VlGsoREQjtkQ>`_
++	`The R statistical programming environment <r-materials.html>`_
++	`Course resources <resources.html>`_
 +	`Overview slides <https://drive.google.com/open?id=10RYNwJXx7gwYCA_o_1u8AtRw465ROjZn>`_
 +	Cloud computing with Amazon Web Services: `setting up an AWS account <https://drive.google.com/open?id=1OXA_TAYu2l_--GEAW85eKJCLUtWyqhbN>`_ and `starting an instance <https://drive.google.com/open?id=1U7D7BRfS1LLbWGzJwkBejc8vfyRSPLIc>`_
 +	OMICtools software database `publication <http://database.oxfordjournals.org/content/2014/bau069.long>`_ and `website <http://omictools.com/>`_

@@ -35,6 +35,9 @@ The Analysis of Deep Sequencing Data course is designed to introduce biologists 
    clc
 
 
+
+
+
 Indices and tables
 ==================
 
