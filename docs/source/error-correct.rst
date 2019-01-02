@@ -56,7 +56,7 @@ Exercises
 Additional Resources
 ********************
 
-+ McElroy KE, Luciani F, Thomas T. (2012) GemSIM: general, error-model based simulator of next-generation sequencing data. BMC Genomics 13: 74. `PMID 22336055 <http://www.ncbi.nlm.nih.gov/pubmed/22336055>`_ *(Note:This paper describes software for simulation of sequence data that is useful for testing effects of error frequency on alignment and assembly).*
++ McElroy KE, Luciani F, Thomas T. (2012) GemSIM: general, error-model based simulator of next-generation sequencing data. BMC Genomics 13: 74. `PMID 22336055 <http://www.ncbi.nlm.nih.gov/pubmed/22336055>`_ *(Note: This paper describes software for simulation of sequence data that is useful for testing effects of error frequency on alignment and assembly).*
 
 + Marçais G, Yorke JA, Zimin A. (2013) Quorum: an error corrector for Illumina reads. Preprint on arXiv.org, `arXiv:1307:3515 <http://arxiv.org/abs/1307.3515>`_
 
@@ -70,5 +70,5 @@ Additional Resources
 
 
 
-Last modified 31 December 2018.
+Last modified 2 January 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

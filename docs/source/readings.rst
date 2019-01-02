@@ -92,7 +92,7 @@ General considerations for RNA-seq library construction
 Assembly and comparison to genome
 
   + A glance at quality score: implication for de novo transcriptome reconstruction of Illumina reads. Mbandi et al., Frontiers in Genetics 2014. `Publisher Website <http://journal.frontiersin.org/Journal/10.3389/fgene.2014.00017/full?>`_
-  + Full-length transcriptome assembly from RNA-Seq data without a reference genome. Grabherr et al, Nature Biotechnology 29:644 - 652, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21572440>`_ [*Software called `Trinity <http://trinityrnaseq.sourceforge.net/>`_; available on Sourceforge.*]
+  + Full-length transcriptome assembly from RNA-Seq data without a reference genome. Grabherr et al, Nature Biotechnology 29:644 - 652, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21572440>`_ [*Software called* `Trinity <http://trinityrnaseq.sourceforge.net/>`_; *available on Sourceforge.*]
   + Comprehensive analysis of RNA-Seq data reveals extensive RNA editing in a human transcriptome. Peng et al, Nature Biotechnology 30:253 - 260, 2012. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/22327324>`_ [*Several comments on this paper question whether the reported differences are in fact evidence of editing or are simply sequencing errors - the authors stand by their conclusions, but the controversy demonstrates the importance of robust data analysis methods.*]
   + Optimization of de novo transcriptome assembly from next-generation sequencing data. Surget-Groba & Montoya-Burgos, Genome Res 20(10):1432-40, 2010. `Full Text <http://genome.cshlp.org/content/20/10/1432.long>`_
   + Rnnotator: an automated de novo transcriptome assembly pipeline from stranded RNA-Seq reads. Martin et al, BMC Genomics 11:663, 2010 `Full Text <http://www.biomedcentral.com/1471-2164/11/663>`_
@@ -146,7 +146,7 @@ Restriction-site Associated DNA (RAD) markers
   + Linkage mapping and comparative genomics using next-generation RAD sequencing of a non-model organism. Baxter et al., PLoS One 6(4):e19315, 2011. `Full Text <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3082572>`_
   + Genome evolution and meiotic maps by massively parallel DNA sequencing: spotted gar, an outgroup for the teleost genome duplication. Amores et al, Genetics 188(4):799-808, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21828280>`_
   + Construction and application for QTL analysis of a Restriction-site Associated DNA (RAD) linkage map in barley. Chutimanitsakun et al, BMC Genomics 4; 12:4, 2011. `Full Text <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3023751>`_
-  + RAD tag sequencing as a source of SNP markers in Cynara cardunculus L. Scaglione et al., BMC Genomics 13:3, 2012. `Full Text <http://www.biomedcentral.com/1471-2164/13/3>`
+  + RAD tag sequencing as a source of SNP markers in Cynara cardunculus L. Scaglione et al., BMC Genomics 13:3, 2012. `Full Text <http://www.biomedcentral.com/1471-2164/13/3>`_
   + Paired-end RAD-seq for de novo assembly and marker design without available reference. Willing et al., Bioinformatics 27(16):2187-93, 2011. `Publisher Website <http://bioinformatics.oxfordjournals.org/content/27/16/2187.long>`_
   + Local de novo assembly of RAD paired-end contigs using short sequencing reads. Etter et al., PLOS ONE 6(4): e18561, 2011. `Full Text <http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0018561>`_
   + Stacks: building and genotyping loci de novo from short-read sequences. Catchen et al., G3: Genes, Genomes, Genetics, 1:171-182, 2011. `Home Page <http://creskolab.uoregon.edu/stacks/>`_
@@ -188,7 +188,7 @@ Cloud computing resources
   + A `tutorial <https://github.com/chapmanb/cloudbiolinux/blob/master/doc/intro/gettingStarted_CloudBioLinux.pdf?raw=true>`_ on getting started with CloudBioLinux on the Amazon Web Services Elastic Compute Cloud (EC2)
   + `Deploying Galaxy on the Cloud <http://userwww.service.emory.edu/%7Eeafgan/content/ppt/EnisAfgan_BOSC_2010.pdf>`_ slides from a presentation by Enis Afgan (Emory University) at the Bioinformatics Open Source Conference in Boston, July 2010
   + A `screencast <http://screencast.g2.bx.psu.edu/cloud/>`_ that provides a step-by-step guide to starting a Galaxy cluster in the EC2 environment
-  + A `webpage <https://bitbucket.org/galaxy/galaxy-central/wiki/cloud>` that has the same information in text form, and is the basis for the screencast
+  + A `webpage <https://bitbucket.org/galaxy/galaxy-central/wiki/cloud>`_ that has the same information in text form, and is the basis for the screencast
   + The iPlant Collaborative, an NSF-funded project to create computational resources for plant biology research, provides access to cloud computing resources through `Atmosphere <http://www.iplantcollaborative.org/discover/atmosphere>`_
   + SeqWare Query Engine: storing and searching sequence data in the cloud. OConnor et al, BMC Bioinformatics 11(Suppl 12):S2, 2010 `Full Text <http://www.biomedcentral.com/1471-2105/11/S12/S2>`_
   + An overview of the Hadoop/MapReduce/HBase framework and its current applications in bioinformatics. Taylor, BMC Bioinformatics 11(Suppl 12):S1, 2010 `Full Text <http://www.biomedcentral.com/1471-2105/11/S12/S1>`_
@@ -210,6 +210,10 @@ Tutorials for bash shell scripting
   + Peter Krumins claims to have the `World's Best Introduction to Sed <http://www.catonmat.net/blog/worlds-best-introduction-to-sed/>`_; take a look and judge for yourself.
   + Bruce Barnett's `sed tutorial <http://www.grymoire.com/Unix/Sed.html>`_.
 
+`Links for Exercise Data <https://drive.google.com/a/ncsu.edu/file/d/1tDei58YF_V-o3Egig6g8j-o8Kb8tSAHv/view?usp=sharing>`_ 
+**************************************************************************************************************************
+
+
 Links to other useful sites
 ***************************
 
@@ -228,5 +232,5 @@ Links to other useful sites
 + The European Bioinformatics Institute provides tools `ArrayExpressHTS and R-Cloud <http://www.ebi.ac.uk/Tools/rcloud/>`_ for analysis of transcriptome data
 
 
-Last modified 27 December 2018.
+Last modified 2 January 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
