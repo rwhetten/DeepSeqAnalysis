@@ -47,13 +47,17 @@ Exercises
 3. Using fastx-toolkit for exploratory analysis. The first exercise will use fastx-toolkit to analyze and process the `c3.fq.gz <https://drive.google.com/open?id=1DhVkPmszlpvH8dIKXef2iiSO-cF_cj-v>`_ sequence file, also found in the the `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_ archive. The fastx-toolkit programs are simple and somewhat dated, but still useful. Download the `QCexercises.sh <https://drive.google.com/open?id=1ERJJYdJciiw0Z3q0LDUfm-QGPcwpdxrB>`_ shell script with exercises.
 
 
-4. Run the script using the command bash QCexercises.sh from a terminal prompt. The shell script should create two image files (with a .png extension) in the directory where you run it - use one of the image viewer programs available under Graphics in the Application menu of the Linux system to view these image files, or just use the display command at a terminal prompt.::
+4. Run the script using the command bash QCexercises.sh from a terminal prompt. The shell script should create two image files (with a .png extension) in the directory where you run it - use one of the image viewer programs available under Graphics in the Application menu of the Linux system to view these image files, or just use the display command at a terminal prompt.
+
+::
 
   display c3.qual.png &
 
 5. Open the QCexercises.sh file with the Geany programming text editor (listed under the Development item in the Applications menu)  and read the code and comments to learn what the script does. You can run the script multiple times with different input sequence files, changing the name of the file to be used as input to the series of programs, or you can simply copy the commands from the script file to a terminal window and run each command from the command line, one step at a time.
 
-6. Run FastQC on the same file, and compare the results. FastQC produces a report containing an HTML file that can be opened using a browser. By default FastQC tries to write the output to a directory in the same place where the sequence file is found - this won't work on your virtual machine image, because the sequence files are in the /data directory and ordinary users don't have write permission in that directory. You can specify an alternative place to save the output using the -o option on the command line.\::
+6. Run FastQC on the same file, and compare the results. FastQC produces a report containing an HTML file that can be opened using a browser. By default FastQC tries to write the output to a directory in the same place where the sequence file is found - this won't work on your virtual machine image, because the sequence files are in the /data directory and ordinary users don't have write permission in that directory. You can specify an alternative place to save the output using the -o option on the command line.
+
+::
 
   fastqc -o ./ /data/AtRNAseq/c3.fq.gz
 
