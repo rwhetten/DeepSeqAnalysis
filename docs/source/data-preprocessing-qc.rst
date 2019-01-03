@@ -53,7 +53,7 @@ Exercises
 
 5. Open the QCexercises.sh file with the Geany programming text editor (listed under the Development item in the Applications menu)  and read the code and comments to learn what the script does. You can run the script multiple times with different input sequence files, changing the name of the file to be used as input to the series of programs, or you can simply copy the commands from the script file to a terminal window and run each command from the command line, one step at a time.
 
-6. Run FastQC on the same file, and compare the results. FastQC produces a report containing an HTML file that can be opened using a browser. By default FastQC tries to write the output to a directory in the same place where the sequence file is found - this won't work on your virtual machine image, because the sequence files are in the /data directory and ordinary users don't have write permission in that directory. You can specify an alternative place to save the output using the -o option on the command line.::
+6. Run FastQC on the same file, and compare the results. FastQC produces a report containing an HTML file that can be opened using a browser. By default FastQC tries to write the output to a directory in the same place where the sequence file is found - this won't work on your virtual machine image, because the sequence files are in the /data directory and ordinary users don't have write permission in that directory. You can specify an alternative place to save the output using the -o option on the command line.\::
 
   fastqc -o ./ /data/AtRNAseq/c3.fq.gz
 
