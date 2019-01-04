@@ -1,6 +1,8 @@
 .. image:: /Images/NC_State.gif
    :target: http://www.ncsu.edu
 
+.. role:: bash(code)
+   :language: bash
 
 Genome Sequencing and Assembly
 ==============================
@@ -43,15 +45,34 @@ Exercise - assembly of a bacterial genome from simulated Illumina 100-nt PE read
 *********************************************************************************
 
 + Simulation of paired-end short reads from a bacterial genome sequence can be done with the GemReads.py program used previously, but that process takes some time.  Two files containing simulated 100-nt paired-end reads from the *Lactobacillus helveticus* strain DPC4571 genome are `sim.r1.fq.gz <https://drive.google.com/open?id=129qylzArUm3-K6-Rv8ORKqBwURuzwu5m>`_ and `sim.r2.fq.gz <https://drive.google.com/open?id=1ETW5KbnT7MTmxznzJSaUrTEKkhZmb-7A>`_.
+
+\
+
 + Use the df (remember "disk free") command to see how much free space is left on your VCL instance - this is a useful practice before doing anything that generates large output files, because it is frustrating to start a large computing job and have it fail due to a lack of disk space to store output files.
-+ Map the simulated reads back to the reference genome sequence using the BWA aligner - execute the commands bwa index and bwa mem at a terminal prompt for an overview of the command-line options of the commands to create an index of the reference genome sequence and align the simulated reads to it, or read the `manual <http://bio-bwa.sourceforge.net/bwa.shtml>`_ to learn more of the details about how to carry out alignment of short reads to a reference genome. NOTE: BWA programs read from gzipped files, so you do not need to un-gzip the reference genome (`DPC4571.fasta.gz <https://drive.google.com/open?id=1Aj85OISJucpTYg5jwMhhAldwpMAlmzvZ>`_) sequence file, or the sim.r1 and sim.r2 sequence read files. By default, BWA writes SAM-format output to STDOUT (the screen), so you need to redirect that to a file or another command in order to save it. In order to save space, it is most efficient to pipe the SAM output first to samtools1.3 view to convert it to BAM format, then to samtools1.3 sort to sort the BAM file so it is ready for use in other downstream applications. The BWA and samtools1.3 packages are installed in the search path, so you can use these programs without specifying a complete path to the executable files.
+
+\
+
++ Map the simulated reads back to the reference genome sequence using the BWA aligner - execute the commands bwa index and bwa mem at a terminal prompt for an overview of the command-line options of the commands to create an index of the reference genome sequence and align the simulated reads to it, or read the `manual <http://bio-bwa.sourceforge.net/bwa.shtml>`_ to learn more of the details about how to carry out alignment of short reads to a reference genome. NOTE: BWA programs read from gzipped files, so you do not need to un-gzip the reference genome (`DPC4571.fasta.gz <https://drive.google.com/open?id=1Aj85OISJucpTYg5jwMhhAldwpMAlmzvZ>`_) sequence file, or the `sim.r1 <https://drive.google.com/open?id=129qylzArUm3-K6-Rv8ORKqBwURuzwu5m>`_ and `sim.r2 <https://drive.google.com/open?id=1ETW5KbnT7MTmxznzJSaUrTEKkhZmb-7A>`_ sequence read files. By default, BWA writes SAM-format output to STDOUT (the screen), so you need to redirect that to a file or another command in order to save it. In order to save space, it is most efficient to pipe the SAM output first to samtools1.3 view to convert it to BAM format, then to samtools1.3 sort to sort the BAM file so it is ready for use in other downstream applications. The BWA and samtools1.3 packages are installed in the search path, so you can use these programs without specifying a complete path to the executable files.
+
+\
+
 + The MaSuRCA assembler tgz archive is already compiled and installed in the /usr/local/masurca directory of the VCL machine image.
+
+\
+
 + Use the MaSuRCA assembler to assemble the simulated reads into a genome assembly, following the instructions given in the MaSuRCA `Quick Start Guide <https://drive.google.com/open?id=1hvUumBdd9LLWlxAzg6NMuSv2gLYYjabk>`_. The average insert size and standard deviation of insert sizes of the simulated paired-end reads is available from the information scrolled to the screen by the BWA mem program during the alignment process, or in the `KmerCounting_ErrorCorrection.sh <https://drive.google.com/open?id=101JatUPQIAtjtRUkYw4V6CZCS03KuKqB>`_ script in the section that describes the GemReads.py command used to simulate the reads.
+
+\
+
 + Comparison of the genome assembly to the genome reference sequence is possible using whole-genome alignment with `MUMmer v.3 <http://mummer.sourceforge.net/manual/>`_. This package of programs is installed in the /usr/local/MUMmer3.23/ directory; look at the list of programs and type
   :code:`nucmer -h` at a terminal prompt to see the options available for the nucmer sequence alignment program.
 
 
 + Assembly quality metrics and Assemblathon-1: `Outline and notes <https://drive.google.com/open?id=1FPqLshMXQEBJNpX6AqpvoMuMP4A8ZMzL>`_
+
+\
+
+
 
 Additional Resources
 ********************
@@ -60,29 +81,45 @@ Additional Resources
 
   *This paper describes a novel strategy for local assembly of Illumina or other short paired-end sequencing reads into "super reads" that can then be assembled using a modified version of an Overlap - Layout - Consensus assembler.*
 
+\
+
 + Veeckman, E., et al. (2016) Are we there yet? Reliably estimating the completeness of plant genome sequences. Plant Cell 28:1759-1768 `Publisher Website <http://www.plantcell.org/content/28/8/1759.long>`_
 
+\
+
   *This paper provides an overview of metrics for assessment of the completeness of de-novo genome assemblies, along with a discussion of potential sources of bias of different approaches.*
+
+\
 
 + Khelik et al, (2017) NucDiff: in-depth characterization and annotation of differences between two sets of DNA sequences. BMC Bioinformatics 18:338. `Publisher Website <https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1748-z>`_
 
   *This paper describes a software package that uses results from Mummer v3 Nucmer, delta-filter & show-snps programs to classify sequence differences, which are presented in GFF3 format so they can be visualized in a genome browser.*
 
+\
+
 + Baker, M. (2012) De-novo genome assembly - what every biologist needs to know. Nature Methods 9:333-337 `Publisher Website <http://www.nature.com/nmeth/journal/v9/n4/full/nmeth.1935.html>`_
+
+\
 
 + Gnerre S, et al. (2011) High-quality draft assemblies of mammalian genomes from massively parallel sequence data. Proc Natl Acad Sci USA 108:1513–1518. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3029755/>`_
 
   *This paper provides recommendations for different types of Illumina libraries and appropriate depths of sequencing for best results with the ALLPATHS assembler. While this approach was the state-of-the-art in genome assembly for a period of time, it is no longer considered the optimal approach.*
 
+\
+
 + Salzberg S, et al. (2012) GAGE: A critical evaluation of genome assemblies and assembly algorithms. Genome Research 22:557–567. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3290791>`_
 
   *This paper describes a set of experiments comparing different assembly programs on four genomes, and provides useful insights into the challenges of genome assembly.*
 
+\
+
 + Magoc T and Salzberg S. (2011) FLASH: Fast Length Adjustment of Short Reads to improve genome assemblies. Bioinformatics 27:2957–2963. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3198573/>`_
+
+\
 
 + Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. `Full Text <http://www.pnas.org/content/98/17/9748.full>`_
 
 
 
-Last modified 31 December 2018.
+Last modified 3 January 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

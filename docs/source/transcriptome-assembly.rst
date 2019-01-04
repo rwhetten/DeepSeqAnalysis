@@ -27,36 +27,96 @@ Key Facts
 
 Paired-end sequencing reads are useful for assembly of eukaryotic transcriptomes, because the information they provide about the positions of sequences relative to each other within a transcript is valuable for correct assembly of alternatively-spliced transcripts. In bacteria, splicing is less frequent, alternative splicing can be less of a concern, and single-end reads can often be assembled into a reasonably accurate transcriptome. If alternative splicing is not of interest, then single-end reads are useful for RNA-seq analysis of eukaryotic transcriptomes as well - now that read-lengths of  100 to 150 nt are readily available, paired-end reads add little additional information regarding levels of gene expression.
 
+\
+
+
 Exercise - reference-guided assembly
 ************************************
 
-+ The Arabidopsis thaliana RNA-seq dataset used for the analysis of differential gene expression includes six sequence files found in the `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_ archive in the AtRNAseq folder of the google team drive.
++ The Arabidopsis thaliana RNA-seq dataset used for the analysis of differential gene expression includes six sequence files found in the `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_ archive in the `AtRNAseq <https://drive.google.com/open?id=1_-cX7Scvp_e8zlN4glcD3-i2eJg5Tv71>`_ archive.
+
+\
+
 + The HiSat2 aligner is already installed on the VCL system. If you want to install it on another computer, an executable binary can be downloaded from the link under the Releases heading on the right side of the program `home page <http://ccb.jhu.edu/software/hisat2/index.shtml>`_. This program is the successor to Bowtie and Tophat, the original programs developed for reference-guided sequence assembly.
+
+\
+
 + Create a folder for this exercise, and unpack the Atchromo5.fasta.gz reference sequence from the /data/AtRNAseq folder into that directory. Use the hisat2-build program (from the hisat2-2.0.5 directory) to build an alignment index from the uncompressed fasta-format sequence data.
-+ Unpack the three control-sample RNA-seq read files (named c1, c2 and c3) from the fullset archive to a single fastq file, using the gzip -cd command with file globs.
+
+\
+
++ Unpack the three control-sample RNA-seq read files (named c1, c2 and c3) from the `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_ archive to a single fastq file, using the gzip -cd command with file globs.
+
+\
+
 + Align the fastq-format sequence reads to the reference sequence using the hisat2 program (using the --dta option), and pipe the output to samtools1.3 view to convert the SAM output into BAM, then to samtools1.3 sort to sort the output BAM data and save it to a file.
+
+\
+
 + Download the Linux x86_64 binary version of the StringTie program from the link under the Obtaining and installing StringTie heading on the program `home page <http://ccb.jhu.edu/software/stringtie/index.shtml>`_. Unpack the zip archive in your /home/lubuntu directory.
+
+\
+
 + Execute the stringtie program using the sorted BAM file as input.
+
+\
+
 
 Exercise - de-novo assembly
 ***************************
 
 + The *Arabidopsis thaliana* RNA-seq dataset can also be used for de-novo assembly, although RAM is a limiting factor on instances of the VCL Biostar_DNASeq machine image.
+
+\
+
 + `Rockhopper <https://cs.wellesley.edu/%7Ebtjaden/Rockhopper/>`_ can be downloaded to the home directory of a VCL instance and run from the command line  - for some reason the GUI version would not save the file of assembled transcripts when I tested it. All six files of RNA-seq data are from the same accession of Arabidopsis, so they can all be concatenated into a single file and provided as input to Rockhopper.
+
+\
+
 + A file of *Arabidopsis thaliana* RNA sequences (inferred from gene models in the TAIR 10 genome assembly: `TAIR10.cDNA.fa.gz <https://drive.google.com/open?id=13n6Iu-Aht4ikGH2SyX0yTwKVfx3ply3R>`_) is also available. The assembled transcripts can be compared with these predicted transcripts as a means of evaluating how good a job the Rockhopper assembler (which is designed for assembly of bacterial RNA-seq datasets) does with the plant RNA-seq data.
+
+
+\
 
 Additional Resources
 ********************
 
 + One strategy for reducing the amount of RAM required for transcriptome assembly by the Trinity software package is to carry out "digital normalization" of the RNA-seq dataset - this means adjusting the numbers of reads in the dataset to ensure more uniform representation of both abundant and rare transcripts, while removing sequencing errors. A detailed `exercise <http://khmer-protocols.readthedocs.io/en/v0.8.4/mrnaseq/index.html>`_ is available, which uses AWS cloud computing instances to provide sufficient computing power to process a real dataset.
+
+\
+
 + Analysis of Next Generation Sequencing data (ANGUS) is a workshop series on high-throughput sequence data analysis; the `2017 workshop <https://angus.readthedocs.io/en/2017/toc.html>`_ includes an `exercise <https://angus.readthedocs.io/en/2017/assembly-trinity.html>`_ on transcriptome assembly with Trinity using cloud computing resources.
+
+\
+
 + Rana et al., 2016. Comparison of de-novo transcriptome assemblers and k-mer strategies using the killifish, Fundulus heteroclitus. PLoS One 11: e0153104. `Full text <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0153104>`_
+
+\
+
 + Boley et al., 2014. Genome-guided transcript assembly by integrative analysis of RNA sequence data. Nature Biotechnology 32: 341-346. `Publisher Website <http://www.nature.com/nbt/journal/v32/n4/full/nbt.2850.html>`_
+
+\
+
 + Grabherr et al, 2011. Full-length transcriptome assembly from RNA-Seq data without a reference genome. Nature Biotechnology 29:644 - 652. `PubMed Central <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3571712/>`_
+
+\
+
 + Tjaden, B. (2015) De novo genome assembly of bacterial transcriptomes from RNA-seq data. Genome Biology 16:1 `Full text <http://genomebiology.com/2015/16/1/1>`_
+
+\
+
 + Gnerre S, et al. (2011) High-quality draft assemblies of mammalian genomes from massively parallel sequence data. Proc Natl Acad Sci USA 108:1513–1518. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3029755/>`_
+
+\
+
 + Salzberg S, et al. (2012) GAGE: A critical evaluation of genome assemblies and assembly algorithms. Genome Research 22:557–567. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3290791>`_ This paper describes a set of experiments comparing different assembly programs on four genomes, and provides useful insights into the challenges of genome assembly.
+
+\
+
 + Magoc T and Salzberg S. (2011) FLASH: Fast Length Adjustment of Short Reads to improve genome assemblies. Bioinformatics 27:2957–2963. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3198573/>`_ This paper describes a software tool for joining paired-end reads obtained from DNA fragments short enough that the reads overlap at the ends. This is reported to improve the quality of assemblies created from the joined reads. An outline of an exercise with the FLASH assembler is available: `FLASH_exercise.docx <p:%5Cfer%5CChristmas%20Tree%20Genetics%20Program%5COther%20Files%5CBIT815_WebpageCode%5CBIT815%5CDocuments%20for%20classes%5CWeek%204>`_
+
+\
+
 + Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. `Full Text <http://www.pnas.org/content/98/17/9748.full>`_
 
 

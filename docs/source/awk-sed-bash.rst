@@ -44,23 +44,23 @@ Exercises
 
 1.	`Bash and awk exercises <https://drive.google.com/open?id=1C0xepbOtdDy2d3yN-VmNUyQ71903XBCY>`_. Writing and executing loops is a key skill to learn in programming, because this makes completion of repetitive tasks much easier. The bash shell also provides a wide variety of tools to manage system functions, maintain software, and track system resources. Awk allows use of both conditional statements and loops to process and manipulate text files, and can carry out many text-processing activities commonly done using spreadsheet programs in a Windows environment.
 
-|
+\
 
 2.	`Exercises <https://drive.google.com/open?id=1yxRhkbvPuzVe6Nx_DURLK-Dxr-UZPuhN>`_ using find, sed, bioawk, and bash to find and modify files.
 
-|
+\
 
 3.	Handy tips for `bash <https://drive.google.com/open?id=14fm1hndRXcoXtuSQPD94bZrkP9HSXVKJ>`_, `awk <https://drive.google.com/open?id=1erhO5seRwopHXMDNPDbbQvehknuioMOo>`_ and `sed <https://drive.google.com/open?id=1onizOqB0JaUHZyhXEezmGUg0M3L6neDa>`_ - these are examples I have saved from my own applications of these tools. You may find some of these tips useful, but these lists are by no means complete, so feel free to add additional information and keep your own list of the most useful tricks for each of these tools.
 
-|
+\
 
 4.	An online resource called `Linux Command Line Exercises for NGS Data Processing <http://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/linux.html>`_ is mostly about awk.
 
-|
+\
 
-5.	One feature of the bash shell mentioned in the list of handy bash shell tricks is `parameter expansion <http://mywiki.wooledge.org/BashGuide/Parameters#Parameter_Expansion>`_, which offers a range of tools for modifying the values of variables. One example of the utility of these tools is processing a set of FASTQ sequence files - suppose there are samples named S001 to S150, so the sequencing center splits the reads into 150 files named S001.fq.gz to S150.fq.gz. If all these files are saved in a directory, a bash loop can be used to align them to a reference genome, but simply using the input filename as the base for the output alignment file will result in files named S001.fq.gz.bam to S150.fq.gz.bam, in which the "fq.gz" no longer serves a meaningful role. For a variable called $file, parameter expansions such as ${file%%.*} can be used to retrieve specific parts of the string of filenames and extensions. The ${file#} and ${file##} constructs remove matched patterns from the left end of the string stored in the $file variable, while the ${file%} and ${file%%} contructs remove matched patterns from the right end of the stored string. `Examples <http://wiki.bash-hackers.org/syntax/pe>`_ make this somewhat more clear, but the best way to see how it works is to practice (for example on the files saved in the /ExerciseData/AtRNAseq directory on google drive).
+5.	One feature of the bash shell mentioned in the list of handy bash shell tricks is `parameter expansion <http://mywiki.wooledge.org/BashGuide/Parameters#Parameter_Expansion>`_, which offers a range of tools for modifying the values of variables. One example of the utility of these tools is processing a set of FASTQ sequence files - suppose there are samples named S001 to S150, so the sequencing center splits the reads into 150 files named S001.fq.gz to S150.fq.gz. If all these files are saved in a directory, a bash loop can be used to align them to a reference genome, but simply using the input filename as the base for the output alignment file will result in files named S001.fq.gz.bam to S150.fq.gz.bam, in which the "fq.gz" no longer serves a meaningful role. For a variable called $file, parameter expansions such as ${file%%.*} can be used to retrieve specific parts of the string of filenames and extensions. The ${file#} and ${file##} constructs remove matched patterns from the left end of the string stored in the $file variable, while the ${file%} and ${file%%} contructs remove matched patterns from the right end of the stored string. `Examples <http://wiki.bash-hackers.org/syntax/pe>`_ make this somewhat more clear, but the best way to see how it works is to practice (for example on the files saved in the `AtRNAseq <https://drive.google.com/open?id=1_-cX7Scvp_e8zlN4glcD3-i2eJg5Tv71>`_ archive).
 
-|
+\
 
 6.	Another useful tool in bash is `process substitution <http://tldp.org/LDP/abs/html/process-sub.html>`_, the ability to nest commands inside other commands to combine outputs from different files and commands into a single process.  For example, to compare column 2 from one multi-column tabular file to column 3 from a different tabular file and report differences between them: 
 
@@ -76,21 +76,35 @@ Additional Resources
 
 +	A `Bash Guide for Beginners <http://www.tldp.org/LDP/Bash-Beginners-Guide/html/>`_, an `Introduction to Bash Programming <http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html>`_, and the `Advanced Bash-scripting Guide <http://www.tldp.org/LDP/abs/html/>`_ are all available on The Linux Documentation Project webpages. The Advanced Bash-scripting Guide also includes appendices with introductory information on `awk <http://tldp.org/LDP/abs/html/awk.html>`_ and `sed <http://tldp.org/LDP/abs/html/x23006.html>`_.
 
+\
+
 +	The GNU `awk manual <https://www.gnu.org/software/gawk/manual/gawk.html#Getting-Started>`_ and `sed manual <https://www.gnu.org/software/sed/manual/sed.html>`_ are available on the `www.gnu.org <www.gnu.org>`_ website.
+
+\
 
 +	The site `panix.com <panix.com>`_ has information on several aspects of the Unix or Linux command-line interface: `sed <http://www.panix.com/~elflord/unix/sed.html>`_, `grep <http://www.panix.com/~elflord/unix/grep.html>`_, and `bash scripting <http://www.panix.com/~elflord/unix/bash-tute.html>`_.
 
+\
+
 +	Bruce Barnett's Unix tutorials page at `grymoire.com <http://www.grymoire.com/Unix/>`_ includes tutorials on `awk <http://www.grymoire.com/Unix/Awk.html>`_, `sed <http://www.grymoire.com/Unix/Sed.html>`_, `grep <http://www.grymoire.com/Unix/Grep.html>`_, and `regular expressions <http://www.grymoire.com/Unix/Regular.html>`_, and links to Unix and Linux-related books.
+
+\
 
 +	The IBM developerWorks site has a three-part series on `awk <https://www.ibm.com/developerworks/library/l-awk1/>`_.
 
+\
+
 +	The blog `TheUnixSchool <http://www.theunixschool.com/>`_ has a page with example `awk and sed <http://www.theunixschool.com/p/awk-sed.html>`_ commands to accomplish specific tasks, as well as a grep search function to find previous postings on any topic of interest (look on the right side of the page, below the "join us on RSS Twitter Facebook Google+" box).
 
+\
+
 +	The LinuxCommand.org website contains tutorials called `Learning the Shell <http://www.linuxcommand.org/lc3_learning_the_shell.php>`_ and `Writing Shell Scripts <http://www.linuxcommand.org/lc3_writing_shell_scripts.php>`_ that provide a good introduction to shell commands and strategies for writing scripts to combine individual commands into a coherent and efficient workflow. There is also a link to a book called `The Linux Command Line <http://www.linuxcommand.org/tlcl.php>`_ which can be downloaded as a PDF.
+
+\
 
 +	`A quick guide to organizing computational biology projects <http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424>`_. Noble, PLoS Computational Biology 5:1000425, 2009 *This paper offers a suggested organizational plan for keeping track of data from different experiments and projects in a structured set of directories and files. It is focused on bioinformatics students, so it emphasizes source code and programs more than experimental data or field notes, but the general strategy is applicable to many disciplines.*
 
 
 
-Last modified 26 December 2018.
+Last modified 3 January 2018.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

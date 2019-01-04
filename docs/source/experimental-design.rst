@@ -35,22 +35,37 @@ Preliminary trials using simulated data sets, or "plasmode" datasets derived fro
 
 An experimental design for any highly-parallel sequencing experiment needs to take into consideration the experimental objectives, the availability of biological material, and potential technical and biological sources of variation. The question of whether individual samples should be analyzed multiple times (technical replicates), or if the same amount of sequencing is better allocated to increasing the number of independent biological samples analyzed (biological replicates), depends in part on the experimental objectives and in part on the relative amount of variation expected to come from the different sources of variation. For example, experienced technical staff can typically produce very consistent libraries given adequate amounts of high-quality RNA, so in general there is little benefit to having multiple libraries made from a single RNA sample, because library preparation is not a major source of variation.As a general guide, it is usually more informative to have more biological replicates than to acquire the same amount of sequence data from more technical replicates, but this can vary depending on experimental priorities (Robles et al, 2012). Yang et al (2014) also report that more biological replicates is better - two is the minimum number, but two replicates do not provide all the benefit that can be obtained from three or four replicates.
 
-Exercise
-********
+Exercises
+*********
 
 + Develop an experimental design for an RNA-seq experiment that involves comparison of samples treated in two different ways. Suppose that the treatment is time-consuming enough that only two experimental units can be processed per day, and that technical variation in the treatment from one day to the next is unavoidable. What experimental design would avoid confounding this technical variation with the biological variation that is the topic of interest in the experiment?
+
+\
+
 + If the experimental design were to be extended so that biological responses to the two treatments are to be compared across multiple genetic  backgrounds, what would the best approach be to incorporate two different genetic entries into the experiment?
 
 Additional Resources
 ********************
 
 + Auer PL, Doerge RW (2010) Statistical design and analysis of RNA sequencing data. Genetics 185(2):405-416 `PubMed Central <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2881125/>`_
+
+\
+
 + Robles JA, Qureshi SE, Stephen SJ, Wilson SR, Burden CJ, Taylor JM. (2012) Efficient experimental design and analysis strategies for the detection of differential expression using RNA-sequencing. BMC Genomics 13:484. `PubMed Central <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3560154>`_
+
+\
+
 + Reeb PD, Steibel JP (2013) Evaluating statistical analysis models for RNA sequencing experiments. Front Genet. 4: 178. `PubMed Central <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3775431>`_
+
+\
+
 + Ching T, Huang S, Garmire LX (2014) Power analysis and sample size estimation for RNA-Seq differential expression. RNA 20: 1684-1696 `Publisher website <http://rnajournal.cshlp.org/content/20/11/1684.full>`_
+
+\
+
 + Yang Y, Fear J, Hu J, Haecker I, Zhou L, Renne R, Bloom D, McIntyre LM. (2014) Leveraging biological replicates to improve analysis in ChIP-seq experiments. `Comp Struct Biotechnol J 9(13):e201401002 <http://csbj.org/article#/e201401002/leveraging-biological-replicates-to-improve-analysis-in-chip-seq-experiments>`_
 
 
 
-Last modified 31 December 2018.
+Last modified 3 January 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
