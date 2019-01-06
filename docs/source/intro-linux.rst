@@ -105,7 +105,7 @@ Setting up an Amazon Web Service account to use Elastic Compute Cloud services:
 -------------------------------------------------------------------------------
 
 
-+ A 2013 `guide </Images/week1/SettingUpAWS-EC2account_Jan2013.pdf>`_ to setting up an Amazon Web Services account is available for those interested in using cloud-based computing resources, and a 2013 `guide </Images/week1/SettingUpFirstEC2instance_Jan2013.pdf>`_ to preparing and running a Cloudbiolinux instance on the Amazon Web Services Elastic Compute Cloud (AWS-EC2), is also available. The BIT815 course no longer uses AWS resources, so these documents have not been updated to reflect any recent changes in AWS procedures – users are cautioned to follow the instructions on the AWS website rather than those in these documents in case of any conflict.
++ A 2013 `guide <https://drive.google.com/open?id=1usJgvhq3xdtWNLp514ievfbWubsebaUS>`_ to setting up an Amazon Web Services account is available for those interested in using cloud-based computing resources, and a 2013 `guide <https://drive.google.com/open?id=1z0LqYJUchs6Ozo-R88EyaQReYB4c4MVX>`_ to preparing and running a Cloudbiolinux instance on the Amazon Web Services Elastic Compute Cloud (AWS-EC2), is also available. The BIT815 course no longer uses AWS resources, so these documents have not been updated to reflect any recent changes in AWS procedures – users are cautioned to follow the instructions on the AWS website rather than those in these documents in case of any conflict.
 
 
 
