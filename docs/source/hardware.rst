@@ -66,6 +66,11 @@ Setting up a job submission script
 	- The next lines specify options for the batch submission process 
 
 
-Last modified 18 December 2018.
+`Setting NCSU AFS Server Access <AFS.html>`_
+********************************************
+
+
+
+Last modified 9 January 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
 
