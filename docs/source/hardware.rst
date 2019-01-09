@@ -66,8 +66,8 @@ Setting up a job submission script
 	- The next lines specify options for the batch submission process 
 
 
-`Setting NCSU AFS Server Access <AFS.html>`_
-********************************************
+`Setting up NCSU AFS Server Access <AFS.html>`_
+***********************************************
 
 
 
