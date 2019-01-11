@@ -79,7 +79,7 @@ Background information about Linux:
 
 \
 
-+ The `LocaleSettingDetails.pdf <https://drive.google.com/open?id=1Ummb6jYkrAindo8riOJr7YuMd4KAV4EV>`_ document covers localization options, including the 'C' locale, in UNIX and how it may affect alphabetical processes.
++ The `LocaleSettingDetails.pdf <https://drive.google.com/open?id=1Ummb6jYkrAindo8riOJr7YuMd4KAV4EV>`_ document covers localization options in UNIX, including the 'C' locale, and how it may affect alphabetical processes.
 
 \
 
