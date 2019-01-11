@@ -79,6 +79,10 @@ Background information about Linux:
 
 \
 
++ The `LocaleSettingDetails.pdf <https://drive.google.com/open?id=1Ummb6jYkrAindo8riOJr7YuMd4KAV4EV>`_ document covers localization options, including the 'C' locale, in UNIX and how it may affect alphabetical processes.
+
+\
+
 + One aspect of command-line use is knowing when to use a particular command, and when it is not needed.  Many command-line utilities such as grep, cut, wc,  sort,  sed, and awk (among many others) accept filenames as arguments after the command, but will also accept input from stdin via a pipe. Other utilities, such as tr, do not accept a filename as an argument and only process data received from stdin. Some people prefer to use the cat command to put data into a pipeline, even when the command being used could read the filename as an argument, simply for the sake of consistency and style (see this `StackOverflow discussion <https://stackoverflow.com/questions/11710552/useless-use-of-cat>`_ as an example), while purists argue that using a command when it is not required means running two processes when one will do. This is rarely a problem, but can lead to differences in the commands used to accomplish the same result. For example, in chapter 5 of the Biostar Handbook called Ontologies, the section called Understand the GO data includes some manipulations of a file called goa_human.gaf.gz, after downloading the file from the geneontology.org website.
 
 ::
