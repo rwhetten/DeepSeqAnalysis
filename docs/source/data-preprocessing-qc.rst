@@ -115,7 +115,7 @@ Additional Resources
 
 \
 
-+ The FastQC `webpage <http://www.bioinformatics.babraham.ac.uk/projects/fastqc>`_ has information about the FastQC program, and details on FastQC output are provided in the `FastQC_details.pdf <http://www4.ncsu.edu/~rosswhet/BIT815/Overview/Week2/FastQC_details.pdf>`_ document.
++ The FastQC `webpage <http://www.bioinformatics.babraham.ac.uk/projects/fastqc>`_ has information about the FastQC program, and details on FastQC output are provided in the `FastQC_details.pdf <https://drive.google.com/open?id=1L9SSnfDTVgP8EeqHZGZe5gG4EHH8xRMT>`_ document.
 
 \
 
