@@ -71,7 +71,7 @@ Exercises
 
 ::
 
-  fastqc -o ./ /data/AtRNAseq/c3.fq.gz
+  fastqc -o ./ c3.fq.gz
 
 The resulting HTML output file can be opened with a browser from the command line; e.g.::
 
