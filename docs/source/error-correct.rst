@@ -38,6 +38,9 @@ Simulation is an important tools for development of new software and comparison 
 Exercises
 *********
 
+For the current class, the text file `error_correction_files.txt <https://drive.google.com/open?id=1doOQv2I4gKxNJspk88XmgiGAOQc53b7E>`_ contains a list of wget commands for the direct download of files necessary for the following exercises. 
+
+
 1. The MaSuRCA (Maryland SuperRead - Celera Assembler) program is installed on the VCL machine image. This program uses k-mers detected in filtered and trimmed fastq sequence reads to expand typical paired-end reads from an Illumina sequencing instrument into what it calls "super-reads". 
 
 \
@@ -92,5 +95,5 @@ Additional Resources
 
 
 
-Last modified 3 January 2019.
+Last modified 24 January 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
