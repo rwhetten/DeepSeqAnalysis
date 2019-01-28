@@ -17,7 +17,7 @@ Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21
 
 				The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading.
 
-				The `Piazza online forum page <https://piazza.com/ncsu/spring2018/bit815/home>`_ is available for questions and discussion.
+				The `Piazza online forum page <https://piazza.com/ncsu/spring2019/bit815/>`_ is available for questions and discussion.
 
 				Teaching assistant: `Will Kohlway <whkohlwa@ncsu.edu>`_
 
@@ -101,5 +101,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 27 December 2018.
+Last modified 28 January 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
