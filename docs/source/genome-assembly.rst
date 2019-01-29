@@ -44,6 +44,12 @@ Different approaches have been proposed to evaluate the quality and completeness
 Exercise - assembly of a bacterial genome from simulated Illumina 100-nt PE reads
 *********************************************************************************
 
+To download an archive of the bacterial genome and simulated reads use the following command. ::
+
+wget -O DPC4571.tgz https://velocity.ncsu.edu/dl/tbjlRdy/367495
+
+
+
 + Simulation of paired-end short reads from a bacterial genome sequence can be done with the GemReads.py program used previously, but that process takes some time.  Two files containing simulated 100-nt paired-end reads from the *Lactobacillus helveticus* strain DPC4571 genome are `sim.r1.fq.gz <https://drive.google.com/open?id=129qylzArUm3-K6-Rv8ORKqBwURuzwu5m>`_ and `sim.r2.fq.gz <https://drive.google.com/open?id=1ETW5KbnT7MTmxznzJSaUrTEKkhZmb-7A>`_.
 
 \
