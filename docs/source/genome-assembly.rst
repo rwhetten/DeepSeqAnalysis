@@ -33,7 +33,7 @@ Different approaches have been proposed to evaluate the quality and completeness
 
 + Sequencing library recommendations by Gnerre et al. (2011) for mammalian genomes:
 
-  + Create both paired-end (180 bp insert, 2x100-nt reads) and mate-pair libraries of different (3 kb, 6 kb and 40 kb)  insert lengths (see `http://www.illumina.com/technology/mate_pair_sequencing_assay.ilmn <http://www.illumina.com/technology/mate_pair_sequencing_assay.ilmn>`_ for information on mate-pair libraries)
+  + Create both paired-end (180 bp insert, 2x100-nt reads) and mate-pair libraries of different (3 kb, 6 kb and 40 kb)  insert lengths (see `illumina's webpage <https://www.illumina.com/science/technology/next-generation-sequencing/mate-pair-sequencing.html>`_ for information on mate-pair libraries)
 
 + Variant discovery/genotyping
 
