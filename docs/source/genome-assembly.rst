@@ -44,7 +44,7 @@ Different approaches have been proposed to evaluate the quality and completeness
 Exercise - assembly of a bacterial genome from simulated Illumina 100-nt PE reads
 *********************************************************************************
 
-THe `GenomeAssembly shell script <https://drive.google.com/open?id=1wLU75DflXTdHeA2oD51ppeDHaLdOzDtr>`_ will guide the exercises for this class. To download an archive of the bacterial genome and simulated reads use the following command. 
+The `GenomeAssembly shell script <https://drive.google.com/open?id=1wLU75DflXTdHeA2oD51ppeDHaLdOzDtr>`_ will guide the exercises for this class. To download an archive of the bacterial genome and simulated reads use the following command. 
 
    :code:`wget -O DPC4571.tgz https://velocity.ncsu.edu/dl/tbjlRdy/367495`
    
