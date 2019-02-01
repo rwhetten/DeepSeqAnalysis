@@ -84,16 +84,16 @@ Additional Resources
 ********************
 
 Several papers have reported that the most reliable approach for transcriptome assembly for different organisms is to use multiple different programs for independent assemblies, followed by merging together of the resulting assembled contigs and selection of the most complete contigs as representatives for the final completed transcriptome. 
-+ McManes, M.D. 2018 The Oyster River Protocol: a multi-assembler and kmer approach for de-novo transcriptome assembly. Peer J. 6:e5428. `Full text <https://dx.doi.org/10.7717%2Fpeerj.5428>`
++ McManes, M.D. 2018 The Oyster River Protocol: a multi-assembler and kmer approach for de-novo transcriptome assembly. Peer J. 6:e5428. `Full text <https://dx.doi.org/10.7717%2Fpeerj.5428>`_
 
 \
 
-+ Nakasugi et al, 2014 Combining transcriptome assemblies from multiple de novo assemblers in the allo-tetraploid plant Nicotiana benthamiana. PLoS ONE 9(3): e91776. `Full text <https://dx.doi.org/10.1371%2Fjournal.pone.0091776>`
++ Nakasugi et al, 2014 Combining transcriptome assemblies from multiple de novo assemblers in the allo-tetraploid plant Nicotiana benthamiana. PLoS ONE 9(3): e91776. `Full text <https://dx.doi.org/10.1371%2Fjournal.pone.0091776>`_
 
 \
 
 Correction of errors in RNA-seq reads requires consideration of the difference in relative abundance among transcripts in order to identify likely error-derived k-mers. Rcorrector is one software package capable of this process.
-+ Song & Florea, 2015. Rcorrector: efficient and accurate error correction for Illumina RNA-seq reads. Gigascience 4:48. `Full text <https://dx.doi.org/10.1186%2Fs13742-015-0089-y>`
++ Song & Florea, 2015. Rcorrector: efficient and accurate error correction for Illumina RNA-seq reads. Gigascience 4:48. `Full text <https://dx.doi.org/10.1186%2Fs13742-015-0089-y>`_
 
 \
 
