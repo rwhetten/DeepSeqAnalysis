@@ -83,7 +83,7 @@ Exercise - de-novo assembly
 Additional Resources
 ********************
 
-+ Several papers have reported that the most reliable approach for transcriptome assembly for different organisms is to use multiple different programs for independent assemblies, followed by merging together of the resulting assembled contigs and selection of the most complete contigs as representatives for the final completed transcriptome. 
+Several papers have reported that the most reliable approach for transcriptome assembly for different organisms is to use multiple different programs for independent assemblies, followed by merging together of the resulting assembled contigs and selection of the most complete contigs as representatives for the final completed transcriptome. 
 + McManes, M.D. 2018 The Oyster River Protocol: a multi-assembler and kmer approach for de-novo transcriptome assembly. Peer J. 6:e5428. `Full text <https://dx.doi.org/10.7717%2Fpeerj.5428>`
 
 \
@@ -92,8 +92,8 @@ Additional Resources
 
 \
 
-+ Correction of errors in RNA-seq reads requires consideration of the difference in relative abundance among transcripts in order to identify likely error-derived k-mers. Rcorrector is one software package capable of this process.
-Song & Florea, 2015. Rcorrector: efficient and accurate error correction for Illumina RNA-seq reads. Gigascience 4:48. `Full text <https://dx.doi.org/10.1186%2Fs13742-015-0089-y>`
+Correction of errors in RNA-seq reads requires consideration of the difference in relative abundance among transcripts in order to identify likely error-derived k-mers. Rcorrector is one software package capable of this process.
++ Song & Florea, 2015. Rcorrector: efficient and accurate error correction for Illumina RNA-seq reads. Gigascience 4:48. `Full text <https://dx.doi.org/10.1186%2Fs13742-015-0089-y>`
 
 \
 
@@ -136,5 +136,5 @@ Song & Florea, 2015. Rcorrector: efficient and accurate error correction for Ill
 + Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. `Full Text <http://www.pnas.org/content/98/17/9748.full>`_
 
 
-Last modified 27 January 2019.
+Last modified 31 January 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
