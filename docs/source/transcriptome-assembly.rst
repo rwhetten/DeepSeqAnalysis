@@ -33,7 +33,7 @@ Paired-end sequencing reads are useful for assembly of eukaryotic transcriptomes
 Exercise - reference-guided assembly
 ************************************
 
-Temporary direct download links for class can be found in the `Transcrome_Assembly.txt <https://drive.google.com/open?id=1Xkr5_-k3lz6cNfiEOigiaKk8sj1Kdwm4>`_ file. 
+Temporary direct download links for class can be found in the `Transcriptome_Assembly.txt <https://drive.google.com/open?id=1Xkr5_-k3lz6cNfiEOigiaKk8sj1Kdwm4>`_ file. 
 
 + The Arabidopsis thaliana RNA-seq dataset used for the analysis of differential gene expression includes six sequence files found in the `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_ archive in the `AtRNAseq <https://drive.google.com/open?id=1_-cX7Scvp_e8zlN4glcD3-i2eJg5Tv71>`_ archive.
 
@@ -82,6 +82,20 @@ Exercise - de-novo assembly
 
 Additional Resources
 ********************
+
++ Several papers have reported that the most reliable approach for transcriptome assembly for different organisms is to use multiple different programs for independent assemblies, followed by merging together of the resulting assembled contigs and selection of the most complete contigs as representatives for the final completed transcriptome. 
+McManes, M.D. 2018 The Oyster River Protocol: a multi-assembler and kmer approach for de-novo transcriptome assembly. Peer J. 6:e5428. `Full text <https://dx.doi.org/10.7717%2Fpeerj.5428>`
+
+\
+
++ Nakasugi et al, 2014 Combining transcriptome assemblies from multiple de novo assemblers in the allo-tetraploid plant Nicotiana benthamiana. PLoS ONE 9(3): e91776. `Full text <https://dx.doi.org/10.1371%2Fjournal.pone.0091776>`
+
+\
+
++ Correction of errors in RNA-seq reads requires consideration of the difference in relative abundance among transcripts in order to identify likely error-derived k-mers. Rcorrector is one software package capable of this process.
+Song & Florea, 2015. Rcorrector: efficient and accurate error correction for Illumina RNA-seq reads. Gigascience 4:48. `Full text <https://dx.doi.org/10.1186%2Fs13742-015-0089-y>`
+
+\
 
 + One strategy for reducing the amount of RAM required for transcriptome assembly by the Trinity software package is to carry out "digital normalization" of the RNA-seq dataset - this means adjusting the numbers of reads in the dataset to ensure more uniform representation of both abundant and rare transcripts, while removing sequencing errors. A detailed `exercise <http://khmer-protocols.readthedocs.io/en/v0.8.4/mrnaseq/index.html>`_ is available, which uses AWS cloud computing instances to provide sufficient computing power to process a real dataset.
 
