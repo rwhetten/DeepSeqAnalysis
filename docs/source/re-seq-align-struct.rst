@@ -25,13 +25,13 @@ Alignment of short DNA sequence reads to a genome reference sequence can be done
 Key Facts
 *********
 
-The length and number of repetitive sequences in a particular genome determine the sequencing strategy to produce data likely to allow a relatively complete assembly. The objective is to have good coverage of the genome with pairs of reads that are far enough apart to guarantee that both reads of a pair are **not** within the same repetitive sequence element.  If one read is within a repetitive element and the other read is in flanking sequence that is unique in the genome, then that read pair provides evidence locating one copy of the repetitive element within a specific unique-sequence region in the genome. Different genomes have differing lengths and arrangements of repetitive DNA sequences in the genome, so different strategies may be required for library construction and sequencing.
+The length and number of repetitive sequences in a particular genome determine the sequencing strategy to produce data likely to allow a relatively complete assembly, and also help determine the best strategy for detecting variation among individuals in genome sequence. Short-read sequencing is very useful for detecting substitutions or insertion/deletion events (indels) of one to a few basepairs, but is not as sensitive for detecting larger indels (>50 bp), or rearrangments such as inversions, translocations, or duplications. Long-read sequencing has much greater sensitivity for detecting these larger-scale phenomena, but is still a relatively new approach for structural analysis of genomes of higher eukaryotes because of the higher relative cost of long-read methods relative to Illumina sequencing. This cost structure is changing with the acquisition of PacBio by Illumina and the recent release of the Oxford Nanopore Technologies PromethION instrument.
 
 
 Variant discovery/genotyping
 ----------------------------
 
-+ SNPs vs structural variants: SNPs are usually more abundant in terms of numbers of sites, but insertion/deletion (indel) and rearrangement events can affect more nucleotides genome-wide. A report in Nature Genetics (`Chiang et al, 2017 <http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.3834.html>`_) suggests that structural variants often have larger effects on relative expression levels of nearby genes than do SNPs.
++ SNPs vs structural variants: SNPs are usually more abundant in terms of numbers of sites, but indels and rearrangement events can affect more nucleotides genome-wide. A report in Nature Genetics (`Chiang et al, 2017 <http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.3834.html>`_) suggests that structural variants often have larger effects on relative expression levels of nearby genes than do SNPs.
 
 \
 
@@ -39,19 +39,19 @@ Variant discovery/genotyping
 
 \
 
-+ Barcoding works well for genotyping specific individuals at SNPs with common alleles: pooled samples work well for identifying rare variants and estimating allele frequencies. 
++ In-read barcoding of individual samples, as is common in GBS or RAD-seq approaches, works well for genotyping specific individuals at SNPs with common alleles: sequencing pooled samples without individual IDs works well for identifying rare variants and estimating allele frequencies. 
 
 \
 
-+ Many software packages are available for identifying structural variants in alignments of short-read (usually Illumina) sequence data to a reference genome (`Alkan et al, <2011 http://www.nature.com/nrg/journal/v12/n5/full/nrg2958.html>`_). `Layer et al (2014) <https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-6-r84>`_ describe Lumpy, a program that detects structural variation in whole-genome sequencing data by synthesizing information from different kinds of read alignment results - split reads (where a single read aligns to two different locations), discordant read pairs (where the paired-end reads from a single fragment align to locations inconsistent with that expected based on the fragment sizes in the sequencing library), or differences in read depth (due perhaps to variation in copy number of a particular sequence in the sample genome relative to the reference).
++ Many software packages are available for identifying structural variants in alignments of short-read (usually Illumina) sequence data to a reference genome (`Alkan et al, 2011 <https://www.nature.com/nrg/journal/v12/n5/full/nrg2958.html>`_). `Layer et al (2014) <https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-6-r84>`_ describe Lumpy, a program that detects structural variation in whole-genome sequencing data by synthesizing information from different kinds of read alignment results - split reads (where a single read aligns to two different locations), discordant read pairs (where the paired-end reads from a single fragment align to locations inconsistent with that expected based on the fragment sizes in the sequencing library), or differences in read depth (due perhaps to variation in copy number of a particular sequence in the sample genome relative to the reference). A more recent publication by `Becker et al (2018) <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1404-6>`_ describes a Python tool for structural variant detection that uses an ensemble of different structural variant detection programs - BreakDancer (`Chen et al, 2009 <https://www.nature.com/articles/nmeth.1363>`_, BreakSeq (`Lam et al, 2010 <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2951730/>`_, cnMOPS (`Klambauer et al, 2012 <https://academic.oup.com/nar/article/40/9/e69/1136601>`_), CNVator (`Abyzov et al, 2011 <https://genome.cshlp.org/content/21/6/974.long>`_), Delly (`Rausch et al, 2012 <https://academic.oup.com/bioinformatics/article/28/18/i333/245403>`_), Hydra (`Quinlan et al, 2010 <https://genome.cshlp.org/content/20/5/623.long>`_), and Lumpy. An extension of this approach (`Zarate et al, BioRxiv 2018 <https://www.biorxiv.org/content/biorxiv/early/2018/09/23/424267.full.pdf>`_) uses parallelization to run some or all of the SV callers BreakDancer, BreakSeq, CNVnator, Delly, Lumpy, and Manta (`Chen et al, 2016 <https://www.ncbi.nlm.nih.gov/pubmed/26647377>`_), on a multi-core computer in roughly the same time required to run a single program. 
 
 \
 
-+ Efficient analysis of data from population-level whole-genome sequencing projects in humans is essential, due to the size of the human genome and the computational intensity of sequence alignment and variant detection. `Johnston et al (2017) <http://www.pnas.org/content/114/10/E1923.full>`_ describe two new programs, PEMapper and PECaller, to improve the efficiency of these analyses. Another paper, `Smith et al (2017) <https://academic.oup.com/gigascience/article/6/10/1/4160384>`_, also describes a new program to identify sequence variants, although their program begins with BAM alignment files produced by a short-read aligner.
++ Efficient analysis of data from population-level whole-genome sequencing projects in humans is essential, due to the size of the human genome and the computational intensity of sequence alignment and variant detection. `Johnston et al (2017) <http://www.pnas.org/content/114/10/E1923.full>`_ describe two new programs, PEMapper and PECaller, to improve the efficiency of these analyses. `Smith et al (2017) <https://academic.oup.com/gigascience/article/6/10/1/4160384>`_, describe the Genome Rearrangement Omni Mapper (GROM) program to efficiently identify all classes of sequence variation including SNPs, structural variants, indels, and copy-number variants.
 
 \
 
-+ `Firtina & Alkan (2016) <https://academic.oup.com/bioinformatics/article/32/15/2243/1743552>`_ report that changing the order of sequence reads in a FASTQ file, followed by alignment of the reads to the human reference genome and SNP calling with various software tools shows discordance in identified variants, ranging from less than 1% to around 25%.
++ `Firtina & Alkan (2016) <https://academic.oup.com/bioinformatics/article/32/15/2243/1743552>`_ report that changing the order of sequence reads in a FASTQ file, followed by alignment of the reads to the human reference genome and SNP calling with various software tools shows discordance in identified variants, ranging from less than 1% to around 25%. This observation suggests that any variant-calling routine should test for sensitivity to read order in the input FASTQ files, although for large datasets this repeatability analysis would be extremely time-consuming.
 
 \
 
@@ -111,14 +111,14 @@ Exercises
 
  ::
 
-	bwa mem -t3 subset reads.tumour.fastq | samtools sort -o tumor.bam - 
+	bwa mem -t8 subset reads.tumour.fastq | samtools sort -o tumor.bam - 
 
 
 \
 
 
 
-	the alignment took about 6 minutes for the tumor-derived reads. Modify this command line to align the normal-tissue-derived reads to the same reference, convert the output to BAM, and sort the output BAM file. After both BAM files are complete, use the samtools index command to produce index files for each of them.
+	The alignment will take a few minutes for the tumor-derived reads. Modify this command line to align the normal-tissue-derived reads to the same reference, convert the output to BAM, and sort the output BAM file. After both BAM files are complete, use the samtools index command to produce index files for each of them. If you don't know how to use the samtools index command (and no one is born knowing this sort of thing), try typing :code:`samtools index -h` at a terminal prompt to see what information is available, or do a Google search.
 
 
 \
