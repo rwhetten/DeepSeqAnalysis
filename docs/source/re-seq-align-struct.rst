@@ -68,7 +68,9 @@ Exercises
 
 \
 
-2. Data from an exercise presented at a `2016 Canadian bioinformatics workshop <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/>`_ are in `Module3.tar.gz <https://drive.google.com/open?id=1KZGdzI50VadXdbnhC3BznAuek3eiXEJx>`_.
+2. Data from an exercise presented at a `2016 Canadian bioinformatics workshop <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/>`_ are in `Module3.tar.gz <https://drive.google.com/open?id=1KZGdzI50VadXdbnhC3BznAuek3eiXEJx>`_. You can directly download the module archive with the following command.
+
+:code:`wget -O Module3.tar.gz https://velocity.ncsu.edu/dl/tbjlRdy/367811`
 
 \
 
