@@ -74,13 +74,30 @@ Exercises
 
 \
 
-3. Web pages describe the steps required to `align samples <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/mapping>`_ of reads from normal and tumor samples to a reference human genome sequence, then analyze the resulting alignments to identify `rearrangements <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/rearrangement>`_. 
+3. Web pages describe the steps required to `align samples <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/mapping>`_ of reads from normal and tumor samples to a reference human genome sequence, then analyze the resulting alignments to `identify rearrangements <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/rearrangement>`_. Before executing this exercise, you must create a "virtual environment" in which you install Python v2.7 and the numpy (Numerical Python) module, because the Lumpy program relies on those dependencies. Create the virtual environment with 
+
+:code:`conda create --name=py2 python=2.7` 
+
+- you will have to respond to a question confirming the installation. After creation of the virtual environment is complete, activate the environment using 
+
+:code:`source activate py2` 
+
+- you will see that the prompt changes to include (py2), so you can tell from the terminal prompt which virtual environment is in use. Install the numpy module in the terminal window running the virtual environemtn, using 
+
+:code:`conda install numpy` 
+
+- this will also ask for confirmation. Normally the creation of a virtualenv and installation of modules would only need to be done once, but because everything in the home directory is lost when a VCL instance is shut down, these steps must be repeated with each new instance that is started.
+
+\
+
+4. Download a shell script that will carry out the commands given in the webpages linked above, edited to reflect the differences in file paths and configuration of the VCL instance using 
+:code:`wget -O module3.sh https://velocity.ncsu.edu/dl/qwRBSlU/367918` 
 
 ------------------
 	
 **IMPORTANT NOTES**
 
-	The full human reference genome sequence is too large to work in the alignment step, so after you unpack the Module3.tar.gz archive, you will need to change into the Module3 directory and extract the reference sequences for chromosomes 3, 6, 9 and 12 (because those have rearrangements on them) to a new file. I used the command 
+	The full human reference genome sequence is too large to work in the alignment step, so after you unpack the Module3.tar.gz archive, you will need to change into the Module3 directory and extract the reference sequences for chromosomes 3, 6, 9 and 12 (because those have rearrangements on them) to a new file. The module3.sh script includes the command 
 ::
 
 	bioawk -cfastx '{if($name==3 || $name==6 || $name==9 || $name==12) {print ">"$name"\n"$seq}}' human_g1k_v37.fasta | fold | gzip > chr36912.fa.gz
@@ -88,52 +105,48 @@ Exercises
 \	
 			to do this extraction; other ways are possible as well. The process will take a few minutes, so don't assume that something is wrong if you don't get a terminal prompt back right away after entering this command.
 
-			After extracting the subset of 4 chromomes from the complete reference genome, you will have to create a BWA index before aligning reads to the four chromosomes of interest. I used the command 
+			After extracting the subset of 4 chromomes from the complete reference genome, the script will delete the files related to the complete human genome reference sequence and index files, to free up disk space.
+			The next step is to create a BWA index before aligning reads to the four chromosomes of interest. The script uses the command 
 
 ::
 
 	bwa index -p subset chr36912.fa.gz
 
+\
+
+		to create an index with the name 'subset'. This will take several minutes, so don't be impatient.
+
 
 
 \
 
-		to create an index with the name 'subset'. This will take 10 or 15 minutes, so don't be impatient.
-
-
-
-------------------
-
-
-\
-
-4. Map the normal tissue-derived and tumor-derived reads back to the reference genome sequence, piping the SAM-format output from the BWA mem aligner to samtools sort to sort the BAM file by reference position so alignment viewers can efficiently display the resulting alignments. I used the following command line:
+5. Map the normal tissue-derived and tumor-derived reads back to the reference genome sequence, piping the SAM-format output from the BWA mem aligner to samtools sort to sort the BAM file by reference position so alignment viewers can efficiently display the resulting alignments. The module3.sh script uses the following command line:
 
  ::
 
-	bwa mem -t8 subset reads.tumour.fastq | samtools sort -o tumor.bam - 
+	bwa mem -t8 -p subset reads.tumour.fastq | samtools sort -o tumour.bam - 
 
 
 \
 
 
 
-	The alignment will take a few minutes for the tumor-derived reads. Modify this command line to align the normal-tissue-derived reads to the same reference, convert the output to BAM, and sort the output BAM file. After both BAM files are complete, use the samtools index command to produce index files for each of them. If you don't know how to use the samtools index command (and no one is born knowing this sort of thing), try typing :code:`samtools index -h` at a terminal prompt to see what information is available, or do a Google search.
+	The alignment will take a few minutes for the tumor-derived reads. A modified version of the same command is used to align the normal-tissue-derived reads to the same reference, convert the output to BAM, and sort the output BAM file. After both BAM files are complete, the script uses the samtools index command to produce index files for each of them. If you don't know how to use the samtools index command (and no one is born knowing this sort of thing), try typing :code:`samtools index -h` at a terminal prompt to see what information is available, or do a Google search.
 
 
 \
 
 
 
-5. The command to produce files of discordant reads from the BAM alignments uses the "flag" column of SAM format, which is a numerical value that contains answers for 12 different yes-or-no questions. The `Explain SAM flags <https://broadinstitute.github.io/picard/explain-flags.html>`_ web page has a list of the 12 properties of reads that make up the flag value; if the value 1294 is entered in the box, the corresponding properties of the reads are identified. The samtools view -F1294 option means "do not show reads with flags containing any of these values", effectively excluding reads with the checked characteristics from the ouput.
+6. The command to produce files of discordant reads from the BAM alignments uses the "flag" column of SAM format, which is a numerical value that contains answers for 12 different yes-or-no questions. The `Explain SAM flags <https://broadinstitute.github.io/picard/explain-flags.html>`_ web page has a list of the 12 properties of reads that make up the flag value; if the value 1294 is entered in the box, the corresponding properties of the reads are identified. The samtools view -F1294 option means "do not show reads with flags containing any of these values", effectively excluding reads with the checked characteristics from the ouput.
 
 \
 
-6. The command to produce files of split reads uses a script called extractSplitReads_BwaMem in the scripts subdirectory of the Module3 directory - make sure you use the correct path when you try to execute this command, and pay attention to the permissions on the files in the scripts subdirectory. How can you change the permissions to allow execution of all those script files?
+7. The command to produce files of split reads uses a script called extractSplitReads_BwaMem in the scripts subdirectory of the Module3 directory - make sure you use the correct path when you try to execute this command, and pay attention to the permissions on the files in the scripts subdirectory. How can you change the permissions to allow execution of all those script files?
 
 \
 
-7. The LUMPY program is installed in the VCL machine image and the path to the executable program is in the search PATH variable, so you should be able to execute that program without concern about what path to use to the program. The paths to the input files, and the names of the input files, however, must match those present on your instance of the machine image.
+8. The LUMPY program is installed in the VCL machine image and the path to the executable program is in the search PATH variable, so you should be able to execute that program without concern about what path to use to the program. The paths to the input files, and the names of the input files, however, must match those present on your instance of the machine image.
 
 
 Additional Resources
@@ -168,5 +181,5 @@ Additional Resources
 
 
 
-Last modified 3 January 2019.
+Last modified 3 Febuary 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
