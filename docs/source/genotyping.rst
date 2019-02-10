@@ -43,8 +43,11 @@ The Variant Call Format (VCF) file type is widely used to store information abou
 Exercises
 *********
 
+A tar archive containing the files for class can be downloaded with the link below.
 
-1.	We will complete an exercise in analysis of a reduced-representation sequencing dataset from a linkage mapping population (two heterozygous outbred individuals and 93 F1 progeny) both without the use of a reference genome, and with the use of the reference genome. The `RADseq <https://drive.google.com/open?id=1b8vlLQAhK6lQtACplqu0lEe2y-xXFw40>`_ archive contains an archive of `bamfiles <https://drive.google.com/open?id=1Kku1sschgluviX-xiX8nC_qyLKoCSkB8>`_ for the 95 samples and the reference sequence for `LG2 <https://drive.google.com/open?id=1tuz5QihPMiOTM_Trdux4gpvRVjAj58tEof>`_ the spotted gar genome for use in the exercise with a reference genome. The complete genome sequence is available either from NCBI, or from the `Broad Institute <ftp://ftp.broadinstitute.org/pub/assemblies/fish/spottedGar/LepOcu1/L_oculatus_v1.assembly.fasta>`_; I used the Broad Institute version. Only `LG2 <https://drive.google.com/open?id=1tuz5QihPMiOTM_Trdux4gpvRVjAj58tEof>`_ is needed, because the sample dataset includes only loci that map to a single linkage group. The `annotation for LG2 <https://drive.google.com/open?id=1XL0_tgdBe5ZqkwflT0N2XKipEoHvIsW9>`_ is in the same directory; this comes from the GFF3 file for the spotted gar genome (available from `Ensembl <http://useast.ensembl.org/Lepisosteus_oculatus/Info/WhatsNew?db=core>`_), for use in identifying SNPs or other variants within or near annotated genes.
+:code:`wget -O RADseq.tgz https://velocity.ncsu.edu/dl/tbjlRdy/368059`
+
+1.	We will complete an exercise in analysis of a reduced-representation sequencing dataset from a linkage mapping population (two heterozygous outbred individuals and 93 F1 progeny) both without the use of a reference genome, and with the use of the reference genome. The `RADseq <https://drive.google.com/open?id=1b8vlLQAhK6lQtACplqu0lEe2y-xXFw40>`_ archive contains an archive of `bamfiles <https://drive.google.com/open?id=1Kku1sschgluviX-xiX8nC_qyLKoCSkB8>`_ for the 95 samples and the reference sequence for `LG2 <https://drive.google.com/open?id=1tuz5QihPMiOTM_Trdux4gpvRVjAj58tE>`_ the spotted gar genome for use in the exercise with a reference genome. The complete genome sequence is available either from NCBI, or from the `Broad Institute <ftp://ftp.broadinstitute.org/pub/assemblies/fish/spottedGar/LepOcu1/L_oculatus_v1.assembly.fasta>`_; I used the Broad Institute version. Only `LG2 <https://drive.google.com/open?id=1tuz5QihPMiOTM_Trdux4gpvRVjAj58tE>`_ is needed, because the sample dataset includes only loci that map to a single linkage group. The `annotation for LG2 <https://drive.google.com/open?id=1XL0_tgdBe5ZqkwflT0N2XKipEoHvIsW9>`_ is in the same directory; this comes from the GFF3 file for the spotted gar genome (available from `Ensembl <http://useast.ensembl.org/Lepisosteus_oculatus/Info/WhatsNew?db=core>`_), for use in identifying SNPs or other variants within or near annotated genes.
 
 \
 
@@ -172,5 +175,5 @@ _______
 
 
 
-Last modified 3 January 2019.
+Last modified 10 February 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
