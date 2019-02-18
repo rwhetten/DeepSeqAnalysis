@@ -14,7 +14,7 @@ Global Overview
 
 Sequences randomly sampled from genomic DNA can be assumed to be drawn from a uniform distribution across all possible sequences in the genome, although this assumption is typically violated at least to some degree, even with PCR-free libraries (`Kozarewa et al, 2009 <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2664327/>`_). Based on that assumption, however, it is possible to analyze the distribution of frequencies of k-mers (short oligonucleotides, typically in the range from 15 to 31 bases) observed in sequence reads. If the average coverage of the genome is 50x, one expects to see most k-mers drawn from single-copy sequences in the genome around 50 times, with a sampling distribution that extends above and below that expected value. Errors in sequencing reads give rise to novel k-mers that typically appear much less frequently than the correct k-mer sequences, while k-mers drawn from sequences that are repeated in the genome (such as transposable elements) appear much more frequently than the single-copy k-mers. These differences can be used to filter out error k-mers and selectively remove reads containing sequencing errors from the dataset. The number of different k-mers detected, and the characteristics of the frequency distribution of kmers, can be used to estimate the size of the genome and the content of repetitive DNA sequences (`Li and Waterman, 2003 <http://genome.cshlp.org/content/13/8/1916.full>`_).
 
-The underlying assumption that all k-mers are sampled from a uniform distribution is grossly violated in RNA-seq data and some other data types, so k-mer counting for purposes of error correction is not generally applied to those data types.
+The underlying assumption that all k-mers are sampled from a uniform distribution is grossly violated in RNA-seq data and some other data types, so k-mer counting for purposes of error correction requires modeling the frequency distributions of kmers independently for transcripts of different abundance classes (`Song and Florea, 2015 <https://gigascience.biomedcentral.com/articles/10.1186/s13742-015-0089-y>`_).
 
 
 Objective
@@ -70,6 +70,10 @@ For the current class, the text file `error_correction_files.txt <https://drive.
 
 Additional Resources
 ********************
+
++ Song L, Florea L (2015) Rcorrector: efficient and accurate error correction for Illumina RNA-seq reads. GigaScience 4:48 `Full Text  <https://gigascience.biomedcentral.com/articles/10.1186/s13742-015-0089-y>`_
+
+\
 
 + McElroy KE, Luciani F, Thomas T. (2012) GemSIM: general, error-model based simulator of next-generation sequencing data. BMC Genomics 13: 74. `PMID 22336055 <http://www.ncbi.nlm.nih.gov/pubmed/22336055>`_ *(Note: This paper describes software for simulation of sequence data that is useful for testing effects of error frequency on alignment and assembly).*
 
