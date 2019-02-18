@@ -27,6 +27,11 @@ Workshop Links
 
 
 
+Additional Resources
+********************
+
++ `Ten Simple Rules for Creating a Good Data Management Plan. <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004525>`_ Michener, WK. PLoS Comput Biol 11(10): e1004525, 2015.
+
 
 
 
