@@ -42,6 +42,10 @@ Sequence data analysis often requires the ability to examine and modify the cont
 Exercises
 *********
 
+`awk_sed_bash.txt <https://drive.google.com/open?id=1hJQ0D844YDBrZz6XUhP3JsXyT-iE2vLS>`_ has the list of links for the data files needed for the following exercises.
+
+
+
 1.	`Bash and awk exercises <https://drive.google.com/open?id=1C0xepbOtdDy2d3yN-VmNUyQ71903XBCY>`_. Writing and executing loops is a key skill to learn in programming, because this makes completion of repetitive tasks much easier. The bash shell also provides a wide variety of tools to manage system functions, maintain software, and track system resources. Awk allows use of both conditional statements and loops to process and manipulate text files, and can carry out many text-processing activities commonly done using spreadsheet programs in a Windows environment.
 
 \
@@ -106,5 +110,5 @@ Additional Resources
 
 
 
-Last modified 3 January 2018.
+Last modified 20 February 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
