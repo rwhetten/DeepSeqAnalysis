@@ -9,7 +9,7 @@ Computing Hardware
 Global overview
 ***************
 
-1. Accounts on the HPC are available to those with an NCSU Unity ID - see `HPC Accounts <https://projects.ncsu.edu/hpc//Accounts/Accounts.php>`_ for information.
+1. Accounts on the HPC are available to those with an NCSU Unity ID - see `HPC Accounts <https://projects.ncsu.edu/hpc/Accounts/GetAccess.php>`_ for information.
 2. Connect to the HPC via login.hpc.ncsu.edu using PuTTY for a command-line interface
 3. Create a job submission script file that contains the commands you want to execute
 4. Submit the job script to the appropriate queue and wait until the job is complete
@@ -18,7 +18,7 @@ Global overview
 Job submission and management
 *****************************
 
-A tool called Load Sharing Facility (LSF) is used to manage the queues of submitted computing jobs on the HPC cluster. See `LSF on HPC Cluster <https://projects.ncsu.edu/hpc//Documents/BladeCenter/ClusterLSF.php>`_ for a summary of the factors considering in prioritizing submitted jobs in the queue. More information is available at the `FAQ for HPC users <https://projects.ncsu.edu/hpc//Documents/HowTo.php>`_; additional documentation on LSF commands can also be found via Google searches.
+A tool called Load Sharing Facility (LSF) is used to manage the queues of submitted computing jobs on the HPC cluster. More information is available at the `FAQ for HPC users <https://projects.ncsu.edu/hpc/Documents/LSF.php>`_; additional documentation on LSF commands can also be found via Google searches.
 
 Available software
 ******************
