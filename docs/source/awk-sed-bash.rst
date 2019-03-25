@@ -86,7 +86,15 @@ Additional Resources
 
 \
 
++	A scan of `The AWK Programing Language <https://drive.google.com/open?id=1B9gz-XLbQBDkxIQdbJVCzWgy2H3UNlIP>`_, a textbook written by the creators of the AWK programing language.   
+
+\
+
 +	The site `panix.com <panix.com>`_ has information on several aspects of the Unix or Linux command-line interface: `sed <http://www.panix.com/~elflord/unix/sed.html>`_, `grep <http://www.panix.com/~elflord/unix/grep.html>`_, and `bash scripting <http://www.panix.com/~elflord/unix/bash-tute.html>`_.
+
+\
+
++	`Datamash main page <https://www.gnu.org/software/datamash/>`_ with links to helpful examples and one-liners. A html `Datamash manual <https://www.gnu.org/software/datamash/manual/datamash.html>`_ is also available. 
 
 \
 
@@ -110,5 +118,5 @@ Additional Resources
 
 
 
-Last modified 20 February 2019.
+Last modified 24 March 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
