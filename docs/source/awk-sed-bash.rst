@@ -74,6 +74,11 @@ Exercises
 	diff <(cut -f2 file1) <(cut -f3 file2)
 
 
+\
+
+7.	`Basic walkthrough of AWK <https://drive.google.com/open?id=1xuWyJCFegjVfxNw5iz9PvecVliDdqjOZ>`_ from chapter 1 of "THe AWK Programing Language" with datamash examples as well.
+
+
 
 Additional Resources
 ********************
