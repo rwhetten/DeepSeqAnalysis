@@ -21,6 +21,8 @@ Resources
 
 `User Guide <https://drive.google.com/open?id=14JAXRocZ25DHSexLSeUJ7K5p3fqDtQ4r>`_
 
+`System Requirements for CLC Genomics Workbench <https://www.qiagenbioinformatics.com/system-requirements/>`_
+
 `Denovo assembly and blast notes <https://drive.google.com/open?id=1nNiP249InLhfzAWYPF45JI99GFxLgEAO>`_
 
 `DeNovo paired-end assembly notes <https://drive.google.com/open?id=1wzCL2_oWjLw3kNSZ5UvRsAwskRDZtBm->`_
