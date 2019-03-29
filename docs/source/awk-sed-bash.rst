@@ -76,9 +76,11 @@ Exercises
 
 \
 
-7.	`Basic walkthrough of AWK <https://drive.google.com/open?id=1xuWyJCFegjVfxNw5iz9PvecVliDdqjOZ>`_ from chapter 1 of "THe AWK Programing Language" with datamash examples as well.
+7.	`Basic walkthrough of AWK <https://drive.google.com/open?id=1xuWyJCFegjVfxNw5iz9PvecVliDdqjOZ>`_ from chapter 1 of "The AWK Programing Language" with datamash examples as well.
 
+\
 
+8.	`Datamash examples and exercises <https://drive.google.com/open?id=1xMsvOyZI18WJgikMbhGiMwvBDb2x35Rs>`_ is a text file with example problems for practice with Datamash as well as a comment on how to deal with non-uniform filenames. 
 
 Additional Resources
 ********************
@@ -123,5 +125,5 @@ Additional Resources
 
 
 
-Last modified 24 March 2019.
+Last modified 28 March 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
