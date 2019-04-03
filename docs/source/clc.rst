@@ -23,6 +23,8 @@ Resources
 
 `System Requirements for CLC Genomics Workbench <https://www.qiagenbioinformatics.com/system-requirements/>`_
 
+`Resequencing Analysis using Tracks tutorial <https://drive.google.com/open?id=13pWt0flmxH1cm4gocsSj9qv9hzeO-gPZ>`_
+
 `Denovo assembly and blast notes <https://drive.google.com/open?id=1nNiP249InLhfzAWYPF45JI99GFxLgEAO>`_
 
 `DeNovo paired-end assembly notes <https://drive.google.com/open?id=1wzCL2_oWjLw3kNSZ5UvRsAwskRDZtBm->`_
