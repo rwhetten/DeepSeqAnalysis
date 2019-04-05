@@ -16,6 +16,15 @@ Objective
 To demo CLC Genomics Workbench, proprietary bioinformatic software, useful for visualization and data processing.     
 
 
+Exercises
+*********
+
+Working with real data.
+
+1. Download the three files: `human_g1k_v37.fasta <https://drive.google.com/open?id=1HuSOZBKTm6nvCjJya16Kn8gL_bs-akso>`_, `reads.tumour.fastq <https://drive.google.com/open?id=11JjMCQfsqh4ao-d3IPwPqBDMugjpdFTB>`_, `reads.normal.fastq <https://drive.google.com/open?id=1CeyEhpvmdQxDEaOwXGZ3sqWK_oR3-HZk>`_
+
+
+
 Resources
 *********
 
@@ -39,5 +48,5 @@ Resources
 
 
 
-Last modified 27 March 2019.
+Last modified 5 April 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
