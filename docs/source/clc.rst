@@ -21,7 +21,7 @@ Exercises
 
 Working with real data.
 
-1. Download the three files: `human_g1k_v37.fasta <https://drive.google.com/open?id=1HuSOZBKTm6nvCjJya16Kn8gL_bs-akso>`_, `reads.tumour.fastq <https://drive.google.com/open?id=11JjMCQfsqh4ao-d3IPwPqBDMugjpdFTB>`_, `reads.normal.fastq <https://drive.google.com/open?id=1CeyEhpvmdQxDEaOwXGZ3sqWK_oR3-HZk>`_
+1. Download the three files: `human_g1k_v37.fasta <https://drive.google.com/open?id=1HuSOZBKTm6nvCjJya16Kn8gL_bs-akso>`_, `reads.tumour.fastq <https://drive.google.com/open?id=11JjMCQfsqh4ao-d3IPwPqBDMugjpdFTB>`_, `reads.normal.fastq <https://drive.google.com/open?id=1CeyEhpvmdQxDEaOwXGZ3sqWK_oR3-HZk>`_ Note: If you don't want to split the fastq files yourself, only download the Human glk v37 fasta and then download the split_r1_r2.zip file below.
 
 2. Either follow along with `Loading data <https://drive.google.com/open?id=1fxjehFe3BhwKA4q4cSD94gFZqTe-hsWwdl-dd133JZg>`_ to split the fastq files from compiled read 1 and 2 to separate files or download the `split_r1_r2.zip <https://drive.google.com/open?id=1chLaduWLQUAPs8yLsiI2J2HARnqhPxjc>`_ with the files already split.
 
