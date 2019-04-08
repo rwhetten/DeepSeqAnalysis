@@ -72,11 +72,12 @@ Exercises
 
 ::
 
-ggID='1KZGdzI50VadXdbnhC3BznAuek3eiXEJx'; echo "The file ID is $ggID";
-ggURL='https://drive.google.com/uc?export=download';
-filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')";
-getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)";
+ggID='1KZGdzI50VadXdbnhC3BznAuek3eiXEJx'; echo "The file ID is $ggID"; 
+ggURL='https://drive.google.com/uc?export=download'; 
+filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')"; 
+getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"; 
 curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"
+
 
 
 
