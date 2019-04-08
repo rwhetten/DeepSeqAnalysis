@@ -70,7 +70,7 @@ Exercises
 
 2. Data from an exercise presented at a `2016 Canadian bioinformatics workshop <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/>`_ are in `Module3.tar.gz <https://drive.google.com/open?id=1KZGdzI50VadXdbnhC3BznAuek3eiXEJx>`_. You can directly download the module archive with the following command.
 
-:code:`wget -O Module3.tar.gz https://velocity.ncsu.edu/dl/tbjlRdy/367811`
+:code:`ggID='1KZGdzI50VadXdbnhC3BznAuek3eiXEJx'; echo "The file ID is $ggID"; ggURL='https://drive.google.com/uc?export=download' ;filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')"; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"`
 
 \
 
