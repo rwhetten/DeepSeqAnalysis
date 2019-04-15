@@ -42,6 +42,7 @@ Resources
 
 `Transcriptome assembly notes <https://drive.google.com/open?id=1jhU1T8FiMsHipFGW_wvDeCTaPCUVkvMN>`_
 
+`RNA-Seq expression analysis <http://resources.qiagenbioinformatics.com/tutorials/RNASeq-droso.pdf>`_
 
 
 
@@ -49,6 +50,5 @@ Resources
 
 
 
-
-Last modified 5 April 2019.
+Last modified 15 April 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
