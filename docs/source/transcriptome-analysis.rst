@@ -81,6 +81,10 @@ You can use the commands found in the `Transcriptome_data.txt <https://drive.goo
  
 6. A complete tutorial for analysis of RNA-seq data using Tophat and Cufflinks is available in `Trapnell et al (2012) <http://www.nature.com/nprot/journal/v7/n3/full/nprot.2012.016.html>`_; this can be used as a guide to carry out analysis of the control and test datasets used for the RNA-seq exercise described above.
 
+\
+
+7. An older `tutorial <http://girke.bioinformatics.ucr.edu/CSHL_RNAseq/mydoc/mydoc_systemPipeRNAseq_02/>`_ for Gene Ontology (GO) Term Enrichment from RNAseq analysis. The tutorial from a Cold Spring Harbor Plant Biology short corse contains information on the overview of the GO term enrichment and notes on the sampling procedure used to shrink the dataset from the `full NCBI record <https://www.ncbi.nlm.nih.gov/bioproject/PRJNA156671>`_. For more information the `Gene Ontology page <http://geneontology.org/docs/go-annotations/>`_ has links to the annotation tables of various organisms. Additionally, a `vignette for the goseq package <https://bioconductor.org/packages/3.4/bioc/vignettes/goseq/inst/doc/goseq.pdf>`_ for GO Term Enrichment using v3.4 of Bioconductor is also available. 
+
 
 
 Additional Resources
@@ -134,5 +138,5 @@ Additional Resources
 
 
 
-Last modified 24 February 2019.
+Last modified 23 April 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
