@@ -9,16 +9,19 @@ Computing Hardware
 Global overview
 ***************
 
-1. Accounts on the HPC are available to those with an NCSU Unity ID - see `HPC Accounts <https://projects.ncsu.edu/hpc//Accounts/Accounts.php>`_ for information.
-2. Connect to the HPC via login.hpc.ncsu.edu using PuTTY for a command-line interface
+1. Accounts on the HPC are available to those with an NCSU Unity ID - see `HPC Accounts <https://projects.ncsu.edu/hpc/Accounts/GetAccess.php>`_ for information.
+2. Connect to the HPC via login.hpc.ncsu.edu using Terminal (macOS) or MobaXterm (Windows) for a command-line interface
 3. Create a job submission script file that contains the commands you want to execute
 4. Submit the job script to the appropriate queue and wait until the job is complete
 5. Transfer the output data back to your office workstation for further analysis, or write another job submission script to carry out more analysis on the HPC.
 
+A full tutorial on HPC is available at https://projects.ncsu.edu/hpc/Guide/.
+The tutorial covers basic Linux, getting an account, login and file transfers, and running jobs via the batch scheduler, via interactive command-line debugging, and via the HPC-VCL that enables display of GUI applications on the HPC.
+
 Job submission and management
 *****************************
 
-A tool called Load Sharing Facility (LSF) is used to manage the queues of submitted computing jobs on the HPC cluster. See `LSF on HPC Cluster <https://projects.ncsu.edu/hpc//Documents/BladeCenter/ClusterLSF.php>`_ for a summary of the factors considering in prioritizing submitted jobs in the queue. More information is available at the `FAQ for HPC users <https://projects.ncsu.edu/hpc//Documents/HowTo.php>`_; additional documentation on LSF commands can also be found via Google searches.
+A tool called Load Sharing Facility (LSF) is used to manage the queues of submitted computing jobs on the HPC cluster. See `LSF on HPC Cluster <https://projects.ncsu.edu/hpc/Documents/LSF.php>`_ more information on submitting jobs to LSF; additional documentation on LSF commands can also be found via Google searches.
 
 Available software
 ******************
