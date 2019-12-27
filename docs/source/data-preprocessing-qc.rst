@@ -48,7 +48,7 @@ Exercises
 
 \
 
-3. Using fastx-toolkit for exploratory analysis. The first exercise will use fastx-toolkit to analyze and process the `c3.fq.gz <https://drive.google.com/open?id=1DhVkPmszlpvH8dIKXef2iiSO-cF_cj-v>`_ sequence file, also found in the the `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_ archive (Both files can be directly downloaded via console using the following 'code <https://drive.google.com/open?id=1BUfKBMhhYyXPQVqKMSSUDVJg-zIVjcpD>'_). The fastx-toolkit programs are simple and somewhat dated, but still useful. Download the `QCexercises.sh <https://drive.google.com/open?id=1ERJJYdJciiw0Z3q0LDUfm-QGPcwpdxrB>`_ shell script with exercises.
+3. Using fastx-toolkit for exploratory analysis. The first exercise will use fastx-toolkit to analyze and process the `c3.fq.gz <https://drive.google.com/open?id=1DhVkPmszlpvH8dIKXef2iiSO-cF_cj-v>`_ sequence file, also found in the the `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_ archive (Both files can be directly downloaded via console using the following `code <https://drive.google.com/open?id=1BUfKBMhhYyXPQVqKMSSUDVJg-zIVjcpD>`_). The fastx-toolkit programs are simple and somewhat dated, but still useful. Download the `QCexercises.sh <https://drive.google.com/open?id=1ERJJYdJciiw0Z3q0LDUfm-QGPcwpdxrB>`_ shell script with exercises.
 
 \
 
@@ -143,5 +143,5 @@ Additional Resources
 
 
 
-Last modified 17 January 2019.
+Last modified 27 December 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
