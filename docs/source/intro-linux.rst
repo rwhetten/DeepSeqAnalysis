@@ -44,7 +44,7 @@ Exercises
 
 \
 
-3. The example files for the week1 `quiz <https://drive.google.com/open?id=1lT1CT2uRF1GSiIpPOdG_4mTWZ6Fa7bwb>`_ are at `quiz_week1.tgz <https://drive.google.com/open?id=1J7h4u3YaBrozBAK30lL8K3ekDjAv-2P9>`_.
+3. The example files for the week1 `quiz <https://drive.google.com/open?id=1lT1CT2uRF1GSiIpPOdG_4mTWZ6Fa7bwb>`_ are at `quiz_week1.tgz <https://drive.google.com/open?id=1J7h4u3YaBrozBAK30lL8K3ekDjAv-2P9>`_ or `quiz.week1_download_script <https://drive.google.com/open?id=1rvbkjygO4P012W9JJUg7D0WZ3Vz12wi1>`_.
 
 \
 

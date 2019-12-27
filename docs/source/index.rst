@@ -20,7 +20,7 @@ The Analysis of Deep Sequencing Data course is designed to introduce biologists 
    readings
    hardware
    intro-linux
-   Sequencing Instruments <https://www.biostarhandbook.com/instruments/sequencing-instruments.html>
+   Sequencing Instruments <https://www.biostarhandbook.com/sequencing-instruments.html>
    experimental-design
    data-preprocessing-qc
    error-correct
@@ -46,5 +46,5 @@ Indices and tables
 * :ref:`search`
 
 
-Last modified 26 December 2018.
+Last modified 19 December 2019.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

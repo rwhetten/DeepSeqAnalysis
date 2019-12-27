@@ -42,7 +42,7 @@ Course Schedule
 
 	3-7 Feb		Re-sequencing, alignment, structural variation [17, 18, 23]
 
-	11-15 Feb	Discovery and genotyping of genetic variation	 
+	10-14 Feb	Discovery and genotyping of genetic variation	 
 
 	17-21 Feb	R and R Studio - lectures and exercises through Software 	 
 		         	 Carpentry website, sections 1 - 8
@@ -76,7 +76,7 @@ General background information and course resources
 
 
 +	General advice on `troubleshooting <troubleshooting.html>`_
-+	`Course syllabus <https://drive.google.com/open?id=1HgYJGXv_mxbKycTMrtK_dg37jjuEAvVG>`_
++	`Course syllabus <https://drive.google.com/open?id=1TWqUE-0B5k_94gCzFABqwD66pVz545Lh>`_
 +	Class bash history files from instructor VCL instances
 +	Lior Pachter's list of sequencing-based assays: `\*Seq <https://liorpachter.wordpress.com/seq/>`_
 +	`The R statistical programming environment <r-materials.html>`_
@@ -99,5 +99,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 8 December 2019.
+Last modified 13 December 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
