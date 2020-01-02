@@ -46,7 +46,7 @@ Exercise - assembly of a bacterial genome from simulated Illumina 100-nt PE read
 
 The `GenomeAssembly shell script <https://drive.google.com/open?id=1wLU75DflXTdHeA2oD51ppeDHaLdOzDtr>`_ will guide the exercises for this class. To download an archive of the bacterial genome and simulated reads use the following command. 
 
-   :code:`wget -O DPC4571.tgz https://velocity.ncsu.edu/dl/tbjlRdy/367495`
+   :code:`ggID='1N_8e4SAj4SU_Y0zoYzA8_s3k1vXZCMtd'; echo "The file ID is $ggID" ; ggURL='https://drive.google.com/uc?export=download' ; filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')" ; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)" ; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"`
    
 
 
@@ -127,5 +127,5 @@ Additional Resources
 
 
 
-Last modified 30 January 2019.
+Last modified 2 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

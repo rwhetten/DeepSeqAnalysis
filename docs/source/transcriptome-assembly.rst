@@ -33,7 +33,7 @@ Paired-end sequencing reads are useful for assembly of eukaryotic transcriptomes
 Exercise - reference-guided assembly
 ************************************
 
-Temporary direct download links for class can be found in the `Transcriptome_Assembly.txt <https://drive.google.com/open?id=1Xkr5_-k3lz6cNfiEOigiaKk8sj1Kdwm4>`_ file. 
+Direct download links for class can be found in the `Transcriptome_Assembly.txt <https://drive.google.com/open?id=1Xkr5_-k3lz6cNfiEOigiaKk8sj1Kdwm4>`_ file. 
 
 + The Arabidopsis thaliana RNA-seq dataset used for the analysis of differential gene expression includes six sequence files found in the `fullset.zip <https://drive.google.com/open?id=16W-W3t3DILI05cufENJRq8NnO1vz7mge>`_ archive in the `AtRNAseq <https://drive.google.com/open?id=1_-cX7Scvp_e8zlN4glcD3-i2eJg5Tv71>`_ archive.
 
@@ -43,7 +43,7 @@ Temporary direct download links for class can be found in the `Transcriptome_Ass
 
 \
 
-+ Create a folder for this exercise, and unpack the `Atchromo5.fasta.gz <https://drive.google.com/open?id=1i5p9JlQZh_xvhGN_d9JvLVaOxqF8Hp0_>`_ reference sequence from the /data/AtRNAseq folder into that directory. Use the hisat2-build program (from the hisat2-2.0.5 directory) to build an alignment index from the uncompressed fasta-format sequence data.
++ Create a folder for this exercise, and unpack the `Atchromo5.fasta.gz <https://drive.google.com/open?id=1i5p9JlQZh_xvhGN_d9JvLVaOxqF8Hp0_>`_ reference sequenceinto that directory. Use the hisat2-build program (from the hisat2-2.0.5 directory) to build an alignment index from the uncompressed fasta-format sequence data.
 
 \
 
@@ -138,5 +138,5 @@ Correction of errors in RNA-seq reads requires consideration of the difference i
 + Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. `Full Text <http://www.pnas.org/content/98/17/9748.full>`_
 
 
-Last modified 31 January 2019.
+Last modified 2 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

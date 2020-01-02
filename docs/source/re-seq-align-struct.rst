@@ -92,8 +92,11 @@ Exercises
 
 \
 
-4. Download a shell script that will carry out the commands given in the webpages linked above, edited to reflect the differences in file paths and configuration of the VCL instance using 
-:code:`wget -O module3.sh https://velocity.ncsu.edu/dl/qwRBSlU/367918` 
+4. Download a `shell script <https://drive.google.com/open?id=1CTWJGeBctKpQ7XFgsVcK9UP7nFU9y2Vj>`_ that will carry out the commands given in the webpages linked above, edited to reflect the differences in file paths and configuration of the VCL instance using 
+:code:`::
+
+	ggID='1CTWJGeBctKpQ7XFgsVcK9UP7nFU9y2Vj'; echo "The file ID is $ggID"; ggURL='https://drive.google.com/uc?export=download'; filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')"; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"
+` 
 
 ------------------
 	
@@ -183,5 +186,5 @@ Additional Resources
 
 
 
-Last modified 3 Febuary 2019.
+Last modified 2 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.

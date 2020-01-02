@@ -210,8 +210,8 @@ Tutorials for bash shell scripting
   + Peter Krumins claims to have the `World's Best Introduction to Sed <http://www.catonmat.net/blog/worlds-best-introduction-to-sed/>`_; take a look and judge for yourself.
   + Bruce Barnett's `sed tutorial <http://www.grymoire.com/Unix/Sed.html>`_.
 
-`Links for Exercise Data <https://drive.google.com/a/ncsu.edu/file/d/1tDei58YF_V-o3Egig6g8j-o8Kb8tSAHv/view?usp=sharing>`_ 
-**************************************************************************************************************************
+`Links for Exercise Data <https://drive.google.com/open?id=1eeex5RhrS4JZaRmKlxr9U6slR3XD2of4>`_ 
+***********************************************************************************************
 
 
 Links to other useful sites
