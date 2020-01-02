@@ -36,7 +36,7 @@ Resources about the Linux command-line environment and the Bash shell
 
 +	`Parameter expansion <http://wiki.bash-hackers.org/syntax/pe>`_ is a wiki page with information about bash parameter expansion, a handy tool for manipulating variables in the bash shell.
 
-+	A `guide <https://drive.google.com/open?id=1oSUePtxotttzn9giJZHHVAldZtyAfr2d>`_ to setting up a computing session on a virtual machine through the NC State Virtual Computing Lab (VCL) is available. This resource is only available to members of the NC State community, because the VCL requires authentication with an NC State user id and password. The work done on a virtual machine instance is lost when the instance is terminated, so if you want to save results of analyses done on a virtual machine, you must either upload the files to a cloud storage site (e.g. Google Drive, Dropbox, velocity.ncsu.edu, or something similar) or mount your AFS file space as an external volume on the virtual machine. To mount AFS as an external volume, first authenticate to the Kerberos server using your NC State user id: **kinit [username]**. A prompt will pop up, asking for your NC State password, but no characters typed at this prompt are echoed to the screen. After your password is accepted, enter the command **aklog** at a terminal prompt to mount the AFS volume. Your personal space will be at the path **/afs/unity.ncsu.edu/users/X/Y**, where X is the initial letter of your user ID and Y is your full user ID.
++	A `guide <https://drive.google.com/open?id=1oSUePtxotttzn9giJZHHVAldZtyAfr2d>`_ to setting up a computing session on a virtual machine through the NC State Virtual Computing Lab (VCL) is available. This resource is only available to members of the NC State community, because the VCL requires authentication with an NC State user id and password. The work done on a virtual machine instance is lost when the instance is terminated, so if you want to save results of analyses done on a virtual machine, you must either upload the files to a cloud storage site (e.g. Google Drive, Dropbox, or something similar) or use NCSU Drive or AFS file space mounted as an external volume on the virtual machine. The AFS file space is mounted by default and a shortcut (called AFS) is placed in the home directory; the NCSU Drive space can be mounted by executing the command **mount.mydrive** at a terminal prompt and providing your NC State Unity password in response to the prompt. After your password is accepted, your NCSU Drive storage is accessible at /mnt/mydrive. 
 
 
 
@@ -101,5 +101,5 @@ Links to software pages on Github and Sourceforge
 +	`Musket <http://musket.sourceforge.net/homepage.htm>`_ on Sourceforge: a multi-stage, k-mer spectrum based error correction program capable of multi-threaded error correction of Illumina short reads.
 
 
-Last modified 2 January 2019.
+Last modified 2 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
