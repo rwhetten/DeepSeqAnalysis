@@ -17,7 +17,7 @@ Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21
 
 				The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading.
 
-				The `Piazza online forum page <https://piazza.com/ncsu/spring2019/bit815/>`_ is available for questions and discussion.
+				The `Piazza online forum page <https://piazza.com/ncsu/spring2020/bit815/>`_ is available for questions and discussion.
 
 				Teaching assistant: `Will Kohlway <whkohlwa@ncsu.edu>`_
 
@@ -81,7 +81,7 @@ General background information and course resources
 +	Lior Pachter's list of sequencing-based assays: `\*Seq <https://liorpachter.wordpress.com/seq/>`_
 +	`The R statistical programming environment <r-materials.html>`_
 +	`Course resources <resources.html>`_
-+	`Overview slides <https://drive.google.com/open?id=10RYNwJXx7gwYCA_o_1u8AtRw465ROjZn>`_
++	`Overview slides (old and outdated in some respects) <https://drive.google.com/open?id=10RYNwJXx7gwYCA_o_1u8AtRw465ROjZn>`_
 +	Cloud computing with Amazon Web Services: `setting up an AWS account <https://drive.google.com/open?id=1OXA_TAYu2l_--GEAW85eKJCLUtWyqhbN>`_ and `starting an instance <https://drive.google.com/open?id=1U7D7BRfS1LLbWGzJwkBejc8vfyRSPLIc>`_
 +	OMICtools software database `publication <http://database.oxfordjournals.org/content/2014/bau069.long>`_ and `website <http://omictools.com/>`_
 +	Qiagen webpage of `tutorials <https://www.qiagenbioinformatics.com/support/tutorials/>`_ for CLC workbench programs
@@ -99,5 +99,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 13 December 2020.
+Last modified 5 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
