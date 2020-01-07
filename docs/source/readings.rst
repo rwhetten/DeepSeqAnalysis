@@ -27,6 +27,10 @@ Library construction and experimental design
 + Points of significance: replication. Blainey et al., Nature Methods 11: 879–880, 2014. `Publisher Web Site <http://www.nature.com/nmeth/journal/v11/n9/full/nmeth.3091.html>`_
 + Points of Significance: Nested designs. Krzywinski et al., Nature Methods 11: 977–978, 2014 `Publisher Web Site <http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3137.html>`_
 + Points of significance: Sources of variation Altman & Krzywinski. Nature Methods 12: 5 – 6, 2015 `Publisher Web Site <http://www.nature.com/nmeth/journal/v12/n1/full/nmeth.3224.html>`_
++ Compilation of DNA sequencing library preparation Methods: as a `Poster <https://drive.google.com/open?id=1lJ9EPzqG71pPOkSpHSNLFpoh23JIjMDC>`_ & an `extensive methods review PDF <https://drive.google.com/open?id=1FCe3rnHDiwUUu6pSZ9LkDuDDyYouFyAS>`_.
++ Compilation of RNA sequencing library preparation Methods: as a `Poster <https://drive.google.com/open?id=1aViVPAgLPkOEUiDAaHvcp-ftunZTk-zF>`_ & an `extensive methods review PDF <https://drive.google.com/open?id=1vkAFWdu-C-4OUb7J0ZBzPMieE_49p8Bu>`_.
++ A `Poster <https://drive.google.com/open?id=1_G4o26Qu0w6GJxRY6n81TOmgvIzhsMro>`_ compiling Single-Cell sequencing methods.  
++ An `overview of recent publictions for cell biology and complex disease research with Illumina technology.<https://drive.google.com/open?id=1FLuKZI0TLfx6xrd9YED5J7zAHgZMoKVr>`_
 
 Data formats, data management, and alignment software tools
 ***********************************************************
