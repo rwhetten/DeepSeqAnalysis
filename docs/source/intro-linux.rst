@@ -50,7 +50,9 @@ Exercises
 
 4. Some links to useful websites with more information about Linux and the bash shell: `The BashGuide <http://mywiki.wooledge.org/BashGuide>`_, `An A-Z Index of the Bash Command Line <https://ss64.com/bash/>`_, and `LinuxCommand.org <http://linuxcommand.org/index.php>`_.
 
+\
 
+5. A quick `Quiz <https://docs.google.com/forms/d/e/1FAIpQLSdAyA3pyegjxk2Jb4Omz4RduFbsk3SMnD0kOe2HsjGCXG_-Ig/viewform?usp=sf_link>`_ to gauge linux command line proficiency. 
 
 Additional Resources
 ********************
@@ -116,5 +118,5 @@ Setting up an Amazon Web Service account to use Elastic Compute Cloud services:
 
 
 
-Last modified 2 January 2020.
+Last modified 10 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
