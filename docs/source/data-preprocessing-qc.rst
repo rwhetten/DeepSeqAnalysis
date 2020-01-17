@@ -141,7 +141,10 @@ Additional Resources
 
 + Ewing B, Green P (1998). Base-calling of automated sequencer traces using phred. II. Error probabilities. Genome Res. 8 (3): 186–194. `PMID 9521922 <http://www.ncbi.nlm.nih.gov/pubmed/9521922>`_
 
+\
+
++ A squencing-focused publication/news aggregate blog, `QCfail <https://sequencing.qcfail.com/>`_.
 
 
-Last modified 27 December 2019.
+Last modified 17 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
