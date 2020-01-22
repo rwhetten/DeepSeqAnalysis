@@ -41,7 +41,11 @@ Exercises
 
 The text file `error_correction_files.txt <https://drive.google.com/open?id=1doOQv2I4gKxNJspk88XmgiGAOQc53b7E>`_ contains a list of commands for the direct download of files necessary for the following exercises. These commands are given for the benefit of those who use an SSH connection to a compute node or virtual machine instance, and don't have a web-browser interface available from which to download the datafiles to the instance. For users who have access to a virtual instance with a graphic interface, starting a web browser and downloading each file directly from the link is probably easiest.
 
+\
+
 1. The first exercise will align RNA-seq reads to a bacterial genome, to provide some experience with alignment software and an opportunity to explore software tools used to summarize and manipulate Sequence Alignment and Mapping (SAM) format files. The `RNA-seq reads<https://drive.google.com/a/ncsu.edu/file/d/1Vo90SPDoe9s-NDuwATPNLwRkBE6Q-Ny3>`_ come from *Lactobacillus helveticus* strain CNRZ32, while the reference genome is from strain `DPC 4571<https://drive.google.com/open?id=1N_8e4SAj4SU_Y0zoYzA8_s3k1vXZCMtd>`_, so some sequence differences detected in the alignments will be due to the strain divergence, and some differences due to sequencing errors or other sources of experimental noise in the RNA-seq data. You can also download a `text file<https://drive.google.com/a/ncsu.edu/file/d/1f_SkLZ0yqfjKQibUITKgpC1czd0x9_Df>`_ of steps to use in aligning the reads to the reference genome, then reviewing the results of the alignment. 
+
+\
 
 2. The MaSuRCA (Maryland SuperRead - Celera Assembler) program is installed on the VCL machine image. This program uses k-mers detected in filtered and trimmed fastq sequence reads to expand typical paired-end reads from an Illumina sequencing instrument into what it calls "super-reads". 
 
@@ -99,5 +103,5 @@ Additional Resources
 
 
 
-Last modified 21 January 2020.
+Last modified 22 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
