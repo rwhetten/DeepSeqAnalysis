@@ -46,9 +46,11 @@ Different approaches have been proposed to evaluate the quality and completeness
 Exercise - assembly of a bacterial genome from simulated Illumina 100-nt PE reads
 *********************************************************************************
 
-The `GenomeAssembly shell script <https://drive.google.com/open?id=1wLU75DflXTdHeA2oD51ppeDHaLdOzDtr>`_ will guide the exercises for this class. To download an archive of the bacterial genome and simulated reads use the following command. 
+The `GenomeAssembly shell script <https://drive.google.com/open?id=1wLU75DflXTdHeA2oD51ppeDHaLdOzDtr>`_ will guide the exercises for this class. To download an archive of the bacterial genome and simulated reads use the following command.
 
-   :code:`ggID='1N_8e4SAj4SU_Y0zoYzA8_s3k1vXZCMtd'; echo "The file ID is $ggID" ; ggURL='https://drive.google.com/uc?export=download' ; filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')" ; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)" ; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"`
+::
+   
+   ggID='1N_8e4SAj4SU_Y0zoYzA8_s3k1vXZCMtd'; echo "The file ID is $ggID" ; ggURL='https://drive.google.com/uc?export=download' ; filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')" ; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)" ; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"
    
 
 
