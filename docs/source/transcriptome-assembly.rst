@@ -85,7 +85,11 @@ Additional Resources
 
 Several papers have reported that the most reliable approach for transcriptome assembly for different organisms is to use multiple different programs for independent assemblies, followed by merging together of the resulting assembled contigs and selection of the most complete contigs as representatives for the final completed transcriptome. 
 
-+ McManes, M.D. 2018 The Oyster River Protocol: a multi-assembler and kmer approach for de-novo transcriptome assembly. Peer J. 6:e5428. `Full text <https://dx.doi.org/10.7717%2Fpeerj.5428>`_
++ Venturini et al, 2018 Leveraging multiple transcriptome assembly methods for improved gene structure annotation. GigaScience 7(8):giy093 `Full text <https://doi.org/10.1093/gigascience/giy093>`_
+
+\
+
++ McManes, M.D. 2018 The Oyster River Protocol: a multi-assembler and kmer approach for de-novo transcriptome assembly. Peer J. 6:e5428. `Full text <https://dx.doi.org/10.7717%2Fpeerj.5428>`_ This paper describes a set of criteria used to evaluate the relative quality of different transcriptome assemblies, using the software tools BUSCO, shmlast, Detonate, and Trans-Rate.
 
 \
 
@@ -93,9 +97,17 @@ Several papers have reported that the most reliable approach for transcriptome a
 
 \
 
-Correction of errors in RNA-seq reads requires consideration of the difference in relative abundance among transcripts in order to identify likely error-derived k-mers. Rcorrector is one software package capable of this process.
++ Gilbert, Donald 2013 Gene-omes built from mRNA seq not genome DNA. 7th annual arthropod genomics symposium. Notre Dame, Indiana. `Poster <http://arthropods.eugenes.org/EvidentialGene/about/EvigeneRNA2013poster.pdf>`_
+
+\
+
+Correction of errors in RNA-seq reads requires consideration of the difference in relative abundance among transcripts in order to identify likely error-derived k-mers. Rcorrector is one software package capable of this process; the SEECER package described by Le et al (2013) is another.
 
 + Song & Florea, 2015. Rcorrector: efficient and accurate error correction for Illumina RNA-seq reads. Gigascience 4:48. `Full text <https://dx.doi.org/10.1186%2Fs13742-015-0089-y>`_
+
+\
+
++ Le et al, 2013 Probabilistic error correction for RNA sequencing. Nucleic Acids Res. 41(10):e109. `Full text <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3664804/>`_
 
 \
 
@@ -138,5 +150,5 @@ Correction of errors in RNA-seq reads requires consideration of the difference i
 + Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. `Full Text <http://www.pnas.org/content/98/17/9748.full>`_
 
 
-Last modified 2 January 2020.
+Last modified 24 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
