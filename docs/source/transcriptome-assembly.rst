@@ -67,7 +67,7 @@ Direct download links for class can be found in the `Transcriptome_Assembly.txt 
 Exercise - de-novo assembly
 ***************************
 
-+ The *Arabidopsis thaliana* RNA-seq dataset can also be used for de-novo assembly, although RAM is a limiting factor on instances of the VCL Biostar_DNASeq machine image.
++ The *Arabidopsis thaliana* RNA-seq dataset can also be used for de-novo assembly, although RAM is a limiting factor on instances of the VCL Biostar_DNASeq machine image. The `Trinity assembler archive <https://github.com/trinityrnaseq/trinityrnaseq/releases/download/v2.9.1/trinityrnaseq-v2.9.1.FULL.tar.gz>`_ can be downloaded from the project Github site. To compile, unpack the archive using the command ``tar -xzf trinityrnaseq-v2.9.1.FULL.tar.gz``, then change to the trinityrnaseq-v2.9.1 directory and execute the ``make`` command to compile the program. Trinity requires Bowtie2, SAMtools, and Salmon, which should all be available on the VCL image.
 
 \
 
