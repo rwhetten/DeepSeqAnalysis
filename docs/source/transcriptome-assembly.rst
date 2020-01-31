@@ -51,11 +51,11 @@ Direct download links for class can be found in the `Transcriptome_Assembly.txt 
 
 \
 
-+ Align the fastq-format sequence reads to the reference sequence using the hisat2 program (using the --dta option), and pipe the output to samtools1.3 view to convert the SAM output into BAM, then to samtools1.3 sort to sort the output BAM data and save it to a file.
++ Align the fastq-format sequence reads to the reference sequence using the hisat2 program (using the --dta option), and pipe the output to samtools view to convert the SAM output into BAM, then to samtools sort to sort the output BAM data and save it to a file.
 
 \
 
-+ Download the Linux x86_64 binary version of the StringTie program from the link under the Obtaining and installing StringTie heading on the program `home page <http://ccb.jhu.edu/software/stringtie/index.shtml>`_. Unpack the zip archive in your /home/lubuntu directory.
++ Stringtie is already installed on VCL instances. If you are not working from the VCL you can download and install the Linux x86_64 binary version of the StringTie program from the link under the Obtaining and installing StringTie heading on the program `home page <http://ccb.jhu.edu/software/stringtie/index.shtml>`_. 
 
 \
 
@@ -63,6 +63,9 @@ Direct download links for class can be found in the `Transcriptome_Assembly.txt 
 
 \
 
++ `Notes <https://drive.google.com/open?id=16xkDxcg5_Y1dhOkzGtH1VaiR3cnBXNyI>`_ from class for reference guided assembly. 
+
+\
 
 Exercise - de-novo assembly
 ***************************
@@ -150,5 +153,5 @@ Correction of errors in RNA-seq reads requires consideration of the difference i
 + Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. `Full Text <http://www.pnas.org/content/98/17/9748.full>`_
 
 
-Last modified 24 January 2020.
+Last modified 31 January 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
