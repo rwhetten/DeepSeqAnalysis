@@ -64,7 +64,7 @@ Variant discovery/genotyping
 Exercises
 *********
 
-1. Data suitable for Gridss analysis, derived from a *Drosophila melanogaster* resequencing experiment, are available for download:  `reference genome archive <https://drive.google.com/a/ncsu.edu/file/d/18wFOo9cWuL30k2QBnQz_Ib9k3sDb2Tss>`_,    `blacklist file <https://drive.google.com/a/ncsu.edu/file/d/1bz6C8s9cT1qKpDkLUKDQNVaGSRxxwPqg>`_, and  `reads.bam file <https://drive.google.com/a/ncsu.edu/file/d/1_Pitwa44t4nbvzPh_N73CFJyUQxQe9FR>`_  of Illumina reads aligned to the reference genome. These reads are from Sequence Read Archive accession SRR2033228 - the reason for providing the BAM file rather than the raw read data is to save the considerable time required to align the reads to the reference genome.
+1. Data suitable for Gridss analysis, derived from a *Drosophila melanogaster* resequencing experiment, are available for download:  `reference genome archive <https://drive.google.com/a/ncsu.edu/file/d/18wFOo9cWuL30k2QBnQz_Ib9k3sDb2Tss>`_,    `blacklist file <https://drive.google.com/a/ncsu.edu/file/d/1bz6C8s9cT1qKpDkLUKDQNVaGSRxxwPqg>`_, and  `reads.bam file <https://drive.google.com/a/ncsu.edu/file/d/1d5RInRtVI4vWslTOrf-Tb6WE06fXi-bX>`_  of Illumina reads aligned to the reference genome. These reads are from Sequence Read Archive accession SRR2033228 - the reason for providing the BAM file rather than the raw read data is to save the considerable time required to align the reads to the reference genome.
 
 \
 
