@@ -13,7 +13,7 @@ Re-sequencing, Alignment, Structural Variation
 Objective
 *********
 
-The objective of this session is to introduce participants to re-sequencing of genomic DNA or cDNA produced from RNA. The term "re-sequencing" indicates that an assembled and annotated genome sequence is available for use as a reference in analysis of the sequence reads. This means that discovery of new sequence information is typically not the primary goal of these experiments. Instead, the sequence reads are used as a measure of some other biological property of interest. A variety of experimental methods have been developed that use massively-parallel DNA sequencing to measure specific aspects of genome structure or transcriptome activity: the accessibility of chromatin to digestion by nucleases, binding of specific proteins to DNA, three-dimensional interactions between chromosomes in the nucleus, and levels of gene expression are some examples of properties that can be measured in this way. After data preprocessing and quality control, alignment of reads to the reference genome sequence provides results in the form of Sequence Alignment and Mapping (SAM) format alignment files, which are then processed by additional software tools to produce the measurements of experimental interest.
+The objective of this session is to introduce participants to re-sequencing of genomic DNA or cDNA produced from RNA. The term "re-sequencing" indicates that an assembled and annotated genome sequence is available for use as a reference in analysis of the sequence reads. This means that discovery of new sequence information is typically not the primary goal of these experiments. Instead, the sequence reads are used as a measure of some other biological property of interest. A variety of experimental methods have been developed that use massively-parallel DNA sequencing to measure specific aspects of genome structure or transcriptome activity: the accessibility of chromatin to digestion by nucleases, binding of specific proteins to DNA, three-dimensional interactions between chromosomes in the nucleus, and levels of gene expression are some examples of properties that can be measured in this way. After data preprocessing and quality control, alignment of reads to the reference genome sequence provides results in the form of Sequence Alignment and Mapping (SAM/BAM) format alignment files, which are then processed by additional software tools to produce the measurements of experimental interest.
 
 
 Description
@@ -43,7 +43,7 @@ Variant discovery/genotyping
 
 \
 
-+ Many software packages are available for identifying structural variants in alignments of short-read (usually Illumina) sequence data to a reference genome (`Alkan et al, 2011 <https://www.nature.com/nrg/journal/v12/n5/full/nrg2958.html>`_). `Layer et al (2014) <https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-6-r84>`_ describe Lumpy, a program that detects structural variation in whole-genome sequencing data by synthesizing information from different kinds of read alignment results - split reads (where a single read aligns to two different locations), discordant read pairs (where the paired-end reads from a single fragment align to locations inconsistent with that expected based on the fragment sizes in the sequencing library), or differences in read depth (due perhaps to variation in copy number of a particular sequence in the sample genome relative to the reference). A more recent publication by `Becker et al (2018) <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1404-6>`_ describes a Python tool for structural variant detection that uses an ensemble of different structural variant detection programs - BreakDancer (`Chen et al, 2009 <https://www.nature.com/articles/nmeth.1363>`_, BreakSeq (`Lam et al, 2010 <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2951730/>`_, cnMOPS (`Klambauer et al, 2012 <https://academic.oup.com/nar/article/40/9/e69/1136601>`_), CNVator (`Abyzov et al, 2011 <https://genome.cshlp.org/content/21/6/974.long>`_), Delly (`Rausch et al, 2012 <https://academic.oup.com/bioinformatics/article/28/18/i333/245403>`_), Hydra (`Quinlan et al, 2010 <https://genome.cshlp.org/content/20/5/623.long>`_), and Lumpy. An extension of this approach (`Zarate et al, BioRxiv 2018 <https://www.biorxiv.org/content/biorxiv/early/2018/09/23/424267.full.pdf>`_) uses parallelization to run some or all of the SV callers BreakDancer, BreakSeq, CNVnator, Delly, Lumpy, and Manta (`Chen et al, 2016 <https://www.ncbi.nlm.nih.gov/pubmed/26647377>`_), on a multi-core computer in roughly the same time required to run a single program. Two comparison of results from different software tools have recently been published; one reported results from 69 different packages (`Kosugi et al, 2019 <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1720-5>`_), while another comparison selected a subset of 10 programs based on different algorithms or combinations of algorithms (`Cameron et al, 2019 <https://www.nature.com/articles/s41467-019-11146-4>`_). 
++ Many software packages are available for identifying structural variants in alignments of short-read (usually Illumina) sequence data to a reference genome (`Alkan et al, 2011 <https://www.nature.com/nrg/journal/v12/n5/full/nrg2958.html>`_). `Layer et al (2014) <https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-6-r84>`_ describe Lumpy, a program that detects structural variation in whole-genome sequencing data by synthesizing information from different kinds of read alignment results - split reads (where a single read aligns to two different locations), discordant read pairs (where the paired-end reads from a single fragment align to locations inconsistent with that expected based on the fragment sizes in the sequencing library), or differences in read depth (due perhaps to variation in copy number of a particular sequence in the sample genome relative to the reference). A more recent publication by `Becker et al (2018) <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1404-6>`_ describes a Python tool for structural variant detection that uses an ensemble of different structural variant detection programs - BreakDancer (`Chen et al, 2009 <https://www.nature.com/articles/nmeth.1363>`_, BreakSeq (`Lam et al, 2010 <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2951730/>`_, cnMOPS (`Klambauer et al, 2012 <https://academic.oup.com/nar/article/40/9/e69/1136601>`_), CNVator (`Abyzov et al, 2011 <https://genome.cshlp.org/content/21/6/974.long>`_), Delly (`Rausch et al, 2012 <https://academic.oup.com/bioinformatics/article/28/18/i333/245403>`_), Hydra (`Quinlan et al, 2010 <https://genome.cshlp.org/content/20/5/623.long>`_), and Lumpy. An extension of this approach (`Zarate et al, BioRxiv 2018 <https://www.biorxiv.org/content/biorxiv/early/2018/09/23/424267.full.pdf>`_) uses parallelization to run some or all of the SV callers BreakDancer, BreakSeq, CNVnator, Delly, Lumpy, and Manta (`Chen et al, 2016 <https://www.ncbi.nlm.nih.gov/pubmed/26647377>`_), on a multi-core computer in roughly the same time required to run a single program. Two comparison of results from different software tools have recently been published; one reported results from 69 different packages (`Kosugi et al, 2019 <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1720-5>`_), while another comparison selected a subset of 10 programs based on different algorithms or combinations of algorithms (`Cameron et al, 2019 <https://www.nature.com/articles/s41467-019-11146-4>`_). The latter paper reports, perhaps not surprisingly, that one of the better programs for detection of structural variants in Illumina short read data is Gridss, a software package previously described by the same research group (`Cameron et al, 2017 <https://genome.cshlp.org/content/27/12/2050>`_)
 
 \
 
@@ -51,7 +51,7 @@ Variant discovery/genotyping
 
 \
 
-+ `Firtina & Alkan (2016) <https://academic.oup.com/bioinformatics/article/32/15/2243/1743552>`_ report that changing the order of sequence reads in a FASTQ file, followed by alignment of the reads to the human reference genome and SNP calling with various software tools shows discordance in identified variants, ranging from less than 1% to around 25%. This observation suggests that any variant-calling routine should test for sensitivity to read order in the input FASTQ files, although for large datasets this repeatability analysis would be extremely time-consuming.
++ `Firtina & Alkan (2016) <https://academic.oup.com/bioinformatics/article/32/15/2243/1743552>`_ report that changing the order of sequence reads in a FASTQ file, followed by alignment of the reads to the human reference genome and SNP calling with various software tools shows discordance in identified variants, ranging from less than 1% to around 25%. This observation suggests that any variant-calling routine should be tested for sensitivity to read order in the input FASTQ files, although for large datasets this repeatability analysis would be extremely time-consuming.
 
 \
 
@@ -64,19 +64,22 @@ Variant discovery/genotyping
 Exercises
 *********
 
-1. Erik Garrison, lead author of the Freebayes SNP caller, has an `exercise in alignment and variant calling <https://github.com/ekg/alignment-and-variant-calling-tutorial>`_ on his Github page, using both E. coli and human datasets downloaded from web sources. The software required for this tutorial is installed in the VCL machine image. A set of `slides <https://drive.google.com/open?id=1XR3kHmCQrTMs007oFKyMs-Qo04lW30vU>`_ from a presentation Garrison gave in 2015 describing the Freebayes SNP caller and how it is used in the 1000 Genomes project exploring human genome diversity are also available.
+1. Data suitable for Gridss analysis, derived from a *Drosophila melanogaster* resequencing experiment, are available for download:  `reference genome archive <https://drive.google.com/a/ncsu.edu/file/d/18wFOo9cWuL30k2QBnQz_Ib9k3sDb2Tss>`_,    `blacklist file <https://drive.google.com/a/ncsu.edu/file/d/1bz6C8s9cT1qKpDkLUKDQNVaGSRxxwPqg>`_, and  `reads.bam file <https://drive.google.com/a/ncsu.edu/file/d/1_Pitwa44t4nbvzPh_N73CFJyUQxQe9FR>`_  of Illumina reads aligned to the reference genome. These reads are from Sequence Read Archive accession SRR2033228 - the reason for providing the BAM file rather than the raw read data is to save the considerable time required to align the reads to the reference genome.
 
 \
 
-2. Data from an exercise presented at a `2016 Canadian bioinformatics workshop <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/>`_ are in `Module3.tar.gz <https://drive.google.com/open?id=1KZGdzI50VadXdbnhC3BznAuek3eiXEJx>`_. You can directly download the module archive with the following command.
+2. Erik Garrison, lead author of the Freebayes SNP caller, has an `exercise in alignment and variant calling <https://github.com/ekg/alignment-and-variant-calling-tutorial>`_ on his Github page, using both E. coli and human datasets downloaded from web sources. The software required for this tutorial is installed in the VCL machine image. A set of `slides <https://drive.google.com/open?id=1XR3kHmCQrTMs007oFKyMs-Qo04lW30vU>`_ from a presentation Garrison gave in 2015 describing the Freebayes SNP caller and how it is used in the 1000 Genomes project exploring human genome diversity are also available.
+
+\
+
+3. Data from an exercise presented at a `2016 Canadian bioinformatics workshop <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/>`_ are in `Module3.tar.gz <https://drive.google.com/open?id=1KZGdzI50VadXdbnhC3BznAuek3eiXEJx>`_. You can directly download the module archive with the following terminal command in an SSH session:
 ::
 
 	ggID='1KZGdzI50VadXdbnhC3BznAuek3eiXEJx'; echo "The file ID is $ggID"; ggURL='https://drive.google.com/uc?export=download'; filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')"; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"
 
-
 \
 
-3. Web pages describe the steps required to `align samples <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/mapping>`_ of reads from normal and tumor samples to a reference human genome sequence, then analyze the resulting alignments to `identify rearrangements <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/rearrangement>`_. Before executing this exercise, you must create a "virtual environment" in which you install Python v2.7 and the numpy (Numerical Python) module, because the Lumpy program relies on those dependencies. Create the virtual environment with 
+Web pages describe the steps required to `align samples <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/mapping>`_ of reads from normal and tumor samples to a reference human genome sequence, then analyze the resulting alignments to `identify rearrangements <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/rearrangement>`_. Before executing this exercise, you must create a "virtual environment" in which you install Python v2.7 and the numpy (Numerical Python) module, because the Lumpy program relies on those dependencies. Create the virtual environment with 
 
 :code:`conda create --name=py2 python=2.7` 
 
@@ -92,7 +95,7 @@ Exercises
 
 \
 
-4. Download a `shell script <https://drive.google.com/open?id=1CTWJGeBctKpQ7XFgsVcK9UP7nFU9y2Vj>`_ that will carry out the commands given in the webpages linked above, edited to reflect the differences in file paths and configuration of the VCL instance using 
+3.1. Download a `shell script <https://drive.google.com/open?id=1CTWJGeBctKpQ7XFgsVcK9UP7nFU9y2Vj>`_ that will carry out the commands given in the webpages linked above, edited to reflect the differences in file paths and configuration of the VCL instance using 
 ::
 
 	ggID='1CTWJGeBctKpQ7XFgsVcK9UP7nFU9y2Vj'; echo "The file ID is $ggID"; ggURL='https://drive.google.com/uc?export=download'; filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')"; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"
@@ -125,7 +128,7 @@ Exercises
 
 \
 
-5. Map the normal tissue-derived and tumor-derived reads back to the reference genome sequence, piping the SAM-format output from the BWA mem aligner to samtools sort to sort the BAM file by reference position so alignment viewers can efficiently display the resulting alignments. The module3.sh script uses the following command line:
+3.2. Map the normal tissue-derived and tumor-derived reads back to the reference genome sequence, piping the SAM-format output from the BWA mem aligner to samtools sort to sort the BAM file by reference position so alignment viewers can efficiently display the resulting alignments. The module3.sh script uses the following command line:
 
  ::
 
@@ -143,21 +146,21 @@ Exercises
 
 
 
-6. The command to produce files of discordant reads from the BAM alignments uses the "flag" column of SAM format, which is a numerical value that contains answers for 12 different yes-or-no questions. The `Explain SAM flags <https://broadinstitute.github.io/picard/explain-flags.html>`_ web page has a list of the 12 properties of reads that make up the flag value; if the value 1294 is entered in the box, the corresponding properties of the reads are identified. The samtools view -F1294 option means "do not show reads with flags containing any of these values", effectively excluding reads with the checked characteristics from the ouput.
+3.3. The command to produce files of discordant reads from the BAM alignments uses the "flag" column of SAM format, which is a numerical value that contains answers for 12 different yes-or-no questions. The `Explain SAM flags <https://broadinstitute.github.io/picard/explain-flags.html>`_ web page has a list of the 12 properties of reads that make up the flag value; if the value 1294 is entered in the box, the corresponding properties of the reads are identified. The samtools view -F1294 option means "do not show reads with flags containing any of these values", effectively excluding reads with the checked characteristics from the ouput.
 
 \
 
-7. The command to produce files of split reads uses a script called extractSplitReads_BwaMem in the scripts subdirectory of the Module3 directory - make sure you use the correct path when you try to execute this command, and pay attention to the permissions on the files in the scripts subdirectory. How can you change the permissions to allow execution of all those script files?
+3.4. The command to produce files of split reads uses a script called extractSplitReads_BwaMem in the scripts subdirectory of the Module3 directory - make sure you use the correct path when you try to execute this command, and pay attention to the permissions on the files in the scripts subdirectory. How can you change the permissions to allow execution of all those script files?
 
 \
 
-8. The LUMPY program is installed in the VCL machine image and the path to the executable program is in the search PATH variable, so you should be able to execute that program without concern about what path to use to the program. The paths to the input files, and the names of the input files, however, must match those present on your instance of the machine image.
+3.5. The LUMPY program is installed in the VCL machine image and the path to the executable program is in the search PATH variable, so you should be able to execute that program without concern about what path to use to the program. The paths to the input files, and the names of the input files, however, must match those present on your instance of the machine image.
 
 
 Additional Resources
 ********************
 
-+ Information on the Sequence Alignment and Mapping (SAM) format is available at a University of Michigan `wiki <http://genome.sph.umich.edu/wiki/SAM>`_, at `Dave’s Wiki <http://davetang.org/wiki/tiki-index.php?page=SAM>`_, and in the SAM format `specification <http://samtools.sourceforge.net/SAM1.pdf>`_. 
++ Information on the Sequence Alignment and Mapping (SAM) format is available at a University of Michigan `wiki <https://genome.sph.umich.edu/wiki/SAM>`_, at `Dave’s Wiki <https://davetang.org/wiki/tiki-index.php?page=SAM>`_, and in the SAM format `specification <https://samtools.github.io/hts-specs/SAMv1.pdf>`_. 
 
 \
 
@@ -186,5 +189,5 @@ Additional Resources
 
 
 
-Last modified 30 January 2020.
+Last modified 4 February 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
