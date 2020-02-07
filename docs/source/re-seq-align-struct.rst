@@ -68,7 +68,7 @@ Exercises
 
 \
 
-2. Erik Garrison, lead author of the Freebayes SNP caller, has an `exercise in alignment and variant calling <https://github.com/ekg/alignment-and-variant-calling-tutorial>`_ on his Github page, using both E. coli and human datasets downloaded from web sources. The software required for this tutorial is installed in the VCL machine image. A set of `slides <https://drive.google.com/open?id=1XR3kHmCQrTMs007oFKyMs-Qo04lW30vU>`_ from a presentation Garrison gave in 2015 describing the Freebayes SNP caller and how it is used in the 1000 Genomes project exploring human genome diversity are also available.
+2. Erik Garrison, lead author of the Freebayes SNP caller, has an `exercise in alignment and variant calling <https://github.com/ekg/alignment-and-variant-calling-tutorial>`_ on his Github page, using both E. coli and human datasets downloaded from web sources, for class please use the `updated exercise <https://drive.google.com/open?id=1x_swb1Lfhf9u1tXILkjchkx_Li561ZYN>`_. The software required for this tutorial is installed in the VCL machine image. A set of `slides <https://drive.google.com/open?id=1XR3kHmCQrTMs007oFKyMs-Qo04lW30vU>`_ from a presentation Garrison gave in 2015 describing the Freebayes SNP caller and how it is used in the 1000 Genomes project exploring human genome diversity are also available.
 
 \
 
@@ -189,5 +189,5 @@ Additional Resources
 
 
 
-Last modified 4 February 2020.
+Last modified 6 February 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
