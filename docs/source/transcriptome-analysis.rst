@@ -142,5 +142,5 @@ Additional Resources
 
 
 
-Last modified 23 April 2019.
+Last modified 27 February 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
