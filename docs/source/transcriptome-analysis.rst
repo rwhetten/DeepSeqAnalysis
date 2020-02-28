@@ -59,7 +59,7 @@ Exercises
 
 You can use the commands found in the `Transcriptome_data.txt <https://drive.google.com/open?id=1jSNUzeBRg1dExWJhI2ylxRfggHYh4s1->`_ to download the required archives directly from the command line. 
 
-1. A subset of the experimental data from `Cumbie et al 2011 <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0025279>`_ is saved in the `AtRNAseq <https://drive.google.com/open?id=1_-cX7Scvp_e8zlN4glcD3-i2eJg5Tv71>`_ archive. The files `c1.fq.gz <https://drive.google.com/open?id=1A1ePOEEQxgY5-WbtH99_-wfpivYpLRyT>`_, `c2.fq.gz <https://drive.google.com/open?id=1OIwpkuNJIAhfDoXFsfAiEbCho6EXt412>`_, and `c3.fq.gz <https://drive.google.com/open?id=1DhVkPmszlpvH8dIKXef2iiSO-cF_cj-v>`_ contain sequence reads from three biological replicates of control samples, and files `t1.fq.gz <https://drive.google.com/open?id=13xP7gcbNCT8BwbGh1_bLg6LF_AWfruhn>`_, `t2.fq.gz <https://drive.google.com/open?id=1_gPRcV7zzs8HixgK7dwNRb-h8MPXjMpc>`_ and `t3.fq.gz <https://drive.google.com/open?id=1wr0qCiomXFSiB2T9zdrzYRSB7FcW67Cy>`_ contain sequence reads from three biological replicates of test samples. The file `Atchromo5.fasta.gz <https://drive.google.com/open?id=1i5p9JlQZh_xvhGN_d9JvLVaOxqF8Hp0_>`_ contains the sequence of Arabidopsis chromosome 5.
+1. A subset of the experimental data from `Cumbie et al 2011 <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0025279>`_ is saved in the `AtRNAseq <https://drive.google.com/open?id=1_-cX7Scvp_e8zlN4glcD3-i2eJg5Tv71>`_ archive. The files `c1.fq.gz <https://drive.google.com/open?id=1A1ePOEEQxgY5-WbtH99_-wfpivYpLRyT>`_, `c2.fq.gz <https://drive.google.com/open?id=1OIwpkuNJIAhfDoXFsfAiEbCho6EXt412>`_, and `c3.fq.gz <https://drive.google.com/open?id=1DhVkPmszlpvH8dIKXef2iiSO-cF_cj-v>`_ contain sequence reads from three biological replicates of control samples, and files `t1.fq.gz <https://drive.google.com/open?id=13xP7gcbNCT8BwbGh1_bLg6LF_AWfruhn>`_, `t2.fq.gz <https://drive.google.com/open?id=1_gPRcV7zzs8HixgK7dwNRb-h8MPXjMpc>`_ and `t3.fq.gz <https://drive.google.com/open?id=1wr0qCiomXFSiB2T9zdrzYRSB7FcW67Cy>`_ contain sequence reads from three biological replicates of test samples. The file `Atchromo5.fasta.gz <https://drive.google.com/open?id=1i5p9JlQZh_xvhGN_d9JvLVaOxqF8Hp0_>`_ contains the sequence of Arabidopsis chromosome 5, and the file `TAIR10.cDNA.fa.gz <https://drive.google.com/open?id=13n6Iu-Aht4ikGH2SyX0yTwKVfx3ply3R>`_ contains predicted transcripts from the TAIR10 Arabidopsis genome assembly. Matrices produced by Salmon using k-mer-based "quasi-mapping" of `read counts <https://drive.google.com/a/ncsu.edu/file/d/1E37JMBl76XPvVlfGKGIha5PPL1Ow8EqF>`_ or `read TPM values <https://drive.google.com/a/ncsu.edu/file/d/1fyhuRyJmh6f0j5ktEUHveoIsg_k1W6OV>`_ are available; these can be imported into DESeq2 or edgeR sessions and analyzed according to the vignettes for those packages (links provided above). 
 
 \
  
@@ -89,6 +89,10 @@ You can use the commands found in the `Transcriptome_data.txt <https://drive.goo
 
 Additional Resources
 ********************
+
++ `Choice of library size normalization and statistical methods for differential gene expression analysis in balanced two-group comparisons for RNA-seq studies <https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6502-7>`_. Li et al, BMC Genomics 21:75, 2020.  *These authors compare different normalization methods and statistical tests for sensitivity and specificity in analysis of simulated RNA-seq datasets, where the correct answer is known, and report that different methods give optimal results depending on the experimental design.*
+
+\
 
 + `Statistical design and analysis of RNA sequencing data <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2881125>`_. Auer & Doerge, Genetics 185(2):405-416, 2010.
 
