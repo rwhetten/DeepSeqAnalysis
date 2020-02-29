@@ -6,7 +6,7 @@
    :language: bash
 
 
-Transcriptome Analysis Annotation and Differential Gene Expression
+Transcriptome Analysis: Differential Gene Expression and Annotation
 ==================================================================
 
 
@@ -20,7 +20,7 @@ Transcriptome analysis is a very broad topic that covers a spectrum from initial
 Objective
 *********
 
-The objective of this session is to introduce participants to the additional complexity of analyzing transcriptomes by deep sequencing, above the already complex process of analyzing genome structure. RNA transcripts vary both in abundance, in primary sequence, and in the outcome of splicing processes. All these types of variation can have important biological effects, and may be of interest in a "transcriptomics" experiment. 
+The objective of this session is to introduce participants to the additional complexity of analyzing transcriptomes by deep sequencing, above the already complex process of analyzing genome structure. RNA transcripts vary both in abundance, in primary sequence, and in the outcome of splicing processes. All these types of variation can have important biological effects, and may be of interest in a "transcriptomics" experiment. Annotation is the process of describing functional elements in genomes, including regions that are transcribed and processed into various kinds of functional RNA molecules. Messenger RNAs that encode proteins are an abundant class of functional RNA molecules, but by no means the only one - long non-coding RNAs, microRNAs, ribosomal RNAs and transfer RNAs are other important classes of functional RNA molecules. 
 
 
 
@@ -47,9 +47,9 @@ RNA-Seq library construction strategies may be different for different experimen
 
 \
 
-+ Alternative splicing analysis: complete coverage of exons is essential, and estimates of relative abundance are important also.
++ Alternative splicing analysis: complete coverage of exons is essential, and estimates of relative abundance are important also. Long-read sequencing methods (PacBio and Oxford Nanopore) are becoming the method of choice for analysis of alternative splicing events because they allow analysis of combinations of alternative splicing events across the entire length of the mature transcript. This advantage is most important in studies of genes in which multiple sites of alternative splicing are known, and a central question of interest is which events occur in the same transcript.
 
-Often researchers are interested in all aspects of transcriptome analysis – discovering new transcripts or alternate splicing events of annotated genes, plus measuring relative abundance and detecting genetic variation – so many RNA-Seq experiments use non-normalized libraries of cDNA primed with random oligos, to give relatively uniform coverage across entire transcripts. Accurate reconstruction of alternatively-spliced transcripts from individual genes is an important part of RNA-seq data analysis if the experimental objectives include testing for significant differences in levels of alternatively-spliced transcripts among individuals (genetic variation in splicing) or among treatment groups (which may include developmental stages as well as environmental conditions or chemical exposures). Software designed to test for association between genetic variants and levels of alternatively-spliced transcripts is available (Monlong et al, `2014 <http://www.nature.com/ncomms/2014/140820/ncomms5698/full/ncomms5698.html>`_). Pipeline tools that combine multiple software packages into an integrated analytical approach have been described by multiple groups (Cumbie et al, `2011 <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0025279>`_ and Varet et al., `2015 <http://biorxiv.org/content/early/2015/09/26/021741>`_ are examples); these may be worth setting up if you have a lot of data to analyze and want the added functionality of an integrated pipeline.
+Often researchers are interested in all aspects of transcriptome analysis – discovering new transcripts or alternate splicing events of annotated genes, plus measuring relative abundance and detecting genetic variation – so many RNA-Seq experiments use non-normalized libraries of cDNA synthesized by priming with random oligos, to give relatively uniform coverage across entire transcripts. Accurate reconstruction of alternatively-spliced transcripts from individual genes is an important part of RNA-seq data analysis if the experimental objectives include testing for significant differences in levels of alternatively-spliced transcripts among individuals (genetic variation in splicing) or among treatment groups (which may include developmental stages as well as environmental conditions or chemical exposures). Software designed to test for association between genetic variants and levels of alternatively-spliced transcripts is available (Monlong et al, `2014 <http://www.nature.com/ncomms/2014/140820/ncomms5698/full/ncomms5698.html>`_). Pipeline tools that combine multiple software packages into an integrated analytical approach have been described by multiple groups (Cumbie et al, `2011 <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0025279>`_ and Varet et al., `2015 <http://biorxiv.org/content/early/2015/09/26/021741>`_ are examples); these may be worth setting up if you have a lot of data to analyze and want the added functionality of an integrated pipeline.
 
 
 
@@ -85,6 +85,9 @@ You can use the commands found in the `Transcriptome_data.txt <https://drive.goo
 
 7. An older `tutorial <http://girke.bioinformatics.ucr.edu/CSHL_RNAseq/mydoc/mydoc_systemPipeRNAseq_02/>`_ for Gene Ontology (GO) Term Enrichment from RNAseq analysis. The tutorial from a Cold Spring Harbor Plant Biology short corse contains information on the overview of the GO term enrichment and notes on the sampling procedure used to shrink the dataset from the `full NCBI record <https://www.ncbi.nlm.nih.gov/bioproject/PRJNA156671>`_. For more information the `Gene Ontology page <http://geneontology.org/docs/go-annotations/>`_ has links to the annotation tables of various organisms. Additionally, a `vignette for the goseq package <https://bioconductor.org/packages/3.4/bioc/vignettes/goseq/inst/doc/goseq.pdf>`_ for GO Term Enrichment using v3.4 of Bioconductor is also available. 
 
+\
+
+8. An exercise in evaluating the influence of total read depth on the sensitivity and precision of detecting genes using RNA-seq data is available. The `download.bamfiles.sh <https://drive.google.com/a/ncsu.edu/file/d/1ZGfoQ9v6x1gIrt9JdxrgGyewG0GB4bZ8>`_ script will download a set of BAM files from Google Drive and run the Hisat2 reference-guided transcript assembler on the files, then compare the GTF files output from the Hisat2 runs with the TAIR10 Arabidopsis reference genome assembly annotation to assess the sensitivity and precision of detecting annotated genes from RNA-seq data. These data are from the study of `Marquez et al, 2012 <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3371709/>`_ - the BAM files contain only reads aligning to chromosome 2 of the Arabidopsis genome, and were subsampled to represent 20%, 40%, 60%, and 80% of all the available data, as well as the complete set of reads aligned to chr2. A set of `questions <https://drive.google.com/a/ncsu.edu/file/d/1sP1sULzovd1E6LzeDEi0_8Aq1fqrCe-8>`_ to answer about the output from the experiment is also available. Important sources of information include the `Stringtie manual <http://ccb.jhu.edu/software/stringtie/index.shtml?t=manual>`_ and the `GFFcompare manual <https://ccb.jhu.edu/software/stringtie/gffcompare.shtml>`_ webpages.
 
 
 Additional Resources
@@ -142,5 +145,5 @@ Additional Resources
 
 
 
-Last modified 27 February 2020.
+Last modified 29 February 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
