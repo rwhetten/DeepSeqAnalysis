@@ -97,6 +97,10 @@ Additional Resources
 
 \
 
++ `CHESS: a new human gene catalog curated from thousands of large-scale RNA sequencing experiments reveals extensive transcriptional noise. <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1590-2>`_ Pertea et al, Genome Biol 19:208, 2018. *These authors report the discovery of 224 novel protein-coding genes and 116,156 novel transcripts in the human genome, in additional to millons of transcripts they hypothesize are transcriptional 'noise'. See also the* `Research Highlight <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1600-4>`_ *by W.F. Doolittle in the same issue of the journal, which discusses the definition of gene function as "honed by natural selection in order to contribute to organismal fitness", and the alternative perspective that suggests that transcribed regions of the genome must have a function because they are transcribed.*
+
+\
+
 + `Statistical design and analysis of RNA sequencing data <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2881125>`_. Auer & Doerge, Genetics 185(2):405-416, 2010.
 
 \
