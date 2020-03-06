@@ -91,7 +91,7 @@ You can use the commands found in the `Transcriptome_data.txt <https://drive.goo
 
 \
 
-9. An exercise on annotation of assembled transcripts (either reference-guided or de-novo assembled) with TransDecoder is available. The `annotation.sh <https://drive.google.com/a/ncsu.edu/file/d/1CdT4XDvtTAqWn9R1w6UoGsQ9mlFssGj_>`_ script file picks up where Exercise 8 ends, and assumes that the GTF file produced by Stringtie reference-guided assembly of RNA-seq reads is available. Some editing of the script will be necessary to make sure the file names and paths are correct for the files you are using for the annotation exercise.
+9. An exercise on annotation of assembled transcripts (either reference-guided or de-novo assembled) with TransDecoder is available. The `annotation.sh <https://drive.google.com/a/ncsu.edu/file/d/1CdT4XDvtTAqWn9R1w6UoGsQ9mlFssGj_>`_ script file picks up where Exercise 8 ends, and assumes that the GTF file produced by Stringtie reference-guided assembly of RNA-seq reads is available. Some editing of the script will be necessary to make sure the file names and paths are correct for the files you are using for the annotation exercise. The text file `Trinotate_Bioconda_install.txt <https://drive.google.com/a/ncsu.edu/file/d/1vcVevB4jaBWUarIM7rWMo_ELFphKSd2Y>`_ has information on how to install the complete Trinotate annotation pipeline using Bioconda - this may work on the VCL image, but will be most useful on the HPC because it has more resources available to actually process large datasets.
 
 Additional Resources
 ********************
