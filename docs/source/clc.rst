@@ -30,6 +30,8 @@ Working with real data.
 Resources
 *********
 
+`Installation guide <https://drive.google.com/open?id=1UjPPPEc7n5hczJFXPCFXx-FbFQpbxIRQ>`_
+
 `User Guide <https://drive.google.com/open?id=14JAXRocZ25DHSexLSeUJ7K5p3fqDtQ4r>`_
 
 `System Requirements for CLC Genomics Workbench <https://www.qiagenbioinformatics.com/system-requirements/>`_
@@ -50,5 +52,5 @@ Resources
 
 
 
-Last modified 15 April 2019.
+Last modified 16 March 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
