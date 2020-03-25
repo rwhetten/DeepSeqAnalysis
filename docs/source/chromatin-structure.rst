@@ -75,7 +75,7 @@ Exercises
 
 \
 
-3. The BED file format is commonly used to describe the locations at which peaks of sequence reads mark likely locations of immuno-reactive complexes (DNA modifications or protein binding), and the bedtools program is a powerful tool for analysis and manipulation of such files. Bedtools can be installed from the Ubuntu software repository, and a `tutorial <http://quinlanlab.org/tutorials/bedtools/bedtools.html>`_ with guided exercises using bedtools and DNAseI-hypersensitivity data from `Maurano et al (2012) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3771521/>`_ is available. The `Integrative Genome Viewer <https://www.broadinstitute.org/igv/>`_ is a tool for visualizing genomic data, and provides a graphic interface for exploration of experimental results; the bedtools tutorial includes some visualization steps as examples. 
+3. The BED file format is commonly used to describe the locations at which peaks of sequence reads mark likely locations of immuno-reactive complexes (DNA modifications or protein binding), and the bedtools program is a powerful tool for analysis and manipulation of such files. Bedtools can be installed from the Ubuntu software repository, and a `tutorial <http://quinlanlab.org/tutorials/bedtools/bedtools.html>`_ with guided exercises using bedtools and DNAseI-hypersensitivity data from `Maurano et al (2012) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3771521/>`_ is available. The `Integrative Genome Viewer <https://www.broadinstitute.org/igv/>`_ is a tool for visualizing genomic data, and provides a graphic interface for exploration of experimental results; the bedtools tutorial includes some visualization steps as examples. A video-guided tutorial (2 hours, ~130mb) is available for download from google drive with `this link <https://drive.google.com/open?id=1dNpEHkLG5-cg0AT17sYyuit5z7EUiYDq>`_.
 
 \
 
@@ -158,5 +158,5 @@ Additional Resources
 
 
 
-Last modified 22 March 2020.
+Last modified 25 March 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
