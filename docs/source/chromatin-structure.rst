@@ -75,7 +75,7 @@ Exercises
 
 \
 
-3. The BED file format is commonly used to describe the locations at which peaks of sequence reads mark likely locations of immuno-reactive complexes (DNA modifications or protein binding), and the bedtools program is a powerful tool for analysis and manipulation of such files. Bedtools can be installed from the Ubuntu software repository, and a `tutorial <http://quinlanlab.org/tutorials/bedtools/bedtools.html>`_ with guided exercises using bedtools and DNAseI-hypersensitivity data from `Maurano et al (2012) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3771521/>`_ is available. The `Integrative Genome Viewer <https://www.broadinstitute.org/igv/>`_ is a tool for visualizing genomic data, and provides a graphic interface for exploration of experimental results; the bedtools tutorial includes some visualization steps as examples. A video-guided tutorial (2 hours, ~130mb) is available for download from google drive with `this link <https://drive.google.com/open?id=1dNpEHkLG5-cg0AT17sYyuit5z7EUiYDq>`_. There is also `bedtools.tutorial.sh <https://drive.google.com/open?id=1fsRNina7IRN7soyvzEDSACHbW4G5ITWA>`_ which is a script to download the IGV and quickly get started.
+3. The BED file format is commonly used to describe the locations at which peaks of sequence reads mark likely locations of immuno-reactive complexes (DNA modifications or protein binding), and the bedtools program is a powerful tool for analysis and manipulation of such files. Bedtools can be installed from the Ubuntu software repository, and a `tutorial <http://quinlanlab.org/tutorials/bedtools/bedtools.html>`_ with guided exercises using bedtools and DNAseI-hypersensitivity data from `Maurano et al (2012) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3771521/>`_ is available. The `Integrative Genome Viewer <https://www.broadinstitute.org/igv/>`_ is a tool for visualizing genomic data, and provides a graphic interface for exploration of experimental results; the bedtools tutorial includes some visualization steps as examples. A video-guided tutorial (2 hours, ~130mb) is available for download from google drive with `this link <https://drive.google.com/open?id=1dNpEHkLG5-cg0AT17sYyuit5z7EUiYDq>`_ along with the text document from the session `here <https://drive.google.com/open?id=1A7op6D8Eb62D3bQ-Fmsphx_er2_tf097>`_. There is also `bedtools.tutorial.sh <https://drive.google.com/open?id=1KTe26-yMhtMZSBKqBMcO_25-UtKs3i8i>`_ which is a script to download the IGV and quickly get started with some ChIPseq exercises. A zoom-recorded class session from March 27th, 2020 with transcribed audio captioning is `available here <https://ncsu.zoom.us/rec/share/7pd3AuzoylFJYZ2R-UPEfqsqJqf8X6a8g3Qe__UIz0zueRhQXLLlvclGdFTCEkyU>`_ or by download from `google drive <https://drive.google.com/open?id=1qXg0jZHqAv1NJElEL5THg49cw49N1R0d>`_. 
 
 \
 
@@ -158,5 +158,5 @@ Additional Resources
 
 
 
-Last modified 25 March 2020.
+Last modified 27 March 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
