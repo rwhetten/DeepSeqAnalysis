@@ -25,6 +25,8 @@ Working with real data.
 
 2. Either follow along with `Loading data <https://drive.google.com/open?id=1fxjehFe3BhwKA4q4cSD94gFZqTe-hsWwdl-dd133JZg>`_ to split the fastq files from compiled read 1 and 2 to separate files or download the `split_r1_r2.zip <https://drive.google.com/open?id=1chLaduWLQUAPs8yLsiI2J2HARnqhPxjc>`_ with the files already split.
 
+3. Zoom video is available for `stream <https://ncsu.zoom.us/rec/play/u8V5c--g-m83GtCR4gSDCvcsW466ev6s1XcYr_MPmEq3BnFSZ1DzYLARYeAPs6BOwHvYrP5ZwpJqLWIQ?continueMode=true>`_ or by `download from gdrive <https://drive.google.com/open?id=1F7ssDiSAMd_J2XEHdqw0f251J6LdCYA6>`_ for the resequencing analysis using tracks tutorial.
+
 
 
 Resources
@@ -52,5 +54,5 @@ Resources
 
 
 
-Last modified 16 March 2020.
+Last modified 30 March 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
