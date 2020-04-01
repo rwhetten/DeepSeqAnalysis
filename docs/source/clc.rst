@@ -27,6 +27,7 @@ Working with real data.
 
 3. Zoom video is available for `stream <https://ncsu.zoom.us/rec/play/u8V5c--g-m83GtCR4gSDCvcsW466ev6s1XcYr_MPmEq3BnFSZ1DzYLARYeAPs6BOwHvYrP5ZwpJqLWIQ?continueMode=true>`_ or by `download from gdrive <https://drive.google.com/open?id=1F7ssDiSAMd_J2XEHdqw0f251J6LdCYA6>`_ for the resequencing analysis using tracks tutorial.
 
+4. To download the Genome sequences for the Denovo assembly tutorial use the following links `SRR396639_1.fastq.gz <https://drive.google.com/open?id=1fbLUAd2A0sJH37dMlusMuJcxvTa8VhyQ>`_, `SRR396639_2.fastq.gz <https://drive.google.com/open?id=1MlFc-Jz0j8qRXDDeGuSkFCmxFC52yyqJ>`_, `SRR396640_1.fastq.gz <https://drive.google.com/open?id=1YXp45epQXbpJxSqWKnIhMeTcD_jQr730>`_, and `SRR396640_2.fastq.gz <https://drive.google.com/open?id=1Mdf0c6REK1qgXPjWV7cg8HlBGPLk88ih>`_. 
 
 
 Resources
