@@ -33,6 +33,7 @@ The Analysis of Deep Sequencing Data course is designed to introduce biologists 
    chromatin-structure
    awk-sed-bash
    clc
+   HPC <https://ncsu-debug.readthedocs.io/en/latest/HPC.html>
 
 
 
@@ -46,5 +47,5 @@ Indices and tables
 * :ref:`search`
 
 
-Last modified 19 December 2019.
+Last modified 2 April 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
