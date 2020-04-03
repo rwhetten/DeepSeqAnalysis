@@ -13,7 +13,7 @@ HPC and LSF
 Objective
 *********
 
-To work through NCSU's High-Preformance Cluster (HPC) quick-start tutorial and other reference videos to review and pratice cluster job submission using LSF.     
+To work through NCSU's High-Performance Cluster (HPC) quick-start tutorial and other reference videos to review and practice cluster job submission using LSF.     
 
 
 Exercises
@@ -34,6 +34,8 @@ Resources
 `NCSU OIT HPC main page <https://projects.ncsu.edu/hpc/main.php>`_
 
 `NCSU HPC LSF guide <https://projects.ncsu.edu/hpc/Documents/LSF.php>`_
+
+`NCSU HPC conda guide <https://projects.ncsu.edu/hpc/Software/Apps.php?app=Conda>`_ - Conda is the preferred method for installing software on the HPC, because it provides a way to manage dependencies and version requirements. Conda was originally written primarily for managing Python virtual environments, but has been extended to include a variety of software not related to Python. See the `Bioconda site <https://bioconda.github.io/>`_ for more information about the enormous variety (> 7000 different bioinformatics programs) available for installation through the bioconda channel of Conda.
 
 `NCSU Bioinformatic Users Group (deBUG) <https://ncsu-debug.readthedocs.io/en/latest/#>`_ ReadtheDoc site.
 
