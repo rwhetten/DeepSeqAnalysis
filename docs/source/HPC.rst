@@ -32,7 +32,9 @@ Resources
 *********
 
 `NCSU OIT HPC main page <https://projects.ncsu.edu/hpc/main.php>`_
+
 `NCSU HPC LSF guide <https://projects.ncsu.edu/hpc/Documents/LSF.php>`_
+
 `NCSU Bioinformatic Users Group (deBUG) <https://ncsu-debug.readthedocs.io/en/latest/#>`_ ReadtheDoc site.
 
 
