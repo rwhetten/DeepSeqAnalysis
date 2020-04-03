@@ -25,7 +25,7 @@ Using NC State University's High-Performance Computing (HPC) Service:
 
 2. Either watch and follow along with the `video guide <https://youtu.be/RXKzN3osLR8>`_ or work through the text version at the bottom of the same page.
 
-3. A Zoom video recording is available `with this link <temp>`_ (or `by download <temp>`_)
+3. A Zoom video recording is available `with this link <https://ncsu.zoom.us/rec/play/upUqJOCpqG03HtKRtQSDAPB-W47oLqys1yMbrPUNzhnnUXILNQelb7NEYuAksjKwuIdXu_z0x_k4IH92?continueMode=true>`_ (or `by video download <https://drive.google.com/open?id=1mdUOXF80CeAm345lh6PIvftUuOV_Q-Jf>`_ & `transcript download <https://drive.google.com/open?id=1Y-DchMpqrMNv58Z03i-SRnrIZVhgb6eD>`_)
 
 
 Resources
