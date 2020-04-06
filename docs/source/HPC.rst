@@ -27,7 +27,8 @@ Using NC State University's High-Performance Computing (HPC) Service:
 
 3. A Zoom video recording of the class session working through the Quick-Start tutorial is available `with this link <https://ncsu.zoom.us/rec/play/upUqJOCpqG03HtKRtQSDAPB-W47oLqys1yMbrPUNzhnnUXILNQelb7NEYuAksjKwuIdXu_z0x_k4IH92?continueMode=true>`_ (or `by video download <https://drive.google.com/open?id=1mdUOXF80CeAm345lh6PIvftUuOV_Q-Jf>`_ & `transcript download <https://drive.google.com/open?id=1Y-DchMpqrMNv58Z03i-SRnrIZVhgb6eD>`_)
 
-4. A `text file <https://drive.google.com/a/ncsu.edu/file/d/1-QqP_tFWBXD5dU8_A8zSVcKgiEy0SkDt/>`_ is available with an overview of commands used to set up a Conda environment on the HPC, and an example LSF job script used to carry out a series of commands using software installed through Conda.
+4. A `text file <https://drive.google.com/a/ncsu.edu/file/d/1-QqP_tFWBXD5dU8_A8zSVcKgiEy0SkDt/>`_ is available with an overview of commands used to set up a Conda environment on the HPC, and an example LSF job script used to carry out a series of commands using software installed through Conda. A Zoom video recording of the class session working through conda setup and LSF job submisson is available `with this link <https://ncsu.zoom.us/rec/play/uZZ-I7ihrmk3EoDDtgSDB_YtW461JqOs0nMd_KcFzx3hBndWYFf3NLVAYyzsdId1nlkPrQ2X1vQU9-c?continueMode=true>`_ (or `by video download <https://drive.google.com/open?id=19CTrmUv27c_upafnUEj2Y0g2kXKJdWzV>`_ & `transcript download <https://drive.google.com/open?id=1cXAYhbLFLma6ZSeRBQ1zm6dlyXa0d6g->`_).
+
 
 Resources
 *********
@@ -43,5 +44,5 @@ Resources
 
 
 
-Last modified 5 April 2020.
+Last modified 6 April 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_ and `Will Kohlway <https://github.com/wkohlway>`_.
