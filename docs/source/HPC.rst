@@ -27,8 +27,9 @@ Using NC State University's High-Performance Computing (HPC) Service:
 
 3. A Zoom video recording of the class session working through the Quick-Start tutorial is available `with this link <https://ncsu.zoom.us/rec/play/upUqJOCpqG03HtKRtQSDAPB-W47oLqys1yMbrPUNzhnnUXILNQelb7NEYuAksjKwuIdXu_z0x_k4IH92?continueMode=true>`_ (or `by video download <https://drive.google.com/open?id=1mdUOXF80CeAm345lh6PIvftUuOV_Q-Jf>`_ & `transcript download <https://drive.google.com/open?id=1Y-DchMpqrMNv58Z03i-SRnrIZVhgb6eD>`_)
 
-4. A `text file <https://drive.google.com/a/ncsu.edu/file/d/1-QqP_tFWBXD5dU8_A8zSVcKgiEy0SkDt/>`_ is available with an overview of commands used to set up a Conda environment on the HPC, and an example LSF job script used to carry out a series of commands using software installed through Conda. A Zoom video recording of the class session working through conda setup and LSF job submisson is available `with this link <https://ncsu.zoom.us/rec/play/uZZ-I7ihrmk3EoDDtgSDB_YtW461JqOs0nMd_KcFzx3hBndWYFf3NLVAYyzsdId1nlkPrQ2X1vQU9-c?continueMode=true>`_ (or `by video download <https://drive.google.com/open?id=19CTrmUv27c_upafnUEj2Y0g2kXKJdWzV>`_ & `transcript download <https://drive.google.com/open?id=1cXAYhbLFLma6ZSeRBQ1zm6dlyXa0d6g->`_).
+4. A `text file <https://drive.google.com/open?id=15_RzI6yQqB-BRUVYl70y6AucvhI8EfZQFbC64mUYJEU>`_ is available with an overview of commands used to set up a Conda environment on the HPC, and an example LSF job script used to carry out a series of commands using software installed through Conda. A Zoom video recording of the class session working through conda setup and LSF job submisson is available `with this link <https://ncsu.zoom.us/rec/play/uZZ-I7ihrmk3EoDDtgSDB_YtW461JqOs0nMd_KcFzx3hBndWYFf3NLVAYyzsdId1nlkPrQ2X1vQU9-c?continueMode=true>`_ (or `by video download <https://drive.google.com/open?id=19CTrmUv27c_upafnUEj2Y0g2kXKJdWzV>`_ & `transcript download <https://drive.google.com/open?id=1cXAYhbLFLma6ZSeRBQ1zm6dlyXa0d6g->`_).
 
+5. A `text file <https://docs.google.com/document/d/1OIVhHsFscXNezba3KHaWEZ7svNq_jYotB9l3mvidfNA>`_ is available with an outline of steps required to set up a Conda environment with Trinity and Transdecoder, do de novo transcriptome assembly, and carry out functional annotation. Sorting out the details of how to do these steps is left as an exercise.
 
 Resources
 *********
@@ -41,8 +42,11 @@ Resources
 
 `NCSU Bioinformatic Users Group (deBUG) <https://ncsu-debug.readthedocs.io/en/latest/#>`_ ReadtheDoc site.
 
+`Singularity v3.5 documentation <https://sylabs.io/guides/3.5/user-guide/>`_ from Sylabs.io
 
+`Using Singularity on the NIH HPC <https://hpc.nih.gov/apps/singularity.html>`_ is documentation for the NIH cluster, but has lots of useful advice and links with more information
 
+`Using Singularity on the NC State BRC cluster <https://brcwebportal.cos.ncsu.edu/cluster_workshop/doku.php?id=using_singularity>`_ is specific to the BRC cluster, which uses SLURM rather than LSF. This also has good advice and links.
 
-Last modified 6 April 2020.
+Last modified 7 April 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_ and `Will Kohlway <https://github.com/wkohlway>`_.
