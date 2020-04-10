@@ -31,6 +31,8 @@ Using NC State University's High-Performance Computing (HPC) Service:
 
 5. A `text file <https://docs.google.com/document/d/1OIVhHsFscXNezba3KHaWEZ7svNq_jYotB9l3mvidfNA>`_ is available with an outline of steps required to set up a Conda environment with Trinity and Transdecoder, do de novo transcriptome assembly, and carry out functional annotation. Sorting out the details of how to do these steps is left as an exercise. A Zoom video recording of the class session working through these steps is available `with this link <https://ncsu.zoom.us/rec/play/uJModu75r2k3TNGV4QSDB_ItW43pK_-s0ihN-PANmk22WnlQNlf3YLYba-VII4xxRXa2x5abeHm2I9W-?continueMode=true>`_ (or `by video download <https://drive.google.com/open?id=1n017W53zp8ZoMc3arG7BW5z1IGwbgCWQ>`_ & `transcript download <https://drive.google.com/open?id=1WSk6MLEDpl0bfEKzsPSc_mzxq36v2kNV>`_).
 
+6. `Notes from 10 April 2020 <https://docs.google.com/document/d/12MuVvPPCjbdK6mJHD5wMrBjmygx2ezm6RoaHB4yaXag>`_ - an exercise to carry out assembly and annotation of a yeast RNA-seq dataset using Trinity, TransDecoder, and Trinotate installed in a Conda environment.
+
 Resources
 *********
 
