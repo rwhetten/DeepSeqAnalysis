@@ -33,6 +33,23 @@ Using NC State University's High-Performance Computing (HPC) Service:
 
 6. `Notes from 10 April 2020 <https://docs.google.com/document/d/12MuVvPPCjbdK6mJHD5wMrBjmygx2ezm6RoaHB4yaXag>`_ - an exercise to carry out assembly and annotation of a yeast RNA-seq dataset using Trinity, TransDecoder, and Trinotate installed in a Conda environment.
 
+Final Project
+*************
+
+The goal of this project (should you choose to accept it), is to utilize the HPC and LSF scripting to.. 
+
+
+1. Do a de novo transcriptome assembly with yeast RNA-seq data.
+
+2. Identify open reading frames, and annotate those ORFs using results of protein similarity searches, protein domain analysis, and various other tools. 
+
+
+The software to be used includes the Trinity assembler, the TransDecoder suite for identification of ORFs, and the Trinotate suite for annotation. You will need to install the necessary tools to a Conda environment on the HPC. The text file linked to the HPC and LSF section under section 6 of Exercises has some notes on how to set up and run the Conda environment to carry out the Trinity assembly as an example. The diamond (protein similarity search) and Pfam (protein domain search) databases are available at /share/bit815s20/databases. The RNA-seq data are in /share/bit815s20/yeast/RNAdata - look for the six files [rnaC1, rnaC2, rnaC3][_1.fastq.gz,_2.fastq.gz]. The TransDecoder and Trinotate pipelines will be similar, but (of course) using commands specific to those software packages.
+
+More detailed information on how to structure the commands for Trinity, TransDecoder, and Trinotate is available at the respective websites for those software packages. The ability to find the information you need to understand how to use software is an important skill to practice, as new software and new methods emerge all the time. However, we are available to answer questions, either via the Piazza forum or during the MWF 8:30 to 10:20 class periods.
+
+
+
 Resources
 *********
 
@@ -50,5 +67,5 @@ Resources
 
 `Using Singularity on the NC State BRC cluster <https://brcwebportal.cos.ncsu.edu/cluster_workshop/doku.php?id=using_singularity>`_ is specific to the BRC cluster, which uses SLURM rather than LSF. This also has good advice and links.
 
-Last modified 9 April 2020.
+Last modified 13 April 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_ and `Will Kohlway <https://github.com/wkohlway>`_.
