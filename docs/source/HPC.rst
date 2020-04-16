@@ -36,7 +36,7 @@ Using NC State University's High-Performance Computing (HPC) Service:
 Final Project
 *************
 
-The goal of this project (should you choose to accept it), is to utilize the HPC and LSF scripting to.. 
+The Final Project is optional, but highly recommended to complete. The goal of this project (should you choose to accept it), is to utilize the HPC and LSF scripting to.. 
 
 
 1. Do a de novo transcriptome assembly with yeast RNA-seq data.
