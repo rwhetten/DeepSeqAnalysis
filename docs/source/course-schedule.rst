@@ -34,39 +34,38 @@ Course Schedule
 	25–29 Jan	Sequencing instruments, Experimental design, 
 	 	        	 Data preprocessing and quality control [8, 9, 10]
 
-	22-24 Jan	Error correction and alignment	 
+	1-5 Feb		Error correction and alignment	 
 
-	1-5 Feb		Assembly - transcriptomes and genomes [22]
+	8-12 Feb	Assembly - transcriptomes and genomes [22]
 
-	8-12 Feb	Re-sequencing, alignment, structural variation [17, 18, 23]
+	15-19 Feb	Re-sequencing, alignment, structural variation [17, 18, 23]
 
-	15-19 Feb	Discovery and genotyping of genetic variation	 
+	22-26 Feb	Discovery and genotyping of genetic variation	 
 
-	22-26 Feb	R and R Studio - lectures and exercises through Software 	 
+	1-4 Mar		R and R Studio - lectures and exercises through Software 	 
 		         	 Carpentry website, sections 1 - 8
 
-	1-4 Mar		R and R Studio, continued - sections 9 - 12. 
-		            	 Advanced: Data Carpentry for Genomics
-	
 	5 Mar		Wellness Day (no class)
 
-	8-12 Mar	Transcriptome analysis: differential gene expression, 
-		       	 annotation [19, 20]
+	8-12 Mar	R and R Studio, continued - sections 9 - 12. 
+		            	 Advanced: Data Carpentry for Genomics
 
-	15-19 Mar	Genome analysis: ChIP-seq, DHS-seq, 3-D conformation	 
+	15-19 Mar	Transcriptome analysis: differential gene expression, 
+		       		 annotation [19, 20]
 
-	22 & 26 Mar	Linux command-line tools: awk, sed, and bash [15]
+	22 & 26 Mar	Genome analysis: ChIP-seq, DHS-seq, 3-D conformation	 
 				(No Class March 24th)
 
-	29 Mar-2 Apr	CLC Genomics Workbench - data QC and pre-processing	 
+	29 Mar-2 Apr	Linux command-line tools: awk, sed, and bash [15]
+	
+	5-9 Apr		CLC Genomics Workbench - data QC and pre-processing	 
 
-	5-9 Apr		CLC Genomics Workbench - RNA-seq analysis	 
+	12-16 Apr	CLC Genomics Workbench - RNA-seq analysis	 
 
-	12-16 Apr	CLC Genomics Workbench - genome assembly tutorial	 
+	19-23 Apr	CLC Genomics Workbench - genome assembly tutorial	 
 
-	19-23 Apr	CLC Genomics Workbench - variant analysis	 
+	16-30 Apr	CLC Genomics Workbench - variant analysis	 
 
-	26-30 Apr	Review and Q&A 
 
 
 
