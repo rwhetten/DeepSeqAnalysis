@@ -2,7 +2,7 @@
    :target: http://www.ncsu.edu
 
 
-Semester Overview, 2020
+Semester Overview, 2021
 =======================
 
 
@@ -13,7 +13,7 @@ Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21
 
 
 
-			**Class meetings are in Room 6117 Jordan Hall from 8:30 to 10:20 am on Mondays, Wednesdays, and Fridays.**
+			**Class meetings are hosted as zoom meetings from 8:30 to 10:20 am on Mondays, Wednesdays, and Fridays.**
 
 				The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading.
 
@@ -27,46 +27,46 @@ Course Schedule
 ***************
 ::
 
-	  Date			Topic [Biostar Handbook Chapter]
+	  Date			Topic [Relevant Biostar Handbook Chapter]
 
-	6–10 Jan	Introduction to Linux and the command-line interface [1, 2, 4]
+	20–22 Jan	Introduction to Linux and the command-line interface [1, 2, 4]
 
-	13–17 Jan	Sequencing instruments, Experimental design, 
+	25–29 Jan	Sequencing instruments, Experimental design, 
 	 	        	 Data preprocessing and quality control [8, 9, 10]
-
-	20 Jan		Martin Luther King holiday, no class	 
 
 	22-24 Jan	Error correction and alignment	 
 
-	27-31 Jan	Assembly - transcriptomes and genomes [22]
+	1-5 Feb		Assembly - transcriptomes and genomes [22]
 
-	3-7 Feb		Re-sequencing, alignment, structural variation [17, 18, 23]
+	8-12 Feb	Re-sequencing, alignment, structural variation [17, 18, 23]
 
-	10-14 Feb	Discovery and genotyping of genetic variation	 
+	15-19 Feb	Discovery and genotyping of genetic variation	 
 
-	17-21 Feb	R and R Studio - lectures and exercises through Software 	 
+	22-26 Feb	R and R Studio - lectures and exercises through Software 	 
 		         	 Carpentry website, sections 1 - 8
 
-	24-28 Feb	R and R Studio, continued - sections 9 - 12. 
+	1-4 Mar		R and R Studio, continued - sections 9 - 12. 
 		            	 Advanced: Data Carpentry for Genomics
+	
+	5 Mar		Wellness Day (no class)
 
-	2-6 Mar		Transcriptome analysis: differential gene expression, 
+	8-12 Mar	Transcriptome analysis: differential gene expression, 
 		       	 annotation [19, 20]
 
-	9-13 Mar	Spring break - no classes	 
+	15-19 Mar	Genome analysis: ChIP-seq, DHS-seq, 3-D conformation	 
 
-	16-20 Mar	Genome analysis: ChIP-seq, DHS-seq, 3-D conformation	 
+	22 & 26 Mar	Linux command-line tools: awk, sed, and bash [15]
+				(No Class March 24th)
 
-	23-27 Mar	Linux command-line tools: awk, sed, and bash [15]
+	29 Mar-2 Apr	CLC Genomics Workbench - data QC and pre-processing	 
 
-	30 Mar-3 Apr	CLC Genomics Workbench - data QC and pre-processing	 
+	5-9 Apr		CLC Genomics Workbench - RNA-seq analysis	 
 
-	6-10 Apr	CLC Genomics Workbench - RNA-seq analysis	 
+	12-16 Apr	CLC Genomics Workbench - genome assembly tutorial	 
 
-	13-17 Apr	CLC Genomics Workbench - genome assembly tutorial	 
+	19-23 Apr	CLC Genomics Workbench - variant analysis	 
 
-	20-22 Apr	CLC Genomics Workbench - variant analysis	 
-
+	26-30 Apr	Review and Q&A 
 
 
 
@@ -99,5 +99,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 5 January 2020.
+Last modified 1 December 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
