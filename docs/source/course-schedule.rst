@@ -64,7 +64,7 @@ Course Schedule
 
 	19-23 Apr	CLC Genomics Workbench - genome assembly tutorial	 
 
-	16-30 Apr	CLC Genomics Workbench - variant analysis	 
+	26-30 Apr	CLC Genomics Workbench - variant analysis	 
 
 
 
@@ -98,5 +98,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 1 December 2020.
+Last modified 13 January 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
