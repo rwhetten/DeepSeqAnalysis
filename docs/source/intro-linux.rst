@@ -36,7 +36,7 @@ DNA sequence data and most results of analysis are stored in plain text format, 
 Exercises
 *********
 
-1. An `Introduction to Linux and Lubuntu 18.04 <https://drive.google.com/file/d/1mYLZtI6IaQH80iwA-1zkeuR5KMRE6us3/view?usp=sharing>`_ is a tutorial to guide participants through an 8-step introduction to the Lubuntu 18.04 operating system and virtual computing lab (VCL) access used for most class computing exercises.
+1. An `Introduction to Linux <https://drive.google.com/file/d/1mYLZtI6IaQH80iwA-1zkeuR5KMRE6us3/view?usp=sharing>`_ is a tutorial to guide participants through an 8-step introduction to the linux operating system and virtual computing lab (VCL) access used for most class computing exercises.
 
 \
 
@@ -118,5 +118,5 @@ Setting up an Amazon Web Service account to use Elastic Compute Cloud services:
 
 
 
-Last modified 10 January 2020.
+Last modified 18 January 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
