@@ -36,7 +36,7 @@ DNA sequence data and most results of analysis are stored in plain text format, 
 Exercises
 *********
 
-1. An `Introduction to Linux and Lubuntu 16.04 <https://drive.google.com/open?id=1-BbvnRUyEaTI6bmVx6daqqShytmvl0HB>`_ is a tutorial to guide participants through an 8-step introduction to the Lubuntu 16.04 operating system used for most class computing exercises.
+1. An `Introduction to Linux and Lubuntu 18.04 <https://drive.google.com/file/d/1mYLZtI6IaQH80iwA-1zkeuR5KMRE6us3/view?usp=sharing>`_ is a tutorial to guide participants through an 8-step introduction to the Lubuntu 18.04 operating system and virtual computing lab (VCL) access used for most class computing exercises.
 
 \
 
