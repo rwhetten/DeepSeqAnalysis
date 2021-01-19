@@ -36,7 +36,7 @@ DNA sequence data and most results of analysis are stored in plain text format, 
 Exercises
 *********
 
-1. An `Introduction to Linux <https://drive.google.com/file/d/1mYLZtI6IaQH80iwA-1zkeuR5KMRE6us3/view?usp=sharing>`_ is a tutorial to guide participants through an 8-step introduction to the linux operating system and virtual computing lab (VCL) access used for most class computing exercises.
+1. An `Introduction to Linux <https://drive.google.com/file/d/1mYLZtI6IaQH80iwA-1zkeuR5KMRE6us3/view?usp=sharing>`_ is a tutorial to guide participants through an 8-step introduction to the linux operating system and virtual computing lab (VCL) access used for most class computing exercises. As an initial exercise before the tutorial, we'll use the commands in `fastq-dump.exercise.sh <https://drive.google.com/file/d/1MM7MuZvVCOfTty1Th9uBKp5Z6VCswm8c>`_ to explore some features of Linux and the virtual machine available through the VCL. Open the Intro to Linux PDF file and follow the directions to connect to a VCL instance, then open a browser in the VCL instance, navigate back to this page, and download the fastq-dump.exercise.sh file to the instance. Follow the directions in that file to compare the relative speed and resource requirements for different methods of achieving the same result. 
 
 \
 
