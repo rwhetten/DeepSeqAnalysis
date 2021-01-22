@@ -5,6 +5,11 @@
 Readings and Resources
 ======================
 
+Course Notes
+************
+
++ A `Google Doc <https://docs.google.com/document/d/1IuWPZDbavBt5Alq-PxxzkQnjuAKVDSLjXZ2zrnigwKA/>`_ version of notes for each class session. Students have view permission; instructors have edit access. This provides a way for instructors to write code that students can copy into a terminal window on another computer.
+
 Global overview books and papers
 ********************************
 
