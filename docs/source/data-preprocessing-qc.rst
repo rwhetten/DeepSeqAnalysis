@@ -118,6 +118,11 @@ Additional Resources
 
 + A squencing-focused publication/news aggregate blog, `QCfail <https://sequencing.qcfail.com/>`_.
 
+Class Recordings
+----------------
 
-Last modified 17 January 2020.
++ `Session 3: recorded January 25th 2021 <https://drive.google.com/file/d/1nH2qK6ljoX_H3cxIQ3yqQYXQuyxZ62u6/view?usp=sharing>`_. `Transcript of recording <https://drive.google.com/file/d/1DMCuaqXCT3-gKxt1LRAQMF8urBvj8LiR/view?usp=sharing>`_.
+
+
+Last modified 27 January 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
