@@ -121,7 +121,7 @@ Additional Resources
 Class Recordings
 ----------------
 
-+ `Session 3: recorded January 25th 2021 <https://drive.google.com/file/d/1nH2qK6ljoX_H3cxIQ3yqQYXQuyxZ62u6/view?usp=sharing>`_. `Transcript of recording <https://drive.google.com/file/d/1DMCuaqXCT3-gKxt1LRAQMF8urBvj8LiR/view?usp=sharing>`_.
++ `Session 3: recorded January 25th 2021 <https://drive.google.com/file/d/1nH2qK6ljoX_H3cxIQ3yqQYXQuyxZ62u6/view?usp=sharing>`_(this link is video and audio). A  Transcript of recording of the video `is also available<https://drive.google.com/file/d/1DMCuaqXCT3-gKxt1LRAQMF8urBvj8LiR/view?usp=sharing>`_.
 
 
 Last modified 27 January 2021.
