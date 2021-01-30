@@ -67,5 +67,13 @@ Additional Resources
 
 
 
-Last modified 3 January 2019.
+Class Recordings
+----------------
+
++   `Session 5: recorded January 29th 2021 <https://drive.google.com/file/d/1WKjWRWgVc2O7RdmJ9WyU9ucDSjk8Mpdv/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1xuxTcwfluE7OlMjoosUWXOCYS3_5sq3a/view?usp=sharing>`_ .
+
+
+
+
+Last modified 30 January 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
