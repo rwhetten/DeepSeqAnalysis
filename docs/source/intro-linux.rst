@@ -125,9 +125,9 @@ Setting up an Amazon Web Service account to use Elastic Compute Cloud services:
 Class Recordings
 ----------------
 
-+ `Session 1: recorded January 20th 2021 <https://drive.google.com/file/d/1LCXtZiDiWj-kycELD1yO7JgIDBWdMhdq/view?usp=sharing>`_(this link is video and audio).
++ `Session 1: recorded January 20th 2021 <https://drive.google.com/file/d/1LCXtZiDiWj-kycELD1yO7JgIDBWdMhdq/view?usp=sharing>`_ (this link is video and audio).
 
-+ `Session 2: recorded January 22th 2021 <https://drive.google.com/file/d/1dh5aTIDA1K4242Wtgl-w6E7a6UmSB380/view?usp=sharing>`_(this link is video and audio). Or use this link for  `Audio only <https://drive.google.com/file/d/1v24OPwqxH5tZh7Y56vAw2orXhEGwHYxK/view?usp=sharing>`_
++ `Session 2: recorded January 22th 2021 <https://drive.google.com/file/d/1dh5aTIDA1K4242Wtgl-w6E7a6UmSB380/view?usp=sharing>`_ (this link is video and audio). Or use this link for `Audio only <https://drive.google.com/file/d/1v24OPwqxH5tZh7Y56vAw2orXhEGwHYxK/view?usp=sharing>`_ .
 
 
 Last modified 23 January 2021.
