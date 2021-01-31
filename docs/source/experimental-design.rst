@@ -70,7 +70,7 @@ Additional Resources
 Class Recordings
 ----------------
 
-+   `Session 5: recorded January 29th 2021 <https://drive.google.com/file/d/1WKjWRWgVc2O7RdmJ9WyU9ucDSjk8Mpdv/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1xuxTcwfluE7OlMjoosUWXOCYS3_5sq3a/view?usp=sharing>`_ .
++   `Session 5: recorded January 29th 2021 <https://drive.google.com/file/d/18Wi6yUFczR5PYRhRlqnMFMvNxNMddIfX/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1ebmrNln6dc_7b_9Do4Yt05ZG7x_ySu0U/view?usp=sharing>`_ .
 
 
 
