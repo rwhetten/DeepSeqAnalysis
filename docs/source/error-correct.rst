@@ -102,6 +102,13 @@ Additional Resources
 + Hatem A, Bozdag D, Toland AE, Çatalyürek ÜV. 2013. Benchmarking short sequence mapping tools. BMC Bioinformatics 14:184. `PMID 23758764 <http://www.ncbi.nlm.nih.gov/pubmed/23758764>`_ *(A  publication comparing eight different open-source or proprietary read-alignment programs on simulated and real data, including BWA and Bowtie2. The conclusion was that no single tool is optimal for every purpose or any dataset; the user must make an informed decision based on experimental system and objectives)*
 
 
+Class Recordings
+----------------
 
-Last modified 22 January 2020.
++   `Session 6: recorded February 1st 2021 <https://drive.google.com/file/d/1ndtvovRz72MC7_SiHRZ2qRV-K8xJ7njY/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1b9m6O4wgkMzlJuqpozEApEi9dybryrWJ/view?usp=sharing>`_ .
+
+
+
+
+Last modified 2 February 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
