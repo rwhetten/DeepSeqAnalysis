@@ -107,10 +107,11 @@ Class Recordings
 
 +   `Session 6: recorded February 1st 2021 <https://drive.google.com/file/d/1ndtvovRz72MC7_SiHRZ2qRV-K8xJ7njY/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1b9m6O4wgkMzlJuqpozEApEi9dybryrWJ/view?usp=sharing>`_ .
 
-+   `Session 7: recorded February 3st 2021 <https://drive.google.com/file/d/1Hy2GgSqd6q8UtDOppFo3JwGFSfKYZDCh/view?usp=sharing>`_ (this link is video and audio).
++   `Session 7: recorded February 3rd 2021 <https://drive.google.com/file/d/1Hy2GgSqd6q8UtDOppFo3JwGFSfKYZDCh/view?usp=sharing>`_ (this link is video and audio).
 
-+   Session 8: recorded February 5st 2021 The video recording from the zoom meeting failed. However, a `transcript of recording of the video is also available <https://drive.google.com/file/d/1cM9miuSplcfS_OLwXxCLFMMK9DpG4HoM/view?usp=sharing>`_ .
++   Session 8: recorded February 5th 2021 The video recording from the zoom meeting failed. However, a `transcript of the recording of the video is available <https://drive.google.com/file/d/1cM9miuSplcfS_OLwXxCLFMMK9DpG4HoM/view?usp=sharing>`_ .
 
++   Session 9 recorded February 9th 2021 The video recording feature is still acting. However, a `transcript of the recording of the video is available <https://drive.google.com/file/d/1g8OdAa3ayxVDgbPcUbUZ9uAFg4bu5V_S/view?usp=sharing>`_.
 
 Last modified 7 February 2021.
 
