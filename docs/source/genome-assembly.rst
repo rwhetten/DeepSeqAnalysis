@@ -134,6 +134,12 @@ Additional Resources
 + Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. `Full Text <http://www.pnas.org/content/98/17/9748.full>`_
 
 
+Class Recordings
+----------------
 
-Last modified 26 January 2020.
++   `Session 10: recorded February 10th 2021 <https://drive.google.com/file/d/1mjBXmBdjrjDufj5e32fd3LUO25qtxU1u/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/18KZf-g8xu5NnkkbXK5y5-1TQ8xMtx-1i/view?usp=sharing>`_.
+
+
+
+Last modified 10 February 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
