@@ -70,7 +70,7 @@ The `GenomeAssembly shell script <https://drive.google.com/open?id=1wLU75DflXTdH
 
 \
 
-+ The MaSuRCA assembler tgz archive has already been unpacked, compiled, and installed in the /usr/local/masurca directory of the VCL machine image.
++ The MaSuRCA assembler tgz archive has already been unpacked, compiled, and installed in the /usr/local/MaSuRCA-4.0.1/ directory of the VCL machine image.
 
 \
 
@@ -78,7 +78,7 @@ The `GenomeAssembly shell script <https://drive.google.com/open?id=1wLU75DflXTdH
 
 \
 
-+ Comparison of the genome assembly to the genome reference sequence is possible using whole-genome alignment with `MUMmer v.3 <http://mummer.sourceforge.net/manual/>`_. This package of programs is installed in the /usr/local/MUMmer3.23/ directory; look at the list of programs and type
++ Comparison of the genome assembly to the genome reference sequence is possible using whole-genome alignment with `MUMmer v.3 <http://mummer.sourceforge.net/manual/>`_. This package of programs is installed in the /usr/local/MaSuRCA-4.0.1/bin/ directory; look at the list of programs and type
   :code:`nucmer -h` at a terminal prompt to see the options available for the nucmer sequence alignment program.
 
 
