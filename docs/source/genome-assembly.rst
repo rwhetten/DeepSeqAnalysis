@@ -139,6 +139,7 @@ Class Recordings
 
 +   `Session 10: recorded February 10th 2021 <https://drive.google.com/file/d/1mjBXmBdjrjDufj5e32fd3LUO25qtxU1u/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/18KZf-g8xu5NnkkbXK5y5-1TQ8xMtx-1i/view?usp=sharing>`_.
 
++   `Session 11: recorded February 12th 2021 <https://drive.google.com/file/d/1Ab0jN7jCTrrgU8Yd_PL4aySslla8BFsT/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1uGBvBMlgEh-GJcrFVDJ3NHjolMAXgrtX/view?usp=sharing>`_.
 
 
 Last modified 10 February 2021.
