@@ -141,6 +141,7 @@ Class Recordings
 
 +   `Session 11: recorded February 12th 2021 <https://drive.google.com/file/d/1Ab0jN7jCTrrgU8Yd_PL4aySslla8BFsT/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1uGBvBMlgEh-GJcrFVDJ3NHjolMAXgrtX/view?usp=sharing>`_.
 
++   `Session 12: recorded February 16th 2021 <https://drive.google.com/file/d/1d_PmnGnxFHJpxum2CuJ4tX53-261I_bx/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1NXu4q-hKDKclVdq5Dg6wyaUD78TMgECV/view?usp=sharing>`_.
 
-Last modified 10 February 2021.
+Last modified 16 February 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
