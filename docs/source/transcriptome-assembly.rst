@@ -9,7 +9,7 @@ Global Overview
 ***************
 
 Multiple options are available for reconstruction of the sequences of RNA transcripts based on analysis of complementary DNA copies, depending on whether a high-quality reference genome assembly is available. If so, reference-guided transcriptome assembly using a splice-aware sequencer aligner followed by resolution of alternative splicing variants and export of consensus transcript sequences can be powerful (`Trapnell et al., 2012 <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/>`_). If there is no reference genome assembly, or the available assembly is fragmented and poorly-annotated, a de-novo assembly of putative transcripts from short-read sequences is one alternative. The availability of long-read sequencing methods such as Oxford Nanopore Technologies and Pacific Biosciences has opened a third alternative, which is to obtain full-length sequences of cDNAs and report those sequences without the requirement for assembly at all (`Sharon et al., 2013 <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4075632/>`_; `Bolisetty et al., 2015 <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0777-z>`_; `Minoche et al., 2015 <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0729-7>`_). The key disadvantage to long-read sequencing is that it often fails to sample deeply enough to capture full-length copies of rare transcripts, so transcriptomes based solely on long-read sequencing may be lacking a full complement of genes expressed at low levels or in a limited number of cell types.
-A number of publications have reported that more complete and accurate transcriptome assemblies can be produced from a combination of read types and assemblers than from any single assembler or read type (`Gilbert 2013 <http://arthropods.eugenes.org/EvidentialGene/about/EvigeneRNA2013poster.pdf>`_; `Nakasugi et al 2014 <https://dx.doi.org/10.1371%2Fjournal.pone.0091776>`_; `McManes 2018 <https://dx.doi.org/10.7717%2Fpeerj.5428>`_; `Venturini et al 2018 <https://doi.org/10.1093/gigascience/giy093>`_; `Gilbert 2019 <https://www.biorxiv.org/content/10.1101/829184v1>`_). The variation in length and transcript abundance of RNAs, combined with the additional complexity contributed by multi-gene families and alternative splicing events, means that no single assembly algorithm or set of parameters can be optimal for every transcript. In all cases described so far, merging together of assemblies produced by different algorithms, or the same algorithm but different parameters, has produced better results than any assembly.
+A number of publications have reported that more complete and accurate transcriptome assemblies can be produced from a combination of read types and assemblers than from any single assembler or read type (`Gilbert 2013 <http://arthropods.eugenes.org/EvidentialGene/about/EvigeneRNA2013poster.pdf>`_; `Nakasugi et al 2014 <https://dx.doi.org/10.1371%2Fjournal.pone.0091776>`_; `McManes 2018 <https://dx.doi.org/10.7717%2Fpeerj.5428>`_; `Venturini et al 2018 <https://doi.org/10.1093/gigascience/giy093>`_; `Gilbert 2019 <https://www.biorxiv.org/content/10.1101/829184v1>`_). The variation in length and transcript abundance of RNAs, combined with the additional complexity contributed by multi-gene families and alternative splicing events, means that no single assembly algorithm or set of parameters can be optimal for every transcript. In all cases described so far, merging together of assemblies produced by different algorithms, or the same algorithm but different parameters, has produced better results than any single assembly from an individual assembler run with a single set of parameters.
 
 Objective
 *********
@@ -27,6 +27,8 @@ Key Facts
 *********
 
 Paired-end sequencing reads are useful for assembly of eukaryotic transcriptomes, because the information they provide about the positions of sequences relative to each other within a transcript is valuable for correct assembly of alternatively-spliced transcripts. In bacteria, splicing is less frequent, alternative splicing can be less of a concern, and single-end reads can often be assembled into a reasonably accurate transcriptome. If alternative splicing is not of interest, then single-end reads are useful for RNA-seq analysis of eukaryotic transcriptomes as well - now that read-lengths of  100 to 150 nt are readily available, paired-end reads add little additional information regarding levels of gene expression.
+
+An important step in the process of transcriptome assembly is evaluation of the quality of the assembly produced. The EvidentialGene pipeline (often shortened to Evigene) produces summary statistics describing the proportion of contigs in the final assembly that show complete or partial similarity to known proteins in the databases used for comparison, but most assemblers don't provide this information. The authors of the Trinity assembler also provide a package of programs called `Trinotate <https://github.com/Trinotate/Trinotate.github.io/wiki>`_, which is designed to identify open reading frames in contigs, translate these to predicted polypeptide sequences, and characterize those polypeptides by comparison with public databases to produce an output file of annotation, but evaluation of transcriptome assembly quality is not a primary objective of this package. The program `rnaQUAST <http://cab.spbu.ru/files/rnaquast/release2.2.0/manual.html>`_ is designed to compare one or more de-novo transcriptome assemblies to a reference assembly and annotation file as a means of comparing the de-novo assemblies. In the absence of an annotated reference genome assembly, the rnaQUAST program can be integrated with the output of `GeneMarkS-T <http://topaz.gatech.edu/GeneMark/>`_ and `BUSCO <https://busco.ezlab.org/>`_ to evaluate the completeness of a de-novo transcriptome assembly. The BUSCO package tests for the presence of a limited set of putative "conserved single-copy orthologues", genes expected to be present in all organisms from a specific taxonomic group, and provides databases of such genes for a variety of taxonomic groups.
 
 \
 
@@ -71,7 +73,24 @@ Direct download links for class can be found in the `Transcriptome_Assembly.txt 
 Exercise - de-novo assembly
 ***************************
 
-+ The *Arabidopsis thaliana* RNA-seq dataset can also be used for de-novo assembly, although it is comprised of short, single-end reads so it is not ideal. The 32 Gb of RAM available on instances of the VCL machine image is a limiting factor. Disk storage space is another important limiting factor on the VCL image; it has only about 14 Gb of available space, which is not enough to store the input RNA-seq reads and have room for the assembler to write temporary files and output. The /data directory contains three sets of paired-end reads of *Drosophila melanogaster* RNA-seq data from different developmental stages; these can be used for a trial assembly using the Trans-ABySS transcriptome assembler (available in the 'bioinfo' conda environment). 
++ The *Arabidopsis thaliana* RNA-seq dataset can also be used for de-novo assembly, although it is comprised of short, single-end reads so it is not ideal. The 32 Gb of RAM available on instances of the VCL machine image is a limiting factor. Disk storage space is another important limiting factor on the VCL image; it has only about 14 Gb of available space, which is not enough to store the input RNA-seq reads and have room for the assembler to write temporary files and output. The /data directory contains three sets of paired-end reads of *Drosophila melanogaster* RNA-seq data from different developmental stages; these can be used for a trial assembly using the Trans-ABySS transcriptome assembler (available in the 'bioinfo' conda environment). The code to quality-trim and adapter-clip the read files and run the Trans-ABySS assembler is relatively brief, but reading the software manuals to understand the function of the command-line options is important.
+
+\
+
++ Example commands to quality-filter and adapter-trim three files of Drosophila RNA seq-data, using a bash loop to process each of the three input RNA-seq datasets in series, followed by a one-line command to run the Trans-ABySS assembler::
+
+   source load_conda
+   conda activate bioinfo
+
+   for file in adult embryo larva; 
+   do bbduk.sh in=/data/${file}_1.fq.gz in2=/data/${file}_2.fq.gz out=${file}.fq.gz ref=adapters mink=11 ktrim=r qtrim=rl minlength=50 maxns=0 trimpolya=15; 
+   done
+
+   transabyss --pe adult.fq.gz embryo.fq.gz larva.fq.gz --outdir ~/out --name flyRNA --length 200 --threads 15 -k 35
+
+\
+
++ This could take three to four hours to complete, so be sure to request enough time for your VCL instance to finish the assembly. If you want to keep the final assembly (in the file out/flyRNA-final.fa), transfer it from the VCL instance to some permanent storage location (e.g. Google Drive, AFS file space) before the instance is terminated. 
 
 \
 
@@ -81,6 +100,12 @@ Exercise - de-novo assembly
 
 + A file of *Arabidopsis thaliana* RNA sequences (inferred from gene models in the TAIR 10 genome assembly: `TAIR10.cDNA.fa.gz <https://drive.google.com/open?id=13n6Iu-Aht4ikGH2SyX0yTwKVfx3ply3R>`_) is also available. The assembled transcripts can be compared with these predicted transcripts as a means of evaluating how good a job the Rockhopper assembler (which is designed for assembly of bacterial RNA-seq datasets) does with the plant RNA-seq data.
 
+\
+
+Exercise - Evaluating Assembly Quality
+**************************************
+
++ The rnaQUAST program is installed in the 'bioinfo' environment, and can be run using the Drosophila melanogaster reference genome assembly and annotation. Code to download the reference genome and annotation from Google Drive is provided in the Course Notes Google Doc, along with the commands needed to build a GMAP index of the reference genome assembly and then invoke rnaQUAST to assess the quality of a transcriptome assembly. If you saved the transcriptome assembly from your Trans-ABySS run in your AFS file space, you can use the file directly from that space rather than transferring it back to the home directory of your VCL instance. 
 
 \
 
@@ -143,9 +168,6 @@ Correction of errors in RNA-seq reads requires consideration of the difference i
 
 \
 
-+ Gnerre S, et al. (2011) High-quality draft assemblies of mammalian genomes from massively parallel sequence data. Proc Natl Acad Sci USA 108:1513–1518. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3029755/>`_
-
-\
 
 + Salzberg S, et al. (2012) GAGE: A critical evaluation of genome assemblies and assembly algorithms. Genome Research 22:557–567. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3290791>`_ This paper describes a set of experiments comparing different assembly programs on four genomes, and provides useful insights into the challenges of genome assembly.
 
