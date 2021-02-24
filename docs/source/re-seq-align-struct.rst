@@ -68,7 +68,13 @@ Exercises
 
 \
 
-2. Erik Garrison, lead author of the Freebayes SNP caller, has an `exercise in alignment and variant calling <https://github.com/ekg/alignment-and-variant-calling-tutorial>`_ on his Github page, using both E. coli and human datasets downloaded from web sources, for class please use the `updated exercise <https://drive.google.com/open?id=1x_swb1Lfhf9u1tXILkjchkx_Li561ZYN>`_. The software required for this tutorial is installed in the VCL machine image. A set of `slides <https://drive.google.com/open?id=1XR3kHmCQrTMs007oFKyMs-Qo04lW30vU>`_ from a presentation Garrison gave in 2015 describing the Freebayes SNP caller and how it is used in the 1000 Genomes project exploring human genome diversity are also available.
+2. Erik Garrison, lead author of the Freebayes SNP caller, has an `exercise in alignment and variant calling <https://github.com/ekg/alignment-and-variant-calling-tutorial>`_ on his Github page, using both E. coli and human datasets downloaded from web sources, for class please use the `updated exercise <https://drive.google.com/open?id=1x_swb1Lfhf9u1tXILkjchkx_Li561ZYN>`_. Most of the software required for this tutorial is installed in the VCL machine image, in the 'bioinfo' conda environment; the 'mutatrix' program gave compile errors so it is not installed, and the tools listed below sra_toolkit are also not installed. A few comments about the tutorial:
+
++ The 'fastq-dump' command to download data from the Sequence Read Archive still exists, but a faster version (called 'fasterq-dump') is now available. You will have to run the 'vdb-config -i' command in the bioinfo conda environment to turn off the file cache option before you can run either the fastq-dump or fasterq-dump programs. Remember that the tab key moves the cursor from one item to the next in the vdb-config program, so press Tab until CACHE is highlighted, then hit the Enter key to select that item, and hit Tab until '[] enable local file caching' is highligted. Use the space bar to deselect (the X goes away), then use Tab to move back to the top row until Exit is highlighted, and hit Enter three times to exit and save changes.
+
++ The commands to carry out steps in Garrison's tutorial have been saved in `ecoli_variants.sh <https://drive.google.com/file/d/17tgOF1elSiCXevSzc3LTMiTYlYGCFkIh/view?usp=sharing>`_ on Google Drive - this version of the exercise uses different files of E. coli reads downloaded from SRA to better demonstrate variant calling. Garrison's tutorial aligns E. coli strain K12 reads to the E. coli K12 reference genome assembly, and (not suprisingly) very few variant loci are discovered. The Freebayes process of calling variants on four E. coli isolates takes a long time, so an output file from that analysis is saved in `ecoli.vcf.gz <https://drive.google.com/file/d/1w-mjUWqoZHwAr3LlGjxWd8NzESP3wta4/view?usp=sharing>`_.
+
++ A set of `slides <https://drive.google.com/open?id=1XR3kHmCQrTMs007oFKyMs-Qo04lW30vU>`_ from a presentation Garrison gave in 2015 describing the Freebayes SNP caller and how it is used in the 1000 Genomes project exploring human genome diversity are also available.
 
 \
 
@@ -87,8 +93,7 @@ Web pages describe the steps required to `align samples <http://bioinformatics-c
 
 :code:`source activate py2` 
 
-- you will see that the prompt changes to include (py2), so you can tell from the terminal prompt which virtual environment is in use. Install the numpy module in the terminal window running the virtual environemtn, using 
-
+- you will see that the prompt changes to include (py2), so you can tell from the terminal prompt which virtual environment is in use. Install the numpy module in the terminal window running the virtual environment, using 
 :code:`conda install numpy` 
 
 - this will also ask for confirmation. Normally the creation of a virtualenv and installation of modules would only need to be done once, but because everything in the home directory is lost when a VCL instance is shut down, these steps must be repeated with each new instance that is started.
@@ -122,7 +127,7 @@ Web pages describe the steps required to `align samples <http://bioinformatics-c
 
 \
 
-		to create an index with the name 'subset'. This will take several minutes, so don't be impatient.
+to create an index with the name 'subset'. This will take several minutes, so don't be impatient.
 
 
 
@@ -137,9 +142,7 @@ Web pages describe the steps required to `align samples <http://bioinformatics-c
 
 \
 
-
-
-	The alignment will take a few minutes for the tumor-derived reads. A modified version of the same command is used to align the normal-tissue-derived reads to the same reference, convert the output to BAM, and sort the output BAM file. After both BAM files are complete, the script uses the samtools index command to produce index files for each of them. If you don't know how to use the samtools index command (and no one is born knowing this sort of thing), try typing :code:`samtools index -h` at a terminal prompt to see what information is available, or do a Google search.
+The alignment will take a few minutes for the tumor-derived reads. A modified version of the same command is used to align the normal-tissue-derived reads to the same reference, convert the output to BAM, and sort the output BAM file. After both BAM files are complete, the script uses the samtools index command to produce index files for each of them. If you don't know how to use the samtools index command (and no one is born knowing this sort of thing), try typing :code:`samtools index -h` at a terminal prompt to see what information is available, or do a Google search.
 
 
 \
