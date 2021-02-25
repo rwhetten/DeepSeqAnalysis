@@ -157,7 +157,7 @@ The alignment will take a few minutes for the tumor-derived reads. A modified ve
 
 \
 
-3.5. The LUMPY program is installed in the VCL machine image and the path to the executable program is in the search PATH variable, so you should be able to execute that program without concern about what path to use to the program. The paths to the input files, and the names of the input files, however, must match those present on your instance of the machine image.
+3.5. The LUMPY program is not installed in the VCL machine image, so those who wish to complete the part of the exercise that requires Lumpy will need to install it from the `Github page <https://github.com/arq5x/lumpy-sv>`_. The installation instructions conclude with copying all the executable files to the /usr/local/bin directory, so you can execute those programs without concern about what path to use to the program. The paths to the input files, and the names of the input files, however, must match those present on your instance of the machine image.
 
 
 Additional Resources
