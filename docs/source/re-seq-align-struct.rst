@@ -196,6 +196,7 @@ Class Recordings
 
 +   `Session 16: recorded February 24th 2021 <https://drive.google.com/file/d/1cPUAVMgqbbBSjD7bvpMpRf8YSbwtKQiL/view?usp=sharing>`_ .
 
++   `Session 17: recorded February 26th 2021 <https://drive.google.com/file/d/1cwWGNAonTL_i-IGpMIgBc5A-C1ce7CPw/view?usp=sharing>`_ .
 
 Last modified 25 February 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
