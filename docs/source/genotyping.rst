@@ -175,6 +175,10 @@ _______
 +	`ddradseqtools: a software package for in silico simulation and testing of double-digest RADseq experiments. <https://www.ncbi.nlm.nih.gov/pubmed/27288885>`_ Mora-Márquez et al ,  Mol Ecol Resour. 17:230-246, 2017.
 
 
+Class Recordings
+----------------
 
-Last modified 27 February 2021.
++   `Session 18: recorded March 1st 2021 <https://drive.google.com/file/d/1QD0-ZjatRVW0s_BXAIrrNh_6lFMU3Gad/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1iEblqJSyrJlDqUTxTvP9r2qeOYJhk2Of/view?usp=sharing>`_.
+
+Last modified 1 March 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
