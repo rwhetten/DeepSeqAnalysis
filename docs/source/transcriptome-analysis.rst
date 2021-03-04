@@ -31,7 +31,7 @@ RNA-seq experiments are growing in popularity as a means of characterizing the t
 
 \
 
-The exercise in RNA-seq data analysis will follow the description in the `EdgeR user's guide <https://www.bioconductor.org/packages/3.4/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf>`_ or the `DESeq2 vignette <https://bioconductor.org/packages/3.4/bioc/vignettes/DESeq2/inst/doc/DESeq2.pdf>`_ on your own or in class. The exercise is based on an experiment reported by Cumbie et al. (`2011 <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0025279>`_), and involves comparison of gene expression levels in Arabidopsis plants inoculated with a bacterial pathogen or mock-inoculated with sterile solution. The complete data from the experiment are downloaded from `NCBI SRA <http://www.ncbi.nlm.nih.gov/sra/?term=SRP004047>`_ during the exercise using the `At_RNAseq.sh <https://drive.google.com/open?id=18NJkXMWjOLUzgiiez4Q-t_z6alM40h7Z>`_ script saved in the `AtRNAseq <https://drive.google.com/open?id=1_-cX7Scvp_e8zlN4glcD3-i2eJg5Tv71>`_ archive; R scripts to run differential gene expression analysis with **DESeq2** or **edgeR** packages are in the same directory. The same directory also contains smaller datasets consisting primarily of reads that map to chromosome 5 of the Arabidopsis genome; these smaller datasets allow the exercise to be completed more quickly and with less RAM if you want to carry out the analysis on a laptop with fewer resources.
+The exercise in RNA-seq data analysis will follow the description in the `EdgeR user's guide <https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf>`_ or the `DESeq2 vignette <https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html>`_ on your own or in class. The exercise is based on an experiment reported by Cumbie et al. (`2011 <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0025279>`_), and involves comparison of gene expression levels in Arabidopsis plants inoculated with a bacterial pathogen or mock-inoculated with sterile solution. The complete data from the experiment are downloaded from `NCBI SRA <http://www.ncbi.nlm.nih.gov/sra/?term=SRP004047>`_ during the exercise using the `At_RNAseq.sh <https://drive.google.com/open?id=18NJkXMWjOLUzgiiez4Q-t_z6alM40h7Z>`_ script saved in the `AtRNAseq <https://drive.google.com/open?id=1_-cX7Scvp_e8zlN4glcD3-i2eJg5Tv71>`_ archive; R scripts to run differential gene expression analysis with **DESeq2** or **edgeR** packages are in the same directory. The same directory also contains smaller datasets consisting primarily of reads that map to chromosome 5 of the Arabidopsis genome; these smaller datasets allow the exercise to be completed more quickly and with less RAM if you want to carry out the analysis on a laptop with fewer resources.
 
 
 Key Facts
@@ -152,5 +152,5 @@ Additional Resources
 
 
 
-Last modified 29 February 2020.
+Last modified 4 March 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
