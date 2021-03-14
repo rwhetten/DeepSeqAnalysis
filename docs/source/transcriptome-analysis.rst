@@ -154,6 +154,13 @@ Additional Resources
 + `Improving RNA-Seq expression estimates by correcting for fragment bias. <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3129672/>`_ Roberts et al, Genome Biol 12:R22, 2011
 
 
+Class Recordings
+----------------
 
-Last modified 11 March 2021.
++   `Session 20: recorded March 10th 2021 <https://drive.google.com/file/d/1_0E405_-u_ulhbgwlV-khTmSDKMnsdQZ/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1PJqv2sx8YO3cEGwzIY1CD3WlU9YXB7G_/view?usp=sharing>`_.
+
++   `Session 21: recorded March 12th 2021 <https://drive.google.com/file/d/1JQK8p4CFNxl5zxP1WGu8awQMuw02bHy7/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1chh1eoUdhSXkDmTWu2aQptxRwC4shYMt/view?usp=sharing>`_.
+
+
+Last modified 14 March 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
