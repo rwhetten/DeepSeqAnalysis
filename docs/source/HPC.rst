@@ -67,5 +67,13 @@ Resources
 
 `Using Singularity on the NC State BRC cluster <https://brcwebportal.cos.ncsu.edu/cluster_workshop/doku.php?id=using_singularity>`_ is specific to the BRC cluster, which uses SLURM rather than LSF. This also has good advice and links.
 
-Last modified 13 April 2020.
+
+
+Class Recordings
+----------------
+
++   `Session 25: recorded March 22nd 2021 <https://drive.google.com/file/d/1h4cCZVNWg8HoySRCnNv08eAcFM6hRIYv/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1zpNSlXdMBVgRj9Ek6Uc--E9Md_LlBopv/view?usp=sharing>`_.
+
+
+Last modified 24 March 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_ and `Will Kohlway <https://github.com/wkohlway>`_.
