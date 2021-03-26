@@ -165,5 +165,8 @@ Class Recordings
 
 +   `Session 23: recorded March 17th 2021 <https://drive.google.com/file/d/17UQQzuNQXJfQ7miwJ5_BZbkCCqloJLgq/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1WvrWkxjiRpeusg_-50t23alBx7WsuK_O/view?usp=sharing>`_.
 
++   `Session 24: recorded March 19th 2021 <https://drive.google.com/file/d/1TKlDlcxupa-qZGopSGF8gVIkVZgtbtwV/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1JgJ7LpdjXQmOQFFIfuAhOjYOq4I5ajiR/view?usp=sharing>`_.
+
+
 Last modified 17 March 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
