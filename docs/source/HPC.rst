@@ -74,6 +74,10 @@ Class Recordings
 
 +   `Session 25: recorded March 22nd 2021 <https://drive.google.com/file/d/1h4cCZVNWg8HoySRCnNv08eAcFM6hRIYv/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1zpNSlXdMBVgRj9Ek6Uc--E9Md_LlBopv/view?usp=sharing>`_.
 +   `Session 26: recorded March 26th 2021 <https://drive.google.com/file/d/19O_5BsQ3_WLJKasuKTFLaH-rOoy1cecU/view?usp=sharing>`_. 
++   `Session 27: recorded March 29th 2021 <https://drive.google.com/file/d/1H1aF_bPJrNtCiUYSOf2C_jS1KebFzLiD/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1k2M3ULhEYeJxLpjEVCKUsc3-NdxapW2l/view?usp=sharing>`_.
++   `Session 28: recorded March 31st 2021 <https://drive.google.com/file/d/1UR0KqRDp1lSj8RkJSB09cLqeKBULdER_/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1Y-vj0StT-3BuBsg7fHfAMjqlnstamRZd/view?usp=sharing>`_.
+
+
 
 Last modified 24 March 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_ and `Will Kohlway <https://github.com/wkohlway>`_.
