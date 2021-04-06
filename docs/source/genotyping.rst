@@ -69,6 +69,9 @@ The `RADseq.tgz <https://drive.google.com/open?id=1b8vlLQAhK6lQtACplqu0lEe2y-xXF
 
 4.	As with SAM and other file formats for genomic data, the VCF format specifies some columns that are mandatory and must contain particular kinds of data, and allows individual software developers considerable freedom to expand on these required fields by adding additional information. In VCF files, the variable fields are the INFO column (which contains summary data about a specific variant across all samples) and the FORMAT string (which specifies data that is available about a variant for each sample with non-missing data at that site)  at each genotyped sample, as well as the columns (beginning with column 10) that contain data for each locus from individual samples. One of the vignettes for the vcfR package has a nice `overview of the structure of VCF files <https://cran.r-project.org/web/packages/vcfR/vignettes/vcf_data.html>`_, although the examples use R and the vcfR package and may not be useful for those unfamiliar with R.
 
+\
+
+5.	BAM files from alignment of human exome-capture sequencing data from eight samples to the hg19 reference assembly can be downloaded from `this link <https://drive.google.com/file/d/1GSv5VaY7_DPnCnT_k1h8kXKEq3yevmHW>`_, or using the file ID '1GSv5VaY7_DPnCnT_k1h8kXKEq3yevmHW' with the ggdownload script on the VCL instance. These files were produced by the BWA mem aligner, incorporating read group information during the alignment process, and then processed further using SAMtools to fix mate-pairing problems, sort by coordinate position, mark duplicates, and remove unmapped reads, based on `an exercise in variant calling with GATK <https://github.com/CBC-UCONN/Variant_Detection_GATK>`_ from University of Connecticut.
 
 Additional Resources
 ********************
@@ -113,6 +116,14 @@ Papers:
 _______
 
 +	`STACKS: An analysis tool set for population genomics. <http://onlinelibrary.wiley.com/doi/10.1111/mec.12354/abstract>`_ Catchen et al., Molecular Ecology 22:3124-3140, 2013.
+
+\
+
++	`STACKS 2: Analytical methods for paired-end sequencing improve RADseq-based population genomics. <https://onlinelibrary.wiley.com/doi/full/10.1111/mec.15253>`_ Rochette et al, Molecular Ecology 28:4737-4754, 2019. *Version 2 of the STACKS package has tools for variant calling either from RADseq data de-novo (in the absence of a reference genome sequence assembly) or from RADseq data aligned to a reference assembly and provided to the program as BAM files. The '''gstacks''' program identifies local haplotypes in BAM files (assuming that the target organism is diploid) using a Bayesian model that can accommodate indels as well as substitution variants.* 
+
+\
+
++	`Systematic comparison of variant calling pipelines using gold standard personal exome variants. <https://www.nature.com/articles/srep17875>`_ Hwang et al, Scientific Reports 5:17875, 2015. *This paper compares the results of variant calling using combinations of three different aligners (BWA-MEM, Bowtie2, or Novoalign) and four different variant callers (GATK HaplotypeCaller, BCFtools mpileup/call, Freebayes, and the Ion Proton Variant Caller) for the NA12878 "genome in a bottle", using twelve different sets of sequencing data produced by different instruments (Illumina Hiseq2000 and Hiseq2500, and Ion Proton). This allows the authors to draw conclusions about which combination of software tools works best for SNPs vs indels, for each sequencing platform, and also compare the error spectra to identify software-specific error tendencies.*
 
 \
 
@@ -180,5 +191,5 @@ Class Recordings
 
 +   `Session 18: recorded March 1st 2021 <https://drive.google.com/file/d/1QD0-ZjatRVW0s_BXAIrrNh_6lFMU3Gad/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1iEblqJSyrJlDqUTxTvP9r2qeOYJhk2Of/view?usp=sharing>`_.
 
-Last modified 1 March 2021.
+Last modified 6 April 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
