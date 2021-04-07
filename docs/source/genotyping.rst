@@ -71,7 +71,7 @@ The `RADseq.tgz <https://drive.google.com/open?id=1b8vlLQAhK6lQtACplqu0lEe2y-xXF
 
 \
 
-5.	BAM files from alignment of human exome-capture sequencing data from eight samples to the hg19 reference assembly can be downloaded from `this link <https://drive.google.com/file/d/1GSv5VaY7_DPnCnT_k1h8kXKEq3yevmHW>`_, or using the file ID '1GSv5VaY7_DPnCnT_k1h8kXKEq3yevmHW' with the ggdownload script on the VCL instance. These files were produced by the BWA mem aligner, incorporating read group information during the alignment process, and then processed further using SAMtools to fix mate-pairing problems, sort by coordinate position, mark duplicates, and remove unmapped reads, based on `an exercise in variant calling with GATK <https://github.com/CBC-UCONN/Variant_Detection_GATK>`_ from University of Connecticut.
+5.	BAM files from alignment of human exome-capture sequencing data from eight samples to the hg19 reference assembly can be downloaded from `this link <https://drive.google.com/file/d/1GSv5VaY7_DPnCnT_k1h8kXKEq3yevmHW>`_, or using the file ID '1GSv5VaY7_DPnCnT_k1h8kXKEq3yevmHW' with the ggdownload script on the VCL instance. These files were produced by the BWA mem aligner, incorporating read group information during the alignment process, and then processed further using SAMtools to fix mate-pairing problems, sort by coordinate position, mark duplicates, and remove unmapped reads, based on `an exercise in variant calling with GATK <https://github.com/CBC-UCONN/Variant_Detection_GATK>`_ from University of Connecticut. A `VCF file <https://drive.google.com/file/d/1dxyLFS0QX9Tz_ajymldTtbLSu9JxHGRJ>`_ of variants called from all eight samples using the GATK HaplotypeCaller, CombineGVCFs, and GenotypeGVCFs pipeline is also available from the course Google Drive - use the file ID '1dxyLFS0QX9Tz_ajymldTtbLSu9JxHGRJ' to download this with the ggdownload script.
 
 Additional Resources
 ********************
@@ -191,5 +191,5 @@ Class Recordings
 
 +   `Session 18: recorded March 1st 2021 <https://drive.google.com/file/d/1QD0-ZjatRVW0s_BXAIrrNh_6lFMU3Gad/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1iEblqJSyrJlDqUTxTvP9r2qeOYJhk2Of/view?usp=sharing>`_.
 
-Last modified 6 April 2021.
+Last modified 7 April 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
