@@ -27,7 +27,7 @@ Awk, sed, and bash are command-line tools that provide tremendous power for mana
 Description
 ***********
 
-The `bash shell <http://cs.lmu.edu/~ray/notes/bash/>`_ is the default command-line user interface in the Lubuntu 16.04 Linux system used for the course. A shell script is simply a text file that contains a series of commands recognized by the bash shell, which allows users to create standard workflows and use them over and over with different input files. This is a powerful tool to automate routine or repetitive tasks in data management or analysis, and learning some basic skills can make these tasks much easier. `Awk <http://tldp.org/LDP/abs/html/awk.html>`_ is a scripting language that is particularly well-suited to handling tabular data in text files, such as SAM alignment files or VCF files of DNA sequence variant data. `Sed <http://tldp.org/LDP/abs/html/x23170.html>`_ is a "stream editor", a program that allows manipulation of text files one or two lines at a time, as the text passes through a series of piped commands. The capabilities of these three tools overlap, and many tasks can be accomplished using any of them, but each has its own particular advantages for specific types of problems. Handling multiple files is made easier using file globbing, as described in the `FileGlobbing.pdf <https://drive.google.com/open?id=1nvy5IynatYLkztRcRGomkWZkFEbwxS9b>`_ document, while the `RegularExpressions.pdf <https://drive.google.com/open?id=1m3OR0Wx5NAj6rbZ9F6dg3gSc56djIVL0>`_ file has provides an overview of regular expressions, a more general and powerful tool for pattern matching in text files. A powerpoint presentation from a previous year's lecture is available `with this link <https://drive.google.com/open?id=1csbwJ8Dc4j4VeTw2TT8aihHMe2aZJwe0>`_.
+The `bash shell <http://cs.lmu.edu/~ray/notes/bash/>`_ is the default command-line user interface in the Lubuntu 18.04 Linux system used for the course. A shell script is simply a text file that contains a series of commands recognized by the bash shell, which allows users to create standard workflows and use them over and over with different input files. This is a powerful tool to automate routine or repetitive tasks in data management or analysis, and learning some basic skills can make these tasks much easier. `Awk <http://tldp.org/LDP/abs/html/awk.html>`_ is a scripting language that is particularly well-suited to handling tabular data in text files, such as SAM alignment files or VCF files of DNA sequence variant data. `Sed <http://tldp.org/LDP/abs/html/x23170.html>`_ is a "stream editor", a program that allows manipulation of text files one or two lines at a time, as the text passes through a series of piped commands. The capabilities of these three tools overlap, and many tasks can be accomplished using any of them, but each has its own particular advantages for specific types of problems. Handling multiple files is made easier using file globbing, as described in the `FileGlobbing.pdf <https://drive.google.com/open?id=1nvy5IynatYLkztRcRGomkWZkFEbwxS9b>`_ document, while the `RegularExpressions.pdf <https://drive.google.com/open?id=1m3OR0Wx5NAj6rbZ9F6dg3gSc56djIVL0>`_ file has provides an overview of regular expressions, a more general and powerful tool for pattern matching in text files. A powerpoint presentation from a previous year's lecture is available `with this link <https://drive.google.com/open?id=1csbwJ8Dc4j4VeTw2TT8aihHMe2aZJwe0>`_.
 
 
 
@@ -35,7 +35,7 @@ The `bash shell <http://cs.lmu.edu/~ray/notes/bash/>`_ is the default command-li
 Key Facts
 *********
 
-Sequence data analysis often requires the ability to examine and modify the contents of text files, and this is exactly the purpose for which awk and sed were designed. Combining these tools with command-line utilities such as cut, sort, uniq, grep, and other shell functions provides powerful capabilities for summarizing or re-formatting data files. The "modulo" operator (%) in awk, for example, is well-suited to the challenge of working with sequence files in FASTA or FASTQ format, where specific information is found in a particular line within each group of two (for FASTA) or four (for FASTQ) lines. The `bioawk <https://github.com/lh3>`_ version of awk removes the need for this trick by allowing the user to specify that the input file format is 'fastx', meaning either FASTA or FASTQ, and the program then assigns the variables $name, $seq, and $quality to the appropriate files in the input file. Another specialized version of awk is `vawk <https://github.com/cc2qe/vawk>`_, which is designed for manipulation of VCF files containing data on the locations of SNPs and other sequence variants as well as which alleles of those variants are detected in a set of samples. Both of these programs are installed in the VCL machine image, so you can compare them and decide for yourself which you prefer. A sample VCF file is available `here <https://drive.google.com/open?id=1AwQK8LaUvFJwbl4UEvxfLYOpzuWMnNud>`_ for use with bioawk and vawk; the official `format specification <https://vcftools.github.io/specs.html>`_ for the Variant Call Format is available on the Github website for `VCFtools <https://vcftools.github.io/index.html>`_.
+Sequence data analysis often requires the ability to examine and modify the contents of text files, and this is exactly the purpose for which awk and sed were designed. Combining these tools with command-line utilities such as cut, sort, uniq, grep, and other shell functions provides powerful capabilities for summarizing or re-formatting data files. The "modulo" operator (%) in awk, for example, is well-suited to the challenge of working with sequence files in FASTA or FASTQ format, where specific information is found in a particular line within each group of two (for FASTA) or four (for FASTQ) lines. The `bioawk <https://github.com/lh3>`_ version of awk removes the need for this trick by allowing the user to specify that the input file format is 'fastx', meaning either FASTA or FASTQ, and the program then assigns the variables $name, $seq, and $quality to the appropriate records in the input file. Another specialized version of awk is `vawk <https://github.com/cc2qe/vawk>`_, which is designed for manipulation of VCF files containing data on the locations of SNPs and other sequence variants as well as which alleles of those variants are detected in a set of samples. Both of these programs are installed in the VCL machine image, so you can compare them and decide for yourself which you prefer. A sample VCF file is available `here <https://drive.google.com/open?id=1AwQK8LaUvFJwbl4UEvxfLYOpzuWMnNud>`_ for use with bioawk and vawk; the official `format specification <https://vcftools.github.io/specs.html>`_ for the Variant Call Format is available on the Github website for `VCFtools <https://vcftools.github.io/index.html>`_.
 
 
 
@@ -46,7 +46,7 @@ Exercises
 
 
 
-1.	`Bash and awk exercises <https://drive.google.com/open?id=1C0xepbOtdDy2d3yN-VmNUyQ71903XBCY>`_. Writing and executing loops is a key skill to learn in programming, because this makes completion of repetitive tasks much easier. The bash shell also provides a wide variety of tools to manage system functions, maintain software, and track system resources. Awk allows use of both conditional statements and loops to process and manipulate text files, and can carry out many text-processing activities commonly done using spreadsheet programs in a Windows environment.
+1.	`Bash and awk exercises <https://drive.google.com/open?id=1C0xepbOtdDy2d3yN-VmNUyQ71903XBCY>`_. Writing and executing loops is a key skill to learn in programming, because this makes completion of repetitive tasks much easier. The bash shell also provides a wide variety of tools to manage system functions, maintain software, and track system resources. Awk allows use of both conditional statements and loops to process and manipulate text files, and can carry out many text-processing activities commonly done using spreadsheet programs in a Windows environment. Awk can do basic arithmetic, but is not intended for statistical analysis - datamash is a better option for doing basic statistical summaries on large tabular files.
 
 \
 
@@ -76,7 +76,7 @@ Exercises
 
 \
 
-7.	`Basic walkthrough of AWK <https://drive.google.com/open?id=1xuWyJCFegjVfxNw5iz9PvecVliDdqjOZ>`_ from chapter 1 of "The AWK Programing Language" with datamash examples as well.
+7.	`Basic walkthrough of AWK <https://drive.google.com/open?id=1xuWyJCFegjVfxNw5iz9PvecVliDdqjOZ>`_ from chapter 1 of "The AWK Programing Language" with datamash examples as well. A scan of the complete text of  `The AWK Programing Language <https://drive.google.com/open?id=1B9gz-XLbQBDkxIQdbJVCzWgy2H3UNlIP>`_, is also available - this is the authoritative resource for AWK, written by the original authors of the language.
 
 \
 
@@ -93,11 +93,7 @@ Additional Resources
 
 \
 
-+	A scan of `The AWK Programing Language <https://drive.google.com/open?id=1B9gz-XLbQBDkxIQdbJVCzWgy2H3UNlIP>`_, a textbook written by the creators of the AWK programing language.   
-
-\
-
-+	The site `panix.com <panix.com>`_ has information on several aspects of the Unix or Linux command-line interface: `sed <http://www.panix.com/~elflord/unix/sed.html>`_, `grep <http://www.panix.com/~elflord/unix/grep.html>`_, and `bash scripting <http://www.panix.com/~elflord/unix/bash-tute.html>`_.
++	The site `www.panix.com <http://www.panix.com>`_ has information on several aspects of the Unix or Linux command-line interface: `sed <http://www.panix.com/~elflord/unix/sed.html>`_, `grep <http://www.panix.com/~elflord/unix/grep.html>`_, and `bash scripting <http://www.panix.com/~elflord/unix/bash-tute.html>`_.
 
 \
 
@@ -125,5 +121,5 @@ Additional Resources
 
 
 
-Last modified 17 April 2020.
+Last modified 7 April 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
