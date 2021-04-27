@@ -157,6 +157,10 @@ Additional Resources
 
 
 
+Class Recordings
+----------------
 
-Last modified 16 April 2020.
++   `Session 38: recorded April 26th 2021 <https://drive.google.com/file/d/1msUuNTdUW0lc05t8W7KGoDRpqYewd_Dl/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1kNTgse-Aqb8Igzso78rt6SKXLXyNH9FS/view?usp=sharing>`_.
+
+Last modified 27 April 2020.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
