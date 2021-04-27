@@ -58,6 +58,7 @@ Class Recordings
 +   `Session 35: recorded April 16th 2021 <https://drive.google.com/file/d/16K19wxouR_x6wOJYarTviOa87Ag1GDMU/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1Qe5gmFYTYXFxam91oLGGKnRSzlEKNmk2/view?usp=sharing>`_.
 +   `Session 36: recorded April 19th 2021 <https://drive.google.com/file/d/1jtRCW6l2Tb3zsqz8X71wiGA8JK_Rfs0X/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1UnbaBUN3ZWNbxUFc5dfzXQk60IxRKkmh/view?usp=sharing>`_.
 +   `Session 37: recorded April 21st 2021 <https://drive.google.com/file/d/1G9srAAJxshrP15OBQ4LzVodI_SEX8PjD/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1lbuR63R4YMwztnv_iUgMHt5syqcl0q8f/view?usp=sharing>`_.
++   `Session 38: recorded April 23rd 2021 <https://drive.google.com/file/d/1T6GLcpAEr6_ZPD4GzQPxrNHuV0A---Ph/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1TiFbqRqwae4iUN5uDw9zW9XvHCXLVo8w/view?usp=sharing>`_.
 
-Last modified 21 April 2021.
+Last modified 23 April 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
