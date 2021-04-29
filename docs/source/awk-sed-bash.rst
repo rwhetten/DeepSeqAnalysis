@@ -120,6 +120,11 @@ Additional Resources
 +	`A quick guide to organizing computational biology projects <http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424>`_. Noble, PLoS Computational Biology 5:1000425, 2009 *This paper offers a suggested organizational plan for keeping track of data from different experiments and projects in a structured set of directories and files. It is focused on bioinformatics students, so it emphasizes source code and programs more than experimental data or field notes, but the general strategy is applicable to many disciplines.*
 
 
+Class Recordings
+----------------
 
-Last modified 7 April 2021.
++   `Session 39: recorded April 28th 2021 <https://drive.google.com/file/d/1TKLnrT5nYzSFqX5CZV5KluxjSS7ccKWT/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1W5O5z2s1EOYedQMw9t0BSVdDOMUFfh3q/view?usp=sharing>`_.
+
+
+Last modified 39 April 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
