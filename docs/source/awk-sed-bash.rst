@@ -124,6 +124,8 @@ Class Recordings
 ----------------
 
 +   `Session 39: recorded April 28th 2021 <https://drive.google.com/file/d/1TKLnrT5nYzSFqX5CZV5KluxjSS7ccKWT/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1W5O5z2s1EOYedQMw9t0BSVdDOMUFfh3q/view?usp=sharing>`_.
++   `Session 40: recorded April 30th 2021 <https://drive.google.com/file/d/1CbTTFLz9kBLJUvmVSLnaTO7bBWVlg7Pz/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1T0PQjeyL3eQlPjRe3YcpV653xIy9GWrW/view?usp=sharing>`_.
+
 
 
 Last modified 39 April 2021.
