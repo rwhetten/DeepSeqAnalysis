@@ -204,6 +204,9 @@ Cloud computing resources
 
 **Links to Linux command-line tutorials and resources**
 
+ + `Data Science at the Command Line <https://datascienceatthecommandline.com/2e/>`_ A free online book by Jeroen Janssens, also available in hard copy form from O'Reilly Media. The second edition was published in 2021, updating the first edition published in 2014. The `Preface <https://datascienceatthecommandline.com/2e/preface.html>`_ has a nice explanation of the author's motivation and rationale for writing the book.
+ + `The Linux Command Line <http://linuxcommand.org/index.php>`_ by William Shotts. Another free online book, also available as a free PDF download or in print form from `No Starch Press <https://nostarch.com/tlcl2>`_
+ 
 Tutorials for AWK, a powerful tool for handling data tables
   + A set of `awk notes <http://people.bu.edu/scottm/AWK.NOTES>`_ from Boston University
   + Bruce Barnett's `awk tutorial <http://www.grymoire.com/Unix/Awk.html>`_
@@ -241,5 +244,5 @@ Links to other useful sites
 + The European Bioinformatics Institute provides tools `ArrayExpressHTS and R-Cloud <http://www.ebi.ac.uk/Tools/rcloud/>`_ for analysis of transcriptome data
 
 
-Last modified 7 January 2020.
+Last modified 4 December 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
