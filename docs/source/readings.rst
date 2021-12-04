@@ -217,14 +217,14 @@ Tutorials for bash shell scripting
   + A `tutorial <http://www.linuxconfig.org/bash-scripting-tutorial>`_ at linuxconfig.org
   + A `Getting Started With Bash <http://www.hypexr.org/bash_tutorial.php>`_ tutorial at hypexr.org
   + Mendel Cooper's `Advanced Bash Shell-Scripting Guide <http://tldp.org/LDP/abs/html/>`_
-  Tutorials for sed, the command-line stream editor
+  
+Tutorials for sed, the command-line stream editor
   + A `tutorial <http://www.panix.com/%7Eelflord/unix/sed.html>`_ at Rutgers
   + Peter Krumins claims to have the `World's Best Introduction to Sed <http://www.catonmat.net/blog/worlds-best-introduction-to-sed/>`_; take a look and judge for yourself.
   + Bruce Barnett's `sed tutorial <http://www.grymoire.com/Unix/Sed.html>`_.
 
 `Links for Exercise Data <https://drive.google.com/open?id=1eeex5RhrS4JZaRmKlxr9U6slR3XD2of4>`_ 
 ***********************************************************************************************
-
 
 Links to other useful sites
 ***************************
@@ -237,7 +237,7 @@ Links to other useful sites
 + Course materials for a short course entitled `Introduction to R and Bioconductor <http://bioconductor.org/help/course-materials/2010/SeattleIntro/>`_, held in Seattle in Dec 2010
 + `Genomic Regions Enrichment of Annotations Tool <http://great.stanford.edu/>`_ - A web service to test for over-representation of specific ontology categories among genes near ChIP-seq peaks
 + Ben Langmead, author of several tools for sequence analysis, has made `course materials <https://github.com/BenLangmead/comp-genomics-class>`_ for a class in Computational Genomics available on Github.
-+ An open-source book called `Introduction to Applied Bioinformatics <http://readiab.org/book/latest/>`_ has chapters on sequence alignment approaches and algorithms, for those interested in more detail about how that works.
++ An open-source book called `Introduction to Applied Bioinformatics <http://readiab.org/book/latest/>`_ has chapters on sequence alignment approaches and algorithms, for those interested in more detail about how sequence alignment works.
 + `Next-gen-seq software <http://www.animalgenome.org/bioinfo/resources/nextgensoft.html>`_ - a list of software packages, both commercial and open-source, related to analysis of deep sequencing datasets
 + `Software <http://www.cbcb.umd.edu/software/>`_ from the Center for Bioinformatics and Computational Biology, University of Maryland - many useful programs, all open-source
 + `PLAZA <http://bioinformatics.psb.ugent.be/plaza/>`_: a comparative genomics resource to study gene and genome evolution in plants; described by Proost et al, Plant Cell 21:3718, 2010 `Full Text <http://www.plantcell.org/content/21/12/3718.full>`_
