@@ -2,7 +2,7 @@
    :target: http://www.ncsu.edu
 
 
-Semester Overview, 2021
+Semester Overview, 2022
 =======================
 
 
@@ -13,70 +13,59 @@ Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21
 
 
 
-			**Class meetings are hosted as zoom meetings from 8:30 to 10:20 am on Mondays, Wednesdays, and Fridays.**
+			**Class meetings are in Jordan Hall 6117 from 8:30 to 10:20 am on Mondays, Wednesdays, and Fridays.**
 
 				The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading.
 
-				The `Piazza online forum page <https://piazza.com/ncsu/spring2020/bit815/>`_ is available for questions and discussion.
-
-				Teaching assistant: `Will Kohlway <whkohlwa@ncsu.edu>`_
+				The `Piazza online forum page <https://piazza.com/ncsu/spring2022/bit815/>`_ is available for questions and discussion.
 
 
 
 Course Schedule 
 ***************
-::
 
-	  Date			Topic [Relevant Biostar Handbook Chapter]
+ **Date**			Topic [Relevant Biostar Handbook chapters, links to other resources]
 
-	20–22 Jan	Introduction to Linux and the command-line interface [1, 2, 4]
+	**10 – 14 Jan**	Introduction to bioinformatics, Linux, and the command-line interface [1, 3, `The Linux Command Line <http://linuxcommand.org/index.php>`_, `Data Science at the Command Line <https://datascienceatthecommandline.com/2e/index.html>`_]
 
-	25–29 Jan	Sequencing instruments, Experimental design, 
-	 	        	 Data preprocessing and quality control [8, 9, 10]
-
-	1-5 Feb		Error correction and alignment	 
-
-	8-12 Feb	Assembly - transcriptomes and genomes [22]
-
-	15-19 Feb	Re-sequencing, alignment, structural variation [17, 18, 23]
-
-	22-26 Feb	Discovery and genotyping of genetic variation	 
-
-	1-4 Mar		R and R Studio - lectures and exercises through Software 	 
-		         	 Carpentry website, sections 1 - 8
-
-	5 Mar		Wellness Day (no class)
-
-	8-12 Mar	R and R Studio, continued - sections 9 - 12. 
-		            	 Advanced: Data Carpentry for Genomics
-
-	15-19 Mar	Transcriptome analysis: differential gene expression, 
-		       		 annotation [19, 20]
-
-	22 & 26 Mar	Genome analysis: ChIP-seq, DHS-seq, 3-D conformation	 
-				(No Class March 24th)
-
-	29 Mar-2 Apr	Linux command-line tools: awk, sed, and bash [15]
+	**17 Jan**       Martin Luther King, Jr Day - University closed, no classes
 	
-	5-9 Apr		CLC Genomics Workbench - data QC and pre-processing	 
+	**19 - 21 Jan**	Sequencing instruments [12, `Performance Assessment of DNA Sequencing Platforms <https://rdcu.be/cCCQt>`_], experimental design, and working in the NC State HPC
+	 	        	
+	**24 - 28 Jan**	Data preprocessing and quality control [14] and sequence read alignment [28]	 
 
-	12-16 Apr	CLC Genomics Workbench - RNA-seq analysis	 
+	**31 Jan - 4 Feb**	Transcriptome assembly  [25 - general introduction; `Best Practices for DeNovo Transcriptome Assembly with Trinity  <https://informatics.fas.harvard.edu/best-practices-for-de-novo-transcriptome-assembly-with-trinity.html>`_ ]
+	
+	**7 - 11 Feb**	Genome assembly [25]
 
-	19-23 Apr	CLC Genomics Workbench - genome assembly tutorial	 
+	**14 - 18 Feb**	Re-sequencing, alignment, structural variation [18] 
 
-	26-30 Apr	CLC Genomics Workbench - variant analysis	 
+	**21 - 25 Feb**	Discovery and genotyping of genetic variation [20, 21]	 
 
+	**28 Feb - 4 Mar**	R and R Studio -  Software Carpentry `Programming with R <http://swcarpentry.github.io/r-novice-inflammation/>`_ and `R for Reproducible Scientific Analysis <https://swcarpentry.github.io/r-novice-gapminder/>`_, Data Carpentry `Genomics Workshop <https://datacarpentry.org/lessons/#genomics-workshop>`_
 
+	**7 - 11 Mar**	Transcriptome analysis: differential gene expression, annotation [22]	
 
+	**14 - 18 Mar**	Spring Break - no classes	
+
+	**21 - 25 Mar**	Genome analysis: ChIP-seq, DHS-seq, 3-D conformation [23, 24, CLC GWB `ChIP sequencing tutorial <https://resources.qiagenbioinformatics.com/tutorials/ChIP-seq_peakshape.pdf>`_]	 
+
+	**28 Mar - 1 Apr**	Linux command-line tools: awk, sed, and bash [`Bioawk Basics <https://bioinformaticsworkbook.org/Appendix/Unix/bioawk-basics.html>`_; `Sed Basics <https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-4sed.html>`_; `Using bash in bioinformatics <https://people.duke.edu/~ccc14/duke-hts-2018/cliburn/Bash_in_Jupyter.html>`_; 4]
+	
+	**4-8 Apr**	CLC Genomics Workbench - data QC and pre-processing	 
+
+	**11 - 15 Apr**	CLC Genomics Workbench - `Expression analysis using RNA-seq data tutorial <https://resources.qiagenbioinformatics.com/tutorials/RNASeq-droso.pdf>`_	 
+
+	**18 - 22 Apr**	CLC Genomics Workbench - `paired-end short-read genome assembly tutorial <https://resources.qiagenbioinformatics.com/tutorials/De_novo_assembly_paired_data.pdf>`_	 
+
+	**25 Apr**	Last day of class - questions, review, summary	 
 
 
 General background information and course resources
 ***************************************************
 
-
 +	General advice on `troubleshooting <troubleshooting.html>`_
 +	`Course syllabus <https://drive.google.com/file/d/1vfHFmcfxiAynyG90TQF8gZFv5eXvDmET/view?usp=sharing>`_
-+	Class bash history files from instructor VCL instances
 +	Lior Pachter's list of sequencing-based assays: `\*Seq <https://liorpachter.wordpress.com/seq/>`_
 +	`The R statistical programming environment <r-materials.html>`_
 +	`Course resources <resources.html>`_
@@ -98,5 +87,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 14 January 2021.
+Last modified 4 December 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
