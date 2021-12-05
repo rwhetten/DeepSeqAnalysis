@@ -7,7 +7,6 @@ Semester Overview, 2022
 
 
 .. image:: /Images/syllabus_logo.jpg
-
 Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21704474/>`_
 
 
@@ -54,9 +53,9 @@ Course Schedule
 	
 	**4-8 Apr**	CLC Genomics Workbench - data QC and pre-processing	 
 
-	**11 - 15 Apr**	CLC Genomics Workbench - `Expression analysis using RNA-seq data tutorial <https://resources.qiagenbioinformatics.com/tutorials/RNASeq-droso.pdf>`_	 
+	**11 - 15 Apr**	CLC Genomics Workbench - Expression analysis using RNA-seq data [`tutorial <https://resources.qiagenbioinformatics.com/tutorials/RNASeq-droso.pdf>`_]	 
 
-	**18 - 22 Apr**	CLC Genomics Workbench - `paired-end short-read genome assembly tutorial <https://resources.qiagenbioinformatics.com/tutorials/De_novo_assembly_paired_data.pdf>`_	 
+	**18 - 22 Apr**	CLC Genomics Workbench - Paired-end short-read genome assembly [`tutorial <https://resources.qiagenbioinformatics.com/tutorials/De_novo_assembly_paired_data.pdf>`_]; Long-read assembly with short-read polishing [`tutorial <https://resources.qiagenbioinformatics.com/tutorials/De_Novo_Assembly_Using_Long_Reads_and_Short_Read_Polishing.pdf>`_]	 
 
 	**25 Apr**	Last day of class - questions, review, summary	 
 
@@ -68,11 +67,11 @@ General background information and course resources
 +	`Course syllabus <https://drive.google.com/file/d/1vfHFmcfxiAynyG90TQF8gZFv5eXvDmET/view?usp=sharing>`_
 +	Lior Pachter's list of sequencing-based assays: `\*Seq <https://liorpachter.wordpress.com/seq/>`_
 +	`The R statistical programming environment <r-materials.html>`_
-+	`Course resources <resources.html>`_
++	`Course resources and recommended reading <resources.html>`_
 +	`Overview slides (old and outdated in some respects) <https://drive.google.com/open?id=10RYNwJXx7gwYCA_o_1u8AtRw465ROjZn>`_
 +	Cloud computing with Amazon Web Services: `setting up an AWS account <https://drive.google.com/open?id=1OXA_TAYu2l_--GEAW85eKJCLUtWyqhbN>`_ and `starting an instance <https://drive.google.com/open?id=1U7D7BRfS1LLbWGzJwkBejc8vfyRSPLIc>`_
 +	OMICtools software database `publication <http://database.oxfordjournals.org/content/2014/bau069.long>`_ and `website <http://omictools.com/>`_
-+	Qiagen webpage of `tutorials <https://www.qiagenbioinformatics.com/support/tutorials/>`_ for CLC workbench programs
++	Qiagen webpage of `tutorials <https://www.qiagenbioinformatics.com/support/tutorials/>`_ for CLC Workbench programs
 +	`Colib'read project webpage <https://colibread.inria.fr/project/>`_ on reference-assembly-free programs for SNP and indel detection and moress 
 
 
