@@ -85,6 +85,10 @@ Exercises
 Additional Resources
 ********************
 
++ `The SEQC2 epigenomics quality control (EpiQC) study. <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02529-2>`_ Foox et al, Genome Biology 22:332, 2021. -- *This article describes results of analysis of DNA methylation patterns in seven human cell lines using three different whole-genome bisulfite sequencing procedures, the enzymatic deamination method, targeted methylation sequencing from Illumina, single-molecule direct detection of methylation from Oxford Nanopore, and Illumina microarrays. The data from different platforms were also analyzed with different algorithms to identify strengths and weaknesses of both platforms and algorithms.*
+
+\
+
 + `De novo assembly of the Aedes aegypti genome using Hi-C yields chromosome-length scaffolds. <http://science.sciencemag.org/content/356/6333/92.full>`_ Dudchenko et al, Science 356:92-95, 2017
 
 \
