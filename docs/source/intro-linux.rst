@@ -24,27 +24,19 @@ Introductory `slides provide <https://drive.google.com/open?id=14abKXvZShl4DuNfk
 Global Overview
 ***************
 
-Linux is the operating system of choice for computationally-intensive data analysis, because of its design and the efficiency with which it runs. Much open-source software for sequence data analysis is written for Linux, although there are an increasing number of Java-based programs that can run under Windows. A key element of the philosophy behind Unix and Linux operating systems is decomposition of tasks into simple categories – separate command-line utilities are available for separate tasks. Combining these simple individual tools into pipelines provides enormous flexibility for managing and processing data. Abstraction is another key concept in computing - generalizing from a specific case to a larger group of cases that all meet a specific set of criteria. The use of "wildcard" or meta-characters to specify groups of files is a simple example; this process is commonly called file globbing. Regular expressions are another powerful example of  abstraction and generalization as key parts of computational thinking.
+Linux is the operating system of choice for computationally-intensive data analysis, because of its design and the efficiency with which it runs. Much open-source software for sequence data analysis is written for Linux, although there is an increasing number of Java-based programs that can run under Windows. A key element of the philosophy behind Unix and Linux operating systems is decomposition of tasks into simple categories – separate command-line utilities are available for separate tasks. Combining these simple individual tools into pipelines provides enormous flexibility for managing and processing data. Abstraction is another key concept in computing - generalizing from a specific case to a larger group of cases that all meet a specific set of criteria. The use of "wildcard" or meta-characters to specify groups of files is a simple example; this process is commonly called file globbing. Regular expressions are another powerful example of  abstraction and generalization as key parts of computational thinking.
 
 
 Key Facts
 *********
 
-DNA sequence data and most results of analysis are stored in plain text format, often compressed using an open-source algorithm to reduce the size of the files stored on disk. A few dozen commands for manipulation of text files, executed either separately or in different combinations, provide an  enormous range of data manipulation and analysis capabilities. A modest investment of time in learning basic file formats and commands for text file manipulation will pay large returns by enabling you to manage large data files and carry out basic analyses on the command line, without any specialized software for sequence analysis.
+DNA sequence data and most results of analysis are stored in plain text format, often compressed using an open-source algorithm to reduce the size of the files stored on disk. A few dozen commands for manipulation of text files, executed either separately or in different combinations, provide an  enormous range of data manipulation and analysis capabilities. A modest investment of time in learning basic file formats and commands for text file manipulation will pay large returns by enabling you to manage large data files and carry out basic analyses on the command line, without any specialized software for sequence analysis. The file sizes used in bioinformatics analysis are often large, so parallel processing using multiple CPU cores for the same job can be a valuable tool in getting things done efficiently.
 
 
 Exercises
 *********
 
-1. An `Introduction to Linux <https://drive.google.com/file/d/1mYLZtI6IaQH80iwA-1zkeuR5KMRE6us3/view?usp=sharing>`_ is a tutorial to guide participants through an 8-step introduction to the linux operating system and virtual computing lab (VCL) access used for most class computing exercises. As an initial exercise before the tutorial, we'll use the commands in `fastq-dump.exercise.sh <https://drive.google.com/file/d/1MM7MuZvVCOfTty1Th9uBKp5Z6VCswm8c>`_ to explore some features of Linux and the virtual machine available through the VCL. Open the Intro to Linux PDF file and follow the directions to connect to a VCL instance, then open a browser in the VCL instance, navigate back to this page, and download the fastq-dump.exercise.sh file to the instance. Follow the directions in that file to compare the relative speed and resource requirements for different methods of achieving the same result. The fastq-dump.exercise.sh shell script can also be directly downloaded with the following code: ::
-
-	ggID='1MM7MuZvVCOfTty1Th9uBKp5Z6VCswm8c' 
-	echo "The file ID is $ggID" 	
-	ggURL='https://drive.google.com/uc?export=download' ;  
-	filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')"   
-	getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"  
-	curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}" 
-
+1. An `Introduction to Linux <https://drive.google.com/file/d/1mYLZtI6IaQH80iwA-1zkeuR5KMRE6us3/view?usp=sharing>`_ is a tutorial to guide participants through an 8-step introduction to the linux operating system and virtual computing lab (VCL) access used for most class computing exercises. As an initial exercise after connecting to a VCL instance in the first part of the tutorial, we'll use the commands in `fastq-dump.exercise.sh <https://drive.google.com/file/d/1MM7MuZvVCOfTty1Th9uBKp5Z6VCswm8c>`_ to explore some features of Linux and the virtual machine available through the VCL. Open the Intro to Linux PDF file and follow the directions to connect to a VCL instance, then open a browser in the VCL instance, navigate back to this page, and download the fastq-dump.exercise.sh file to the instance. Follow the directions in that file to compare the relative speed and resource requirements for different methods of achieving the same result. 
 
 \
 
@@ -52,7 +44,7 @@ Exercises
 
 \
 
-3. The example files for the week1 `quiz <https://drive.google.com/open?id=1lT1CT2uRF1GSiIpPOdG_4mTWZ6Fa7bwb>`_ are at `quiz_week1.tgz <https://drive.google.com/open?id=1J7h4u3YaBrozBAK30lL8K3ekDjAv-2P9>`_ or `quiz.week1_download_script <https://drive.google.com/open?id=1rvbkjygO4P012W9JJUg7D0WZ3Vz12wi1>`_.
+3. The example files for the week1 `quiz <https://drive.google.com/open?id=1lT1CT2uRF1GSiIpPOdG_4mTWZ6Fa7bwb>`_ are at `quiz_week1.tgz <https://drive.google.com/open?id=1J7h4u3YaBrozBAK30lL8K3ekDjAv-2P9>`_.
 
 \
 
@@ -69,15 +61,19 @@ Additional Resources
 Background information about Linux:
 -----------------------------------
 
-+ A reminiscence called `The Strange Birth and Long Life of Unix <http://faculty.salina.k-state.edu/tim/unix_sg/_downloads/The_Strange_Birth_and_Long_Life_of_Unix_IEEE_Spectrum.pdf>`_ by Warren Toomey in 2011 commemorated the 40th anniversary of the beginning of Unix (and therefore, Linux) development.
++ A reminiscence called `The Strange Birth and Long Life of Unix <http://faculty.salina.k-state.edu/tim/unix_sg/_downloads/The_Strange_Birth_and_Long_Life_of_Unix_IEEE_Spectrum.pdf>`_ by Warren Toomey in 2011 commemorated the 40th anniversary of the beginning of Unix development.
 
 \
 
-+ The `Software Carpentry <https://software-carpentry.org/lessons/>`_ website has a series of tutorials with introductions to many aspects of Linux computing. The lessons entitled The Unix Shell and Programming with R are particularly relevant to this course, because we use the shell a lot throughout the course, and R is important in the section on transcriptome analysis.
++ The `Software Carpentry <https://software-carpentry.org/lessons/>`_ website has a series of tutorials with introductions to many aspects of Linux computing. The lessons entitled The Unix Shell and Programming with R are particularly relevant to this course, because we use the shell throughout the course, and R is important in the section on transcriptome analysis.
 
 \
 
-+ Analysis of Next-Generation Sequencing Data workshops (ANGUS) have been taught at Michigan State in the past, and in 2017 moved to UC-Davis. Course materials are available online. The class uses cloud computing instances that are configured differently, so the exercises won't necessarily work exactly the same on the VCL machine image we are using, but the course materials do contain useful information about bioinformatics applications and tools.
++ The Harvard Chan Bioinformatics Core offers teaching materials suitable for instructor-led or self-guided learning. `Introduction to the command line <https://github.com/hbctraining/Intro-to-shell-flipped>`_ is the first in a series; other modules cover the R statistical environment,  RNA-seq analysis, and ChIP-seq analysis. 
+
+\
+
++ Data Carpentry has a module `Introduction to the Command Line for Genomics <https://datacarpentry.org/shell-genomics/>`_ that includes exercises. The course is intended to use an Amazon Machine Image cloud-computing environment, but the VCL image available at NC State should be a workable alternative.
 
 \
 
@@ -93,26 +89,18 @@ Background information about Linux:
 
 \
 
-+ One aspect of command-line use is knowing when to use a particular command, and when it is not needed.  Many command-line utilities such as grep, cut, wc,  sort,  sed, and awk (among many others) accept filenames as arguments after the command, but will also accept input from stdin via a pipe. Other utilities, such as tr, do not accept a filename as an argument and only process data received from stdin. Some people prefer to use the cat command to put data into a pipeline, even when the command being used could read the filename as an argument, simply for the sake of consistency and style (see this `StackOverflow discussion <https://stackoverflow.com/questions/11710552/useless-use-of-cat>`_ as an example), while purists argue that using a command when it is not required means running two processes when one will do. This is rarely a problem, but can lead to differences in the commands used to accomplish the same result. For example, in chapter 5 of the Biostar Handbook called Ontologies, the section called Understand the GO data includes some manipulations of a file called goa_human.gaf.gz, after downloading the file from the geneontology.org website.
-
-::
-
-	# Uncompress the GO file:
-	gunzip goa_human.gaf.gz
-
-	# Remove the lines starting with ! and simplfy the file name:
-	cat goa_human.gaf grep -v '!' > assoc.txt
-
-	# The same result could be obtained in a single step using this alternative
-	gunzip goa_human.gaf.gz | grep -v '!' > assoc.txt
++ One aspect of command-line use is knowing when to use a particular command, and when it is not needed.  Many command-line utilities such as grep, cut, wc,  sort,  sed, and awk (among many others) accept filenames as arguments after the command, but will also accept input from stdin via a pipe. Other utilities, such as tr, do not accept a filename as an argument and only process data received from stdin. Some people prefer to use the cat command to put data into a pipeline, even when the command being used could read the filename as an argument, simply for the sake of consistency and style (see this `StackOverflow discussion <https://stackoverflow.com/questions/11710552/useless-use-of-cat>`_ as an example), while purists argue that using a command when it is not required means running two processes when one will do. This is rarely a problem, but can lead to differences in the commands needed to accomplish the desired result. One example is the 'sort' utility - if this utility receives input from stdin via a pipe, it uses default settings that may be different from those it would use if it opened the file directly. This causes important differences in performance unless specific options are used; see `this post <https://superuser.com/questions/938558/sort-parallel-isnt-parallelizing>`_ for the details.
 
 
 
-Windows Subsystem for Linux in Windows 10
+Windows options for access to Linux tools
 -----------------------------------------
 
-+ Windows 10 offers an optional beta-release of Windows Subsystem for Linux, which allows running any of three different Linux-like command-line environments  on Windows, although the Linux kernel itself is not installed. These provide a command-line bash shell environment with GNU utilities - see a `tutorial on set-up <https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/>`_ or a `Microsoft page <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_.
++ Windows 10 offers an optional beta-release of Windows Subsystem for Linux (WSL), which allows running any of three different Linux-like command-line environments  on Windows, although the Linux kernel itself is not installed. These provide a command-line bash shell environment with GNU utilities - see a `tutorial on set-up <https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/>`_ or a `Microsoft page <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_. The WSL environment is separate from the Windows environment on the same computer, although it is possible to set up shared file space accessible from both environments.
 
++ The `MobaXterm <https://mobaxterm.mobatek.net/>`_ program is available in both free and paid versions, and provides a fairly complete package of both network tools for connection to remote computers (e.g. ssh, scp, sftp, and X11 graphics, among others) as well as over 200 Linux command-line utilities that can be used to operate on files and directories in your Windows environment. This program is recommended by the `NC State High-Performance Computing (HPC) <https://projects.ncsu.edu/hpc/Documents/mobaxterm.php>`_ for Windows users who use the HPC cluster.
+
++ `Cygwin <https://www.cygwin.com/>`_ is a relatively complete set of Linux tools and programs compiled to run on Windows systems, including systems older than Windows10. If you have an older Windows system, or want an alternative to Windows Subsystem for Linux, this may be an option to consider. MobaXterm uses Cygwin utilities, and includes many of the most commonly-used tools, but is not as comprehensive as a full Cygwin installation.
 
 
 Setting up an Amazon Web Service account to use Elastic Compute Cloud services:
@@ -130,5 +118,5 @@ Class Recordings
 + `Session 2: recorded January 22th 2021 <https://drive.google.com/file/d/1dh5aTIDA1K4242Wtgl-w6E7a6UmSB380/view?usp=sharing>`_ (this link is video and audio). Or use this link for `Audio only <https://drive.google.com/file/d/1v24OPwqxH5tZh7Y56vAw2orXhEGwHYxK/view?usp=sharing>`_ .
 
 
-Last modified 23 January 2021.
+Last modified 15 December 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
