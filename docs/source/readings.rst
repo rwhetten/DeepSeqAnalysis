@@ -5,10 +5,18 @@
 Readings and Resources
 ======================
 
+NC State Bioinformatics Users Group (BUG)
+**************************
+
++ A `Google Group <https://groups.google.com/a/ncsu.edu/g/group-bioinformatics-users>`_ for questions and discussion among local bioinformatics users
++ A `Github repository <https://github.ncsu.edu/lllowe/BioinformaticsUsersGroup>`_ for scripts, tutorials, and other code resources 
++ A `shared Google Drive folder <https://drive.google.com/drive/folders/0AC1DHkNrcTEnUk9PVA>`_ for papers, documentation and sample data for tutorials 
+
 Course Notes
 ************
 
-+ A `Google Doc <https://docs.google.com/document/d/1IuWPZDbavBt5Alq-PxxzkQnjuAKVDSLjXZ2zrnigwKA/>`_ version of notes for each class session. Students have view permission; instructors have edit access. This provides a way for instructors to write code that students can copy into a terminal window on another computer.
++ `Spring 2022 Google Doc course notes <https://docs.google.com/document/d/1pmz2AXQdk6xBm8yubvcOeO18lwDjwxku0cstls-XM04/>`_ An online version of notes for each class session. Students have view permission; instructors have edit access. This provides a way for instructors to write code that students can copy into a terminal window, and provides a place to record information about class sessions.
++ `Spring 2021 Google Doc course notes <https://docs.google.com/document/d/1IuWPZDbavBt5Alq-PxxzkQnjuAKVDSLjXZ2zrnigwKA/>`_ - these may be of historical interest, or not.
 
 Global overview books and papers
 ********************************
