@@ -16,46 +16,47 @@ Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21
 
 				The `Biostar Handbook <https://www.biostarhandbook.com/>`_ is a resource for much of the reading.
 
-				The `Piazza online forum page <https://piazza.com/ncsu/spring2022/bit815/>`_ is available for questions and discussion.
-
+				A Slack channel is available for questions and discussion.
+			
+				Will Kohlway (will_kohlway at ncsu.edu) is the teaching assistant for the course.
 
 
 Course Schedule 
 ***************
 
- **Date**			Topic [Relevant Biostar Handbook chapters, links to other resources]
+ **Week and Dates**	Topic [Relevant Biostar Handbook chapters, links to other resources]
 
-	**Week01, 10 – 14 Jan**	Introduction to bioinformatics, Linux, and the command-line interface [1, 3, `The Linux Command Line <http://linuxcommand.org/index.php>`_, `Data Science at the Command Line <https://datascienceatthecommandline.com/2e/index.html>`_]
+	**Week 1, 10 – 14 Jan**	Introduction to bioinformatics, Linux, and the command-line interface [1, 3, `The Linux Command Line <http://linuxcommand.org/index.php>`_, `Data Science at the Command Line <https://datascienceatthecommandline.com/2e/index.html>`_]
 
 	**17 Jan**       Martin Luther King, Jr Day - University closed, no classes
 	
-	**Week02, 19 - 21 Jan**	Sequencing instruments [12, `Performance Assessment of DNA Sequencing Platforms <https://rdcu.be/cCCQt>`_], experimental design, and working in the NC State HPC
+	**Week 2, 19 - 21 Jan**	Sequencing instruments [12, `Performance Assessment of DNA Sequencing Platforms <https://rdcu.be/cCCQt>`_], experimental design, and introduction to the NC State HPC
 	 	        	
-	**Week03, 24 - 28 Jan**	Data preprocessing and quality control [14] and sequence read alignment [28]	 
+	**Week 3, 24 - 28 Jan**	Data preprocessing and quality control [14] and sequence read alignment [28]	 
 
-	**Week04, 31 Jan - 4 Feb**	Transcriptome assembly  [25 - general introduction; `Best Practices for DeNovo Transcriptome Assembly with Trinity  <https://informatics.fas.harvard.edu/best-practices-for-de-novo-transcriptome-assembly-with-trinity.html>`_ ]
+	**Week 4, 31 Jan - 4 Feb**	Transcriptome assembly  [25 - general introduction; `Best Practices for DeNovo Transcriptome Assembly with Trinity  <https://informatics.fas.harvard.edu/best-practices-for-de-novo-transcriptome-assembly-with-trinity.html>`_ ]
 	
-	**Week05, 7 - 11 Feb**	Genome assembly [25]
+	**Week 5, 7 - 11 Feb**	Genome assembly [25]
 
-	**Week06, 14 - 18 Feb**	Re-sequencing, alignment, structural variation [18] 
+	**Week 6, 14 - 18 Feb**	Re-sequencing, alignment, structural variation [18] 
 
-	**Week07, 21 - 25 Feb**	Discovery and genotyping of genetic variation [20, 21]	 
+	**Week 7, 21 - 25 Feb**	Discovery and genotyping of genetic variation [20, 21]	 
 
-	**Week08, 28 Feb - 4 Mar**	R and R Studio -  Software Carpentry `Programming with R <http://swcarpentry.github.io/r-novice-inflammation/>`_ and `R for Reproducible Scientific Analysis <https://swcarpentry.github.io/r-novice-gapminder/>`_, Data Carpentry `Genomics Workshop <https://datacarpentry.org/lessons/#genomics-workshop>`_
+	**Week 8, 28 Feb - 4 Mar**	R and R Studio -  Software Carpentry `Programming with R <http://swcarpentry.github.io/r-novice-inflammation/>`_ and `R for Reproducible Scientific Analysis <https://swcarpentry.github.io/r-novice-gapminder/>`_, Data Carpentry `Genomics Workshop <https://datacarpentry.org/lessons/#genomics-workshop>`_
 
-	**Week09, 7 - 11 Mar**	Transcriptome analysis: differential gene expression, annotation [22]	
+	**Week 9, 7 - 11 Mar**	Transcriptome analysis: differential gene expression, annotation [22]	
 
-	**Week10, 14 - 18 Mar**	Spring Break - no classes	
+	**Week 10, 14 - 18 Mar**	Spring Break - no classes	
 
-	**Week11, 21 - 25 Mar**	Genome analysis: ChIP-seq, DHS-seq, 3-D conformation [23, 24, CLC GWB `ChIP sequencing tutorial <https://resources.qiagenbioinformatics.com/tutorials/ChIP-seq_peakshape.pdf>`_]	 
+	**Week 11, 21 - 25 Mar**	Genome analysis: ChIP-seq, DHS-seq, 3-D conformation [23, 24, CLC GWB `ChIP sequencing tutorial <https://resources.qiagenbioinformatics.com/tutorials/ChIP-seq_peakshape.pdf>`_]	 
 
-	**Week12, 28 Mar - 1 Apr**	Linux command-line tools: awk, sed, and bash [`Bioawk Basics <https://bioinformaticsworkbook.org/Appendix/Unix/bioawk-basics.html>`_; `Sed Basics <https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-4sed.html>`_; `Using bash in bioinformatics <https://people.duke.edu/~ccc14/duke-hts-2018/cliburn/Bash_in_Jupyter.html>`_; `The Art of Bioinformatics Scripting <https://www.biostarhandbook.com/books/scripting/index.html>`_]
+	**Week 12, 28 Mar - 1 Apr**	Linux command-line tools: awk, sed, and bash [`Bioawk Basics <https://bioinformaticsworkbook.org/Appendix/Unix/bioawk-basics.html>`_; `Sed Basics <https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-4sed.html>`_; `Using bash in bioinformatics <https://people.duke.edu/~ccc14/duke-hts-2018/cliburn/Bash_in_Jupyter.html>`_; `The Art of Bioinformatics Scripting <https://www.biostarhandbook.com/books/scripting/index.html>`_]
 	
-	**Week13, 4-8 Apr**	CLC Genomics Workbench - data QC and pre-processing	 
+	**Week 13, 4-8 Apr**	CLC Genomics Workbench - data QC and pre-processing	 
 
-	**Week14, 11 - 15 Apr**	CLC Genomics Workbench - Expression analysis using RNA-seq data [`tutorial <https://resources.qiagenbioinformatics.com/tutorials/RNASeq-droso.pdf>`_]	 
+	**Week 14, 11 - 15 Apr**	CLC Genomics Workbench - Expression analysis using RNA-seq data [`tutorial <https://resources.qiagenbioinformatics.com/tutorials/RNASeq-droso.pdf>`_]	 
 
-	**Week15, 18 - 22 Apr**	CLC Genomics Workbench - Paired-end short-read genome assembly [`tutorial <https://resources.qiagenbioinformatics.com/tutorials/De_novo_assembly_paired_data.pdf>`_]; Long-read assembly with short-read polishing [`tutorial <https://resources.qiagenbioinformatics.com/tutorials/De_Novo_Assembly_Using_Long_Reads_and_Short_Read_Polishing.pdf>`_]	 
+	**Week 15, 18 - 22 Apr**	CLC Genomics Workbench - Paired-end short-read genome assembly [`tutorial <https://resources.qiagenbioinformatics.com/tutorials/De_novo_assembly_paired_data.pdf>`_]; Long-read assembly with short-read polishing [`tutorial <https://resources.qiagenbioinformatics.com/tutorials/De_Novo_Assembly_Using_Long_Reads_and_Short_Read_Polishing.pdf>`_]	 
 
 	**25 Apr**	Last day of class - questions, review, summary	 
 
@@ -86,5 +87,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 4 December 2021.
+Last modified 21 December 2021.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
