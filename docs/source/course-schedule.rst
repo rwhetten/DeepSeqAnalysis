@@ -65,8 +65,10 @@ General background information and course resources
 ***************************************************
 
 +	General advice on `troubleshooting <troubleshooting.html>`_
-+	`Course syllabus <https://drive.google.com/file/d/1vfHFmcfxiAynyG90TQF8gZFv5eXvDmET/view?usp=sharing>`_
++	`Course syllabus <https://drive.google.com/file/d/1wlAVNHiPSLiZ6yxojj9iB6CNZSpqw6WG/>`_
 +	Lior Pachter's list of sequencing-based assays: `\*Seq <https://liorpachter.wordpress.com/seq/>`_
++	`DNA Sequencing Methods Collection <https://drive.google.com/file/d/1FCe3rnHDiwUUu6pSZ9LkDuDDyYouFyAS/>`_ - Illumina compilation of published methods
++	`For All You Seq - DNA <https://drive.google.com/file/d/1lJ9EPzqG71pPOkSpHSNLFpoh23JIjMDC/>`_ and `For All You Seq - RNA <https://drive.google.com/file/d/1aViVPAgLPkOEUiDAaHvcp-ftunZTk-zF/>`_ are Illumina posters that give brief graphical summaries of many different kinds of sequencing assays
 +	`The R statistical programming environment <r-materials.html>`_
 +	`Course resources and recommended reading <resources.html>`_
 +	`Overview slides (old and outdated in some respects) <https://drive.google.com/open?id=10RYNwJXx7gwYCA_o_1u8AtRw465ROjZn>`_
