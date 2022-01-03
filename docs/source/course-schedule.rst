@@ -18,7 +18,7 @@ Image credit: `Lilian Matallana <https://www.linkedin.com/in/lilian-matallana-21
 
 				A Slack channel is available for questions and discussion.
 			
-				Will Kohlway (will_kohlway at ncsu.edu) is the teaching assistant for the course.
+				Will Kohlway (whkohlwa at ncsu.edu) is the teaching assistant for the course.
 
 
 Course Schedule 
@@ -89,5 +89,5 @@ A flow-chart overview of DNA sequencing experiments
 
 
 
-Last modified 21 December 2021.
+Last modified 3 January 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
