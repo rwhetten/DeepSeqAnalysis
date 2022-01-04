@@ -10,7 +10,7 @@ Global overview
 ***************
 
 1. Accounts on the HPC are available to those with an NCSU Unity ID - see `Get Access <https://projects.ncsu.edu/hpc/Accounts/GetAccess.php>`_ for information.
-2. Connect to the HPC via login.hpc.ncsu.edu using PuTTY for a command-line interface
+2. Connect to the HPC via login.hpc.ncsu.edu using Terminal (macOS) or MobaXterm (Windows) for a command-line interface
 3. Create a job submission script file that contains the commands you want to execute
 4. Submit the job script to the appropriate queue and wait until the job is complete
 5. Transfer the output data back to your office workstation for further analysis, or write another job submission script to carry out more analysis on the HPC.
@@ -72,6 +72,6 @@ Setting up NCSU AFS and Drive Access
 	- `AFS filespace and NCSU Drive <https://oit.ncsu.edu/my-it/filespace/ncsu-drive>`_ filespace are two different storage options that are available to NCSU campus community members (students, staff, and faculty). Access to these storage volumes is enabled on the VCL instances used in class. Access to AFS filespace is enabled by default and a directory called AFS is created in the home directory of each user; the NCSU Drive space can be mounted by entering the command **mount.mydrive** in a terminal window and entering the appropriate Unity password in response to the prompt, after which the NCSU Drive space is available at the path **/mnt/mydrive**. Both of these storage volumes can also be accessed from Windows or Mac desktop or laptop computers; the OIT webpage linked above has information on how to set up this access. Saving work from the VCL instance to these non-volatile storage options is important if you want keep any files produced during a VCL work session, as all user-created files saved on the virtual machine instance will be lost when the work session is terminated.
 
 
-Last modified 5 January 2020.
+Last modified 4 January 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
 
