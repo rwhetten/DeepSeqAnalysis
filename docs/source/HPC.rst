@@ -13,7 +13,7 @@ HPC and LSF
 Objective
 *********
 
-The objective of this section is to work through NCSU's High-Performance Cluster (HPC) quick-start tutorial to gain familiarity with the NC State HPC, and use other reference videos to review and practice cluster job submission using LSF. `Singularity containers <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177459>`_ are an important asset for working on the HPC, because they allow preservation of exactly the same working environment for the duration of a project, and can be made available to other scientists in pursuit of the goal of reproducible research. Unlike Docker containers, which require root access to run, Singularity containers run with the same permissions of the user who launches the container, but can still be deployed on computing clusters to take advantage of the hardware resources available there.    
+The objective of this section is to work through NCSU's High-Performance Cluster (HPC) quick-start tutorial to gain familiarity with the NC State HPC, and use other reference videos to review and practice cluster job submission using LSF, the job management system of the HPC. `Singularity containers <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177459>`_ are an important asset for working on the HPC, because they allow preservation of exactly the same working environment for the duration of a project, and can be made available to other scientists in pursuit of the goal of reproducible research. Unlike Docker containers, which require root access to run, Singularity containers run with the same permissions of the user who launches the container, but can still be deployed on computing clusters to take advantage of the hardware resources available there. Access to the NC State HPC is available to faculty, staff and students at NC State University - see `Request Access <https://projects.ncsu.edu/hpc/Accounts/GetAccess.php>`_ for more information. Mac and Linux users can connect directly to the HPC by SSH to login.hpc.ncsu.edu from a terminal window; Windows users should install `MobaXterm <https://mobaxterm.mobatek.net/download.html>`_ to provide a terminal environment for SSH as well as a number of other useful tools. The HPC uses a tool called Load Sharing Facility (LSF) to manage the queues of computing jobs submitted for processing on the HPC - see the `LSF Document <https://projects.ncsu.edu/hpc/Documents/LSF.php>`_ for more information about LSF scripts.  
 
 
 Exercises
@@ -46,7 +46,7 @@ The Final Project is optional, but highly recommended to complete. The goal of t
 
 The software to be used includes the Trinity assembler, the TransDecoder suite for identification of ORFs, and the Trinotate suite for annotation. You will need to install the necessary tools to a Conda environment on the HPC. The text file linked to the HPC and LSF section under section 6 of Exercises has some notes on how to set up and run the Conda environment to carry out the Trinity assembly as an example. The diamond (protein similarity search) and Pfam (protein domain search) databases are available at /share/bit815s20/databases. The RNA-seq data are in /share/bit815s20/yeast/RNAdata - look for the six files [rnaC1, rnaC2, rnaC3][_1.fastq.gz,_2.fastq.gz]. The TransDecoder and Trinotate pipelines will be similar, but (of course) using commands specific to those software packages.
 
-More detailed information on how to structure the commands for Trinity, TransDecoder, and Trinotate is available at the respective websites for those software packages. The ability to find the information you need to understand how to use software is an important skill to practice, as new software and new methods emerge all the time. However, we are available to answer questions, either via the Piazza forum or during the MWF 8:30 to 10:20 class periods.
+More detailed information on how to structure the commands for Trinity, TransDecoder, and Trinotate is available at the respective websites for those software packages. The ability to find the information you need to understand how to use software is an important skill to practice, as new software and new methods emerge all the time. However, we are available to answer questions, either via the Slack channel or during class meetings.
 
 
 
@@ -81,5 +81,5 @@ Class Recordings
 +   `Session 32: recorded April 8th 2021 <https://drive.google.com/file/d/1ugrRnCMCD-sBI_DP1gthSCGHAh6KVs8s/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1lpmnb_FloOWYoWFBVkeJNMQsI8ebQ81W/view?usp=sharing>`_.
 
 
-Last modified 9th April 2021.
+Last modified 4 January 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_ and `Will Kohlway <https://github.com/wkohlway>`_.
