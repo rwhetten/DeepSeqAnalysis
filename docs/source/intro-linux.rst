@@ -61,7 +61,7 @@ Additional Resources
 Background information about Linux:
 -----------------------------------
 
-+ A reminiscence called `The Strange Birth and Long Life of Unix <http://faculty.salina.k-state.edu/tim/unix_sg/_downloads/The_Strange_Birth_and_Long_Life_of_Unix_IEEE_Spectrum.pdf>`_ by Warren Toomey in 2011 commemorated the 40th anniversary of the beginning of Unix development.
++ A reminiscence called `The Strange Birth and Long Life of Unix <https://drive.google.com/file/d/16ovTh5fssy8TDeU1rBhFi7tPAOTM-4c0/view?usp=sharing>`_ by Warren Toomey in 2011 commemorated the 40th anniversary of the beginning of Unix development.
 
 \
 
@@ -118,5 +118,5 @@ Class Recordings
 + `Session 2: recorded January 22th 2021 <https://drive.google.com/file/d/1dh5aTIDA1K4242Wtgl-w6E7a6UmSB380/view?usp=sharing>`_ (this link is video and audio). Or use this link for `Audio only <https://drive.google.com/file/d/1v24OPwqxH5tZh7Y56vAw2orXhEGwHYxK/view?usp=sharing>`_ .
 
 
-Last modified 15 December 2021.
+Last modified 18 January 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
