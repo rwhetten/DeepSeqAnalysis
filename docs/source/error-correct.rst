@@ -43,7 +43,7 @@ The text file `error_correction_files.txt <https://drive.google.com/open?id=1doO
 
 \
 
-1. The first exercise will align RNA-seq reads to a bacterial genome, to provide some experience with alignment software and an opportunity to explore software tools used to summarize and manipulate Sequence Alignment and Mapping (SAM) format files. The `RNA-seq reads <https://drive.google.com/a/ncsu.edu/file/d/1Vo90SPDoe9s-NDuwATPNLwRkBE6Q-Ny3>`_ come from *Lactobacillus helveticus* strain CNRZ32, while the reference genome is from strain `DPC 4571 <https://drive.google.com/open?id=1N_8e4SAj4SU_Y0zoYzA8_s3k1vXZCMtd>`_, so some sequence differences detected in the alignments will be due to the strain divergence, and some differences due to sequencing errors or other sources of experimental noise in the RNA-seq data. You can also download a `text file <https://drive.google.com/a/ncsu.edu/file/d/1f_SkLZ0yqfjKQibUITKgpC1czd0x9_Df>`_ of steps to use in aligning the reads to the reference genome, then reviewing the results of the alignment. 
+1. The first exercise will align RNA-seq reads to a bacterial genome, to provide some experience with alignment software and an opportunity to explore software tools used to summarize and manipulate Sequence Alignment and Mapping (SAM) format files. The `RNA-seq reads <https://drive.google.com/a/ncsu.edu/file/d/1Vo90SPDoe9s-NDuwATPNLwRkBE6Q-Ny3>`_ come from *Lactobacillus helveticus* strain CNRZ32, while the reference genome is from strain `DPC 4571 <https://drive.google.com/open?id=1N_8e4SAj4SU_Y0zoYzA8_s3k1vXZCMtd>`_, so some sequence differences detected in the alignments will be due to the strain divergence, and some differences due to sequencing errors or other sources of experimental noise in the RNA-seq data. You can also download a `text file <https://drive.google.com/a/ncsu.edu/file/d/1f_SkLZ0yqfjKQibUITKgpC1czd0x9_Df>`_ of steps to use in aligning the reads to the reference genome, then reviewing the results of the alignment. The output of the Qualimap program used to summarize the alignments present in the BAM output file shows (among other data) a distribution of mapping quality for all aligned reads. See `this post on the sequencing.qcfail blog <https://sequencing.qcfail.com/articles/mapq-values-are-really-useful-but-their-implementation-is-a-mess/>`_ for a discussion of mapping quality scores from different alignment programs.
 
 \
 
@@ -74,6 +74,14 @@ Download the `K-merCounting_ErrorCorrection.sh <https://drive.google.com/open?id
 
 Additional Resources
 ********************
+
++ Heydari M, et al (2017) Evaluation of the impact of Illumina error correction tools on de novo genome assembly. BMC Bioinformatics 18(1):374 `Full Text <https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1784-8>`_
+
+\
+
++ Heydari M, et al (2019) Illumina error correction near highly repetitive DNA regions improves de novo genome assembly. BMC Bioinformatics 20: 298  `Full Text <https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2906-2>`_
+
+\
 
 + Song L, Florea L (2015) Rcorrector: efficient and accurate error correction for Illumina RNA-seq reads. GigaScience 4:48 `Full Text  <https://gigascience.biomedcentral.com/articles/10.1186/s13742-015-0089-y>`_
 
@@ -113,6 +121,6 @@ Class Recordings
 
 +   Session 9 recorded February 9th 2021 The video recording feature is still acting. However, a `transcript of the recording of the video is available <https://drive.google.com/file/d/1g8OdAa3ayxVDgbPcUbUZ9uAFg4bu5V_S/view?usp=sharing>`_.
 
-Last modified 7 February 2021.
+Last modified 28 January 2022.
 
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
