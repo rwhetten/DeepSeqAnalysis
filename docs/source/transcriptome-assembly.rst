@@ -112,13 +112,20 @@ Exercise - Evaluating Assembly Quality
 Additional Resources
 ********************
 
++ Raghavan et al, 2022 A simple guide to *de novo* transcriptome assembly and annotation. Briefings in Bioinformatics bbab563. `Full Text <https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbab563/6514404>`_ *A recent review of the entire process of de-novo transcriptome assembly, from data pre-processing to transcriptome annotation, with lists of programs suitable for different steps in the process. An excellent overview of the current state of the art.*
+
+\
+
++ The Harvard Informatics facility has an online guide to `Best Practices for De Novo Transcriptome Assembly with Trinity <https://informatics.fas.harvard.edu/best-practices-for-de-novo-transcriptome-assembly-with-trinity.html>`_ that contains example SLURM scripts for submission of different job types to a computing cluster, as well as an extensive discussion of practical considerations in transcriptome assembly.
+
+
 Several papers have reported that the most reliable approach for transcriptome assembly for different organisms is to use multiple different programs for independent assemblies, followed by merging together of the resulting assembled contigs and selection of the most complete contigs as representatives for the final completed transcriptome. 
 
 + Venturini et al, 2018 Leveraging multiple transcriptome assembly methods for improved gene structure annotation. GigaScience 7(8):giy093 `Full text <https://doi.org/10.1093/gigascience/giy093>`_
 
 \
 
-+ McManes, M.D. 2018 The Oyster River Protocol: a multi-assembler and kmer approach for de-novo transcriptome assembly. Peer J. 6:e5428. `Full text <https://dx.doi.org/10.7717%2Fpeerj.5428>`_ This paper describes a set of criteria used to evaluate the relative quality of different transcriptome assemblies, using the software tools BUSCO, shmlast, Detonate, and Trans-Rate.
++ McManes, M.D. 2018 The Oyster River Protocol: a multi-assembler and kmer approach for de-novo transcriptome assembly. Peer J. 6:e5428. `Full text <https://dx.doi.org/10.7717%2Fpeerj.5428>`_ *This paper describes a set of criteria used to evaluate the relative quality of different transcriptome assemblies, using the software tools BUSCO, shmlast, Detonate, and Trans-Rate.*
 
 \
 
@@ -168,18 +175,6 @@ Correction of errors in RNA-seq reads requires consideration of the difference i
 
 \
 
-
-+ Salzberg S, et al. (2012) GAGE: A critical evaluation of genome assemblies and assembly algorithms. Genome Research 22:557–567. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3290791>`_ This paper describes a set of experiments comparing different assembly programs on four genomes, and provides useful insights into the challenges of genome assembly.
-
-\
-
-+ Magoc T and Salzberg S. (2011) FLASH: Fast Length Adjustment of Short Reads to improve genome assemblies. Bioinformatics 27:2957–2963. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3198573/>`_ This paper describes a software tool for joining paired-end reads obtained from DNA fragments short enough that the reads overlap at the ends. This is reported to improve the quality of assemblies created from the joined reads. An outline of an exercise with the FLASH assembler is available: `FLASH_exercise.docx <p:%5Cfer%5CChristmas%20Tree%20Genetics%20Program%5COther%20Files%5CBIT815_WebpageCode%5CBIT815%5CDocuments%20for%20classes%5CWeek%204>`_
-
-\
-
-+ Pevzner PA, et al. (2001) An Eulerian path approach to DNA fragment assembly. PNAS 98:9748-9753. `Full Text <http://www.pnas.org/content/98/17/9748.full>`_
-
-
 Class Recordings
 ----------------
 
@@ -189,5 +184,5 @@ Class Recordings
 
 +   `Session 15: recorded February 22nd 2021 <https://drive.google.com/file/d/1FGRXLgY4HPVrj5BrXZP01wgf4nbXKVmn/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1ZtK0JEQUvJWlFt2GvrxL3_hhyxvAehb0/view?usp=sharing>`_.
 
-Last modified 22 February 2021.
+Last modified 30 January 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
