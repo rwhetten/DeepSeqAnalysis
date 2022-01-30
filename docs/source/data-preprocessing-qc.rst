@@ -72,6 +72,10 @@ Additional Resources
 
 \
 
++ Heng Li (developer of the BWA aligner and bioawk tools, among others) has a `blog post <https://lh3.github.io/2017/07/24/on-nonvaseq-base-quality>`_ comparing empirical base quality from three different Illumina sequencing platforms - Hiseq2500, HiseqX10, and Novaseq. Specific types of base-substitution errors are characteristic of different instruments at different positions in the reads in the libraries he analyzed.
+
+\
+
 + Another program suitable for adapter trimming is called "flexbar" - this program can also split reads into different files based on the presence of specific "barcode" sequences detected in the sequence reads. Such barcodes are common in GBS and RAD-seq applications, so this tool can be important in those applications. The manual for flexbar is on `Sourceforge <http://sourceforge.net/p/flexbar/wiki/Manual/>`_, and the `publication <http://www.mdpi.com/2079-7737/1/3/895>`_ describing the software is also available.
 
 \
@@ -106,5 +110,5 @@ Class Recordings
 +   `Session 4: recorded January 27th 2021 <https://drive.google.com/file/d/1WKjWRWgVc2O7RdmJ9WyU9ucDSjk8Mpdv/view?usp=sharing>`_ (this link is video and audio). A  Transcript of recording of the video `is also available <https://drive.google.com/file/d/1xuxTcwfluE7OlMjoosUWXOCYS3_5sq3a/view?usp=sharing>`_ .
 
 
-Last modified 15 December 2021.
+Last modified 30 January 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
