@@ -73,19 +73,24 @@ Direct download links for class can be found in the `Transcriptome_Assembly.txt 
 Exercise - de-novo assembly
 ***************************
 
-+ The *Arabidopsis thaliana* RNA-seq dataset can also be used for de-novo assembly, although it is comprised of short, single-end reads so it is not ideal. The 32 Gb of RAM available on instances of the VCL machine image is a limiting factor. Disk storage space is another important limiting factor on the VCL image; it has only about 14 Gb of available space, which is not enough to store the input RNA-seq reads and have room for the assembler to write temporary files and output. The /data directory contains three sets of paired-end reads of *Drosophila melanogaster* RNA-seq data from different developmental stages; these can be used for a trial assembly using the Trans-ABySS transcriptome assembler (available in the 'bioinfo' conda environment). The code to quality-trim and adapter-clip the read files and run the Trans-ABySS assembler is relatively brief, but reading the software manuals to understand the function of the command-line options is important.
++ The *Arabidopsis thaliana* RNA-seq dataset can also be used for de-novo assembly, although it is comprised of short, single-end reads so it is not ideal. The 32 Gb of RAM available on instances of the VCL machine image is a limiting factor. Disk storage space is another important limiting factor on the VCL image; it has only about 7 Gb of available space, which is not enough to store the input RNA-seq reads and have room for the assembler to write temporary files and output. The BITfileserver contains three sets of paired-end reads of *Drosophila melanogaster* RNA-seq data from different developmental stages; these can be used for a trial assembly using the Trans-ABySS transcriptome assembler (available in the 'bioinfo' conda environment). Download the data using a bash loop such as:: 
+
+   for N in adult embryo larva; 
+   do wget http://152.7.176.221/bit815/TranscriptomeAssembly/${N}_1.fq.gz; 
+   wget http://152.7.176.221/bit815/TranscriptomeAssembly/${N}_2.fq.gz; 
+   done
 
 \
 
-+ Example commands to quality-filter and adapter-trim three files of Drosophila RNA seq-data, using a bash loop to process each of the three input RNA-seq datasets in series, followed by a one-line command to run the Trans-ABySS assembler::
++ The code to quality-trim and adapter-clip the read files and run the Trans-ABySS assembler is relatively brief, but reading the software manuals to understand the function of the command-line options is important. Example commands are provided to quality-filter and adapter-trim three files of Drosophila RNA seq-data, using a bash loop to process each of the three input RNA-seq datasets in series. After filtering is complete, the original files can be deleted to free disk space,  followed by a one-line command to run the Trans-ABySS assembler::
 
    source load_conda
    conda activate bioinfo
 
    for file in adult embryo larva; 
-   do bbduk.sh in=/data/${file}_1.fq.gz in2=/data/${file}_2.fq.gz out=${file}.fq.gz ref=adapters mink=11 ktrim=r qtrim=rl minlength=50 maxns=0 trimpolya=15; 
+   do bbduk.sh in=${file}_1.fq.gz in2=${file}_2.fq.gz out=${file}.fq.gz ref=adapters mink=11 ktrim=r qtrim=rl minlength=50 maxns=0 trimpolya=15; 
    done
-
+   rm adult_1.fq.gz adult_2.fq.gz embryo_1.fq.gz embryo_2.fq.gz larva_1.fq.gz larva_2.fq.gz
    transabyss --pe adult.fq.gz embryo.fq.gz larva.fq.gz --outdir ~/out --name flyRNA --length 200 --threads 15 -k 35
 
 \
@@ -184,5 +189,5 @@ Class Recordings
 
 +   `Session 15: recorded February 22nd 2021 <https://drive.google.com/file/d/1FGRXLgY4HPVrj5BrXZP01wgf4nbXKVmn/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1ZtK0JEQUvJWlFt2GvrxL3_hhyxvAehb0/view?usp=sharing>`_.
 
-Last modified 30 January 2022.
+Last modified 1 February 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
