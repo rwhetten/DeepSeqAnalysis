@@ -47,6 +47,8 @@ Library construction and experimental design
 
 Data formats, data management, and alignment software tools
 ***********************************************************
++ A Quick Guide to Organizing Computational Biology Projects. Noble, PLoS Comp. Biol 5:e1000424, 2009 `Full Text <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424>`_ *Written from the perspective of the research scientist generating and analyzing the data*
++ Ten Simple Rules for Providing Effective Bioinformatics Research Support. Kumuthini, et al. PLoS Comput Biol 16:e1007531. `Full Text <https://doi.org/10.1371/journal.pcbi.1007531>`_ *Written from the perspective of core bioinformatics facility service providers*
 + The Sequence Alignment/Map format and SAMtools. Li et al, Bioinformatics 25(16):2078-9, 2009 `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2723002>`_
 + SAM format specification `file <http://samtools.sourceforge.net/SAM1.pdf>`_
 + Efficient storage of high throughput sequencing data using reference-based compression. Fritz et al, Genome Res 21(5):734-40, 2011. `Full Text <http://genome.cshlp.org/content/21/5/734.long>`_
@@ -115,7 +117,9 @@ Assembly and comparison to genome
   + Rnnotator: an automated de novo transcriptome assembly pipeline from stranded RNA-Seq reads. Martin et al, BMC Genomics 11:663, 2010 `Full Text <http://www.biomedcentral.com/1471-2164/11/663>`_
   + De novo assembly and analysis of RNA-seq data. Robertson et al, Nature Methods 7:909-912, 2010 `Full Text <http://www.nature.com/nmeth/journal/v7/n11/full/nmeth.1517.html>`_ [*Describes Trans-ABySS, a pipeline to use the ABySS parallel assembler for de novo transcriptome analysis.*]
 
+
 Differential expression analysis
+
   + Robust adjustment of sequence tag abundance. Baumann & Doerge, Bioinformatics 2013 `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/24108185>`_
   + R-SAP: a multi-threading computational pipeline for the characterization of high-throughput RNA-sequencing data. Mittal & McDonald, Nucleic Acids Res, 2012 `Full Text <http://nar.oxfordjournals.org/content/early/2012/01/28/nar.gks047.long>`_
   + Targeted RNA sequencing reveals the deep complexity of the human transcriptome. Mercer et al, Nature Biotechnology 30:99 - 104, 2012 `Publisher Website <http://www.nature.com/nbt/journal/v30/n1/full/nbt.2024.html>`_
@@ -177,8 +181,8 @@ Population Genomics
 
 Workspace environments
 **********************
-
 Papers
+  + Using prototyping to choose a bioinformatics workflow management system. Jackson et al, PLoS Comput Biol. 17:e1008622, 2021. `Full Text <https://doi.org/10.1371/journal.pcbi.1008622>`_ *A description of how the authors compared four different workflow management systems for their analytical pipeline development project before choosing Nextflow*
   + Galaxy: a comprehensive approach for supporting accessible, reproducible, and transparent computational research in the life sciences. Goecks et al, Genome Biol 11(8):R86, 2010 `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2945788>`_
   + Galaxy Cloudman: Delivering compute clusters. BMC Bioinformatics 11(Suppl. 12):S4, 2010 `Full Text <http://www.biomedcentral.com/content/pdf/1471-2105-11-S12-S4.pdf>`_
   + `The Genome Analysis Toolkit <http://www.broadinstitute.org/gsa/wiki/index.php/The_Genome_Analysis_Toolkit>`_: a MapReduce framework for analyzing next-generation DNA sequencing data. McKenna et al, Genome Res 20(9):1297-303, 2010. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2928508>`_
@@ -252,5 +256,5 @@ Links to other useful sites
 + The European Bioinformatics Institute provides tools `ArrayExpressHTS and R-Cloud <http://www.ebi.ac.uk/Tools/rcloud/>`_ for analysis of transcriptome data
 
 
-Last modified 4 December 2021.
+Last modified 2 February 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
