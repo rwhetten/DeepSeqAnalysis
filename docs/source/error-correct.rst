@@ -107,7 +107,11 @@ Additional Resources
 
 \
 
-+ Hatem A, Bozdag D, Toland AE, Çatalyürek ÜV. 2013. Benchmarking short sequence mapping tools. BMC Bioinformatics 14:184. `PMID 23758764 <http://www.ncbi.nlm.nih.gov/pubmed/23758764>`_ *(A  publication comparing eight different open-source or proprietary read-alignment programs on simulated and real data, including BWA and Bowtie2. The conclusion was that no single tool is optimal for every purpose or any dataset; the user must make an informed decision based on experimental system and objectives)*
++ Li, H. 2018. On the definition of sequence identity. `Blog post <http://lh3.github.io/2018/11/25/on-the-definition-of-sequence-identity>`_ *A discussion of different ways of defining sequence identity based on different methods for handling indels and different scoring systems for match, mismatch, gap open and gap extend events. Includes Perl one-liners for calculating sequence identity from alignments made by the* `minimap2 <https://lh3.github.io/minimap2/minimap2.html>`_ *long-read aligner.*
+
+\
+
++ Hatem A, Bozdag D, Toland AE, Çatalyürek ÜV. 2013. Benchmarking short sequence mapping tools. BMC Bioinformatics 14:184. `PMID 23758764 <http://www.ncbi.nlm.nih.gov/pubmed/23758764>`_ *A  publication comparing eight different open-source or proprietary read-alignment programs on simulated and real data, including BWA and Bowtie2. The conclusion was that no single tool is optimal for every purpose or any dataset; the user must make an informed decision based on experimental system and objectives.*
 
 
 Class Recordings
