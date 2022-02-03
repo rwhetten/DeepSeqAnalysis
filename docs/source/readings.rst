@@ -25,6 +25,15 @@ Global overview books and papers
 + Next generation quantitative genetics in plants. Jiménez-Gómez, Frontiers in Plant Science 2:77, 2011 `Full Text <http://www.frontiersin.org/Plant_Physiology/10.3389/fpls.2011.00077/full>`_ [*Equally relevant to animal and microbial systems*]
 + Sense from sequence reads: methods for alignment and assembly. Flicek & Birney, Nat Methods 6(11 Suppl):S6-S12, 2009. `Full Text <http://www.nature.com/nmeth/journal/v6/n11s/full/nmeth.1376.html>`_
 
+Data Management and Project Organization
+****************************************
+
++ The FAIR Guiding Principles for scientific data management and stewardship. Wilkinson, et al  Sci Data 3:160018, 2016 `Full Text <https://doi.org/10.1038/sdata.2016.18>`_ *Research data should be Findable, Accessible, Interoperable, and Reusable in order to be of maximum value to the larger scientific community* 
++ A quick guide to organizing computational biology projects. Noble, PLoS Comp Biol 5:e1000424, 2009 `Full Text <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424>`_ *Written from the perspective of the research scientist generating and analyzing the data*
++ Ten simple rules for providing effective bioinformatics research support. Kumuthini, et al. PLoS Comp Biol 16:e1007531, 2020. `Full Text <https://doi.org/10.1371/journal.pcbi.1007531>`_ *Written from the perspective of core bioinformatics facility service providers*
++ Good enough practices in scientific computing. Wilson et al, PLoS Comp Biol 13:e1005510, 2017. `Full Text <https://doi.org/10.1371/journal.pcbi.1005510>`_ *Covers data management, software management, collaboration, project organization, version control, and manuscript authoring practices.*
++ PM4NGS, a project management framework for next-generation sequencing data analysis. Vera Alvarez et al, GigaScience 10:giaa141, 2021 `Full Text <https://doi.org/10.1093/gigascience/giaa141>`_ *A recent publication, as-yet uncited, that describes an  automated system for creating a management structure of directories, files, and data management tools based on Jupyter notebooks and Common Workflow Language (CWL). Not everyone is a fan of CWL, but the paper presents useful concepts regarding strategies for reproducible research and data management to achieve the FAIR principles.* 
+
 Library construction and experimental design
 ********************************************
 
@@ -40,22 +49,25 @@ Library construction and experimental design
 + Points of significance: replication. Blainey et al., Nature Methods 11: 879–880, 2014. `Publisher Web Site <http://www.nature.com/nmeth/journal/v11/n9/full/nmeth.3091.html>`_
 + Points of Significance: Nested designs. Krzywinski et al., Nature Methods 11: 977–978, 2014 `Publisher Web Site <http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3137.html>`_
 + Points of significance: Sources of variation Altman & Krzywinski. Nature Methods 12: 5 – 6, 2015 `Publisher Web Site <http://www.nature.com/nmeth/journal/v12/n1/full/nmeth.3224.html>`_
-+ Compilation of DNA sequencing library preparation Methods: as a `Poster <https://drive.google.com/open?id=1lJ9EPzqG71pPOkSpHSNLFpoh23JIjMDC>`_ & an `extensive methods review PDF <https://drive.google.com/open?id=1FCe3rnHDiwUUu6pSZ9LkDuDDyYouFyAS>`_.
-+ Compilation of RNA sequencing library preparation Methods: as a `Poster <https://drive.google.com/open?id=1aViVPAgLPkOEUiDAaHvcp-ftunZTk-zF>`_ & an `extensive methods review PDF <https://drive.google.com/open?id=1vkAFWdu-C-4OUb7J0ZBzPMieE_49p8Bu>`_.
-+ A `Poster <https://drive.google.com/open?id=1_G4o26Qu0w6GJxRY6n81TOmgvIzhsMro>`_ compiling Single-Cell sequencing methods.  
-+ An `overview of recent publictions <https://drive.google.com/open?id=1FLuKZI0TLfx6xrd9YED5J7zAHgZMoKVr>`_ for cell biology and complex disease research with Illumina technology.
++ Compilation of DNA sequencing library preparation Methods: as a `poster <https://drive.google.com/open?id=1lJ9EPzqG71pPOkSpHSNLFpoh23JIjMDC>`_ & an `extensive methods review PDF <https://drive.google.com/open?id=1FCe3rnHDiwUUu6pSZ9LkDuDDyYouFyAS>`_.
++ Compilation of RNA sequencing library preparation Methods: as a `poster <https://drive.google.com/open?id=1aViVPAgLPkOEUiDAaHvcp-ftunZTk-zF>`_ & an `extensive methods review PDF <https://drive.google.com/open?id=1vkAFWdu-C-4OUb7J0ZBzPMieE_49p8Bu>`_.
++ A `poster <https://drive.google.com/open?id=1_G4o26Qu0w6GJxRY6n81TOmgvIzhsMro>`_ compiling Single-Cell sequencing methods.  
++ An `overview of recent publications <https://drive.google.com/open?id=1FLuKZI0TLfx6xrd9YED5J7zAHgZMoKVr>`_ for cell biology and complex disease research with Illumina technology.
 
-Data formats, data management, and alignment software tools
+Data formats and alignment software tools
 ***********************************************************
-+ A Quick Guide to Organizing Computational Biology Projects. Noble, PLoS Comp. Biol 5:e1000424, 2009 `Full Text <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424>`_ *Written from the perspective of the research scientist generating and analyzing the data*
-+ Ten Simple Rules for Providing Effective Bioinformatics Research Support. Kumuthini, et al. PLoS Comput Biol 16:e1007531. `Full Text <https://doi.org/10.1371/journal.pcbi.1007531>`_ *Written from the perspective of core bioinformatics facility service providers*
+
 + The Sequence Alignment/Map format and SAMtools. Li et al, Bioinformatics 25(16):2078-9, 2009 `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2723002>`_
 + SAM format specification `file <http://samtools.sourceforge.net/SAM1.pdf>`_
++ PAF alignment format is described in the manual page for the  `minimap2 <https://lh3.github.io/minimap2/minimap2.html>`_ long-read aligner.
++ Minimap2: pairwise alignment for nucleotide sequences. Li, Bioinformatics 34:3094-3100, 2018 https://doi.org/10.1093/bioinformatics/bty191. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/pmc6137996/>`_
 + Efficient storage of high throughput sequencing data using reference-based compression. Fritz et al, Genome Res 21(5):734-40, 2011. `Full Text <http://genome.cshlp.org/content/21/5/734.long>`_
 + Compression of DNA sequence reads in FASTQ format. Deorowicz & Grabowski, Bioinformatics 27(6):860-2, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21252073>`_
 + Fast and accurate short read alignment with Burrows-Wheeler transform. Li & Durbin, Bioinformatics 25(14):1754-60, 2009. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2705234>`_
 + Improving SNP discovery by base alignment quality. Li H, Bioinformatics 27(8):1157-8, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21320865>`_
 + BEDTools: a flexible suite of utilities for comparing genomic features. Quinlan and Hall, Bioinformatics 26:841-842, 2010. `Publisher Website <http://bioinformatics.oxfordjournals.org/content/26/6/841.full.pdf+html>`_
++ The variant call format and VCFtools. Danecek et al, Bioinformatics 27:2156-2158, 2011. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pubmed/21653522>`_
++ The UC Santa Cruz Genome Browser FAQ on `data file formats <https://genome.ucsc.edu/FAQ/FAQformat>`_
 
 Data quality assessment, filtering, and correction
 **************************************************
@@ -111,11 +123,11 @@ General considerations for RNA-seq library construction
 Assembly and comparison to genome
 
   + A glance at quality score: implication for de novo transcriptome reconstruction of Illumina reads. Mbandi et al., Frontiers in Genetics 2014. `Publisher Website <http://journal.frontiersin.org/Journal/10.3389/fgene.2014.00017/full?>`_
-  + Full-length transcriptome assembly from RNA-Seq data without a reference genome. Grabherr et al, Nature Biotechnology 29:644 - 652, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21572440>`_ [*Software called* `Trinity <http://trinityrnaseq.sourceforge.net/>`_; *available on Sourceforge.*]
-  + Comprehensive analysis of RNA-Seq data reveals extensive RNA editing in a human transcriptome. Peng et al, Nature Biotechnology 30:253 - 260, 2012. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/22327324>`_ [*Several comments on this paper question whether the reported differences are in fact evidence of editing or are simply sequencing errors - the authors stand by their conclusions, but the controversy demonstrates the importance of robust data analysis methods.*]
+  + Full-length transcriptome assembly from RNA-Seq data without a reference genome. Grabherr et al, Nature Biotechnology 29:644 - 652, 2011. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/21572440>`_ *Software called* `Trinity <https://github.com/trinityrnaseq/trinityrnaseq/wiki>`_; *is available on Github.*
+  + Comprehensive analysis of RNA-Seq data reveals extensive RNA editing in a human transcriptome. Peng et al, Nature Biotechnology 30:253 - 260, 2012. `PubMed <http://www.ncbi.nlm.nih.gov/pubmed/22327324>`_ *Several comments on this paper question whether the reported differences are in fact evidence of editing or are simply sequencing errors - the authors stand by their conclusions, but the controversy demonstrates the importance of robust data analysis methods.*
   + Optimization of de novo transcriptome assembly from next-generation sequencing data. Surget-Groba & Montoya-Burgos, Genome Res 20(10):1432-40, 2010. `Full Text <http://genome.cshlp.org/content/20/10/1432.long>`_
   + Rnnotator: an automated de novo transcriptome assembly pipeline from stranded RNA-Seq reads. Martin et al, BMC Genomics 11:663, 2010 `Full Text <http://www.biomedcentral.com/1471-2164/11/663>`_
-  + De novo assembly and analysis of RNA-seq data. Robertson et al, Nature Methods 7:909-912, 2010 `Full Text <http://www.nature.com/nmeth/journal/v7/n11/full/nmeth.1517.html>`_ [*Describes Trans-ABySS, a pipeline to use the ABySS parallel assembler for de novo transcriptome analysis.*]
+  + De novo assembly and analysis of RNA-seq data. Robertson et al, Nature Methods 7:909-912, 2010 `Full Text <http://www.nature.com/nmeth/journal/v7/n11/full/nmeth.1517.html>`_ *Describes Trans-ABySS, a pipeline to use the ABySS parallel assembler for de novo transcriptome analysis.*
 
 
 Differential expression analysis
@@ -256,5 +268,5 @@ Links to other useful sites
 + The European Bioinformatics Institute provides tools `ArrayExpressHTS and R-Cloud <http://www.ebi.ac.uk/Tools/rcloud/>`_ for analysis of transcriptome data
 
 
-Last modified 2 February 2022.
+Last modified 4 February 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
