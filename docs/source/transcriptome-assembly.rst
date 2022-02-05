@@ -114,6 +114,12 @@ Exercise - Evaluating Assembly Quality
 
 \
 
++ `Evaluating your transcriptome assembly <https://dibsi-rnaseq.readthedocs.io/en/latest/evaluation.html>`_ outlines the use of Transrate and BUSCO to evaluate de-novo transcriptome assembly quality. This comes from documentation for a short course in transcriptome sequencing, assembly and analysis held at UC Davis in 2017. They install Transrate and BUSCO by compiling from source code - for the NC State HPC, it is much easier to install both packages in a conda virtual environment using the command::
+
+    conda create --prefix /share/bit815s20/$USER/txptomeQC_env transrate busco
+
+\
+
 Additional Resources
 ********************
 
@@ -122,6 +128,10 @@ Additional Resources
 \
 
 + The Harvard Informatics facility has an online guide to `Best Practices for De Novo Transcriptome Assembly with Trinity <https://informatics.fas.harvard.edu/best-practices-for-de-novo-transcriptome-assembly-with-trinity.html>`_ that contains example SLURM scripts for submission of different job types to a computing cluster, as well as an extensive discussion of practical considerations in transcriptome assembly.
+
+\
+
++ `Advanced Guide to Trinity <https://eagle.fish.washington.edu/whale/fish546/Trinity_r2013-08-14_analysis1-2014-02-08-20-44-13.233/bin/trinityrnaseq_r2013_08_14/docs/advanced_trinity_guide.html>`_ A resource dated 2014, so it may not be completely accurate with respect to the latest version of Trinity, but it discusses the three individual component programs of Trinity (Inchworm, Chrysalis, and Butterfly) and what each does during the process of Trinity assembly. This also provides some insight into specific parameter settings that can be adjusted to improve Trinity assemblies - these recommendations may or may not work with the latest version of Trinity, though.
 
 
 Several papers have reported that the most reliable approach for transcriptome assembly for different organisms is to use multiple different programs for independent assemblies, followed by merging together of the resulting assembled contigs and selection of the most complete contigs as representatives for the final completed transcriptome. 
@@ -189,5 +199,5 @@ Class Recordings
 
 +   `Session 15: recorded February 22nd 2021 <https://drive.google.com/file/d/1FGRXLgY4HPVrj5BrXZP01wgf4nbXKVmn/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1ZtK0JEQUvJWlFt2GvrxL3_hhyxvAehb0/view?usp=sharing>`_.
 
-Last modified 1 February 2022.
+Last modified 5 February 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
