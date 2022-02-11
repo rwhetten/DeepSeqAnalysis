@@ -50,11 +50,7 @@ The `GenomeAssembly shell script <https://drive.google.com/open?id=1wLU75DflXTdH
 
 ::
    
-   ggID='1PWLCABfrEpxAeG0XOBwPsDBE_KxBqG3N'; 
-   echo "The file ID is $ggID" ; 
-   ggURL='https://drive.google.com/uc?export=download' ; 
-   filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')" ; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)" ; 
-   curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"
+   wget http://152.7.176.221/ExerciseData/archives/DPC4571.tgz
    
 
 
