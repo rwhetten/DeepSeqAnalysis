@@ -78,14 +78,11 @@ Exercises
 
 \
 
-3. Data from an exercise presented at a `2016 Canadian bioinformatics workshop <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/>`_ are in `Module3.tar.gz <https://drive.google.com/open?id=1KZGdzI50VadXdbnhC3BznAuek3eiXEJx>`_. You can directly download the module archive with the following terminal command in an SSH session:
-::
-
-	ggID='1KZGdzI50VadXdbnhC3BznAuek3eiXEJx'; echo "The file ID is $ggID"; ggURL='https://drive.google.com/uc?export=download'; filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')"; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"
+3. Data from an exercise presented at a `2016 Canadian bioinformatics workshop <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/>`_ are in `Module3.tar.gz <https://drive.google.com/open?id=1KZGdzI50VadXdbnhC3BznAuek3eiXEJx>`_.
 
 \
 
-Web pages describe the steps required to `align samples <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/mapping>`_ of reads from normal and tumor samples to a reference human genome sequence, then analyze the resulting alignments to `identify rearrangements <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/rearrangement>`_. Before executing this exercise, you must create a "virtual environment" in which you install Python v2.7 and the numpy (Numerical Python) module, because the Lumpy program relies on those dependencies. Create the virtual environment with 
++ Web pages describe the steps required to `align samples <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/mapping>`_ of reads from normal and tumor samples to a reference human genome sequence, then analyze the resulting alignments to `identify rearrangements <http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/rearrangement>`_. Before executing this exercise, you must create a "virtual environment" in which you install Python v2.7 and the numpy (Numerical Python) module, because the Lumpy program relies on those dependencies. Create the virtual environment with 
 
 :code:`conda create --name=py2 python=2.7` 
 
@@ -103,7 +100,7 @@ Web pages describe the steps required to `align samples <http://bioinformatics-c
 3.1. Download a `shell script <https://drive.google.com/open?id=1CTWJGeBctKpQ7XFgsVcK9UP7nFU9y2Vj>`_ that will carry out the commands given in the webpages linked above, edited to reflect the differences in file paths and configuration of the VCL instance using 
 ::
 
-	ggID='1CTWJGeBctKpQ7XFgsVcK9UP7nFU9y2Vj'; echo "The file ID is $ggID"; ggURL='https://drive.google.com/uc?export=download'; filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')"; getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}"
+	wget http://152.7.176.221/bit815/ResequencingAlignmentStructuralVariation/module3.sh
  
 
 ------------------
@@ -198,5 +195,5 @@ Class Recordings
 
 +   `Session 17: recorded February 26th 2021 <https://drive.google.com/file/d/1cwWGNAonTL_i-IGpMIgBc5A-C1ce7CPw/view?usp=sharing>`_ .
 
-Last modified 25 February 2021.
+Last modified 17 February 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
