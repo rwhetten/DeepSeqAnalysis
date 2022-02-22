@@ -45,7 +45,7 @@ Exercises
 
 The `RADseq.tgz <https://drive.google.com/open?id=1b8vlLQAhK6lQtACplqu0lEe2y-xXFw40>`_ archive containing the files for class can be downloaded from the link, or with the code below. ::
 
-	ggID='1b8vlLQAhK6lQtACplqu0lEe2y-xXFw40' ; ggURL='https://drive.google.com/uc?export=download' ; filename="$(curl --insecure -sc /tmp/gcookie "${ggURL}&id=${ggID}" | grep -o '="uc-name.*</span>' | sed 's/.*">//;s/<.a> .*//')" getcode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)" ; curl --insecure -LOJb /tmp/gcookie "${ggURL}&confirm=${getcode}&id=${ggID}" 
+	wget http://152.7.176.221/ExerciseData/archives/RADseq.tgz
 
 
 1.	We will complete an exercise in analysis of a reduced-representation sequencing dataset from a linkage mapping population (two heterozygous outbred individuals and 93 F1 progeny) both `without the use of a reference genome <https://drive.google.com/open?id=1yQPYzqegIJAB8IcQ8LyyycDjKUrlOUdA>`_, and `with the use of the reference genome <https://drive.google.com/open?id=1wxJEQ89Vi6SsZFLDt0RKfOiSCNvCnbHE>`_. The RADseq.tgz archive contains an archive of `bamfiles <https://drive.google.com/open?id=1Kku1sschgluviX-xiX8nC_qyLKoCSkB8>`_ for the 95 samples and the reference sequence for `LG2 <https://drive.google.com/open?id=1tuz5QihPMiOTM_Trdux4gpvRVjAj58tE>`_ the spotted gar genome for use in the exercise with a reference genome. The complete genome sequence is available either from NCBI, or from the `Broad Institute <ftp://ftp.broadinstitute.org/pub/assemblies/fish/spottedGar/LepOcu1/L_oculatus_v1.assembly.fasta>`_; I used the Broad Institute version. Only `LG2 <https://drive.google.com/open?id=1tuz5QihPMiOTM_Trdux4gpvRVjAj58tE>`_ is needed, because the sample dataset includes only loci that map to a single linkage group. The `annotation for LG2 <https://drive.google.com/open?id=1XL0_tgdBe5ZqkwflT0N2XKipEoHvIsW9>`_ is in the same directory; this comes from the GFF3 file for the spotted gar genome (available from `Ensembl <http://useast.ensembl.org/Lepisosteus_oculatus/Info/WhatsNew?db=core>`_), for use in identifying SNPs or other variants within or near annotated genes.
@@ -71,7 +71,18 @@ The `RADseq.tgz <https://drive.google.com/open?id=1b8vlLQAhK6lQtACplqu0lEe2y-xXF
 
 \
 
-5.	BAM files from alignment of human exome-capture sequencing data from eight samples to the hg19 reference assembly can be downloaded from `this link <https://drive.google.com/file/d/1GSv5VaY7_DPnCnT_k1h8kXKEq3yevmHW>`_, or using the file ID '1GSv5VaY7_DPnCnT_k1h8kXKEq3yevmHW' with the ggdownload script on the VCL instance. These files were produced by the BWA mem aligner, incorporating read group information during the alignment process, and then processed further using SAMtools to fix mate-pairing problems, sort by coordinate position, mark duplicates, and remove unmapped reads, based on `an exercise in variant calling with GATK <https://github.com/CBC-UCONN/Variant_Detection_GATK>`_ from University of Connecticut. A `VCF file <https://drive.google.com/file/d/1dxyLFS0QX9Tz_ajymldTtbLSu9JxHGRJ>`_ of variants called from all eight samples using the GATK HaplotypeCaller, CombineGVCFs, and GenotypeGVCFs pipeline is also available from the course Google Drive - use the file ID '1dxyLFS0QX9Tz_ajymldTtbLSu9JxHGRJ' to download this with the ggdownload script.
+5.	BAM files from alignment of human exome-capture sequencing data from eight samples to the hg19 reference assembly can be downloaded from `this link <https://drive.google.com/file/d/1GSv5VaY7_DPnCnT_k1h8kXKEq3yevmHW>`_, or using the command 
+
+::
+
+	wget http://152.7.176.221/ExerciseData/UConnExercise/bamfiles.tgz
+
+
+These files were produced by the BWA mem aligner, incorporating read group information during the alignment process, and then processed further using SAMtools to fix mate-pairing problems, sort by coordinate position, mark duplicates, and remove unmapped reads, based on `an exercise in variant calling with GATK <https://github.com/CBC-UCONN/Variant_Detection_GATK>`_ from University of Connecticut. A `VCF file <https://drive.google.com/file/d/1dxyLFS0QX9Tz_ajymldTtbLSu9JxHGRJ>`_ of variants called from all eight samples using the GATK HaplotypeCaller, CombineGVCFs, and GenotypeGVCFs pipeline is also available with the command 
+::
+
+	wget http://152.7.176.221/ExerciseData/UConnExercise/combined.vcf.gz
+	
 
 Additional Resources
 ********************
@@ -191,5 +202,5 @@ Class Recordings
 
 +   `Session 18: recorded March 1st 2021 <https://drive.google.com/file/d/1QD0-ZjatRVW0s_BXAIrrNh_6lFMU3Gad/view?usp=sharing>`_ (this link is video and audio). A Transcript of recording of the video `is also available <https://drive.google.com/file/d/1iEblqJSyrJlDqUTxTvP9r2qeOYJhk2Of/view?usp=sharing>`_.
 
-Last modified 7 April 2021.
+Last modified 22 February 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
