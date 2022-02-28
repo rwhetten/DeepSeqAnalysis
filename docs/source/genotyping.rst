@@ -126,6 +126,8 @@ ______________
 Papers:
 _______
 
++	`Lost in parameter space: a road map for STACKS. <https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12775>`_ Paris et al, Methods Ecol Evol 8:1360-1373, 2017.
+
 +	`STACKS: An analysis tool set for population genomics. <http://onlinelibrary.wiley.com/doi/10.1111/mec.12354/abstract>`_ Catchen et al., Molecular Ecology 22:3124-3140, 2013.
 
 \
