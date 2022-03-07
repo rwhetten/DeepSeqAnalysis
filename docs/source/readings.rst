@@ -195,6 +195,8 @@ Workspace environments
 **********************
 Papers
   + Using prototyping to choose a bioinformatics workflow management system. Jackson et al, PLoS Comput Biol. 17:e1008622, 2021. `Full Text <https://doi.org/10.1371/journal.pcbi.1008622>`_ *A description of how the authors compared four different workflow management systems for their analytical pipeline development project before choosing Nextflow*
+  + Nextflow enables reproducible computational workflows. Di Tommaso et al, Nat Biotechnol 35:316-319, 2017 `Publisher Website <https://www.nature.com/articles/nbt.3820>`_ *The paper describing the Nextflow workflow management system - this does not provide much guidance for how to use Nextflow; for that information see the* `Nextflow documentation <https://www.nextflow.io/docs/latest/index.html>`_
+  + Singularity: Scientific containers for mobility of compute. Kurtzer et al,  PLoS ONE 12(5): e0177459, 2017. `Full Text <https://doi.org/10.1371/journal.pone.0177459>`_ *Containers are an important aspect of reproducible research, and Singularity is specifically designed to be compatible with use in cluster-computing environments and interoperable with Docker. Information on installing and using Singularity is available in the* `documentation <https://sylabs.io/guides/3.5/user-guide/index.html>`_.
   + Galaxy: a comprehensive approach for supporting accessible, reproducible, and transparent computational research in the life sciences. Goecks et al, Genome Biol 11(8):R86, 2010 `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2945788>`_
   + Galaxy Cloudman: Delivering compute clusters. BMC Bioinformatics 11(Suppl. 12):S4, 2010 `Full Text <http://www.biomedcentral.com/content/pdf/1471-2105-11-S12-S4.pdf>`_
   + `The Genome Analysis Toolkit <http://www.broadinstitute.org/gsa/wiki/index.php/The_Genome_Analysis_Toolkit>`_: a MapReduce framework for analyzing next-generation DNA sequencing data. McKenna et al, Genome Res 20(9):1297-303, 2010. `PubMedCentral <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2928508>`_
@@ -268,5 +270,5 @@ Links to other useful sites
 + The European Bioinformatics Institute provides tools `ArrayExpressHTS and R-Cloud <http://www.ebi.ac.uk/Tools/rcloud/>`_ for analysis of transcriptome data
 
 
-Last modified 4 February 2022.
+Last modified 7 March 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
