@@ -27,6 +27,14 @@ More links to conference presentations and workshop materials related to Biocond
 Workshop Links
 **************
 
+`aRrgh: a newcomer's (angry) guide to R <https://tim-smith.us/arrgh/>`_ is a guide to R written for those who have programming experience in compiled languages such as C, C++, or Java - the author compares (unfavorably, in most cases) the syntax and customs in R with C and C++. He does offer useful recommendations on what R methods he finds most useful, along with comments that make me feel better when I'm struggling to get R to do what I want it to do. "R makes me want to kick things almost every time I use it" is one example; I agree completely with this statement despite the fact that I also find R invaluable as a computational resource. The aRrgh webpage does not provide sample data to use in exploring the features of R it describes, but the dataset we will use for some of the differential gene analysis exercises next week can be downloaded using the command::
+
+   wget http://152.7.176.221:/ExerciseData/archives/AtRNAseq.tgz
+
+The page in the "aRrgh" guide about data frames includes the comment "read.table isn't the zippiest option for giant data sets but don't worry about it until you're sure you're already worried about it". When you are sure that you are worried about it, one good alternative is the `data.table <https://rdatatable.gitlab.io/data.table/>`_ package, which offers a higher-performance version of data.frames suitable for larger datasets and parallel processing.
+
+`R & Bioconductor Manual <http://manuals.bioinformatics.ucr.edu/home/R_BioCondManual>`_ is a very thorough introduction to R for bioinformatics, written by Thomas Girke from UC Riverside. This webpage provides a good introduction to R and Bioconductor, with specific examples of many useful tools and analytical methods applied to genomic datasets.
+
 `Software Carpentry <http://swcarpentry.github.io/r-novice-gapminder/>`_ is an introductory tutorial for R and RStudio that is not focused on genomic data, but introduces R data structures, flow control, graphics and visualization tools, and data manipulation methods. 
 
 
@@ -35,6 +43,14 @@ Workshop Links
 
 Additional Resources
 ********************
+
++ `R for Data Science <http://r4ds.had.co.nz/>`_, by Hadley Wickham and Garrett Grolemund. Hadley Wickham is one of the people behind RStudio, and a key developer in the suite of packages referred to as the `tidyverse <https://www.tidyverse.org/>`_. The R for Data Science book is an excellent resource for learning the tidyverse approach to data analysis in R, but moves at a rapid pace.
+
+\
+
++ `Statistical Inference via Data Science: A ModernDive into R and the Tidyverse <https://moderndive.com/index.html>`_, by Chester Ismay and Albert Y. Kim. Another book available free online, with a somewhat slower pace of explaining key concepts. This may be a good complement to R for Data Science if you like to see a complex topic explained in different ways.
+
+\
 
 + Orchestrating high-throughput genomic analysis with Bioconductor. Huber et al, Nature Methods 12:115, 2015 `PubMed Central <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4509590/>`_ *This paper is the recommended citation for those who publish research results developed with the use of Bioconductor packages. It is not the most useful source of information about how to analyze data using Bioconductor, but instead provides a global overview of the goals and strategies of the development team.*
 
@@ -46,11 +62,7 @@ Additional Resources
 
 + A quick guide for organizing computational biology projects. Noble WS. PLoS Comput Biol 5(7): e1000424, 2009 `Full Text <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424>`_ *This paper provides one perspective on factors to consider in creating a directory hierarchy for storing data, scripts, analysis results, and other information related to computational biology projects. A Google search for 'bioinformatics directory structure' returns many links to pages with other perspectives, and personal preferences are important in determining what will work best for any particular person. Uniformity of naming conventions is one unifying theme, however, because having a consistent system of naming directories and files makes it easier to manage data with bash scripts and regular expressions.*
 
-\
-
-+ `R & Bioconductor Manual <http://manuals.bioinformatics.ucr.edu/home/R_BioCondManual>`_ by Thomas Girke from UC Riverside. *This webpage provides a very complete introduction to R and Bioconductor, with specific examples of many useful tools and analytical methods applied to genomic datasets.*
 
 
-
-Last modified 4 March 2021.
+Last modified 6 March 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_
