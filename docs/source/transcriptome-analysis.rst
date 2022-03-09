@@ -99,6 +99,14 @@ Additional Resources
 
 \
 
++ `DE-kupl: exhaustive capture of biological variation in RNA-seq data through k-mer decomposition <https://doi.org/10.1186/s13059-017-1372-2>`_ Audoux et al, Genome Biol 18:243, 2017. *These authors developed the DE-kupl software tool for reference-free transcriptome analysis using kmer decomposition of RNA-seq sequencing reads. This can be a powerful tool for analysis of organisms with no previous genomic information, or for detection of novel events in species (such as human) with well-annotated genome and transcriptome data.*
+
+\ 
+
++ `Ultrafast functional profiling of RNA-seq data for nonmodel organisms <https://doi.org/10.1101/gr.269894.120>`_  Liu et al, Genome Research  31: 713-720, 2021 *These authors developed another reference-free kmer-based analysis tool for RNA-seq data, called* `Seq2Fun <https://www.seq2fun.ca/>`_. *The Seq2Fun pipeline translates RNA-seq reads into all six reading frames and searches databases of peptide sequences to identify homologous proteins, and produces output including transcript abundance tables, biochemical pathway information, and species of origin. The output from Seq2Fun can be used as input to* `NetworkAnalyst <https://www.networkanalyst.ca/>`_ *to carry out Gene Ontology (GO) annotation and pathway analysis.*
+
+\
+
 + `Choice of library size normalization and statistical methods for differential gene expression analysis in balanced two-group comparisons for RNA-seq studies <https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6502-7>`_. Li et al, BMC Genomics 21:75, 2020.  *These authors compare different normalization methods and statistical tests for sensitivity and specificity in analysis of simulated RNA-seq datasets, where the correct answer is known, and report that different methods give optimal results depending on the experimental design.*
 
 \
@@ -168,5 +176,5 @@ Class Recordings
 +   `Session 24: recorded March 19th 2021 <https://drive.google.com/file/d/1TKlDlcxupa-qZGopSGF8gVIkVZgtbtwV/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1JgJ7LpdjXQmOQFFIfuAhOjYOq4I5ajiR/view?usp=sharing>`_.
 
 
-Last modified 17 March 2021.
+Last modified 9 March 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
