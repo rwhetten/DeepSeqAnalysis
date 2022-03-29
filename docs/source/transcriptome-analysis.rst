@@ -95,6 +95,10 @@ You can use the commands found in the `Transcriptome_data.txt <https://drive.goo
 Additional Resources
 ********************
 
++ `Statistical design and analysis of RNA sequencing data <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2881125>`_. Auer & Doerge, Genetics 185(2):405-416, 2010.
+
+\
+
 + BAM alignment files are not the only way to estimate the number of transcripts from each gene detected in an RNA-seq dataset; an alternative approach is to create a k-mer hash table of the transcripts that might be detected, then use that table to analyze the filtered and trimmed reads themselves to estimate the count of reads from each transcript, and therefore the counts for each transcript detected. Software tools to carry out this type of transcript-count estimation include `Sailfish <http://www.cs.cmu.edu/~ckingsf/software/sailfish/>`_,  `Salmon <https://combine-lab.github.io/salmon/>`_, `Kallisto <https://pachterlab.github.io/kallisto/about>`_, and `HTSeq <http://www-huber.embl.de/HTSeq/doc/overview.html>`_.
 
 \
@@ -115,7 +119,7 @@ Additional Resources
 
 \
 
-+ `Statistical design and analysis of RNA sequencing data <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2881125>`_. Auer & Doerge, Genetics 185(2):405-416, 2010.
++ `Protocol update for large-scale genome and gene function analysis with the PANTHER classification system (v.14.0) <https://doi.org/10.1038/s41596-019-0128-8>`_ Mi, et al.Nat Protoc 14, 703–721 (2019). *PANTHER is a database of gene orthologues with Gene Ontology classication and assignments to biochemical pathways, searchable by several methods to allow researchers to recover annotation information important for providing biological context to the results of transcriptome analysis experiments.*
 
 \
 
@@ -176,5 +180,5 @@ Class Recordings
 +   `Session 24: recorded March 19th 2021 <https://drive.google.com/file/d/1TKlDlcxupa-qZGopSGF8gVIkVZgtbtwV/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1JgJ7LpdjXQmOQFFIfuAhOjYOq4I5ajiR/view?usp=sharing>`_.
 
 
-Last modified 9 March 2022.
+Last modified 29 March 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
