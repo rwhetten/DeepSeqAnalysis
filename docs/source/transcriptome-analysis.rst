@@ -51,6 +51,8 @@ RNA-Seq library construction strategies may be different for different experimen
 
 Often researchers are interested in all aspects of transcriptome analysis – discovering new transcripts or alternate splicing events of annotated genes, plus measuring relative abundance and detecting genetic variation – so many RNA-Seq experiments use non-normalized libraries of cDNA synthesized by priming with random oligos, to give relatively uniform coverage across entire transcripts. Accurate reconstruction of alternatively-spliced transcripts from individual genes is an important part of RNA-seq data analysis if the experimental objectives include testing for significant differences in levels of alternatively-spliced transcripts among individuals (genetic variation in splicing) or among treatment groups (which may include developmental stages as well as environmental conditions or chemical exposures). Software designed to test for association between genetic variants and levels of alternatively-spliced transcripts is available (Monlong et al, `2014 <http://www.nature.com/ncomms/2014/140820/ncomms5698/full/ncomms5698.html>`_). Pipeline tools that combine multiple software packages into an integrated analytical approach have been described by multiple groups (Cumbie et al, `2011 <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0025279>`_ and Varet et al., `2015 <http://biorxiv.org/content/early/2015/09/26/021741>`_ are examples); these may be worth setting up if you have a lot of data to analyze and want the added functionality of an integrated pipeline.
 
+One disadvantage of using an integrated pipeline can be that the details of individual steps in the analysis are obscured, unless the end user can actually read the code and understand what each step of the pipeline does. This can make it difficult to know exactly what analytical routines are used, or how appropriate they are to the user's dataset. This can be especially important in dealing with sources of bias, such as transcript length and GC content, that can affect the results of differential expression analysis from RNA-seq experiments. Mandelboum et al (`PLoS Biol 17:e3000481, 2019 <https://doi.org/10.1371/journal.pbio.3000481>`_) reported that sample-specific variation in length effects resulted in biased results in 35 different datasets downloaded from the GEO database at NCBI, detected as a rank correlation between the log-fold change in expression of a transcript and the length of the transcript, even when comparing replicate samples of the same experimental treatment. Many current protocols for differential gene expression analysis include normalization for transcript length, but testing for a relationship between log-fold change in expression and transcript characteristics is a good control to test for possible bias. Hansen et al (`Biostatistics 13:204, 2012 <https://doi.org/10.1093/biostatistics/kxr054>`_) described conditional quantile normalization to reduce bias due to GC content or transcript length, and this method was reported by Mandelboum et al to mitigate the bias they observed in the published datasets they analyzed.
+
 
 Exercises
 *********
@@ -99,6 +101,10 @@ Additional Resources
 
 \
 
++ `Recurrent functional misinterpretation of RNA-seq data caused by sample-specific gene length bias <https://doi.org/10.1371/journal.pbio.3000481>`_. Mandelboum et al, PLoS Biol 17: e3000481, 2019. *Transcript length is correlated with log-fold change in expression levels in 35 published RNA-seq datasets after normalization with five different methods, according to these authors. They recommend conditional quantile normalization as a way to reduce the bias due to differences in transcript length and GC content.*
+
+\
+
 + BAM alignment files are not the only way to estimate the number of transcripts from each gene detected in an RNA-seq dataset; an alternative approach is to create a k-mer hash table of the transcripts that might be detected, then use that table to analyze the filtered and trimmed reads themselves to estimate the count of reads from each transcript, and therefore the counts for each transcript detected. Software tools to carry out this type of transcript-count estimation include `Sailfish <http://www.cs.cmu.edu/~ckingsf/software/sailfish/>`_,  `Salmon <https://combine-lab.github.io/salmon/>`_, `Kallisto <https://pachterlab.github.io/kallisto/about>`_, and `HTSeq <http://www-huber.embl.de/HTSeq/doc/overview.html>`_.
 
 \
@@ -107,7 +113,7 @@ Additional Resources
 
 \ 
 
-+ `Ultrafast functional profiling of RNA-seq data for nonmodel organisms <https://doi.org/10.1101/gr.269894.120>`_  Liu et al, Genome Research  31: 713-720, 2021 *These authors developed another reference-free kmer-based analysis tool for RNA-seq data, called* `Seq2Fun <https://www.seq2fun.ca/>`_. *The Seq2Fun pipeline translates RNA-seq reads into all six reading frames and searches databases of peptide sequences to identify homologous proteins, and produces output including transcript abundance tables, biochemical pathway information, and species of origin. The output from Seq2Fun can be used as input to* `NetworkAnalyst <https://www.networkanalyst.ca/>`_ *to carry out Gene Ontology (GO) annotation and pathway analysis.*
++ `Ultrafast functional profiling of RNA-seq data for nonmodel organisms <https://doi.org/10.1101/gr.269894.120>`_  Liu et al, Genome Research  31: 713-720, 2021 *These authors developed another reference-free kmer-based analysis tool for RNA-seq data, called* `Seq2Fun <https://www.seq2fun.ca/>`_. *The Seq2Fun pipeline translates RNA-seq reads into all six reading frames and searches databases of peptide sequences to identify homologous proteins, and produces output including transcript abundance tables, biochemical pathway information, and species of origin. The output from Seq2Fun can be used as input to* `NetworkAnalyst <https://www.networkanalyst.ca/>`_ *to carry out Gene Ontology (GO) and KEGG annotation and pathway analysis.*
 
 \
 
@@ -180,5 +186,5 @@ Class Recordings
 +   `Session 24: recorded March 19th 2021 <https://drive.google.com/file/d/1TKlDlcxupa-qZGopSGF8gVIkVZgtbtwV/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1JgJ7LpdjXQmOQFFIfuAhOjYOq4I5ajiR/view?usp=sharing>`_.
 
 
-Last modified 29 March 2022.
+Last modified 31 March 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
