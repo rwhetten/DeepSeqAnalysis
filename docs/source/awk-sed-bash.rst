@@ -46,11 +46,11 @@ Exercises
 
 
 
-1.	`Bash and awk exercises <https://drive.google.com/open?id=1C0xepbOtdDy2d3yN-VmNUyQ71903XBCY>`_. Writing and executing loops is a key skill to learn in programming, because this makes completion of repetitive tasks much easier. The bash shell also provides a wide variety of tools to manage system functions, maintain software, and track system resources. Awk allows use of both conditional statements and loops to process and manipulate text files, and can carry out many text-processing activities commonly done using spreadsheet programs in a Windows environment. Awk can do basic arithmetic, but is not intended for statistical analysis - datamash is a better option for doing basic statistical summaries on large tabular files.
+1.	`Command-line exercises <https://docs.google.com/document/d/1ePSJp3p0TT7FXvvi4JhXlbGLCIds3pnhnQqfThebAzU>`_. Finding and managing files in Linux systems can be a major component of bioinformatics projects, so learning tools to make those taskes easier is important. File globbing and regular expressions are related concepts important for file management, and also useful in writing scripts to speed up analysis. Writing and executing loops is a key skill to learn in programming, because this makes completion of repetitive tasks much easier. The bash shell also provides a wide variety of tools to manage system functions, maintain software, and track system resources. Awk allows use of both conditional statements and loops to process and manipulate text files, and can carry out many text-processing activities commonly done using spreadsheet programs in a Windows environment. Awk can do basic arithmetic, but is not intended for statistical analysis - datamash is a better option for doing basic statistical summaries on large tabular files.
 
 \
 
-2.	`Exercises <https://drive.google.com/open?id=1yxRhkbvPuzVe6Nx_DURLK-Dxr-UZPuhN>`_ using find, sed, bioawk, and bash to find and modify files.
+2.	`Exercises <https://docs.google.com/document/d/1KqHJmv8fx7csvDDolyrHpMZuzNVYWlWgx4XvS3YN9r8>`_ using sed, bioawk, and bash to  modify and summarize data in files.
 
 \
 
@@ -80,7 +80,7 @@ Exercises
 
 \
 
-8.	`Datamash examples and exercises <https://drive.google.com/open?id=1xMsvOyZI18WJgikMbhGiMwvBDb2x35Rs>`_ is a text file with example problems for practice with Datamash as well as a comment on how to deal with non-uniform filenames. 
+8.	`Datamash examples and exercises <https://docs.google.com/document/d/1-v7G5ebJRKG7TA1RI5_I_XzOupQuF90jV1GAYsAZfIs>`_ is a  file with example problems for practice with Datamash as well as a comment on how to deal with non-uniform filenames. 
 
 Additional Resources
 ********************
@@ -128,5 +128,5 @@ Class Recordings
 
 
 
-Last modified 30 April 2021.
+Last modified 10 April 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
