@@ -121,6 +121,10 @@ Additional Resources
 
 \
 
++ `Interpretation of differential gene expression results of RNA-seq data: review and integration <https://academic.oup.com/bib/article/20/6/2044/5066173>`_ McDermaid et al, Briefings inBioinformatics 20:2044-2054, 2019. *The authors describe a new Bioconductor package for visualization of differential gene expression results using R, to simplify production of a variety of graphic outputs from results of three widely-used analysis packages*
+
+\
+
 + `CHESS: a new human gene catalog curated from thousands of large-scale RNA sequencing experiments reveals extensive transcriptional noise. <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1590-2>`_ Pertea et al, Genome Biol 19:208, 2018. *These authors report the discovery of 224 novel protein-coding genes and 116,156 novel transcripts in the human genome, in additional to millons of transcripts they hypothesize are transcriptional 'noise'. See also the* `Research Highlight <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1600-4>`_ *by W.F. Doolittle in the same issue of the journal, which discusses the definition of gene function as "honed by natural selection in order to contribute to organismal fitness", and the alternative perspective that suggests that transcribed regions of the genome must have a function because they are transcribed.*
 
 \
@@ -186,5 +190,5 @@ Class Recordings
 +   `Session 24: recorded March 19th 2021 <https://drive.google.com/file/d/1TKlDlcxupa-qZGopSGF8gVIkVZgtbtwV/view?usp=sharing>`_. A trancscript of the recording is `also availabile <https://drive.google.com/file/d/1JgJ7LpdjXQmOQFFIfuAhOjYOq4I5ajiR/view?usp=sharing>`_.
 
 
-Last modified 31 March 2022.
+Last modified 13 April 2022.
 Edits by `Ross Whetten <https://github.com/rwhetten>`_, `Will Kohlway <https://github.com/wkohlway>`_, & `Maria Adonay <https://github.com/amalgamaria>`_.
