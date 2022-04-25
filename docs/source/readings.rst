@@ -9,7 +9,7 @@ NC State Bioinformatics Users Group (BUG)
 **************************
 
 + A `Google Group <https://groups.google.com/a/ncsu.edu/g/group-bioinformatics-users>`_ for questions and discussion among local bioinformatics users
-+ A `Github repository <https://github.ncsu.edu/lllowe/BioinformaticsUsersGroup>`_ for scripts, tutorials, and other code resources 
++ A `Github repository <https://github.ncsu.edu/lllowe/BioinformaticsUsersGroup>`_ for scripts, tutorials, and other code resources - see this `webinar <https://sites.google.com/ncsu.edu/bug/bug-seminars#h.u8o28xd7apzj>`_ for information on how to contribute to the Github site 
 + A `shared Google Drive folder <https://drive.google.com/drive/folders/0AC1DHkNrcTEnUk9PVA>`_ for papers, documentation and sample data for tutorials 
 
 Course Notes
